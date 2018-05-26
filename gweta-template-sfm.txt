@@ -1,0 +1,25 @@
+\newspaper Pamɛbhamɛ
+\volume-eng 001
+\volume-or "Nimlʋʋ : 00x---
+\date 2005 'Zë Zë -kwɛ
+\tagline "su –bha ‘sëëdhɛ -mü "Gwɛɛtaawo
+\body
+\article 1
+\heading 1
+\heading 2
+\p 1
+
+\article 2
+\heading 1
+\heading 2
+\p 1
+
+\article 3
+\heading 1
+\heading 2
+\p 1
+
+\article 4
+\heading 1
+\heading 2
+\p 1
