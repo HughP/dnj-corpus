@@ -9,6 +9,16 @@ Language Name: Eastern Dan
 
 Orthography version: 3
 
+### Orthography History
+
+Version | Date | Modifications | Mentor/Artist | Reference
+-------------|----|----|-------------|-------------
+Version 1 | Pre-1975 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34704
+Version 2 | 1975-1982 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34713
+Version 3 | 1982-2014 | ?? | Margrit Bolli | 
+Version 4 | 2014-2017+ | ?? | Valentin Vydrin | p.c.
+
+
 ## Corpus Description
 Linux Command Line:
 `wc -l -w -m`
@@ -20,242 +30,126 @@ Lines  | Words  |  Characters
 
 UnicodeCharacterCount Stats:
 
-U+0009		194
-
-U+000A		11686
-
-U+000C		88
-
-U+0020		36545
-
-U+0021	!	25
-
-U+0022	"	1576
-
-U+0027	'	2363
-
-U+0028	(	309
-
-U+0029	)	308
-
-U+002B	+	86
-
-U+002C	,	2212
-
-U+002C+0308	,̈	3
-
-U+002D	-	15242
-
-U+002E	.	2128
-
-U+002F	/	13
-
-U+0030	0	689
-
-U+0031	1	208
-
-U+0032	2	323
-
-U+0033	3	93
-
-U+0034	4	80
-
-U+0035	5	147
-
-U+0036	6	63
-
-U+0037	7	119
-
-U+0038	8	198
-
-U+0039	9	96
-
-U+003A	:	230
-
-U+003B	;	29
-
-U+003C	<	72
-
-U+003D	=	2659
-
-U+003E	>	72
-
-U+003F	?	85
-
-U+0041	A	590
-
-U+0042	B	260
-
-U+0043	C	12
-
-U+0044	D	432
-
-U+0045	E	84
-
-U+0046	F	35
-
-U+0047	G	247
-
-U+0048	H	22
-
-U+0049	I	48
-
-U+004A	J	9
-
-U+004B	K	807
-
-U+004C	L	106
-
-U+004D	M	397
-
-U+004E	N	248
-
-U+004F	O	36
-
-U+0050	P	201
-
-U+0052	R	7
-
-U+0053	S	311
-
-U+0054	T	153
-
-U+0055	U	25
-
-U+0056	V	92
-
-U+0057	W	311
-
-U+0059	Y	448
-
-U+005A	Z	236
-
-U+005B	[	3
-
-U+005D	]	3
-
-U+005F	_	1
-
-U+0061	a	15986
-
-U+0062	b	4805
-
-U+0063	c	350
-
-U+0064	d	6289
-
-U+0065	e	3136
-
-U+0066	f	272
-
-U+0067	g	5460
-
-U+0068	h	7528
-
-U+0069	i	4773
-
-U+006A	j	58
-
-U+006B	k	6592
-
-U+006C	l	2387
-
-U+006D	m	2458
-
-U+006E	n	8866
-
-U+006F	o	5156
-
-U+0070	p	2294
-
-U+0071	q	83
-
-U+0072	r	1328
-
-U+0073	s	3972
-
-U+0074	t	2249
-
-U+0075	u	4260
-
-U+0076	v	302
-
-U+0077	w	4958
-
-U+0078	x	69
-
-U+0079	y	3564
-
-U+007A	z	992
-
-U+00AB	«	18
-
-U+00B0	°	1
-
-U+00BB	»	16
-
-U+00CB	Ë	37
-
-U+00D6	Ö	26
-
-U+00DC	Ü	29
-
-U+00E7	ç	17
-
-U+00E8	è	178
-
-U+00E9	é	85
-
-U+00EA	ê	24
-
-U+00EB	ë	4799
-
-U+00EE	î	3
-
-U+00F6	ö	6762
-
-U+00FB	û	22
-
-U+00FC	ü	3299
-
-U+0186	Ɔ	45
-
-U+0190	Ɛ	52
-
-U+0254	ɔ	4259
-
-U+025B	ɛ	6619
-
-U+0269	ɩ	517
-
-U+028B	ʋ	584
-
-U+028B+0308	ʋ̈	260
-
-U+0308	̈	5
-
-U+03CB	ϋ	697
-
-U+2013	–	985
-
-U+2018	‘	7305
-
-U+2019	’	642
-
-U+201A	‚	5
-
-U+201C	“	2449
-
-U+201D	”	59
-
-U+2026	…	5
-
-U+2039	‹	30
-
-U+203A	›	30
-
-U+FFF9	￹	10
-
+  Codepoint     | Grapheme   |   Count  | 
+-------------|----|-------| 
+ U+00B0   | °  | 1     | 
+ U+005F      | _  | 1     | 
+ U+005B      | [  | 3     | 
+ U+002C+0308 | ,̈ | 3     | 
+ U+005D      | ]  | 3     | 
+ U+00EE      | î  | 3     | 
+ U+2026      | …  | 5     | 
+ U+0308      | ̈  | 5     | 
+ U+201A      | ‚  | 5     | 
+ U+0052      | R  | 7     | 
+ U+004A      | J  | 9     | 
+ U+FFF9      | ￹  | 10    | 
+ U+0043      | C  | 12    | 
+ U+002F      | /  | 13    | 
+ U+00BB      | »  | 16    | 
+ U+00E7      | ç  | 17    | 
+ U+00AB      | «  | 18    | 
+ U+0048      | H  | 22    | 
+ U+00FB      | û  | 22    | 
+ U+00EA      | ê  | 24    | 
+ U+0021      | !  | 25    | 
+ U+0055      | U  | 25    | 
+ U+00D6      | Ö  | 26    | 
+ U+00DC      | Ü  | 29    | 
+ U+003B      | ;  | 29    | 
+ U+2039      | ‹  | 30    | 
+ U+203A      | ›  | 30    | 
+ U+0046      | F  | 35    | 
+ U+004F      | O  | 36    | 
+ U+00CB      | Ë  | 37    | 
+ U+0186      | Ɔ  | 45    | 
+ U+0049      | I  | 48    | 
+ U+0190      | Ɛ  | 52    | 
+ U+006A      | j  | 58    | 
+ U+201D      | ”  | 59    | 
+ U+0036      | 6  | 63    | 
+ U+0078      | x  | 69    | 
+ U+003C      | <  | 72    | 
+ U+003E      | >  | 72    | 
+ U+0034      | 4  | 80    | 
+ U+0071      | q  | 83    | 
+ U+0045      | E  | 84    | 
+ U+003F      | ?  | 85    | 
+ U+00E9      | é  | 85    | 
+ U+002B      | +  | 86    | 
+ U+000C      |    | 88    | 
+ U+0056      | V  | 92    | 
+ U+0033      | 3  | 93    | 
+ U+0039      | 9  | 96    | 
+ U+004C      | L  | 106   | 
+ U+0037      | 7  | 119   | 
+ U+0035      | 5  | 147   | 
+ U+0054      | T  | 153   | 
+ U+00E8      | è  | 178   | 
+ U+0009      |    | 194   | 
+ U+0038      | 8  | 198   | 
+ U+0050      | P  | 201   | 
+ U+0031      | 1  | 208   | 
+ U+003A      | :  | 230   | 
+ U+005A      | Z  | 236   | 
+ U+0047      | G  | 247   | 
+ U+004E      | N  | 248   | 
+ U+028B+0308 | ʋ̈  | 260   | 
+ U+0042      | B  | 260   | 
+ U+0066      | f  | 272   | 
+ U+0076      | v  | 302   | 
+ U+0029      | )  | 308   | 
+ U+0028      | (  | 309   | 
+ U+0053      | S  | 311   | 
+ U+0057      | W  | 311   | 
+ U+0032      | 2  | 323   | 
+ U+0063      | c  | 350   | 
+ U+004D      | M  | 397   | 
+ U+0044      | D  | 432   | 
+ U+0059      | Y  | 448   | 
+ U+0269      | ɩ  | 517   | 
+ U+028B      | ʋ  | 584   | 
+ U+0041      | A  | 590   | 
+ U+2019      | ’  | 642   | 
+ U+0030      | 0  | 689   | 
+ U+03CB      | ϋ  | 697   | 
+ U+004B      | K  | 807   | 
+ U+2013      | –  | 985   | 
+ U+007A      | z  | 992   | 
+ U+0072      | r  | 1328  | 
+ U+0022      | "  | 1576  |
+ U+002E      | .  | 2128  | 
+ U+002C      | ,  | 2212  | 
+ U+0074      | t  | 2249  | 
+ U+0070      | p  | 2294  | 
+ U+0027      | '  | 2363  | 
+ U+006C      | l  | 2387  | 
+ U+201C      | “  | 2449  | 
+ U+006D      | m  | 2458  | 
+ U+003D      | =  | 2659  | 
+ U+0065      | e  | 3136  | 
+ U+00FC      | ü  | 3299  | 
+ U+0079      | y  | 3564  | 
+ U+0073      | s  | 3972  | 
+ U+0254      | ɔ  | 4259  | 
+ U+0075      | u  | 4260  | 
+ U+0069      | i  | 4773  | 
+ U+00EB      | ë  | 4799  | 
+ U+0062      | b  | 4805  | 
+ U+0077      | w  | 4958  | 
+ U+006F      | o  | 5156  | 
+ U+0067      | g  | 5460  | 
+ U+0064      | d  | 6289  | 
+ U+006B      | k  | 6592  | 
+ U+025B      | ɛ  | 6619  | 
+ U+00F6      | ö  | 6762  | 
+ U+2018      | ‘  | 7305  | 
+ U+0068      | h  | 7528  | 
+ U+006E      | n  | 8866  | 
+ U+000A      |    | 11686 | 
+ U+002D      | -  | 15242 | 
+ U+0061      | a  | 15986 | 
+ U+0020      |    | 36545 | 
 ## Provenance
 Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus as a series of .doc files.
 
@@ -283,6 +177,13 @@ using this command on linux  `for f in gweta*.pdf; do pdftotext $f mass-text_$f.
 \heading 2
 \p 1
 ```
+
+## Intelectual propert ownership and licenses
+Copyright claims are un-clear.
+If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.)
+
+Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license.
+The `README.md` which is Hugh's contribution is provided under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Research Notes
 
