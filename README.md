@@ -339,7 +339,7 @@ Space can be a word forming character. However, if two tone characters come toge
 ##### Tone class characters
 
 Codepoint     | Grapheme   |   Count  | Note
--------------|----|-------|
+-------------|----|-------|----
 U+002C+0308 | ,̈ | 3     | find operation can't locate this
 U+0308      | ̈  | 5     | find operation can't locate this
 U+201D      | ”  | 59    | These are coming at the end of a word with two vowels and it is not clear why (suspicion is that is it marking both vowels for something)
