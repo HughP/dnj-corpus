@@ -11,12 +11,14 @@ Script: Can be written in Arabic or  Latin script.
 
 ### Latin Orthography History
 
-Version | Date | Modifications | Mentor/Artist | Reference
+Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
-Version 1 | Pre-1975 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34704
-Version 2 | 1975-1982 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34713
-Version 3 | 1982-2014 | ?? | Margrit Bolli |
-Version 4 | 2014-2017+ | ?? | Valentin Vydrin | p.c.
+  Version 0.1|  pre-1975 | ??  | Margrit Bolli / Eva Flik | 1975. Yaobhaa -wo bhe pe -se -ya ʼgu. Société Internationale de Linguistique: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34532
+Version 1 | 1981| ?? | Margrit Bolli / Eva Flik | Bolli, Margrit. 1981. Guide d’orthographe pour la langue dan (dialecte blo -wo). Société Internationale de Linguistique: Abidjan, Ivory Coast. (27 page booklet):  https://www.sil.org/resources/archives/34704
+Version 2 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | https://www.sil.org/resources/archives/34713
+Version 2.5| 2000 | Biblical text preprints use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik |See Ruth Publication in 2000. Typeset in Nairobi.
+Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin |
+Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | p.c.
 
 ## Corpus Description
 ### Writing system
@@ -26,7 +28,7 @@ Version 4 | 2014-2017+ | ?? | Valentin Vydrin | p.c.
 
 _Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in expected ways. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
 
-#### Linguistic orthography description
+#### Linguistic orthography description for orthography version 1
 
 Presented in crucial ordering for tokenization.
 
@@ -268,11 +270,14 @@ Tasks:
 1. I would like to count unique stems and their variations.
 
 How do I expect to count variations? the following would all be variations. (I know that they might not be the same "lexical" word but that is a small aside for me right now.)
+```
 =ban-
 =ban`
 -ban`
 "ban
 'ban
+ban'-
+```
 Basically where we only count segmental features.
 
 2. I would like to get a unique string count which properly accounts for the orthography's non-standard use of Unicode Characters. often times word counters use punctuation attributes to mark the end of a word, when it is not followed by a space.
@@ -321,7 +326,7 @@ Corpus location:
 
 #### Word forming characters
 
-Space can be a word forming character. However, if two tone characters come together then one can assume that word break happens between them. Also orthographic punctuation might form the edges of a word. Often in the corpus punctuation is surrounded by spaces. This is unusual from an English orthography perspective.
+Space can be a word forming character. However, if two tone characters come together then one can (not assume) that word break happens between them (because two characters can some at the end of a word `'-'`). Also orthographic punctuation might form the edges of a word. Often in the corpus punctuation is surrounded by spaces. This is unusual from an English orthography perspective.
 
  Examples:
  * tom and sue
