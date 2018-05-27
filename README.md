@@ -4,7 +4,9 @@ A small corpus of a local newspaper
 ## Language Description
 
 Language ISO639-3: dnj
+
 Language Name: Eastern Dan
+
 Script: Can be written in Arabic or  Latin script.
 
 ### Latin Orthography History
@@ -190,7 +192,7 @@ using this command on linux  `for f in gweta*.pdf; do pdftotext $f mass-text_$f.
 
 ## Intellectual property ownership and licenses
 Copyright claims are un-clear.
-If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the owners, or their employer.
+If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the authors, or their employer. It does not readily seem that the authors are attributed in the corpus, but they might be in the orthography.
 
 Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license.
 The `README.md` which is Hugh's contribution is provided under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
