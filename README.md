@@ -26,6 +26,62 @@ Version 4 | 2014-2017+ | ?? | Valentin Vydrin | p.c.
 
 _Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in expected ways. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
 
+#### Linguistic orthography description
+
+Presented in crucial ordering for tokenization.
+
+##### Vowels
+```
+ɛa
+ɛ
+ë
+ö
+ü
+e
+i
+aɔ
+ɔ
+a
+o
+u
+ng
+```
+##### Consonants
+
+```
+kp
+kw
+k
+gb
+gw
+g
+bh
+dh
+m
+n
+f
+s
+v
+z
+l
+w
+r
+y
+```
+##### Tone marking
+
+###### Word initial
+```
+'
+=
+-
+```
+###### Word finally
+```
+-
+'-
+'
+```
 ### Content
 
 This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008.
@@ -39,6 +95,7 @@ Lines  | Words  |  Characters
   11686 | 46192  |  221389
 
 UnicodeCharacterCount Stats:
+Presented in frequency order.
 
   Codepoint     | Grapheme   |   Count  |
 -------------|----|-------|
@@ -281,31 +338,24 @@ Space can be a word forming character. However, if two tone characters come toge
 
 ##### Tone class characters
 
-Codepoint     | Grapheme   |   Count  |
+Codepoint     | Grapheme   |   Count  | Note
 -------------|----|-------|
-U+005F      | _  | 1     |
-U+002C+0308 | ,̈ | 3     |
-U+00EE      | î  | 3     |
-U+0308      | ̈  | 5     |
-U+201A      | ‚  | 5     |
-U+002F      | /  | 13    |
-U+00FB      | û  | 22    |
-U+00EA      | ê  | 24    |
-U+201D      | ”  | 59    |
-U+003C      | <  | 72    |
-U+003E      | >  | 72    |
-U+00E9      | é  | 85    |
-U+00E8      | è  | 178   |
-U+2019      | ’  | 642   |
-U+2013      | –  | 985   |
-U+0022      | "  | 1576  |
-U+002E      | .  | 2128  |
-U+002C      | ,  | 2212  |
-U+0027      | '  | 2363  |
-U+201C      | “  | 2449  |
+U+002C+0308 | ,̈ | 3     | find operation can't locate this
+U+0308      | ̈  | 5     | find operation can't locate this
+U+201D      | ”  | 59    | These are coming at the end of a word with two vowels and it is not clear why (suspicion is that is it marking both vowels for something)
+U+0022      | "  | 1576  | ! suspect that these need to be replaced with double instances of U+0027
+U+201C      | “  | 2449  | ! suspect that these need to be replaced with double instances of U+0027
 U+003D      | =  | 2659  |
-U+2018      | ‘  | 7305  |
+U+2019      | ’  | 642   | ! Suspect that these need to be replaced with single instances of U+0027
+U+2018      | ‘  | 7305  | ! Suspect that these need to be replaced with single instances of U+0027
+U+0027      | '  | 2363  | ! Suspect that these need to be replaced with single instances of U+0027
+U+005F      | _  | 1     |  suspected spelling mistake for U+002D
+U+2013      | –  | 985   | Sometimes this character is used word initially instead of U+002D
 U+002D      | -  | 15242 |
+
+Need sed replace and a cleaned text instane.
+
+`sed 's/[_ –]/-/g' mass-text.txt > spell-corrected-mass-text.txt`
 
 #### Punctuation characters
 
@@ -348,6 +398,8 @@ U+0036      | 6  | 63
 U+0037      | 7  | 119   
 U+0038      | 8  | 198   
 U+0039      | 9  | 96   
+
+Thousands separator is U+002E "."
 
 #### Reasonable characters needed for Internet use
 According to RFC 3986: http://www.ietf.org/rfc/rfc3986.txt
