@@ -1,25 +1,34 @@
-# dnj-corups
+# dnj-corpus
 A small corpus of a local newspaper
 
 ## Language Description
 
 Language ISO639-3: dnj
-
 Language Name: Eastern Dan
+Script: Can be written in Arabic or  Latin script.
 
-Orthography version: 3
-
-### Orthography History
+### Latin Orthography History
 
 Version | Date | Modifications | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
 Version 1 | Pre-1975 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34704
 Version 2 | 1975-1982 | ?? | Margrit Bolli | https://www.sil.org/resources/archives/34713
-Version 3 | 1982-2014 | ?? | Margrit Bolli | 
+Version 3 | 1982-2014 | ?? | Margrit Bolli |
 Version 4 | 2014-2017+ | ?? | Valentin Vydrin | p.c.
 
-
 ## Corpus Description
+### Writing system
+
+* BCP47: dnj-Latn
+* Orthography version: 3
+
+_Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in expected ways. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
+
+### Content
+
+This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008.
+
+#### Metrics
 Linux Command Line:
 `wc -l -w -m`
 
@@ -27,140 +36,141 @@ Lines  | Words  |  Characters
 --|---|--
   11686 | 46192  |  221389
 
-
 UnicodeCharacterCount Stats:
 
-  Codepoint     | Grapheme   |   Count  | 
--------------|----|-------| 
- U+00B0   | °  | 1     | 
- U+005F      | _  | 1     | 
- U+005B      | [  | 3     | 
- U+002C+0308 | ,̈ | 3     | 
- U+005D      | ]  | 3     | 
- U+00EE      | î  | 3     | 
- U+2026      | …  | 5     | 
- U+0308      | ̈  | 5     | 
- U+201A      | ‚  | 5     | 
- U+0052      | R  | 7     | 
- U+004A      | J  | 9     | 
- U+FFF9      | ￹  | 10    | 
- U+0043      | C  | 12    | 
- U+002F      | /  | 13    | 
- U+00BB      | »  | 16    | 
- U+00E7      | ç  | 17    | 
- U+00AB      | «  | 18    | 
- U+0048      | H  | 22    | 
- U+00FB      | û  | 22    | 
- U+00EA      | ê  | 24    | 
- U+0021      | !  | 25    | 
- U+0055      | U  | 25    | 
- U+00D6      | Ö  | 26    | 
- U+00DC      | Ü  | 29    | 
- U+003B      | ;  | 29    | 
- U+2039      | ‹  | 30    | 
- U+203A      | ›  | 30    | 
- U+0046      | F  | 35    | 
- U+004F      | O  | 36    | 
- U+00CB      | Ë  | 37    | 
- U+0186      | Ɔ  | 45    | 
- U+0049      | I  | 48    | 
- U+0190      | Ɛ  | 52    | 
- U+006A      | j  | 58    | 
- U+201D      | ”  | 59    | 
- U+0036      | 6  | 63    | 
- U+0078      | x  | 69    | 
- U+003C      | <  | 72    | 
- U+003E      | >  | 72    | 
- U+0034      | 4  | 80    | 
- U+0071      | q  | 83    | 
- U+0045      | E  | 84    | 
- U+003F      | ?  | 85    | 
- U+00E9      | é  | 85    | 
- U+002B      | +  | 86    | 
- U+000C      |    | 88    | 
- U+0056      | V  | 92    | 
- U+0033      | 3  | 93    | 
- U+0039      | 9  | 96    | 
- U+004C      | L  | 106   | 
- U+0037      | 7  | 119   | 
- U+0035      | 5  | 147   | 
- U+0054      | T  | 153   | 
- U+00E8      | è  | 178   | 
- U+0009      |    | 194   | 
- U+0038      | 8  | 198   | 
- U+0050      | P  | 201   | 
- U+0031      | 1  | 208   | 
- U+003A      | :  | 230   | 
- U+005A      | Z  | 236   | 
- U+0047      | G  | 247   | 
- U+004E      | N  | 248   | 
- U+028B+0308 | ʋ̈  | 260   | 
- U+0042      | B  | 260   | 
- U+0066      | f  | 272   | 
- U+0076      | v  | 302   | 
- U+0029      | )  | 308   | 
- U+0028      | (  | 309   | 
- U+0053      | S  | 311   | 
- U+0057      | W  | 311   | 
- U+0032      | 2  | 323   | 
- U+0063      | c  | 350   | 
- U+004D      | M  | 397   | 
- U+0044      | D  | 432   | 
- U+0059      | Y  | 448   | 
- U+0269      | ɩ  | 517   | 
- U+028B      | ʋ  | 584   | 
- U+0041      | A  | 590   | 
- U+2019      | ’  | 642   | 
- U+0030      | 0  | 689   | 
- U+03CB      | ϋ  | 697   | 
- U+004B      | K  | 807   | 
- U+2013      | –  | 985   | 
- U+007A      | z  | 992   | 
- U+0072      | r  | 1328  | 
- U+0022      | "  | 1576  |
- U+002E      | .  | 2128  | 
- U+002C      | ,  | 2212  | 
- U+0074      | t  | 2249  | 
- U+0070      | p  | 2294  | 
- U+0027      | '  | 2363  | 
- U+006C      | l  | 2387  | 
- U+201C      | “  | 2449  | 
- U+006D      | m  | 2458  | 
- U+003D      | =  | 2659  | 
- U+0065      | e  | 3136  | 
- U+00FC      | ü  | 3299  | 
- U+0079      | y  | 3564  | 
- U+0073      | s  | 3972  | 
- U+0254      | ɔ  | 4259  | 
- U+0075      | u  | 4260  | 
- U+0069      | i  | 4773  | 
- U+00EB      | ë  | 4799  | 
- U+0062      | b  | 4805  | 
- U+0077      | w  | 4958  | 
- U+006F      | o  | 5156  | 
- U+0067      | g  | 5460  | 
- U+0064      | d  | 6289  | 
- U+006B      | k  | 6592  | 
- U+025B      | ɛ  | 6619  | 
- U+00F6      | ö  | 6762  | 
- U+2018      | ‘  | 7305  | 
- U+0068      | h  | 7528  | 
- U+006E      | n  | 8866  | 
- U+000A      |    | 11686 | 
- U+002D      | -  | 15242 | 
- U+0061      | a  | 15986 | 
- U+0020      |    | 36545 | 
+  Codepoint     | Grapheme   |   Count  |
+-------------|----|-------|
+ U+00B0   | °  | 1     
+ U+005F      | _  | 1     
+ U+005B      | [  | 3     
+ U+002C+0308 | ,̈ | 3     
+ U+005D      | ]  | 3     
+ U+00EE      | î  | 3     
+ U+2026      | …  | 5     
+ U+0308      | ̈  | 5     
+ U+201A      | ‚  | 5     
+ U+0052      | R  | 7     
+ U+004A      | J  | 9     
+ U+FFF9      | ￹  | 10    
+ U+0043      | C  | 12    
+ U+002F      | /  | 13    
+ U+00BB      | »  | 16    
+ U+00E7      | ç  | 17    
+ U+00AB      | «  | 18    
+ U+0048      | H  | 22    
+ U+00FB      | û  | 22    
+ U+00EA      | ê  | 24    
+ U+0021      | !  | 25    
+ U+0055      | U  | 25    
+ U+00D6      | Ö  | 26    
+ U+00DC      | Ü  | 29    
+ U+003B      | ;  | 29    
+ U+2039      | ‹  | 30    
+ U+203A      | ›  | 30    
+ U+0046      | F  | 35    
+ U+004F      | O  | 36    
+ U+00CB      | Ë  | 37    
+ U+0186      | Ɔ  | 45    
+ U+0049      | I  | 48    
+ U+0190      | Ɛ  | 52    
+ U+006A      | j  | 58    
+ U+201D      | ”  | 59    
+ U+0036      | 6  | 63    
+ U+0078      | x  | 69    
+ U+003C      | <  | 72    
+ U+003E      | >  | 72    
+ U+0034      | 4  | 80    
+ U+0071      | q  | 83    
+ U+0045      | E  | 84    
+ U+003F      | ?  | 85    
+ U+00E9      | é  | 85    
+ U+002B      | +  | 86    
+ U+000C      |    | 88    
+ U+0056      | V  | 92    
+ U+0033      | 3  | 93    
+ U+0039      | 9  | 96    
+ U+004C      | L  | 106   
+ U+0037      | 7  | 119   
+ U+0035      | 5  | 147   
+ U+0054      | T  | 153   
+ U+00E8      | è  | 178   
+ U+0009      |    | 194   
+ U+0038      | 8  | 198   
+ U+0050      | P  | 201   
+ U+0031      | 1  | 208   
+ U+003A      | :  | 230   
+ U+005A      | Z  | 236   
+ U+0047      | G  | 247   
+ U+004E      | N  | 248   
+ U+028B+0308 | ʋ̈  | 260  
+ U+0042      | B  | 260   
+ U+0066      | f  | 272   
+ U+0076      | v  | 302   
+ U+0029      | )  | 308   
+ U+0028      | (  | 309   
+ U+0053      | S  | 311   
+ U+0057      | W  | 311   
+ U+0032      | 2  | 323   
+ U+0063      | c  | 350   
+ U+004D      | M  | 397   
+ U+0044      | D  | 432   
+ U+0059      | Y  | 448   
+ U+0269      | ɩ  | 517   
+ U+028B      | ʋ  | 584   
+ U+0041      | A  | 590   
+ U+2019      | ’  | 642   
+ U+0030      | 0  | 689   
+ U+03CB      | ϋ  | 697   
+ U+004B      | K  | 807   
+ U+2013      | –  | 985   
+ U+007A      | z  | 992   
+ U+0072      | r  | 1328  
+ U+0022      | "  | 1576  
+ U+002E      | .  | 2128  
+ U+002C      | ,  | 2212  
+ U+0074      | t  | 2249  
+ U+0070      | p  | 2294  
+ U+0027      | '  | 2363  
+ U+006C      | l  | 2387  
+ U+201C      | “  | 2449  
+ U+006D      | m  | 2458  
+ U+003D      | =  | 2659  
+ U+0065      | e  | 3136  
+ U+00FC      | ü  | 3299  
+ U+0079      | y  | 3564  
+ U+0073      | s  | 3972  
+ U+0254      | ɔ  | 4259  
+ U+0075      | u  | 4260  
+ U+0069      | i  | 4773  
+ U+00EB      | ë  | 4799  
+ U+0062      | b  | 4805  
+ U+0077      | w  | 4958  
+ U+006F      | o  | 5156  
+ U+0067      | g  | 5460  
+ U+0064      | d  | 6289  
+ U+006B      | k  | 6592  
+ U+025B      | ɛ  | 6619  
+ U+00F6      | ö  | 6762  
+ U+2018      | ‘  | 7305  
+ U+0068      | h  | 7528  
+ U+006E      | n  | 8866  
+ U+000A      |    | 11686
+ U+002D      | -  | 15242
+ U+0061      | a  | 15986
+ U+0020      |    | 36545
 ## Provenance
 Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus as a series of .doc files.
 
-Hugh Paterson III converted those to PDFs and then used pdftotext to extract the text. The text was then converted to a single file `mass-text.txt` useing the following commands.
+Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted those to PDFs and then used pdftotext to extract the text. The text was then converted to a single file `mass-text.txt` useing the following commands.
 
 using this command on linux  `for f in gweta*.pdf; do pdftotext $f mass-text_$f.txt; done` and then  `cat mass-text_gweta*.txt >> mass-text.txt`
 
 ## File types and purpose
 
 `gweta*.doc` these are the original files provided by VV.
+
 `gweta*.pdf`these are PDFs generated my MS Word by Rebecca Paterson from files provided by VV.
+
 `gweta*.txt` these files are generated by Hugh Paterson using `pdftotext`.
 
 `*-sfm.txt` files have a hand coded structure to them that includes making for things like newspaper title, volume, date, tagline, article, heading 1, heading 2, and text of article:
@@ -178,9 +188,9 @@ using this command on linux  `for f in gweta*.pdf; do pdftotext $f mass-text_$f.
 \p 1
 ```
 
-## Intelectual propert ownership and licenses
+## Intellectual property ownership and licenses
 Copyright claims are un-clear.
-If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.)
+If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the owners, or their employer.
 
 Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license.
 The `README.md` which is Hugh's contribution is provided under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
@@ -188,7 +198,6 @@ The `README.md` which is Hugh's contribution is provided under the [Creative Com
 ## Research Notes
 
 ### Working with custom character attributes
-
 
 Non-standard components (from an ASCII perspective):
 1. It has some greek/IPA characters in the orthography. This does not match standard [a-zA-Z] classes. [ë, ɛ, ɔ, ʋ, ö,]
@@ -207,9 +216,9 @@ How do I expect to count variations? the following would all be variations. (I k
 'ban
 Basically where we only count segmental features.
 
-2. I would like to get a unique string count which assumes that the language's punctuation is the border of words.
+2. I would like to get a unique string count which properly accounts for the orthography's non-standard use of Unicode Characters. often times word counters use punctuation attributes to mark the end of a word, when it is not followed by a space.
 
-If I say that space is the word break then words punctuation is included in words.
+If I say that space is the word break then words punctuation is included in words, but not all words are separated by spaces.
 
 3. I would like to count overtly marked tonal melodies. That is something like:
 
@@ -234,21 +243,144 @@ Challenge: Given the nature of the custom (non-standard Unicode) properties attr
 
 Here is what I have tried, but It is not getting me where I need to go.
 
+```
+cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr
+cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top
+cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top | head -20
+cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | head -20
+  grep -o -c phonology target.file
+  grep -o -c Phonology target.file
+ sed -e 's/[^[:alpha:]]/ /g' text_to_analize.txt | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
+  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
 
+pdftotext target.file
+  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
+
+  ```
 
 Corpus location:
 
+#### Word forming characters
+
+Space can be a word forming character. However, if two tone characters come together then one can assume that word break happens between them. Also orthographic punctuation might form the edges of a word. Often in the corpus punctuation is surrounded by spaces. This is unusual from an English orthography perspective.
+
+ Examples:
+ * tom and sue
+ * tom. and sue
+ * tom.and sue
+ * tom,.and sue
+ * =tome- and sue
+ * »=tome-« and sue
+ * =tome-=and' sue.
+
+#### Word component characters
+
+##### Segmental phonology
+
+##### Tone class characters
+
+Codepoint     | Grapheme   |   Count  |
+-------------|----|-------|
+U+005F      | _  | 1     |
+U+002C+0308 | ,̈ | 3     |
+U+00EE      | î  | 3     |
+U+0308      | ̈  | 5     |
+U+201A      | ‚  | 5     |
+U+002F      | /  | 13    |
+U+00FB      | û  | 22    |
+U+00EA      | ê  | 24    |
+U+201D      | ”  | 59    |
+U+003C      | <  | 72    |
+U+003E      | >  | 72    |
+U+00E9      | é  | 85    |
+U+00E8      | è  | 178   |
+U+2019      | ’  | 642   |
+U+2013      | –  | 985   |
+U+0022      | "  | 1576  |
+U+002E      | .  | 2128  |
+U+002C      | ,  | 2212  |
+U+0027      | '  | 2363  |
+U+201C      | “  | 2449  |
+U+003D      | =  | 2659  |
+U+2018      | ‘  | 7305  |
+U+002D      | -  | 15242 |
+
+#### Punctuation characters
+
+Codepoint   | Grapheme   |   Count  
+-------------|-----|-------
+U+00B0   | °  | 1     
+U+005F      | _  | 1     
+U+005B      | [  | 3     
+U+005D      | ]  | 3     
+U+2026      | …  | 5     
+U+201A      | ‚  | 5     
+U+002F      | /  | 13    
+U+00BB      | »  | 16    
+U+00AB      | «  | 18      
+ U+0021      | !  | 25      
+ U+003B      | ;  | 29    
+ U+2039      | ‹  | 30    
+ U+203A      | ›  | 30
+ U+003C      | <  | 72    
+ U+003E      | >  | 72        
+ U+003F      | ?  | 85      
+U+002E      | .  | 2128  
+U+002C      | ,  | 2212  
+U+0029      | )  | 308   
+U+0028      | (  | 309   
+ U+003A      | :  | 230   
+ U+002B      | +  | 86    
+
+#### Number Characters
+
+Codepoint   | Grapheme   |   Count  
+-------------|-----|-------
+U+0030      | 0  | 689   
+U+0031      | 1  | 208   
+U+0032      | 2  | 323   
+U+0033      | 3  | 93    
+U+0034      | 4  | 80
+U+0035      | 5  | 147  
+U+0036      | 6  | 63   
+U+0037      | 7  | 119   
+U+0038      | 8  | 198   
+U+0039      | 9  | 96   
+
+#### Reasonable characters needed for Internet use
+According to RFC 3986: http://www.ietf.org/rfc/rfc3986.txt
+
+     reserved    = gen-delims / sub-delims
+
+     gen-delims  = ":" / "/" / "?" / "#" / "[" / "]" / "@"
+
+     sub-delims  = "!" / "$" / "&" / "'" / "(" / ")"
+                 / "\*" / "+" / "," / ";" / "="
+
+     unreserved  = ALPHA / DIGIT / "-" / "." / "\_" / "~"
+
+     Alpha-digit classes: [a-zA-Z] [0-9]
+
+#### Other Characters used
 
 
+#### Scriptsource Notes
+Source : http://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=dnj
+```
+Character list for Dan written with Latin script
+Main characters
 
-Word component characters:
+[\u0303 \u0300 \u0301 a b ɓ d e ɛ f g {gb} h i k {kp} {kw} l m n {nw} {ny} ŋ o ɔ ə ɵ p r s t u ɥ v w x y z]
+Auxiliary characters
+[c j q]
+Index characters
 
-
-Punctuation characters:
-
-
-Other Characters used:
-
+[A B Ɓ D E Ɛ F G {Gb} H I K {Kp} {Kw} L M N {Nw} {Ny} Ŋ O Ɔ Ə Ɵ P R S T U Ɥ V W X Y Z]
+Punctuation characters
+Numbering system
+```
+* These scriptsource notes make some sense in terms of the IPA characters used, however, they are not a valid description of the orthography. For instance at least for version 3 of the [dnj] orthography there is no _ɓ_ character, rather it is written _bh_.
+* The scriptsource information source is not cited, though the entry's contributor is noted.
 
 
 ### Tool for the Job Notes
@@ -262,6 +394,7 @@ Other Characters used:
 This works for most things in the .doc files, but did not get all headings. or all content from text boxes.
 
 #### Antiword
+`antiword gweta01.doc > gweta01-aw.txt`
 * Source:
  http://www.winfield.demon.nl/#Programmer
 * _Note_:
@@ -281,18 +414,3 @@ Did not work with .doc files.
 * Source:  http://silvercoders.com/en/products/doctotext/
 * _Note_:
 Needed local compiling directions were not clear. needed more know how to accomplish this.
-
-```
-cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr
-cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top
-cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top | head -20
-cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | head -20
-  grep -o -c phonology target.file
-  grep -o -c Phonology target.file
- sed -e 's/[^[:alpha:]]/ /g' text_to_analize.txt | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-
-pdftotext target.file
-  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-
-  ```
