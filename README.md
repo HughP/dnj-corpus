@@ -9,9 +9,11 @@ Language Name: Eastern Dan
 
 Script: Can be written in Arabic or  Latin script.
 
+Script Note: There may be several orthgraphies from different dialects which would all qualify as BCP47: dnj-Latn.
+
 ### Latin Orthography History
 
-**Note**: It might be the case that there are multiple writing systems for the same languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+**Note**: It might be the case that there are multiple writing systems for the same languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time. Not being a French speaker, the finer details of the evidence are not clear at the moment.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
@@ -270,9 +272,9 @@ Non-standard components (from an ASCII perspective):
 
 Tasks:
 
-1. I would like to count unique stems and their variations.
+1. I would like to count unique lexical strings and their variations.
 
-How do I expect to count variations? the following would all be variations. (I know that they might not be the same "lexical" word but that is a small aside for me right now.)
+ What do I mean by variations? the following would all be variations. (I know that they might not be the same "lexical word" but that is a small aside for me right now.)
 ```
 =ban-
 =ban`
@@ -281,15 +283,15 @@ How do I expect to count variations? the following would all be variations. (I k
 'ban
 ban'-
 ```
-Basically where we only count segmental features.
+ So in linguistic terms a lexical string would be only the segmental tier of the word. (For linguistic clarity, I totally realize that the same string with different tones may be classified as a different word, depending on one's definition of a word. Also homophones would be lumped together here too.) However for typing studies, we need to relate things back to the lexical string.
 
-2. I would like to get a unique string count which properly accounts for the orthography's non-standard use of Unicode Characters. often times word counters use punctuation attributes to mark the end of a word, when it is not followed by a space.
+2. I would like to get a unique string count which properly accounts for the orthography's non-standard use of Unicode Characters. For instance, the GNU tool `wc`  says that this corpus has 46192 words. I don't trust this because, often times word counters use punctuation attributes to mark the end of a word, when it is not followed by a space. I would like a more accurate word count of the corpus.
 
-If I say that space is the word break then words punctuation is included in words, but not all words are separated by spaces.
+  If I say that space is the word break then words punctuation is included in words, but not all words are separated by spaces and not all words end with punctuation.
 
 3. I would like to count overtly marked tonal melodies. That is something like:
 
-```
+ ```
 break strings into segments according to custom word forming rules.
  search between word forming characters for characters in tonal indicator class until reaching the last word forming character in the string
    Return tonal characters as a set.
@@ -297,14 +299,34 @@ Count unique sets
 Write results to table
 ```
 
-  Results| Count  |  Phonology
---|---|--
-  =-|  45 |  H+ M
-  =` | 37  |  H+ L
-  -` |  22 |  L H
-  "|  56 |  H L
+  What do I mean by Count?
+ * How many tone patterns are expressed in the corpus?
+ * Which words are they expressed on?
+ * How many times is that word used?
+ * What percentage of all the instances of expressed tone patterns in the corpus does this represent?
+ * How many total words are in the corpus?
 
-Results : (45 set =-, 37 =\`, 22 -\`, 56 ", etc.)
+ Example:
+
+Totals|The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
+----|----|----|----|----
+|= - | klee   |   12 | 4| 3 (=, '-, null)
+|= -  |  moo |  54 |  11| 0
+Total |H L   | 2 | 66  |  15 | n/a
+
+
+ Summary table:
+
+  Phonology |Results| Count
+----|----|----|----
+ H+ M |  =-|  45
+ H+ L |  =` | 37
+   L H | -` |  22
+H L |  "|  56
+
+Results in text form:
+
+(45 set =-, 37 =\`, 22 -\`, 56 ", etc.)
 
 Challenge: Given the nature of the custom (non-standard Unicode) properties attributed to this orthography I need to both expand the alpha numeric range of character tools like RegEx [:alpha:] and then also limit classes like "Punctuation".
 
@@ -322,7 +344,6 @@ cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | u
 
 pdftotext target.file
   sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-
   ```
 
 Corpus location:

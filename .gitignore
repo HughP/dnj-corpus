@@ -1,0 +1,11 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# OS X
+.DS_Store
+.AppleDouble
+.Parent
+#Corpus related files
+counter.py
