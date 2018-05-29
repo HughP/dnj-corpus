@@ -308,17 +308,17 @@ Write results to table
 
  Example:
 
-Totals|The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
-----|----|----|----|----
-|= - | klee   |   12 | 4| 3 (=, '-, null)
-|= -  |  moo |  54 |  11| 0
-Total |H L   | 2 | 66  |  15 | n/a
 
+ Totals | The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
+ ------|------|------|-------|-------|----
+ ||= - | klee   |   12 | 4| 3 (=, '-, null)
+ ||= -  |  moo |  54 |  11| 0
+ Total |H L   | 2 | 66  |  15 | n/a
 
  Summary table:
 
   Phonology |Results| Count
-----|----|----|----
+----|----|----
  H+ M |  =-|  45
  H+ L |  =` | 37
    L H | -` |  22
