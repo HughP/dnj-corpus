@@ -387,7 +387,7 @@ Need sed replace and a cleaned text instance.
 1. Correct minus signs
 
  `sed 's/[_ –]/-/g' mass-text.txt > spell-corrected-mass-text.txt`
- 
+ +
   or consider moving all of them to U+02D7 which is modifier letter minus.
 
 2. Correct equal signs
