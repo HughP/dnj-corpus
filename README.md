@@ -39,18 +39,18 @@ A short prose discussion is followed by a chart. Charts are followed by list pre
 
 ##### Casing rules
 
-Casing rules appear to follow general French casing norms, with two noted excpetions.
+Casing rules appear to follow general French casing norms, with two noted exceptions.
 
 1. The first word of a sentence is capitalized.
 2. Proper nouns are capitalized.
 3.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
 4. Surnames are not capitalized as is the custom in French literature.
 5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
-6. Tone markes preceding words do not get capitalized, but the characters following the tone marks do get capitalized.
+6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
 
 ##### Unicode PUA reliance
 
-Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts,  should be checked for PUA characters. Known used characters have been:
+Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
 *
 
 
@@ -148,22 +148,37 @@ Unmentioned in RFC3986 is the use of double quote marks which is highly importan
 
 Codepoint   | Grapheme  
 -------------|-----
-U+0030      | 0
-U+0031      | 1     
-U+0032      | 2     
-U+0033      | 3    
-U+0034      | 4  
-U+0035      | 5    
-U+0036      | 6     
-U+0037      | 7     
-U+0038      | 8
-U+0039      | 9
+U+0021 | !
+U+0022 | "
+U+0023 | #
+U+0024 | $
+U+0025 | %
+U+0026 | &
+U+0027 | '
+U+0028 | (
+U+0029 | )
+U+002A | *
+U+002B | +
+U+002C | ,
+U+002D | -
+U+002E | .
+U+002F | /
+U+003A | :
+U+003B | ;
+U+003D | =
+U+003F | ?
+U+0040 | @
+U+005B | [
+U+005D | ]
+U+005F | _
+U+007E | ~
+
 
 ```
 %
 :
- /
- ?
+/
+?
 #
 [
 ]
@@ -188,15 +203,26 @@ _
 ```
 ##### Vowels
 
-Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉.  Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however,
+Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however,
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
 Uppercase, lowercase |, |  |
-
-Ng, ng
-Aa,aa
-
+U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
+U+0061 U+006E, U+0061 U+0061 U+006E| Aan,aan | | 
+U+0061, U+0061 U+0061| Aa,aa | | 
+U+0061, U+025B U+0061| _a,ɛa | | 
+	,U+025B | ,ɛ | | 
+	,U+00EB | ,ë | | 
+	,U+00F6 | ,ö | | 
+	,U+00FC | ,ü | | 
+	,U+0065 | ,e | | 
+	,U+0069 | ,i | | 
+	,U+0061 U+0254 | ,aɔ | | 
+	,U+0254 | ,ɔ | | 
+	,U+0061 | ,a | | 
+	,U+006F | ,o | | 
+	,U+0075 | ,u | | 
 
 ```
 ng
@@ -386,6 +412,370 @@ Presented in frequency order.
  U+002D      | -  | 15242
  U+0061      | a  | 15986
  U+0020      |    | 36545
+ 
+ Round 2 
+ 	U+005F	_	1
+	U+00A8	¨	1
+	U+00B0	°	1
+	U+005D	]	3
+	U+00EE	î	3
+	U+005B	[	3
+	U+2026	…	6
+	U+201A	‚	7
+	U+0052	R	8
+	U+004A	J	9
+	U+FFF9	￹	14
+	U+0043	C	15
+	U+002F	/	17
+	U+00E7	ç	21
+	U+00BB	»	21
+	U+00AB	«	23
+	U+00FB	û	26
+	U+0048	H	26
+	U+00EA	ê	28
+	U+2039	‹	30
+	U+203A	›	30
+	U+0021	!	30
+	U+00D6	Ö	31
+	U+003B	;	31
+	U+0055	U	36
+	U+00DC	Ü	44
+	U+004F	O	45
+	U+00CB	Ë	46
+	U+0046	F	54
+	U+0186	Ɔ	55
+	U+0049	I	61
+	U+0190	Ɛ	63
+	U+201D	”	69
+	U+006A	j	70
+	U+0036	6	74
+	U+0078	x	85
+	U+003E	>	86
+	U+003C	<	90
+	U+003F	?	98
+	U+0034	4	100
+	U+0045	E	102
+	U+0071	q	103
+	U+00E9	é	105
+	U+0039	9	109
+	U+000C	 	110
+	U+002B	+	110
+	U+0056	V	115
+	U+0033	3	120
+	U+004C	L	138
+	U+0037	7	151
+	U+0035	5	173
+	U+0054	T	198
+	U+00E8	è	221
+	U+0009	 	240
+	U+0050	P	247
+	U+0031	1	256
+	U+0038	8	260
+	U+005A	Z	288
+	U+003A	:	299
+	U+004E	N	301
+	U+0042	B	325
+	U+0047	G	336
+	U+0066	f	337
+	U+0308	̈	372
+	U+0057	W	382
+	U+0076	v	394
+	U+0053	S	402
+	U+0032	2	407
+	U+0029	)	409
+	U+0028	(	410
+	U+0063	c	436
+	U+004D	M	482
+	U+0044	D	516
+	U+0059	Y	542
+	U+0269	ɩ	603
+	U+2019	’	663
+	U+0041	A	709
+	U+03CB	ϋ	767
+	U+0030	0	857
+	U+004B	K	989
+	U+2013	–	1029
+	U+028B	ʋ	1048
+	U+007A	z	1199
+	U+0072	r	1648
+	U+0022	"	1975
+	U+002E	.	2628
+	U+002C	,	2731
+	U+0027	'	2746
+	U+0074	t	2752
+	U+0070	p	2839
+	U+201C	“	2953
+	U+006C	l	2961
+	U+006D	m	2969
+	U+003D	=	3252
+	U+0065	e	3877
+	U+00FC	ü	3997
+	U+0079	y	4306
+	U+0073	s	4904
+	U+0075	u	5247
+	U+0254	ɔ	5318
+	U+00EB	ë	5798
+	U+0069	i	5875
+	U+0077	w	5881
+	U+0062	b	5920
+	U+006F	o	6295
+	U+0067	g	6723
+	U+0064	d	7648
+	U+006B	k	8000
+	U+025B	ɛ	8040
+	U+00F6	ö	8151
+	U+2018	‘	8866
+	U+0068	h	9124
+	U+006E	n	10890
+	U+000A	 	14491
+	U+002D	-	18466
+	U+0061	a	19605
+	U+0020	 	43840
+	
+	Round two -fm
+	
+		U+00B0	°	1
+	U+005F	_	1
+	U+00A8	¨	1
+	U+00EE	î	3
+	U+005D	]	3
+	U+005B	[	3
+	U+002C+0308	,̈	4
+	U+2026	…	6
+	U+201A	‚	7
+	U+0308	̈	8
+	U+0052	R	8
+	U+004A	J	9
+	U+FFF9	￹	14
+	U+0043	C	15
+	U+002F	/	17
+	U+00E7	ç	21
+	U+00BB	»	21
+	U+00AB	«	23
+	U+0048	H	26
+	U+00FB	û	26
+	U+00EA	ê	28
+	U+0021	!	30
+	U+2039	‹	30
+	U+203A	›	30
+	U+00D6	Ö	31
+	U+003B	;	31
+	U+0055	U	36
+	U+00DC	Ü	44
+	U+004F	O	45
+	U+00CB	Ë	46
+	U+0046	F	54
+	U+0186	Ɔ	55
+	U+0049	I	61
+	U+0190	Ɛ	63
+	U+201D	”	69
+	U+006A	j	70
+	U+0036	6	74
+	U+0078	x	85
+	U+003E	>	86
+	U+003C	<	90
+	U+003F	?	98
+	U+0034	4	100
+	U+0045	E	102
+	U+0071	q	103
+	U+00E9	é	105
+	U+0039	9	109
+	U+000C	 	110
+	U+002B	+	110
+	U+0056	V	115
+	U+0033	3	120
+	U+004C	L	138
+	U+0037	7	151
+	U+0035	5	173
+	U+0054	T	198
+	U+00E8	è	221
+	U+0009	 	240
+	U+0050	P	247
+	U+0031	1	256
+	U+0038	8	260
+	U+005A	Z	288
+	U+003A	:	299
+	U+004E	N	301
+	U+0042	B	325
+	U+0047	G	336
+	U+0066	f	337
+	U+028B+0308	ʋ̈	360
+	U+0057	W	382
+	U+0076	v	394
+	U+0053	S	402
+	U+0032	2	407
+	U+0029	)	409
+	U+0028	(	410
+	U+0063	c	436
+	U+004D	M	482
+	U+0044	D	516
+	U+0059	Y	542
+	U+0269	ɩ	603
+	U+2019	’	663
+	U+028B	ʋ	688
+	U+0041	A	709
+	U+03CB	ϋ	767
+	U+0030	0	857
+	U+004B	K	989
+	U+2013	–	1029
+	U+007A	z	1199
+	U+0072	r	1648
+	U+0022	"	1975
+	U+002E	.	2628
+	U+002C	,	2727
+	U+0027	'	2746
+	U+0074	t	2752
+	U+0070	p	2839
+	U+201C	“	2953
+	U+006C	l	2961
+	U+006D	m	2969
+	U+003D	=	3252
+	U+0065	e	3877
+	U+00FC	ü	3997
+	U+0079	y	4306
+	U+0073	s	4904
+	U+0075	u	5247
+	U+0254	ɔ	5318
+	U+00EB	ë	5798
+	U+0069	i	5875
+	U+0077	w	5881
+	U+0062	b	5920
+	U+006F	o	6295
+	U+0067	g	6723
+	U+0064	d	7648
+	U+006B	k	8000
+	U+025B	ɛ	8040
+	U+00F6	ö	8151
+	U+2018	‘	8866
+	U+0068	h	9124
+	U+006E	n	10890
+	U+000A	 	14491
+	U+002D	-	18466
+	U+0061	a	19605
+	U+0020	 	43840
+	
+	Spell checke with equals
+	
+		U+00B0	°	1
+	U+00A8	¨	1
+	U+005D	]	3
+	U+005B	[	3
+	U+00EE	î	3
+	U+002C+0308	,̈	4
+	U+2026	…	6
+	U+201A	‚	7
+	U+0052	R	8
+	U+0308	̈	8
+	U+004A	J	9
+	U+FFF9	￹	14
+	U+0043	C	15
+	U+002F	/	17
+	U+00E7	ç	21
+	U+00BB	»	21
+	U+00AB	«	23
+	U+00FB	û	26
+	U+0048	H	26
+	U+00EA	ê	28
+	U+2039	‹	30
+	U+203A	›	30
+	U+0021	!	30
+	U+00D6	Ö	31
+	U+003B	;	31
+	U+0055	U	36
+	U+00DC	Ü	44
+	U+004F	O	45
+	U+00CB	Ë	46
+	U+0046	F	54
+	U+0186	Ɔ	55
+	U+0049	I	61
+	U+0190	Ɛ	63
+	U+201D	”	69
+	U+006A	j	70
+	U+0036	6	74
+	U+0078	x	85
+	U+003E	>	86
+	U+003C	<	90
+	U+003F	?	98
+	U+0034	4	100
+	U+0045	E	102
+	U+0071	q	103
+	U+00E9	é	105
+	U+0039	9	109
+	U+002B	+	110
+	U+000C	 	110
+	U+0056	V	115
+	U+0033	3	120
+	U+004C	L	138
+	U+0035	5	173
+	U+0054	T	198
+	U+00E8	è	221
+	U+0009	 	240
+	U+0050	P	247
+	U+0031	1	256
+	U+0038	8	260
+	U+005A	Z	288
+	U+003A	:	299
+	U+004E	N	301
+	U+0042	B	325
+	U+0047	G	336
+	U+0066	f	337
+	U+028B+0308	ʋ̈	360
+	U+0057	W	382
+	U+0076	v	394
+	U+0053	S	402
+	U+004D	M	482
+	U+0059	Y	542
+	U+0269	ɩ	603
+	U+2019	’	663
+	U+028B	ʋ	688
+	U+0041	A	709
+	U+03CB	ϋ	767
+	U+004B	K	989
+	U+007A	z	1199
+	U+0072	r	1648
+	U+0022	"	1975
+	U+002E	.	2628
+	U+002C	,	2727
+	U+0027	'	2746
+	U+0074	t	2752
+	U+0070	p	2839
+	U+201C	“	2953
+	U+006C	l	2961
+	U+006D	m	2969
+	U+A78A	꞊	3252
+	U+00FC	ü	3997
+	U+0079	y	4306
+	U+0073	s	4904
+	U+0254	ɔ	5318
+	U+00EB	ë	5798
+	U+0069	i	5875
+	U+0077	w	5881
+	U+0062	b	5920
+	U+0067	g	6723
+	U+0064	d	7648
+	U+006B	k	8000
+	U+025B	ɛ	8040
+	U+00F6	ö	8151
+	U+2018	‘	8866
+	U+000A	 	14491
+	U+0061	a	19605
+	U+0024	$	63336
+	U+002D	-	63336
+	U+0037	7	63487
+	U+0032	2	63743
+	U+0029	)	63745
+	U+0028	(	63746
+	U+0063	c	63772
+	U+0044	D	63852
+	U+0030	0	64193
+	U+0075	u	68583
+	U+006F	o	69631
+	U+0068	h	72460
+	U+006E	n	74226
+	U+0020	 	126672
+	U+0065	e	130549
+	
+	
 ## Provenance
 Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus as a series of .doc files.
 
@@ -568,6 +958,8 @@ Need sed replace and a cleaned text instance.
 
 1. Correct minus signs
 
+I made some mistakes and I should use perl 
+
  `sed 's/[_ –]/-/g' mass-text.txt > spell-corrected-mass-text.txt`
  +
   or consider moving all of them to U+02D7 which is modifier letter minus.
@@ -583,6 +975,11 @@ U+003D
  Example with perl
 
  ```echo 汉典“馑”字的基本解释 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
+
+cat mass-text.txt | perl -CS -pe 's/–/\N{U+02D7}/g'
+	cat mass-text.txt | perl -CS -pe 's/_/\N{U+02D7}/g'
+cat mass-text.txt | perl -CS -pe 's/-/\N{U+02D7}/g'
+cat mass-text.txt | perl -CS -pe 's/=/\N{U+A78A}/g'
 
 
 #### Punctuation characters
