@@ -402,7 +402,7 @@ using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.
 `*-sfm.txt` files have a hand coded structure to them that includes making for things like newspaper title, volume, date, tagline, article, heading 1, heading 2, and text of article:
 
 ```
-\newspaper Pamɛbhamɛ
+\newspaper -Pamɛbhamɛ
 \volume-eng 001
 \volume-or "Nimlʋʋ : 00x---
 \date 2005 'Zë Zë -kwɛ
