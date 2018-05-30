@@ -33,38 +33,53 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 
 _Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in expected ways. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
 
-#### Linguistic orthography description for orthography version 1
+#### Linguistic orthography description for orthography version 2.6
 
-Presented in crucial ordering for tokenization.
+A short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
+
+##### Casing rules
+
+Casing rules appear to follow general French casing norms, with two noted excpetions.
+
+1. The first word of a sentence is capitalized.
+2. Proper nouns are capitalized.
+3.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
+4. Surnames are not capitalized as is the custom in French literature.
+5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
+6. Tone markes preceding words do not get capitalized, but the characters following the tone marks do get capitalized.
+
+##### Unicode PUA reliance
+
+Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts,  should be checked for PUA characters. Known used characters have been:
+*
+
 
 ##### Punctuation
 
-Codepoint   | Grapheme   
--------------|-----
-U+00B0   | °
-U+005F      | _  
-U+005B      | [  
-U+005D      | ]
-U+2026      | …  
-U+201A      | ‚   
-U+002F      | /    
-U+00BB      | »    
-U+00AB      | «     
- U+0021      | !      
- U+003B      | ;  
- U+2039      | ‹  
- U+203A      | ›  
- U+003C      | <  
- U+003E      | >   
- U+003F      | ?  
-U+002E      | .  
-U+002C      | ,  
-U+0029      | )  
-U+0028      | (   
- U+003A      | :  
- U+002B      | +  
-
-
+Codepoint   | Grapheme | Usage
+-------------|-----|----
+U+00B0   | ° | unknown
+U+005F      | _ | unknown
+U+005B      | [  |unknown
+U+005D      | ] |unknown
+U+2026      | … |unknown
+U+201A      | ‚ |unknown
+U+002F      | /  |unknown
+U+00BB      | »  |opens a direct speech statement
+U+00AB      | «   |closes a direct speech statement  
+ U+0021      | !   |closes an exclamation, interjection or emphatic statement
+ U+003B      | ;  |unknown
+ U+2039      | ‹  |closes a quote inside of a direct speech statement
+ U+203A      | ›  |opens a quote inside of a direct speech statement
+ U+003C      | <  |unknown
+ U+003E      | >  |unknown
+ U+003F      | ?  |closes a question statement
+U+002E      | .  | unknown
+U+002C      | ,  | unknown
+U+0029      | )  | unknown
+U+0028      | (   | unknown
+ U+003A      | :  |unknown
+ U+002B      | + | precedes a telephone number to indicate country code
 ```
 °
 _
@@ -90,8 +105,101 @@ _
 +
 ```
 
-##### Vowels
+#### Number Characters
+When writing Eastern Dan with the Latin script the following numbers are used.
+
+Number oriented notes:
+
+* Thousands separator is U+002E 〈.〉.
+* Shortened form of the word "number". Unicode has a special character for this U+2116 〈№〉. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of the degree symbol U+00B0 〈°〉 , and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. Wikipedia suggests that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form "no" (an "n" followed by a superscript lowercase 〈o〉). The plural form "nos" can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."
+
+Codepoint   | Grapheme  
+-------------|-----
+U+0030      | 0
+U+0031      | 1     
+U+0032      | 2     
+U+0033      | 3    
+U+0034      | 4  
+U+0035      | 5    
+U+0036      | 6     
+U+0037      | 7     
+U+0038      | 8
+U+0039      | 9
+
 ```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+#### Reasonable characters needed for Internet use
+According to RFC 3986: http://www.ietf.org/rfc/rfc3986.txt the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
+
+This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using U+003D  〈=〉 as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is U+A78A 'modifier letter short equals sign'. Typographically these characters are the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. Just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and development.
+
+Unmentioned in RFC3986 is the use of double quote marks which is highly important in various mark-ups like HTML5.
+
+Codepoint   | Grapheme  
+-------------|-----
+U+0030      | 0
+U+0031      | 1     
+U+0032      | 2     
+U+0033      | 3    
+U+0034      | 4  
+U+0035      | 5    
+U+0036      | 6     
+U+0037      | 7     
+U+0038      | 8
+U+0039      | 9
+
+```
+%
+:
+ /
+ ?
+#
+[
+]
+@
+!
+$
+&
+'
+(
+)
+*
++
+"
+,
+;
+=
+-
+.
+_
+~
+"
+```
+##### Vowels
+
+Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉.  Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however,
+
+Codepoint | Grapheme | IPA equivalent | Phonetic description
+-------------|-----|----|----
+Uppercase, lowercase |, |  |
+
+Ng, ng
+Aa,aa
+
+
+```
+ng
 ɛa
 ɛ
 ë
@@ -104,7 +212,6 @@ aɔ
 a
 o
 u
-ng
 ```
 ##### Consonants
 
@@ -130,13 +237,13 @@ y
 ```
 ##### Tone marking
 
-###### Word initial
+###### Pre-Stem
 ```
 '
 =
 -
 ```
-###### Word finally
+###### Post-Stem
 ```
 -
 '-
@@ -361,11 +468,13 @@ Write results to table
 
  Example:
 
- Totals | The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
+
+Totals | The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
  ------|------|------|-------|-------|----
- ||= - | klee   |   12 | 4| 3 (=, '-, null)
- ||= -  |  moo |  54 |  11| 0
+ |= - | klee   |   12 | 4| 3 (=, '-, null)
+ |= -  |  moo |  54 |  11| 0
  Total |H L   | 2 | 66  |  15 | n/a
+
 
  Summary table:
 
@@ -373,7 +482,7 @@ Write results to table
 ----|----|----
  H+ M |  =-|  45
  H+ L |  =` | 37
-   L H | -` |  22
+ L H | -` |  22
 H L |  "|  56
 
 Results in text form:
