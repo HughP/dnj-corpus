@@ -254,17 +254,19 @@ y
 This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008.
 
 #### Metrics
+First round were off a bit because 4 issues of the local news paper did not get added to the file `mass-text.txt`
 Linux Command Line:
 `wc -l -w -m`
 
-Lines  | Words  |  Characters
---|---|--
-  11686 | 46192  |  221389
+Round |Lines  | Words  |  Characters
+--|--|---|--
+First |  11686 | 46192  |  221389
+Second  | 14491 |  55986 | 269437
 
 UnicodeCharacterCount Stats:
 Presented in frequency order.
 
-  Codepoint     | Grapheme   |   Count  |
+  Codepoint     | Grapheme   |   Count  Round 1 |
 -------------|----|-------|
  U+00B0   | °  | 1     
  U+005F      | _  | 1     
@@ -392,7 +394,7 @@ Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted those to PDFs and the
 using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done` and then  ``cat mass-text_*weta*.txt >> mass-text.txt``
 
 ## File types and purpose
-
+### Original Files
 `[gG]weta*.doc` these are the original files provided by VV.
 
 `[gG]weta*.pdf`these are PDFs generated my MS Word by Rebecca Paterson from files provided by VV.
@@ -413,6 +415,25 @@ using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.
 \heading 2
 \p 1
 ```
+### Converted Files
+The following transforms were performed on the original files to clean up character in consistencies.
+
+1. Correct minus signs
+ Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
+
+ `sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt`
+
+2. Correct equal signs
+
+ I need to replace normal equal sign with letter equal sign.
+U+A78A modifier letter short equals sign.
+U+003D
+
+ `sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt`
+
+ Example with perl
+
+ ```echo 汉典“馑”字的基本解释 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
 
 ## Intellectual property ownership and licenses
 Copyright claims are un-clear.
@@ -528,7 +549,7 @@ Space can be a word forming character. However, if two tone characters come toge
 
 ##### Tone class characters
 
-Codepoint     | Grapheme   |   Count  | Note
+Codepoint     | Grapheme   |   Count Round 1 | Note
 -------------|----|-------|----
 U+002C+0308 | ,̈ | 3     | find operation can't locate this
 U+0308      | ̈  | 5     | find operation can't locate this
@@ -566,7 +587,7 @@ U+003D
 
 #### Punctuation characters
 
-Codepoint   | Grapheme   |   Count  
+Codepoint   | Grapheme   |   Count  Round 1
 -------------|-----|-------
 U+00B0   | °  | 1     
 U+005F      | _  | 1     
@@ -593,7 +614,7 @@ U+0028      | (  | 309
 
 #### Number Characters
 
-Codepoint   | Grapheme   |   Count  
+Codepoint   | Grapheme   |   Count  Round 1
 -------------|-----|-------
 U+0030      | 0  | 689   
 U+0031      | 1  | 208   
@@ -627,6 +648,7 @@ According to RFC 3986: http://www.ietf.org/rfc/rfc3986.txt
 
 #### Scriptsource Notes
 Source : http://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=dnj
+
 ```
 Character list for Dan written with Latin script
 Main characters
@@ -640,6 +662,7 @@ Index characters
 Punctuation characters
 Numbering system
 ```
+
 * These scriptsource notes make some sense in terms of the IPA characters used, however, they are not a valid description of the orthography. For instance at least for version 3 of the [dnj] orthography there is no _ɓ_ character, rather it is written _bh_.
 * The scriptsource information source is not cited, though the entry's contributor is noted.
 
