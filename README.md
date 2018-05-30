@@ -229,7 +229,7 @@ Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus as a series of .
 
 Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted those to PDFs and then used pdftotext to extract the text. The text was then converted to a single file `mass-text.txt` useing the following commands.
 
-using this command on linux  `for f in gweta*.pdf; do pdftotext $f mass-text_$f.txt; done` and then  `cat mass-text_gweta*.txt >> mass-text.txt`
+using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done` and then  ``cat mass-text_*weta*.txt >> mass-text.txt``
 
 ## File types and purpose
 
@@ -307,7 +307,6 @@ Write results to table
  * How many total words are in the corpus?
 
  Example:
-
 
  Totals | The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
  ------|------|------|-------|-------|----
