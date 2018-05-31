@@ -7,9 +7,9 @@ Language ISO639-3: dnj
 
 Language Name: Eastern Dan
 
-Script: Can be written in Arabic or  Latin script.
+Script: Can be written in Arabic or Latin script.
 
-Script Note: There may be several orthgraphies from different dialects which would all qualify as BCP47: dnj-Latn.
+Script Note: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn.
 
 ### Latin Orthography History
 
@@ -31,7 +31,7 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 * BCP47: dnj-Latn
 * Orthography version: 3
 
-_Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in expected ways. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
+_Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
 
 #### Linguistic orthography description for orthography version 2.6
 
@@ -58,28 +58,28 @@ Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan text
 
 Codepoint   | Grapheme | Usage
 -------------|-----|----
-U+00B0   | ° | unknown
+U+00B0   | ° | Used as part of the abbreviation for number 〈n°〉.
 U+005F      | _ | unknown
 U+005B      | [  |unknown
 U+005D      | ] |unknown
 U+2026      | … |unknown
 U+201A      | ‚ |unknown
 U+002F      | /  |unknown
-U+00BB      | »  |opens a direct speech statement
-U+00AB      | «   |closes a direct speech statement  
- U+0021      | !   |closes an exclamation, interjection or emphatic statement
+U+00BB      | »  | Opens a direct speech statement
+U+00AB      | «   | Closes a direct speech statement  
+ U+0021      | !   | Closes an exclamation, interjection or emphatic statement
  U+003B      | ;  |unknown
- U+2039      | ‹  |closes a quote inside of a direct speech statement
- U+203A      | ›  |opens a quote inside of a direct speech statement
+ U+2039      | ‹  | Closes a quote inside of a direct speech statement
+ U+203A      | ›  | Opens a quote inside of a direct speech statement
  U+003C      | <  |unknown
  U+003E      | >  |unknown
- U+003F      | ?  |closes a question statement
+ U+003F      | ?  | Closes a question statement
 U+002E      | .  | unknown
 U+002C      | ,  | unknown
 U+0029      | )  | unknown
 U+0028      | (   | unknown
  U+003A      | :  |unknown
- U+002B      | + | precedes a telephone number to indicate country code
+ U+002B      | + | Precedes a telephone number to indicate country code
 ```
 °
 _
@@ -241,6 +241,12 @@ u
 ```
 ##### Consonants
 
+Codepoint | Grapheme | IPA equivalent | Phonetic description
+-------------|-----|----|----
+Uppercase, lowercase |, |  |
+
+
+
 ```
 kp
 kw
@@ -262,6 +268,11 @@ r
 y
 ```
 ##### Tone marking
+
+Codepoint | Grapheme | IPA equivalent | Phonetic description | Usage Note
+-------------|-----|----|----|----
+No Casing |, |  | |
+
 
 ###### Pre-Stem
 ```
@@ -654,126 +665,6 @@ Presented in frequency order.
 	U+0061	a	19605
 	U+0020	 	43840
 	
-	Spell checke with equals
-	
-		U+00B0	°	1
-	U+00A8	¨	1
-	U+005D	]	3
-	U+005B	[	3
-	U+00EE	î	3
-	U+002C+0308	,̈	4
-	U+2026	…	6
-	U+201A	‚	7
-	U+0052	R	8
-	U+0308	̈	8
-	U+004A	J	9
-	U+FFF9	￹	14
-	U+0043	C	15
-	U+002F	/	17
-	U+00E7	ç	21
-	U+00BB	»	21
-	U+00AB	«	23
-	U+00FB	û	26
-	U+0048	H	26
-	U+00EA	ê	28
-	U+2039	‹	30
-	U+203A	›	30
-	U+0021	!	30
-	U+00D6	Ö	31
-	U+003B	;	31
-	U+0055	U	36
-	U+00DC	Ü	44
-	U+004F	O	45
-	U+00CB	Ë	46
-	U+0046	F	54
-	U+0186	Ɔ	55
-	U+0049	I	61
-	U+0190	Ɛ	63
-	U+201D	”	69
-	U+006A	j	70
-	U+0036	6	74
-	U+0078	x	85
-	U+003E	>	86
-	U+003C	<	90
-	U+003F	?	98
-	U+0034	4	100
-	U+0045	E	102
-	U+0071	q	103
-	U+00E9	é	105
-	U+0039	9	109
-	U+002B	+	110
-	U+000C	 	110
-	U+0056	V	115
-	U+0033	3	120
-	U+004C	L	138
-	U+0035	5	173
-	U+0054	T	198
-	U+00E8	è	221
-	U+0009	 	240
-	U+0050	P	247
-	U+0031	1	256
-	U+0038	8	260
-	U+005A	Z	288
-	U+003A	:	299
-	U+004E	N	301
-	U+0042	B	325
-	U+0047	G	336
-	U+0066	f	337
-	U+028B+0308	ʋ̈	360
-	U+0057	W	382
-	U+0076	v	394
-	U+0053	S	402
-	U+004D	M	482
-	U+0059	Y	542
-	U+0269	ɩ	603
-	U+2019	’	663
-	U+028B	ʋ	688
-	U+0041	A	709
-	U+03CB	ϋ	767
-	U+004B	K	989
-	U+007A	z	1199
-	U+0072	r	1648
-	U+0022	"	1975
-	U+002E	.	2628
-	U+002C	,	2727
-	U+0027	'	2746
-	U+0074	t	2752
-	U+0070	p	2839
-	U+201C	“	2953
-	U+006C	l	2961
-	U+006D	m	2969
-	U+A78A	꞊	3252
-	U+00FC	ü	3997
-	U+0079	y	4306
-	U+0073	s	4904
-	U+0254	ɔ	5318
-	U+00EB	ë	5798
-	U+0069	i	5875
-	U+0077	w	5881
-	U+0062	b	5920
-	U+0067	g	6723
-	U+0064	d	7648
-	U+006B	k	8000
-	U+025B	ɛ	8040
-	U+00F6	ö	8151
-	U+2018	‘	8866
-	U+000A	 	14491
-	U+0061	a	19605
-	U+0024	$	63336
-	U+002D	-	63336
-	U+0037	7	63487
-	U+0032	2	63743
-	U+0029	)	63745
-	U+0028	(	63746
-	U+0063	c	63772
-	U+0044	D	63852
-	U+0030	0	64193
-	U+0075	u	68583
-	U+006F	o	69631
-	U+0068	h	72460
-	U+006E	n	74226
-	U+0020	 	126672
-	U+0065	e	130549
 	
 	
 ## Provenance
@@ -806,12 +697,14 @@ using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.
 \p 1
 ```
 ### Converted Files
-The following transforms were performed on the original files to clean up character in consistencies.
+The following transforms were performed on the original files to clean up character inconsistencies.
 
 1. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
 
  `sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt`
+ 
+ This solution is too greedy. I need to convert hyphens beteen numbers back to hypehns.
 
 2. Correct equal signs
 
@@ -824,6 +717,12 @@ U+003D
  Example with perl
 
  ```echo 汉典“馑”字的基本解释 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
+
+3. Corrected Unicode PUA codes
+
+4. Corrected non-letter apostrophy to letter apostrophy 
+
+5. Correct double apostrophy to propper quote marks.
 
 ## Intellectual property ownership and licenses
 Copyright claims are un-clear.
