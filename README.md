@@ -51,7 +51,8 @@ Casing rules appear to follow general French casing norms, with two noted except
 ##### Unicode PUA reliance
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
-*
+
+* Usage of U+F173 COMBINING MACRON-GRAVE. U+F173 was deprecated because the character was added to Unicode 5.0 as U+1DC6. There are 22 occurrences in a toolbox file which is not part of this corpus.
 
 
 ##### Punctuation
@@ -209,20 +210,20 @@ Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
 Uppercase, lowercase |, |  |
 U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
-U+0061 U+006E, U+0061 U+0061 U+006E| Aan,aan | | 
-U+0061, U+0061 U+0061| Aa,aa | | 
-U+0061, U+025B U+0061| _a,ɛa | | 
-,U+025B | ,ɛ | | 
-,U+00EB | ,ë | | 
-,U+00F6 | ,ö | | 
-,U+00FC | ,ü | | 
-,U+0065 | ,e | | 
-,U+0069 | ,i | | 
-,U+0061 U+0254 | ,aɔ | | 
-,U+0254 | ,ɔ | | 
-,U+0061 | ,a | | 
-,U+006F | ,o | | 
-,U+0075 | ,u | | 
+U+0061 U+006E, U+0061 U+0061 U+006E| Aan,aan | |
+U+0061, U+0061 U+0061| Aa,aa | |
+U+0061, U+025B U+0061| Ɛa,ɛa | |
+,U+025B | ,ɛ | |
+,U+00EB | ,ë | |
+,U+00F6 | ,ö | |
+,U+00FC | ,ü | |
+,U+0065 | ,e | |
+,U+0069 | ,i | |
+,U+0061 U+0254 | ,aɔ | |
+,U+0254 | ,ɔ | |
+,U+0061 | ,a | |
+,U+006F | ,o | |
+,U+0075 | ,u | |
 
 ```
 ng
@@ -423,8 +424,8 @@ Presented in frequency order.
  U+002D      | -  | 15242
  U+0061      | a  | 15986
  U+0020      |    | 36545
- 
- Round 2 
+
+ Round 2
  	U+005F	_	1
 	U+00A8	¨	1
 	U+00B0	°	1
@@ -542,9 +543,9 @@ Presented in frequency order.
 	U+002D	-	18466
 	U+0061	a	19605
 	U+0020	 	43840
-	
+
 	Round two -fm
-	
+
 		U+00B0	°	1
 	U+005F	_	1
 	U+00A8	¨	1
@@ -664,15 +665,18 @@ Presented in frequency order.
 	U+002D	-	18466
 	U+0061	a	19605
 	U+0020	 	43840
-	
-	
-	
-## Provenance
-Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus as a series of .doc files.
 
-Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted those to PDFs and then used pdftotext to extract the text. The text was then converted to a single file `mass-text.txt` useing the following commands.
 
-using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done` and then  ``cat mass-text_*weta*.txt >> mass-text.txt``
+## Provenance and text conditioning
+Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three texts of unknown content were provided as a series of `.txt` files in related folders.
+
+* moyan-sanni_ko_dhotroo
+* moyan-waa_won
+* moyan-yii_to_gu
+
+One `.doc` file was provided with 22 short (single paragraph length) parallel texts (Eastern Dan - French). And a copy of the New Testament was also provided but is not included in this corpus for copyright reasons.
+
+Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted the files following the steps in the `File types > Converted files` section.
 
 ## File types and purpose
 ### Original Files
@@ -685,7 +689,7 @@ using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.
 `*-sfm.txt` files have a hand coded structure to them that includes making for things like newspaper title, volume, date, tagline, article, heading 1, heading 2, and text of article:
 
 ```
-\newspaper -Pamɛbhamɛ
+\newspaper ˗Pamɛbhamɛ
 \volume-eng 001
 \volume-or "Nimlʋʋ : 00x---
 \date 2005 'Zë Zë -kwɛ
@@ -696,14 +700,38 @@ using this command on linux  `for f in *weta*.pdf; do pdftotext $f mass-text_$f.
 \heading 2
 \p 1
 ```
-### Converted Files
-The following transforms were performed on the original files to clean up character inconsistencies.
 
-1. Correct minus signs
+Three folders containing some `.txt` files are held in the `Text of Unknown Content` directory.
+
+* moyan-sanni_ko_dhotroo
+* moyan-waa_won
+* moyan-yii_to_gu
+
+The folder `sil-pua` contains `teckit` files for transferring Deprecated Unicode points from SIL's PUA area to their accepted and final Unicode point values.
+
+### Converted Files
+The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized.
+
+The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 10.xx on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was exicuted from the root of this repo):
+
+*   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
+
+Each of the three sets of files in the directory `Text of Unknown Content` were concatenated together `$ cp $( find ./Text-of-Unknown-Content/*moyan-*/*moyan-*.old.txt ) . && cat moyan-san
+ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt
+`
+and then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
+
+The combined issues of _˗Pamɛbhamɛ_ and the three files representing the three unknown content were then concatenated into the same file for character level processing. `$ cat combined-*.txt >> proof-of-concept-text.txt `
+
+1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
+
+2. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
+
+3. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
 
  `sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt`
- 
+
  This solution is too greedy. I need to convert hyphens beteen numbers back to hypehns.
 
 2. Correct equal signs
@@ -720,7 +748,7 @@ U+003D
 
 3. Corrected Unicode PUA codes
 
-4. Corrected non-letter apostrophy to letter apostrophy 
+4. Corrected non-letter apostrophy to letter apostrophy
 
 5. Correct double apostrophy to propper quote marks.
 
@@ -857,7 +885,7 @@ Need sed replace and a cleaned text instance.
 
 1. Correct minus signs
 
-I made some mistakes and I should use perl 
+I made some mistakes and I should use perl
 
  `sed 's/[_ –]/-/g' mass-text.txt > spell-corrected-mass-text.txt`
  +
