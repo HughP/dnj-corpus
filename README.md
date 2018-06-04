@@ -1,5 +1,5 @@
 # dnj-corpus
-A small corpus of a local newspaper, and some other things written in Eastern Dan.
+A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and some other things written in Eastern Dan.
 
 ## Language Description
 
@@ -296,6 +296,8 @@ A new testament is also known to exist, but is not included in this repo.
 
 #### Metrics
 ##### Pre text clean up stats
+It should be noted that the percentages of characters and the percentages of phonemes presented here are attested only in this corpus. This corpus is not necessarily natural speech, and some characters may be over represented because _˗Pamɛbhamɛ_, which was targeted at new readers, published a chart of the alphabet in nearly every issue.
+
 First round were off a bit because 4 issues of the local news paper did not get added to the file `mass-text.txt`
 Linux Command Line:
 `wc -l -w -m`
