@@ -1,15 +1,13 @@
 # dnj-corpus
-A small corpus of a local newspaper
+A small corpus of a local newspaper, and some other things written in Eastern Dan.
 
 ## Language Description
 
-Language ISO639-3: dnj
+* Language ISO639-3: dnj
+* Language Name: Eastern Dan
+* Script: Can be written in Arabic or Latin script.
 
-Language Name: Eastern Dan
-
-Script: Can be written in Arabic or Latin script.
-
-Script Note: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn.
+Script Note: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn. Crúbadán language data for Western Dan uses: `dnj-x-west` but it is unclear if that corpus is based on the same orthography as this one.
 
 ### Latin Orthography History
 
