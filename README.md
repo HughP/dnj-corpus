@@ -833,26 +833,6 @@ Results in text form:
 
 (45 set =-, 37 =\`, 22 -\`, 56 ", etc.)
 
-Challenge: Given the nature of the custom (non-standard Unicode) properties attributed to this orthography I need to both expand the alpha numeric range of character tools like RegEx [:alpha:] and then also limit classes like "Punctuation".
-
-Here is what I have tried, but It is not getting me where I need to go.
-
-```
-cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr
-cat target.file | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top
-cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | top | head -20
-cat target.file  | tr '[:space:]' '[####  n*]' | grep -v "^####  s*$" | sort | uniq -c | sort -bnr | head -20
-  grep -o -c phonology target.file
-  grep -o -c Phonology target.file
- sed -e 's/[^[:alpha:]]/ /g' text_to_analize.txt | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-
-pdftotext target.file
-  sed -e 's/[^[:alpha:]]/ /g' target.file | tr '####  n' " " |  tr -s " " | tr " " '####  n'| tr 'A-Z' 'a-z' | sort | uniq -c | sort -nr | nl
-  ```
-
-Corpus location:
-
 #### Word forming characters
 
 Space can be a word forming character. However, if two tone characters come together then one can (not assume) that word break happens between them (because two characters can some at the end of a word `'-'`). Also orthographic punctuation might form the edges of a word. Often in the corpus punctuation is surrounded by spaces. This is unusual from an English orthography perspective.
@@ -995,36 +975,3 @@ Numbering system
 
 * These scriptsource notes make some sense in terms of the IPA characters used, however, they are not a valid description of the orthography. For instance at least for version 3 of the [dnj] orthography there is no _ɓ_ character, rather it is written _bh_.
 * The scriptsource information source is not cited, though the entry's contributor is noted.
-
-
-### Tool for the Job Notes
-
-#### LibreOffice headless
-
-`libreoffice --headless --convert-to "txt:Text (encoded):UTF8" mydocument.doc`
-* Source:
- https://stackoverflow.com/questions/5671988/how-to-extract-just-plain-text-from-doc-docx-files-unix
-* _Note_:
-This works for most things in the .doc files, but did not get all headings. or all content from text boxes.
-
-#### Antiword
-`antiword gweta01.doc > gweta01-aw.txt`
-* Source:
- http://www.winfield.demon.nl/#Programmer
-* _Note_:
- puts in a lot of character for charts. (makes ASCII charts), when counting characters this will throw off character counts.
-
-#### textract
-* Source: https://textract.readthedocs.io/en/stable/installation.html#ubuntu-debian
-* _Note_:
- This is just a python wraper around several tools, for .doc antiword was the tool used. So why not just use antiword?
-
-#### pandoc
-* Source:
-* _Note_:
-Did not work with .doc files.
-
-#### doctotext
-* Source:  http://silvercoders.com/en/products/doctotext/
-* _Note_:
-Needed local compiling directions were not clear. needed more know how to accomplish this.
