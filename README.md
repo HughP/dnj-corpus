@@ -205,23 +205,23 @@ _
 Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
--------------|-----|----|----
+-------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
-U+0061 U+006E, U+0061 U+0061 U+006E| Aan,aan | |
-U+0061, U+0061 U+0061| Aa,aa | |
-U+0061, U+025B U+0061| Ɛa,ɛa | |
-,U+025B | ,ɛ | |
-,U+00EB | ,ë | |
-,U+00F6 | ,ö | |
-,U+00FC | ,ü | |
-,U+0065 | ,e | |
-,U+0069 | ,i | |
-,U+0061 U+0254 | ,aɔ | |
-,U+0254 | ,ɔ | |
-,U+0061 | ,a | |
-,U+006F | ,o | |
-,U+0075 | ,u | |
+U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | |
+U+0041 U+0061, U+0061 U+0061| Aa, aa | |
+U+0061, U+025B U+0061| Ɛa, ɛa | |
+,U+025B | Ɛ, ɛ | |
+,U+00EB | Ë, ë | |
+,U+00F6 | Ö, ö | |
+,U+00FC | Ü, ü | |
+,U+0065 | E, e | |
+,U+0069 | I, i | |
+,U+0061 U+0254 | Aɔ, aɔ | |
+,U+0254 | Ɔ, ɔ | |
+U+0041, U+0061 | A, a | |
+,U+006F | O, o | |
+,U+0075 | U, u | |
 
 ```
 ng
