@@ -1,13 +1,15 @@
 # dnj-corpus
-A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and some other things written in Eastern Dan.
+A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (chapters) from _While waiting for a medical doctor_ translated into Eastern Dan.
 
 ## Language Description
 
-* Language ISO639-3: dnj
-* Language Name: Eastern Dan
+* Language ISO639-3: [dnj](https://iso639-3.sil.org/code/dnj)
+* Language Name: Dan
+* Language variety demonstrated in this corpus: Eastern Dan
 * Script: Can be written in Arabic or Latin script.
 
-Script Note: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn. Crúbadán language data for Western Dan uses: `dnj-x-west` but it is unclear if that corpus is based on the same orthography as this one.
+**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083)) to split one of these dialects off into its own language (Kla [lda](https://iso639-3.sil.org/code/lda)). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
+**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn. Crúbadán language data for Western Dan uses: `dnj-x-east` but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
 ### Latin Orthography History
 
@@ -33,18 +35,19 @@ _Notes_: In this writing system tone is shown in part through characters with th
 
 #### Writing system,  orthographic, linguistic, and alphabet  descriptions for encoding of text in Eastern Dan version 2.6.
 
-A short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
+No formal published writing system description exists for Eastern Dan. Several community oriented readers, offer alphabet and orthography level descriptions. Two forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the corespondences between linguistic units and typographical units.
+
+In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
 Note: the graphemes used here, with the exception of those recommended for special status by RFC3986 are presented because they are evidenced in the corpus.
 
 These definitions are observed:
 * An _alphabet_ is a list of characters used to encode a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
 * A _linguistic description_ would include phonetic or phonological details for the characters used in the encoding of the text.
-* A list of _phonemes_ is a list of unique and distinctive sound uints in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes.
-* A writing system description would include things like punctuation characters, usage of punctuation rules, casing correspondences, and casing rules, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
+* A list of _phonemes_ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes in the same language.
+* A writing system description would include things like punctuation characters, usage rules for punctuation marks, casing correspondences, usage rules for casing, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
 
 ##### Casing rules
-
-Casing rules appear to follow general French casing norms, with two noted exceptions.
+Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
 
 1. The first word of a sentence is capitalized.
 2. Proper nouns are capitalized.
@@ -54,6 +57,7 @@ Casing rules appear to follow general French casing norms, with two noted except
 6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
 
 ##### Punctuation
+Based on data within the corpus, the following punctuation marks are observed.  Their usages, as far as can be determined, from the corpus are indicated in the table.
 
 Codepoint   | Grapheme | Usage
 -------------|-----|----
@@ -79,6 +83,7 @@ U+0029      | )  | unknown
 U+0028      | (   | unknown
  U+003A      | :  |unknown
  U+002B      | + | Precedes a telephone number to indicate country code
+
 ```
 °
 _
@@ -105,7 +110,7 @@ _
 ```
 
 #### Number Characters
-When writing Eastern Dan with the Latin script the following numbers are used.
+As evidenced in the corpus, when writing Eastern Dan with the Latin script the following numbers are used.
 
 Codepoint   | Grapheme  
 -------------|-----
@@ -136,14 +141,15 @@ U+0039      | 9
 Number oriented notes:
 
 * Thousands separator is U+002E 〈.〉.
-* Shortened form of the word "number". Unicode has a special character for this U+2116 〈№〉. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of the degree symbol U+00B0 〈°〉 , and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. Wikipedia suggests that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form "no" (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form "nos" can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."
+* Shortened form of the word "number". Unicode has a special character for this U+2116 〈№〉. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of the degree symbol U+00B0 〈°〉 , and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form "no" (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form "nos" can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."
 
 #### Reasonable characters needed for Internet use
 According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
 
 This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using U+003D  〈=〉 as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is U+A78A 'modifier letter short equals sign'. Typographically these characters are the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. Just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
 
-Unmentioned in RFC3986 is the use of double quote marks which is highly important in various mark-ups like HTML5.
+Unmentioned in RFC3986 is the use of U+0022 double quote marks 〈"〉 which is highly important in various mark-ups like HTML5.
+The following table represents RFC3986 plus 〈"〉.  Many of these characters are evidenced in the corpus. However some are not evidenced.
 
 Codepoint   | Grapheme  
 -------------|-----
@@ -200,6 +206,7 @@ _
 ~
 "
 ```
+dà̰ wò
 
 ##### Alphabet
 
@@ -207,27 +214,37 @@ Pedagogically the following as been presented in Eastern Dan "learning to write"
 
 ##### Vowels
 
+> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do.1 This brings the total number of vowels to 22.
+
+>The existing orthography contains three cases of vowel over-representation:
+<e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
+<o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
+<ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]1 on a xH tone syllable and [ɤ] elsewhere.2
+The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
+
 Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
-U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | |
-U+0041 U+0061, U+0061 U+0061| Aa, aa | |
+U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | long nasalized front open unrounded vowel
+U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | long front open unrounded vowel
+U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | |  
 U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | |
+U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | |
 U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | |
-
-,U+025B | Ɛ, ɛ | |
-,U+00EB | Ë, ë | |
-,U+00F6 | Ö, ö | |
-,U+00FC | Ü, ü | |
-,U+0065 | E, e | |
-,U+0069 | I, i | |
-,U+0254 | Ɔ, ɔ | |
+U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
+U+0190, U+025B | Ɛ, ɛ | ɛ |
+, U+00EB | Ë, ë | |
+U+00D6, U+00F6 | Ö, ö | |
+ U+00DC, U+00FC | Ü, ü | |
+, U+0065 | E, e | |
+, U+0069 | I, i | i |
+, U+0254 | Ɔ, ɔ | |
 U+0041, U+0061 | A, a | |
-,U+006F | O, o | |
-,U+0075 | U, u | |
+ U+004F, U+006F | O, o | |
+, U+0075 | U, u | |
 
 ```
 ng
@@ -294,6 +311,55 @@ Uun	uun
 
 The presentation of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
 
+The existing orthography contains three cases of consonant over-representation:
+<l, r>: the phoneme /l/ is pronounced [ɾ] and spelled <r> following a coronal consonant (/t, d, s, z, y/) and [l] elsewhere;
+<bh, m>: the phoneme /ɓ/ is pronounced and spelled [m] preceding a nasal vowel and [ɓ] elsewhere;
+<dh, n>: the phoneme /ɗ/ is pronounced and spelled [n] preceding a nasal vowel and [ɗ] elsewhere.
+The allophonic graphemes <r, m, n> were all included in the orthography out of a desire to facilitate transition to and from French; their presence also conforms to regional practice.
+
+Labial
+Dental
+Palatal
+Velar
+Labio-velar
+Voiceless stops
+p
+t
+
+k
+kp, kw
+Voiced stops
+b
+d
+
+g
+gb, gw
+Voiceless fricatives
+f
+s
+
+
+
+Voiced fricatives
+v
+z
+
+
+
+Implosives
+ɓ <bh, m>
+ɗ <dh, n>
+
+
+
+Continuants
+
+l <l, r>
+y
+
+w
+
+
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
 Uppercase, lowercase |, |  |
@@ -321,6 +387,8 @@ r
 y
 ```
 ##### Tone marking
+
+>The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).u
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description | Usage Note
 -------------|-----|----|----|----
@@ -820,214 +888,3 @@ If authors of content were employed by SIL, SIL International would be the copyr
 
 Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license.
 The `README.md` which is Hugh's contribution is provided under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
-
-## Research Notes
-
-### Working with custom character attributes
-
-Non-standard components (from an ASCII perspective):
-1. It has some greek/IPA characters in the orthography. This does not match standard [a-zA-Z] classes. [ë, ɛ, ɔ, ʋ, ö,]
-2. It has tone diacritics. This also does not match standard [a-zA-Z] classes.
-3. It uses punctuation marks to indicate tone. This does not match standard [a-zA-Z] classes. And means that they need to be included in the word, and excluded from punctuation classes.
-
-Tasks:
-
-1. I would like to count unique lexical strings and their variations.
-
- What do I mean by variations? the following would all be variations. (I know that they might not be the same "lexical word" but that is a small aside for me right now.)
-```
-=ban-
-=ban`
--ban`
-"ban
-'ban
-ban'-
-```
- So in linguistic terms a lexical string would be only the segmental tier of the word. (For linguistic clarity, I totally realize that the same string with different tones may be classified as a different word, depending on one's definition of a word. Also homophones would be lumped together here too.) However for typing studies, we need to relate things back to the lexical string.
-
-2. I would like to get a unique string count which properly accounts for the orthography's non-standard use of Unicode Characters. For instance, the GNU tool `wc`  says that this corpus has 46192 words. I don't trust this because, often times word counters use punctuation attributes to mark the end of a word, when it is not followed by a space. I would like a more accurate word count of the corpus.
-
-  If I say that space is the word break then words punctuation is included in words, but not all words are separated by spaces and not all words end with punctuation.
-
-3. I would like to count overtly marked tonal melodies. That is something like:
-
- ```
-break strings into segments according to custom word forming rules.
- search between word forming characters for characters in tonal indicator class until reaching the last word forming character in the string
-   Return tonal characters as a set.
-Count unique sets
-Write results to table
-```
-
-  What do I mean by Count?
- * How many tone patterns are expressed in the corpus?
- * Which words are they expressed on?
- * How many times is that word used?
- * What percentage of all the instances of expressed tone patterns in the corpus does this represent?
- * How many total words are in the corpus?
-
- Example:
-
-
-Totals | The Tone pattern | Lexical strings indicating they use the tone pattern | Number of times the lexical string with the tone pattern occurs in the corpus | Percentage of the tone patters expressed in the corpus | Number and kind of other tone patterns this same lexical string occurs with
- ------|------|------|-------|-------|----
- |= - | klee   |   12 | 4| 3 (=, '-, null)
- |= -  |  moo |  54 |  11| 0
- Total |H L   | 2 | 66  |  15 | n/a
-
-
- Summary table:
-
-  Phonology |Results| Count
-----|----|----
- H+ M |  =-|  45
- H+ L |  =` | 37
- L H | -` |  22
-H L |  "|  56
-
-Results in text form:
-
-(45 set =-, 37 =\`, 22 -\`, 56 ", etc.)
-
-#### Word forming characters
-
-Space can be a word forming character. However, if two tone characters come together then one can (not assume) that word break happens between them (because two characters can some at the end of a word `'-'`). Also orthographic punctuation might form the edges of a word. Often in the corpus punctuation is surrounded by spaces. This is unusual from an English orthography perspective.
-
- Examples:
- * tom and sue
- * tom. and sue
- * tom.and sue
- * tom,.and sue
- * =tome- and sue
- * »=tome-« and sue
- * =tome-=and' sue.
-
-#### Word component characters
-
-##### Segmental phonology
-
-##### Tone class characters
-
-Codepoint     | Grapheme   |   Count Round 1 | Note
--------------|----|-------|----
-U+002C+0308 | ,̈ | 3     | find operation can't locate this
-U+0308      | ̈  | 5     | find operation can't locate this
-U+201D      | ”  | 59    | These are coming at the end of a word with two vowels and it is not clear why (suspicion is that is it marking both vowels for something)
-U+0022      | "  | 1576  | ! suspect that these need to be replaced with double instances of U+0027
-U+201C      | “  | 2449  | ! suspect that these need to be replaced with double instances of U+0027
-U+003D      | =  | 2659  |
-U+2019      | ’  | 642   | ! Suspect that these need to be replaced with single instances of U+0027
-U+2018      | ‘  | 7305  | ! Suspect that these need to be replaced with single instances of U+0027
-U+0027      | '  | 2363  | ! Suspect that these need to be replaced with single instances of U+0027
-U+005F      | _  | 1     |  suspected spelling mistake for U+002D
-U+2013      | –  | 985   | Sometimes this character is used word initially instead of U+002D
-U+002D      | -  | 15242 |
-
-Need sed replace and a cleaned text instance.
-
-1. Correct minus signs
-
-I made some mistakes and I should use perl
-
- `sed 's/[_ –]/-/g' mass-text.txt > spell-corrected-mass-text.txt`
- +
-  or consider moving all of them to U+02D7 which is modifier letter minus.
-
-2. Correct equal signs
-
- I need to replace normal equal sign with letter equal sign.
-U+A78A modifier letter short equals sign.
-U+003D
-
- `sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt`
-
- Example with perl
-
- ```echo 汉典“馑”字的基本解释 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
-
-cat mass-text.txt | perl -CS -pe 's/–/\N{U+02D7}/g'
-	cat mass-text.txt | perl -CS -pe 's/_/\N{U+02D7}/g'
-cat mass-text.txt | perl -CS -pe 's/-/\N{U+02D7}/g'
-cat mass-text.txt | perl -CS -pe 's/=/\N{U+A78A}/g'
-
-
-#### Punctuation characters
-
-Codepoint   | Grapheme   |   Count  Round 1
--------------|-----|-------
-U+00B0   | °  | 1     
-U+005F      | _  | 1     
-U+005B      | [  | 3     
-U+005D      | ]  | 3     
-U+2026      | …  | 5     
-U+201A      | ‚  | 5     
-U+002F      | /  | 13    
-U+00BB      | »  | 16    
-U+00AB      | «  | 18      
- U+0021      | !  | 25      
- U+003B      | ;  | 29    
- U+2039      | ‹  | 30    
- U+203A      | ›  | 30
- U+003C      | <  | 72    
- U+003E      | >  | 72        
- U+003F      | ?  | 85      
-U+002E      | .  | 2128  
-U+002C      | ,  | 2212  
-U+0029      | )  | 308   
-U+0028      | (  | 309   
- U+003A      | :  | 230   
- U+002B      | +  | 86    
-
-#### Number Characters
-
-Codepoint   | Grapheme   |   Count  Round 1
--------------|-----|-------
-U+0030      | 0  | 689   
-U+0031      | 1  | 208   
-U+0032      | 2  | 323   
-U+0033      | 3  | 93    
-U+0034      | 4  | 80
-U+0035      | 5  | 147  
-U+0036      | 6  | 63   
-U+0037      | 7  | 119   
-U+0038      | 8  | 198   
-U+0039      | 9  | 96   
-
-Thousands separator is U+002E "."
-
-#### Reasonable characters needed for Internet use
-According to RFC 3986: http://www.ietf.org/rfc/rfc3986.txt
-
-     reserved    = gen-delims / sub-delims
-
-     gen-delims  = ":" / "/" / "?" / "#" / "[" / "]" / "@"
-
-     sub-delims  = "!" / "$" / "&" / "'" / "(" / ")"
-                 / "\*" / "+" / "," / ";" / "="
-
-     unreserved  = ALPHA / DIGIT / "-" / "." / "\_" / "~"
-
-     Alpha-digit classes: [a-zA-Z] [0-9]
-
-#### Other Characters used
-
-
-#### Scriptsource Notes
-Source : http://scriptsource.org/cms/scripts/page.php?item_id=language_detail&key=dnj
-
-```
-Character list for Dan written with Latin script
-Main characters
-
-[\u0303 \u0300 \u0301 a b ɓ d e ɛ f g {gb} h i k {kp} {kw} l m n {nw} {ny} ŋ o ɔ ə ɵ p r s t u ɥ v w x y z]
-Auxiliary characters
-[c j q]
-Index characters
-
-[A B Ɓ D E Ɛ F G {Gb} H I K {Kp} {Kw} L M N {Nw} {Ny} Ŋ O Ɔ Ə Ɵ P R S T U Ɥ V W X Y Z]
-Punctuation characters
-Numbering system
-```
-
-* These scriptsource notes make some sense in terms of the IPA characters used, however, they are not a valid description of the orthography. For instance at least for version 3 of the [dnj] orthography there is no _ɓ_ character, rather it is written _bh_.
-* The scriptsource information source is not cited, though the entry's contributor is noted.
