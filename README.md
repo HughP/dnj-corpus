@@ -31,9 +31,16 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 
 _Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
 
-#### Linguistic orthography description for orthography version 2.6
+#### Writing system,  orthographic, linguistic, and alphabet  descriptions for encoding of text in Eastern Dan version 2.6.
 
 A short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
+Note: the graphemes used here, with the exception of those recommended for special status by RFC3986 are presented because they are evidenced in the corpus.
+
+These definitions are observed:
+* An _alphabet_ is a list of characters used to encode a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
+* A _linguistic description_ would include phonetic or phonological details for the characters used in the encoding of the text.
+* A list of _phonemes_ is a list of unique and distinctive sound uints in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes.
+* A writing system description would include things like punctuation characters, usage of punctuation rules, casing correspondences, and casing rules, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
 
 ##### Casing rules
 
@@ -45,13 +52,6 @@ Casing rules appear to follow general French casing norms, with two noted except
 4. Surnames are not capitalized as is the custom in French literature.
 5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
 6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
-
-##### Unicode PUA reliance
-
-Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
-
-* Usage of U+F173 COMBINING MACRON-GRAVE. U+F173 was deprecated because the character was added to Unicode 5.0 as U+1DC6. There are 22 occurrences in a toolbox file which is not part of this corpus.
-
 
 ##### Punctuation
 
@@ -200,6 +200,11 @@ _
 ~
 "
 ```
+
+##### Alphabet
+
+Pedagogically the following as been presented in Eastern Dan "learning to write" materials.
+
 ##### Vowels
 
 Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
@@ -210,14 +215,15 @@ Uppercase, lowercase |, |  |
 U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
 U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | |
 U+0041 U+0061, U+0061 U+0061| Aa, aa | |
-U+0061, U+025B U+0061| Ɛa, ɛa | |
+U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | |
+U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | |
+
 ,U+025B | Ɛ, ɛ | |
 ,U+00EB | Ë, ë | |
 ,U+00F6 | Ö, ö | |
 ,U+00FC | Ü, ü | |
 ,U+0065 | E, e | |
 ,U+0069 | I, i | |
-,U+0061 U+0254 | Aɔ, aɔ | |
 ,U+0254 | Ɔ, ɔ | |
 U+0041, U+0061 | A, a | |
 ,U+006F | O, o | |
@@ -238,6 +244,52 @@ a
 o
 u
 ```
+
+Aa	aa
+An	an
+Aan	aan
+Aɔ	aɔ
+Aɔn	aɔn
+Bh	bh
+Dh	dh
+Ee	ee
+Ɛ	ɛ
+Ɛɛ	ɛɛ
+Ɛn	ɛn
+Ɛɛn	ɛɛn
+Ë	ë
+Ëë	ëë
+Ën	ën
+Ëën	ëën
+Ɛa	ɛa
+Ɛan	ɛan
+Gw	gw
+In	in
+Iin	iin
+Ɩ	ɩ
+Ɩɩ	ɩɩ
+Kw	kw
+Ng	ng
+Oo	oo
+Ɔ	ɔ
+Ɔɔ	ɔɔ
+Ɔn	ɔn
+Ɔɔn	ɔɔn
+Ö	ö
+Öö	öö
+U	u
+Un	un
+Uun	uun
+Ü	ü
+Üü	üü
+Ün	ün
+Üün	üün
+Ϋ	ϋ
+Ϋϋ	ϋϋ
+Ʋ	ʋ
+Ʋʋ	ʋʋ
+
+
 ##### Consonants
 
 The presentation of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
@@ -287,6 +339,12 @@ No Casing |, |  | |
 '-
 '
 ```
+##### Unicode PUA reliance
+
+Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
+
+* Usage of U+F173 COMBINING MACRON-GRAVE. U+F173 was deprecated because the character was added to Unicode 5.0 as U+1DC6. There are 22 occurrences in a toolbox file which is not part of this corpus.
+
 ### Content
 
 This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008.
@@ -713,7 +771,7 @@ Three folders containing some `.txt` files are held in the `Text of Unknown Cont
 * moyan-waa_won
 * moyan-yii_to_gu
 
-The folder `sil-pua` contains `teckit` files for transferring Deprecated Unicode points from SIL's PUA area to their accepted and final Unicode point values.
+The folder `sil-pua` contains [`teckit`](http://scripts.sil.org/TECkit) files for transferring Deprecated Unicode points from SIL's PUA area to their accepted and final Unicode point values.
 
 ### Converted Files
 The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized.
@@ -723,9 +781,7 @@ The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PD
 *   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
 
 Each of the three sets of files in the directory `Text of Unknown Content` were concatenated together `$ cp $( find ./Text-of-Unknown-Content/*moyan-*/*moyan-*.old.txt ) . && cat moyan-san
-ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt
-`
-and then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
+ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt` and then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
 
 The combined issues of _˗Pamɛbhamɛ_ and the three files representing the three unknown content were then concatenated into the same file for character level processing. `$ cat combined-*.txt >> proof-of-concept-text.txt `
 
