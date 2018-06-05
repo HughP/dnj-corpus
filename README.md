@@ -3,17 +3,17 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 ## Language Description
 
-* Language ISO639-3: [dnj](https://iso639-3.sil.org/code/dnj)
-* Language Name: Dan
-* Language variety demonstrated in this corpus: Eastern Dan
-* Script: Can be written in Arabic or Latin script.
+* **ISO 639-3 language tag**: [dnj](https://iso639-3.sil.org/code/dnj)
+* **Language Name**: Dan
+* **Language variety demonstrated in this corpus**: Eastern Dan
+* **Script**: Can be written <!--in Arabic -->or Latin script. <!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
 
-**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083)) to split one of these dialects off into its own language (Kla [lda](https://iso639-3.sil.org/code/lda)). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
-**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47: dnj-Latn. Crúbadán language data for Western Dan uses: `dnj-x-east` but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
+**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a1">[3](#f3)</sup><sup>,</sup><sup id="a1">[4](#f4)</sup>. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a1">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
+**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a1">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a1">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
 ### Latin Orthography History
 
-**Note**: It might be the case that there are multiple writing systems for the same languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time. Not being a French speaker, the finer details of the evidence are not clear at the moment.
+**Note**: It is the case that there are multiple writing systems for different speech varieties of the "same" ISO 639-3 designate languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
@@ -46,9 +46,10 @@ These definitions and conventions are observed:
 * A list of _phonemes_ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes in the same language.
 * A _writing system description_ includes things like casing correspondences, usage rules for casing, punctuation characters, usage rules for punctuation marks, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
 *  The following characters are used to provide special meaning to text outside of tables:
- * Content within square brackets denotes either Phonetic representations or ISO639-3 codes  `[]`.
-  *  Content within forward slashes denotes either Phonological representations `//`.
+ * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
+  *  Content within forward slashes denotes phonemic representations `//`.
   * Content within angle brackets orthographic representations `〈〉`.
+  * Content within double-slashes or pipes morphophonemic representations `// //` or `| |`.
 
 ##### Casing rules
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
@@ -313,6 +314,35 @@ Uun	uun
 
 
 ##### Consonants
+Vowels
+
+|                | Front | Near-front | Central | Near-back | Back |
+|----------------|:-----:|:----------:|:-------:|:---------:|:----:|
+| **Close**      |  i y  |            |   ɨ ʉ   |           |  ɯ u |
+| **Near-close** |       |     ɪ ʏ    |   ɪ̈ ʊ̈   |     ʊ     |      |
+| **Close-mid**  |  e ø  |            |   ɘ ɵ   |           |  ɤ o |
+| **Mid**        |  e̞ ø̞  |            |   ə ɵ̞   |           |  ɤ̞ o̞ |
+| **Open-mid**   |  ɛ œ  |            |   ɜ ɞ   |           |  ʌ ɔ |
+| **Near-open**  |   æ   |            |    ɐ    |           |      |
+| **Open**       |  a ɶ  |            |   ä ɒ̈   |           |  ɑ ɒ |
+
+Consonants
+
+|                            | Bilabial | Labio-dental | Linguo-labial | Dental | Alveolar | Palato-alveolar | Retroflex | Alveolo-palatal | Palatal | Velar | Uvular | Pharyngeal / Epiglottal | Glottal |
+|----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|:---------------:|:---------:|:---------------:|:-------:|:-----:|:------:|:-----------------------:|:-------:|
+| **Nasal**                  |    m̥ m   |        ɱ     |      n̼̊ n̼      |        |    n̥ n   |                 |    ɳ̊ ɳ    |                 |   ɲ̊ ɲ   |  ŋ̊ ŋ  |   ɴ̥ ɴ  |           — —           |   — —   |
+| **Stop**                   |    p b   |      p̪ b̪     |      t̼ d̼      |        |    t d   |                 |    ʈ ɖ    |                 |   c ɟ   |  k ɡ  |   q ɢ  |            ʡ            |   ʔ —   |
+| **Sibilant affricate**     |    — —   |      — —     |      — —      |        |   ts dz  |      tʃ dʒ      |   ʈʂ ɖʐ   |      tɕ dʑ      |   — —   |  — —  |   — —  |           — —           |   — —   |
+| **Non-sibilant affricate** |   pɸ bβ  |     p̪f b̪v    |               |  tθ dð |   tθ̠ dð̠  |     t̠ɹ̠̊˔ d̠ɹ̠˔     |           |                 |  cç ɟʝ  | kx ɡɣ |   qχ   |          ʡħ ʡʕ          |   ʔh —  |
+| **Sibilant fricative**     |    — —   |      — —     |      — —      |        |    s z   |       ʃ ʒ       |    ʂ ʐ    |       ɕ ʑ       |   — —   |  — —  |   — —  |           — —           |   — —   |
+| **Non-sibilant fricative** |    ɸ β   |      f v     |      θ̼ ð̼      |   θ ð  |    θ̱ ð̠   |      ɹ̠̊˔ ɹ̠˔      |           |                 |   ç ʝ   |  x ɣ  |   χ ʁ  |           ħ ʕ           |  h ɦ ʔ̞  |
+| **Approximant**            |    ɸ˕    |      ʋ       |               |   θ̞    |    ɹ̥ ɹ   |                 |    ɻ̊ ɻ    |                 |   j̊ j   |  ɰ̊ ɰ  |        |                         |         |
+| **Flap or tap**            |      ⱱ̟   |        ⱱ     |        ɾ̼      |        |    ɾ̥ ɾ   |                 |    ɽ̊ ɽ    |       — —       |   — —   |  — —  |     ɢ̆  |             ʡ̮           |   — —   |
+| **Trill**                  |      ʙ   |              |        r̼      |        |    r̥ r   |                 |   ɽr̥ ɽr   |       — —       |   — —   |  — —  |   ʀ̥ ʀ  |           ʜ ʢ           |   — —   |
+| **Lateral affricate**      |    — —   |      — —     |               |        |   tɬ dɮ  |                 |   ʈɭ̊˔     |                 |  cʎ̥˔    | kʟ̝̊ ɡʟ̝ |        |           — —           |   — —   |
+| **Lateral fricative**      |    — —   |      — —     |               |        |    ɬ ɮ   |                 |    ɭ̊˔     |                 |   ʎ̥˔ ʎ̝  |  ʟ̝̊ ʟ̝  |        |           — —           |   — —   |
+| **Lateral approximant**    |    — —   |      — —     |        l̼      |        |    l̥ l   |                 |    ɭ̊ ɭ    |                 |   ʎ̥ ʎ   |    ʟ  |     ʟ̠  |           — —           |   — —   |
+| **Lateral flap**           |    — —   |      — —     |        ɺ̼      |        |      ɺ   |                 |      ɭ̆    |                 |     ʎ̮   |       |        |           — —           |   — —   |
 
 The presentation of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
 
@@ -849,7 +879,7 @@ The folder `sil-pua` contains [`teckit`](http://scripts.sil.org/TECkit) files fo
 ### Converted Files
 The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized.
 
-The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 10.xx on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was exicuted from the root of this repo):
+The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 16.13.1 (180523) on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was exicuted from the root of this repo):
 
 *   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
 
@@ -871,13 +901,11 @@ s/ /\\ /2g
 ```
 The 2 specifies that the second one should apply, and the g specifies that all the rest should apply too. (This probably only works on GNU sed. According to the Open Group Base Specification, "If both g and n are specified, the [results are unspecified](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html).")
 
-
 2. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
 
 3. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
-
- `sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt`
+  ```sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt```
 
  This solution is too greedy. I need to convert hyphens beteen numbers back to hypehns.
 
@@ -887,20 +915,48 @@ The 2 specifies that the second one should apply, and the g specifies that all t
 U+A78A modifier letter short equals sign.
 U+003D
 
- `sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt`
+ ```
+ sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt
+ ```
 
  Example with perl
 
- ```echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
-
+ ```
+ echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'
+ ```
 3. Corrected Unicode PUA codes
 
-4. Corrected non-letter apostrophy to letter apostrophy
+4. Corrected non-letter apostrophe to letter apostrophe
 
-5. Correct double apostrophy to propper quote marks.
+5. Correct double apostrophe to proper quote marks.
+
+## Bibliography
+
+<!-- <b id="f1">1</b> Footnote content here. [↩](#a1)
+<b id="f2">2</b> Footnote content here. [↩](#a2) -->
+
+<b id="f3">3 </b>Simons, Gary. F., & Charles D. Fennig (Eds.) 2017. Ethnologue: Languages of the World, 20th edition. Dallas, TX: SIL International. Online: https://www.ethnologue.com/language/dnj [↩](#a3)
+
+<b id="f4">4 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a4)
+
+<b id="f5">5 </b>Valentin Vydrin. 2012. ISO 639-3 Change Request 2012-083. Online: https://iso639-3.sil.org/request/2012-083.  [↩](#a5)
+
+<b id="f6">6 </b>Phillips, A. & M. Davis (Eds.) 2009. Tags for Identifying Languages.  Internet Engineering Task Force (IETF). Online: https://tools.ietf.org/html/bcp47. [↩](#a6)
+
+<b id="f6">7 </b>Scannell, Kevin  (Ed.) 2009. An Crúbadán - Dan. Saint Louis University, Saint Louis, USA . Online: http://crubadan.org/languages/dnj. [↩](#a7)
+
+```
+Some text <sup id="a1">[1](#f1)</sup>
+
+```
+Then from within the footnote, link back to it.
+
+```
+<b id="f1">1</b> Footnote content here. [↩](#a1)
+```
 
 ## Intellectual property ownership and licenses
-###Text (corpus) content
+### Text (corpus) content
 Copyright claims are un-clear.
 If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the authors, or their employer. It does not readily seem that the authors are attributed in the corpus, but they might be in the orthography.
 
