@@ -40,11 +40,15 @@ No formal published writing system description exists for Eastern Dan. Several c
 In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
 Note: the graphemes used here, with the exception of those recommended for special status by RFC3986 are presented because they are evidenced in the corpus.
 
-These definitions are observed:
+These definitions and conventions are observed:
 * An _alphabet_ is a list of characters used to encode a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
 * A _linguistic description_ would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of _phonemes_ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes in the same language.
-* A writing system description would include things like punctuation characters, usage rules for punctuation marks, casing correspondences, usage rules for casing, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
+* A _writing system description_ includes things like casing correspondences, usage rules for casing, punctuation characters, usage rules for punctuation marks, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
+*  The following characters are used to provide special meaning to text outside of tables:
+ * Content within square brackets denotes either Phonetic representations or ISO639-3 codes  `[]`.
+  *  Content within forward slashes denotes either Phonological representations `//`.
+  * Content within angle brackets orthographic representations `〈〉`.
 
 ##### Casing rules
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
@@ -55,6 +59,7 @@ Based on data within the corpus, casing rules appear to follow general French ca
 4. Surnames are not capitalized as is the custom in French literature.
 5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
 6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
+7. The second letter in a first phoneme digraph does not get capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
 
 ##### Punctuation
 Based on data within the corpus, the following punctuation marks are observed.  Their usages, as far as can be determined, from the corpus are indicated in the table.
@@ -855,6 +860,18 @@ The combined issues of _˗Pamɛbhamɛ_ and the three files representing the thre
 
 1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
+2. Remove extra BOM marks.
+ ``` Replace all of them, then undo the first one:
+
+sed -e 's/ /\\ /g' -e 's/\\ / /1'
+```
+```
+sed "s/$(echo -ne '\uFEFF')//2g"
+s/ /\\ /2g
+```
+The 2 specifies that the second one should apply, and the g specifies that all the rest should apply too. (This probably only works on GNU sed. According to the Open Group Base Specification, "If both g and n are specified, the [results are unspecified](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html).")
+
+
 2. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
 
 3. Correct minus signs
@@ -874,7 +891,7 @@ U+003D
 
  Example with perl
 
- ```echo 汉典“馑”字的基本解释 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
+ ```echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'```
 
 3. Corrected Unicode PUA codes
 
