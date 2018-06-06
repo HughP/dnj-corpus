@@ -52,7 +52,7 @@ These definitions and conventions are observed throughout this work:
 * __Characters __ are single unicode code points.
 * A __linguistic description__ would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of __phonemes__ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer __letters__/components than a list of phonemes in the same language.
-* A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and _other Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "multi-graphs", "diacritics", "digraphs", "digram", "encoding" -->
+* A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and _other Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "multi-graphs", "diacritics", "digraphs", "digram", "encoding", "dipthong" -->
 *  The following characters are used to provide special meaning to text outside of tables:
  * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
   *  Content within forward slashes denotes phonemic representations `//`.
@@ -163,7 +163,7 @@ According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) <sup id="a24">[24](
 
 This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using  〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
 
-Unmentioned in RFC3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉  U+003E 'GREATER-THAN SIGN', and 〈<〉  U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5. Markdown, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
+Unmentioned in RFC3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉  U+003E 'GREATER-THAN SIGN', and 〈<〉  U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5<sup id="a25">[25](#f25)</sup>. Markdown<sup id="a26">[26](#f26)</sup>, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
 The following table represents RFC3986 plus 〈", <, >, |, \`, \ 〉.  Many of these characters are evidenced in the corpus. However some are not evidenced. <!-- Need to show which ones -->
 
 Codepoint   | Grapheme  
@@ -239,7 +239,7 @@ Pedagogically the following as been presented in Eastern Dan "learning to write"
 
 ##### Vowels
 
-> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do.1 This brings the total number of vowels to 22.
+> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
 
 >The existing orthography contains three cases of vowel over-representation:
 <e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
@@ -252,7 +252,7 @@ Eastern Dan is claimed to have a 10 vowel system with length, pitch, and nasaliz
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
-U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
+U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
 U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | long nasalized front open unrounded vowel
 U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | long front open unrounded vowel
 U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | |  
@@ -442,7 +442,7 @@ y
 ```
 ##### Tone marking
 
->The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).u
+>The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description | Usage Note
 -------------|-----|----|----|----
@@ -898,16 +898,16 @@ The folder `sil-pua` contains [`teckit`](http://scripts.sil.org/TECkit) files fo
 ### Converted Files
 The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized.
 
-The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 16.13.1 (180523) on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was exicuted from the root of this repo):
+The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 16.13.1 (180523) on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was executed from the root of this repo):
 
 *   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
 
-Each of the three sets of files in the directory `Text of Unknown Content` were concatenated together `$ cp $( find ./Text-of-Unknown-Content/*moyan-*/*moyan-*.old.txt ) . && cat moyan-san
+Each of the three sets of files in the directory `While-waiting-for-a-medical-doctor` were concatenated together `$ cp $( find ./While-waiting-for-a-medical-doctor/*moyan-*/*moyan-*.old.txt ) . && cat moyan-san
 ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt` and then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
 
 The combined issues of _˗Pamɛbhamɛ_ and the three files representing the three unknown content were then concatenated into the same file for character level processing. `$ cat combined-*.txt >> proof-of-concept-text.txt `
 
-####Character Maintence
+####Character Maintenance
 1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
 2. Remove extra BOM marks.
