@@ -23,11 +23,11 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
 Version 0.1 | pre-1970 protestant  |  Imported from Liberia | Mission Biblique  |  R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
-Version 0.2  | pre-1970  |  concurrent with but separate from version 0.1 | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
+Version 0.2  | pre-1970 catholic  |  concurrent with but separate from version 0.1 | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
   Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
 Version 1 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
 Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
-| 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
+Version 2.5 | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
 Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
 Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
 
@@ -54,11 +54,11 @@ These definitions and conventions are observed throughout this work:
 * A list of __phonemes__ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer __letters__/components than a list of phonemes in the same language.
 * A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and _other Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "multi-graphs", "diacritics", "digraphs", "digram", "encoding", "dipthong" -->
 *  The following characters are used to provide special meaning to text outside of tables:
- * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
-  *  Content within forward slashes denotes phonemic representations `//`.
-  * Content within angle brackets orthographic representations `〈〉`.
-  * Content within double-slashes or pipes morphophonemic representations `// //` or `| |`.
-  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉	 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following metiones.
+  * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
+   *  Content within forward slashes denotes phonemic representations `//`.
+   * Content within angle brackets orthographic or graphemic representations `〈〉`.
+   * Content within double-slashes or pipes morphophonemic representations `// //` or `| |`.
+   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉	 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following mentions.
 
 ##### Casing rules
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
@@ -166,7 +166,7 @@ This does not preclude any language based denotation that the orthography may ma
 Unmentioned in RFC3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉  U+003E 'GREATER-THAN SIGN', and 〈<〉  U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5<sup id="a25">[25](#f25)</sup>. Markdown<sup id="a26">[26](#f26)</sup>, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
 The following table represents RFC3986 plus 〈", <, >, |, \`, \ 〉.  Many of these characters are evidenced in the corpus. However some are not evidenced. <!-- Need to show which ones -->
 
-Codepoint   | Grapheme  
+Codepoint   | Grapheme
 -------------|-----
 U+0021 | !
 U+0022 | "
@@ -316,15 +316,16 @@ U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | |
 U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | |
 U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
 U+0190, U+025B | Ɛ, ɛ | ɛ |
-, U+00EB | Ë, ë | |
+U+00CB, U+00EB | Ë, ë | |
 U+00D6, U+00F6 | Ö, ö | |
  U+00DC, U+00FC | Ü, ü | |
-, U+0065 | E, e | |
-, U+0069 | I, i | i |
-, U+0254 | Ɔ, ɔ | |
+U+0045, U+0065 | E, e | |
+U+0049, U+0069 | I, i | i |
+U+0186, U+0254 | Ɔ, ɔ | |
 U+0041, U+0061 | A, a | |
  U+004F, U+006F | O, o | |
-, U+0075 | U, u | |
+U+0055, U+0075 | U, u | |
+
 
 ```
 ng
@@ -343,7 +344,7 @@ u
 ```
 
 ##### Consonants
-
+<!--
 
 |                            | Bilabial | Labio-dental | Linguo-labial | Dental | Alveolar | Palato-alveolar | Retroflex | Alveolo-palatal | Palatal | Velar | Uvular | Pharyngeal / Epiglottal | Glottal |
 |----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|:---------------:|:---------:|:---------------:|:-------:|:-----:|:------:|:-----------------------:|:-------:|
@@ -360,8 +361,9 @@ u
 | **Lateral fricative**      |    — —   |      — —     |               |        |    ɬ ɮ   |                 |    ɭ̊˔     |                 |   ʎ̥˔ ʎ̝  |  ʟ̝̊ ʟ̝  |        |           — —           |   — —   |
 | **Lateral approximant**    |    — —   |      — —     |        l̼      |        |    l̥ l   |                 |    ɭ̊ ɭ    |                 |   ʎ̥ ʎ   |    ʟ  |     ʟ̠  |           — —           |   — —   |
 | **Lateral flap**           |    — —   |      — —     |        ɺ̼      |        |      ɺ   |                 |      ɭ̆    |                 |     ʎ̮   |       |        |           — —           |   — —   |
-
+-->
 The presentation of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
+
 <!--
 The existing orthography contains three cases of consonant over-representation:
 <l, r>: the phoneme /l/ is pronounced [ɾ] and spelled <r> following a coronal consonant (/t, d, s, z, y/) and [l] elsewhere;
@@ -518,7 +520,7 @@ Hugh Paterson III `sil.linguis[at]gmail[dot]com` converted the files following t
 \p 1
 ```
 
-Three folders containing some `.txt` files are held in the `While-waiting for-a-medical-doctor` directory.
+Three folders containing some `.txt` files are held in the `While-waiting-for-a-medical-doctor` directory.
 
 * moyan-sanni_ko_dhotroo
 * moyan-waa_won
@@ -534,33 +536,52 @@ The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PD
 *   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
 
 Each of the three sets of files in the directory `While-waiting-for-a-medical-doctor` were concatenated together with the following:
- * `$ cp $( find ./While-waiting-for-a-medical-doctor/*moyan-*/*moyan-*.old.txt ) . && cat moyan-san
-ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt`
+ * `$ cp $( find ./While-waiting-for-a-medical-doctor/*moyan-*/*moyan-*.old.txt ) . && cat moyan-sanni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt`
 
 These files were then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
 
 The combined issues of _˗Pamɛbhamɛ_ and the three files representing _While waiting for a medical doctor_ were then concatenated into the same file for character level processing.
-* `$ cat combined-*.txt >> proof-of-concept-text.txt `
+* `$ cat combined-*.txt >> proof-of-concept-text.txt && rm combined-*.txt `
 
 #### Character Maintenance
 1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
-2. Remove extra BOM marks.
- ``` Replace all of them, then undo the first one:
+```
+$ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -if utf8 -of utf8
+```
 
-sed -e 's/ /\\ /g' -e 's/\\ / /1'
-```
-```
-sed "s/$(echo -ne '\uFEFF')//2g"
-s/ /\\ /2g
-```
-The 2 specifies that the second one should apply, and the g specifies that all the rest should apply too. (This probably only works on GNU sed. According to the Open Group Base Specification, "If both g and n are specified, the [results are unspecified](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html).")
+2. Remove all BOM marks (they were created or concatenated into the middle of the file with the `cat` command).
 
-3. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
+ ```$ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
+```
+
+3. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt  > proof-no-PUA-no-BOM-no-TAGS.txt` could be used.
 
 
 #### Typographical Encoding Errors
 In the course of text production it several different look alike characters have been used. This is common for languages that do not have a Keyboard layout that will restrict (or guarantee the consistency) of the characters used to produce texts in that language.
+
+1. Correct equal signs
+
+ I need to replace normal equal sign with letter equal sign.
+U+A78A modifier letter short equals sign.
+U+003D
+```
+| perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g'
+```
+2. replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
+
+3. replace Non-breaing space U+00A0 with normal space U+0020 target 374
+
+
+U+0009	 	482
+U+000A	 	30690
+U+000C	 	220
+U+000D	 	1340
+U+001E	 	5442
+U+0020	 	124711
+
+
 
 1. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
@@ -570,11 +591,7 @@ In the course of text production it several different look alike characters have
 
  This solution is too greedy. I need to convert hyphens between numbers back to hyphens.
 
-2. Correct equal signs
 
- I need to replace normal equal sign with letter equal sign.
-U+A78A modifier letter short equals sign.
-U+003D
 
  ```
  sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt
