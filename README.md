@@ -552,7 +552,8 @@ $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec
 
 2. Remove all BOM marks (they were created or concatenated into the middle of the file with the `cat` command).
 
- ```$ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
+ ```
+ $ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
 ```
 
 3. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt  > proof-no-PUA-no-BOM-no-TAGS.txt` could be used.
@@ -567,11 +568,28 @@ In the course of text production it several different look alike characters have
 U+A78A modifier letter short equals sign.
 U+003D
 ```
-| perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g'
+cat proof-no-PUA-no-BOM-no-TAGS.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g' > Corrected-equal.txt
 ```
 2. replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
-3. replace Non-breaing space U+00A0 with normal space U+0020 target 374
+```
+Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-equal-letterU.txt
+```
+
+3. Corrected bad non-breaking hyphen.
+
+```
+Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+001E}/\N{U+02D7}/g' > Corrected-equal-letterU-nbs.txt
+```
+
+
+4. Corrected bad commas U+201A --> U+002C
+
+```
+Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+001E}/\N{U+02D7}/g' > Corrected-equal-letterU-nbs.txt
+```
+
+5. replace Non-breaing space U+00A0 with normal space U+0020 target 374
 
 
 U+0009	 	482
@@ -581,32 +599,20 @@ U+000D	 	1340
 U+001E	 	5442
 U+0020	 	124711
 
-
-
-1. Correct minus signs
+6. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
 
-  ```sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt
+  ```
+  sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt
   ```
 
  This solution is too greedy. I need to convert hyphens between numbers back to hyphens.
 
 
+7. Corrected non-letter apostrophe to letter apostrophe
 
- ```
- sed "s/=/$(echo -ne '\uA78A')/g" spell-corrected-mass-text.txt > spell-corrected-mass-text-correct-equal.txt
- ```
-
- Example with perl
-
- ```
- echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'
- ```
-3. Corrected bad commas U+201A --> U+002C
-
-4. Corrected non-letter apostrophe to letter apostrophe
-
-5. Correct double apostrophe to proper quote marks.
+8. Correct double apostrophe to proper quote marks.
+9. French Quotes
 
 ## Bibliography
 
