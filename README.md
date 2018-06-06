@@ -6,24 +6,30 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 * **ISO 639-3 language tag**: [dnj](https://iso639-3.sil.org/code/dnj)
 * **Language Name**: Dan
 * **Language variety demonstrated in this corpus**: Eastern Dan
-* **Script**: Can be written <!--in Arabic -->or Latin script. <!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
+* **Script**: Can is written in Latin script.
 
-**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a1">[3](#f3)</sup><sup>,</sup><sup id="a1">[4](#f4)</sup>. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a1">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
-**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a1">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a1">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
+<!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
+
+**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
+
+**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
+
+**Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽  The second case is more grammatical in nature. Most fonts don't support 〈‽〉	 U+203D 'INTERROBANG'.
 
 ### Latin Orthography History
 
-**Note**: It is the case that there are multiple writing systems for different speech varieties of the "same" ISO 639-3 designate languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+**Orthography Note**: It is the case that there are multiple writing systems for different speech varieties of the "same" ISO 639-3 designated languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
-  Version 0.1|  pre-1975 | ?? | Margrit Bolli / Eva Flik | 1975. Yaobhaa -wo bhe pe -se -ya ʼgu. Société Internationale de Linguistique: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34532
-Version 1 | 1981| ?? | Margrit Bolli / Eva Flik | Bolli, Margrit. 1981. Guide d’orthographe pour la langue dan (dialecte blo -wo). Société Internationale de Linguistique: Abidjan, Ivory Coast. (27 page booklet):  https://www.sil.org/resources/archives/34704
-Version 2 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | https://www.sil.org/resources/archives/34713
-Version 2.6  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  1994. Cours-Eclair Dan Gweetawu (Yacouba)
-Version 2.7| 2000 | Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik |See Ruth and Jonah Published in 2000.  
-Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin |
-Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | p.c.
+Version 0.1 | pre-1970 protestant  |  Imported from Liberia | Mission Biblique  |  R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
+Version 0.2  | pre-1970  |  concurrent with but separate from version 0.1 | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
+  Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
+Version 1 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
+Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
+| 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
+Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
+Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
 
 ## Corpus Description
 ### Writing system
@@ -31,25 +37,28 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 * BCP47: dnj-Latn
 * Orthography version: 3
 
-_Notes_: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the word. These characters are not used in expected ways according to their Unicode attributes, as a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script.
+**Writing System Note**: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. As a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `"ban- ? =Yaa'-` where there are extra spaces around the question mark.
 
-#### Writing system,  orthographic, linguistic, and alphabet  descriptions for encoding of text in Eastern Dan version 2.6.
+#### Writing system,  orthographic, linguistic, and alphabet  descriptions for encoding of text in Eastern Dan version 3.
 
-No formal published writing system description exists for Eastern Dan. Several community oriented readers, offer alphabet and orthography level descriptions. Two forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the corespondences between linguistic units and typographical units.
+No formal published writing system description exists for Eastern Dan. Several community oriented readers,<sup id="a19">[19](#f19)</sup><sup>,</sup><sup id="a20">[20](#f20)</sup> offer alphabet and orthography level descriptions. Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the corespondences between linguistic units and typographical units.
 
-In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization.
-Note: the graphemes used here, with the exception of those recommended for special status by RFC3986 are presented because they are evidenced in the corpus.
+In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization by the python library [segments](https://pypi.org/project/segments/).<sup id="a21">[21](#f21)</sup>
+Note: the graphemes used here, with the exception of those recommended for special status by RFC3986<sup id="a22">[22](#f22)</sup> are presented because they are evidenced in the corpus.
 
-These definitions and conventions are observed:
-* An _alphabet_ is a list of characters used to encode a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
-* A _linguistic description_ would include phonetic or phonological details for the characters used in the encoding of the text.
-* A list of _phonemes_ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two characters are used together in a pattern to indicate that together they represent a phoneme then an alphabet might have fewer *letters*/components than a list of phonemes in the same language.
-* A _writing system description_ includes things like casing correspondences, usage rules for casing, punctuation characters, usage rules for punctuation marks, letters, numbers, and characters used in Internet use, with their Unicode code points used in technical encodings.
+These definitions and conventions are observed throughout this work:
+* An __alphabet__ is a list of __letters__ used to transcribe a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
+* __Letters__ are typographical units for the purposes of pedagogy.
+* __Characters __ are single unicode code points.
+* A __linguistic description__ would include phonetic or phonological details for the characters used in the encoding of the text.
+* A list of __phonemes__ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer __letters__/components than a list of phonemes in the same language.
+* A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and _other Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "multi-graphs", "diacritics", "digraphs", "digram", "encoding" -->
 *  The following characters are used to provide special meaning to text outside of tables:
  * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
   *  Content within forward slashes denotes phonemic representations `//`.
   * Content within angle brackets orthographic representations `〈〉`.
   * Content within double-slashes or pipes morphophonemic representations `// //` or `| |`.
+  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉	 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following metiones.
 
 ##### Casing rules
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
@@ -60,7 +69,7 @@ Based on data within the corpus, casing rules appear to follow general French ca
 4. Surnames are not capitalized as is the custom in French literature.
 5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
 6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
-7. The second letter in a first phoneme digraph does not get capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
+7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
 
 ##### Punctuation
 Based on data within the corpus, the following punctuation marks are observed.  Their usages, as far as can be determined, from the corpus are indicated in the table.
@@ -72,21 +81,21 @@ U+005F      | _ | unknown
 U+005B      | [  |unknown
 U+005D      | ] |unknown
 U+2026      | … |unknown
-U+201A      | ‚ |unknown
+U+201A      | ‚ | Errors - Should be U+002C
 U+002F      | /  |unknown
 U+00BB      | »  | Opens a direct speech statement
 U+00AB      | «   | Closes a direct speech statement  
  U+0021      | !   | Closes an exclamation, interjection or emphatic statement
- U+003B      | ;  |unknown
+ U+003B      | ;  | unknown
  U+2039      | ‹  | Closes a quote inside of a direct speech statement
  U+203A      | ›  | Opens a quote inside of a direct speech statement
- U+003C      | <  |unknown
- U+003E      | >  |unknown
+ U+003C      | <  | Error - All cases are double i.e. << and should be replaced with U+00AB
+ U+003E      | >  | Error - All cases are double i.e. >> and should be replaced with U+00BB
  U+003F      | ?  | Closes a question statement
 U+002E      | .  | unknown
 U+002C      | ,  | unknown
-U+0029      | )  | unknown
-U+0028      | (   | unknown
+U+0029      | )  | Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
+U+0028      | (   | Opens a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
  U+003A      | :  |unknown
  U+002B      | + | Precedes a telephone number to indicate country code
 
@@ -146,16 +155,14 @@ U+0039      | 9
 
 Number oriented notes:
 
-* Thousands separator is U+002E 〈.〉.
-* Shortened form of the word "number". Unicode has a special character for this U+2116 〈№〉. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of the degree symbol U+00B0 〈°〉 , and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form "no" (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form "nos" can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."
+* Thousands separator is 〈.〉 U+002E 'FULL STOP'.
+* The is a shortened form of the word "number" in many transcription traditions. Unicode has a special character for this 〈№〉 U+2116 'NUMERO SIGN'. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of 〈°〉  U+00B0 'DEGREE SIGN', and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form 〈no〉 (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form 〈nos〉 can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."<sup id="a23">[23](#f23)</sup>
 
 #### Reasonable characters needed for Internet use
-According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
+According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) <sup id="a24">[24](#f24)</sup>the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
 
-This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using U+003D  〈=〉 as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is U+A78A 'modifier letter short equals sign'. Typographically these characters are the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. Just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
+This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using  〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
 
-Unmentioned in RFC3986 is the use of U+0022 double quote marks 〈"〉 which is highly important in various mark-ups like HTML5.
-The following table represents RFC3986 plus 〈"〉.  Many of these characters are evidenced in the corpus. However some are not evidenced.
 
 Codepoint   | Grapheme  
 -------------|-----
@@ -212,11 +219,12 @@ _
 ~
 "
 ```
-dà̰ wò
+
+<!-- #### Reasonable characters needed for French -->
 
 ##### Alphabet
 
-Pedagogically the following as been presented in Eastern Dan "learning to write" materials.
+Pedagogically the following as been presented in Eastern Dan "learning to write" materials<sup id="a25">[25](#f25)</sup>.
 
 ##### Vowels
 
@@ -888,6 +896,7 @@ ni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt
 
 The combined issues of _˗Pamɛbhamɛ_ and the three files representing the three unknown content were then concatenated into the same file for character level processing. `$ cat combined-*.txt >> proof-of-concept-text.txt `
 
+####Character Maintence
 1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
 2. Remove extra BOM marks.
@@ -901,9 +910,11 @@ s/ /\\ /2g
 ```
 The 2 specifies that the second one should apply, and the g specifies that all the rest should apply too. (This probably only works on GNU sed. According to the Open Group Base Specification, "If both g and n are specified, the [results are unspecified](http://pubs.opengroup.org/onlinepubs/9699919799/utilities/sed.html).")
 
-2. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
+3. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-of-concept-text.txt` could be used.
 
-3. Correct minus signs
+
+####Typograhical encoding Errors
+1. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
   ```sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt```
 
@@ -924,7 +935,7 @@ U+003D
  ```
  echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'
  ```
-3. Corrected Unicode PUA codes
+3. Corrected bad commas U+201A --> U+002C
 
 4. Corrected non-letter apostrophe to letter apostrophe
 
@@ -943,7 +954,32 @@ U+003D
 
 <b id="f6">6 </b>Phillips, A. & M. Davis (Eds.) 2009. Tags for Identifying Languages.  Internet Engineering Task Force (IETF). Online: https://tools.ietf.org/html/bcp47. [↩](#a6)
 
-<b id="f6">7 </b>Scannell, Kevin  (Ed.) 2009. An Crúbadán - Dan. Saint Louis University, Saint Louis, USA . Online: http://crubadan.org/languages/dnj. [↩](#a7)
+<b id="f7">7 </b>Scannell, Kevin  (Ed.) 2009. An Crúbadán - Dan. Saint Louis University, Saint Louis, USA . Online: http://crubadan.org/languages/dnj. [↩](#a7)
+
+<b id="f8">8 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a8)
+
+<b id="f9">9 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a9)
+
+<b id="f10">10 </b>Baba, Tiémoko Sébastien .1978. Yaobhaa -wo bhe pe -se -ya ʼgu (Receuil de contes yacouba, ʼGwetaa -wo). Société Internationale de Linguistique: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34532. [↩](#a10)
+
+<b id="f11">11 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a11)
+
+<b id="f12">12 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a12)
+
+<b id="f13">13 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a13)
+
+<b id="f14">14 </b>Bolli, Margrit & Eva Flik. 2000. Rutö. Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a14)
+
+<b id="f15">15 </b>Bolli, Margrit & Eva Flik. 2000. Zonasö. Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a15)
+
+<b id="f16">16 </b>Roberts, David, Dana Basnight-Brown & Valentin Vydrin. Marking tone with punctuation: and orthography experiment in Eastern Dan (Côte d’Ivoire). [↩](#a16)
+
+<b id="f17">17 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a17)
+
+<b id="f18">18 </b>Vydrin,Valentin & David Roberts. Forthcoming. Tonal oral reading errors in the orthography of Eastern Dan (Côte d’Ivoire). In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a18)
+
+<b id="f21"> Moran, Steven & Robert Forkel. 2017 (November 16). cldf/segments: segments 1.2.1 (Version v1.2.1). Zenodo. http://doi.org/10.5281/zenodo.1051157 . [↩](#a21)
+
 
 ```
 Some text <sup id="a1">[1](#f1)</sup>
