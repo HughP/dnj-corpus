@@ -163,6 +163,8 @@ According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) <sup id="a24">[24](
 
 This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using  〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
 
+Unmentioned in RFC3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉  U+003E 'GREATER-THAN SIGN', and 〈<〉  U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5. Markdown, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
+The following table represents RFC3986 plus 〈", <, >, |, \`, \ 〉.  Many of these characters are evidenced in the corpus. However some are not evidenced. <!-- Need to show which ones -->
 
 Codepoint   | Grapheme  
 -------------|-----
@@ -182,13 +184,18 @@ U+002D | -
 U+002E | .
 U+002F | /
 U+003A | :
-U+003B | ;
+U+003B | ;  
+ U+003C | <
 U+003D | =
+ U+003E | >  
 U+003F | ?
 U+0040 | @
+U+005C |  \
 U+005B | [
 U+005D | ]
 U+005F | _
+U+0060 | \`
+U+007C | \|
 U+007E | ~
 
 
@@ -218,6 +225,10 @@ $
 _
 ~
 "
+`
+|
+>
+<
 ```
 
 <!-- #### Reasonable characters needed for French -->
