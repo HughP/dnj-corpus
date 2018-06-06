@@ -552,7 +552,7 @@ $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec
 
 2. Remove all BOM marks (they were created or concatenated into the middle of the file with the `cat` command).
 
- ```
+  ```
  $ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
 ```
 
@@ -564,15 +564,14 @@ In the course of text production it several different look alike characters have
 
 1. Correct equal signs
 
- I need to replace normal equal sign with letter equal sign.
-U+A78A modifier letter short equals sign.
-U+003D
-```
+Replace normal equal sign U+003D with letter equal sign U+A78A.
+
+ ```
 cat proof-no-PUA-no-BOM-no-TAGS.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g' > Corrected-equal.txt
 ```
-2. replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
+2. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
-```
+ ```
 Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-equal-letterU.txt
 ```
 
