@@ -27,7 +27,7 @@ Version 0.2  | pre-1970 catholic  |  concurrent with but separate from version 0
   Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
 Version 1 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
 Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
-Version 2.5 | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
+_Western Dan_ | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
 Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
 Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
 
@@ -47,12 +47,14 @@ In this section a short prose discussion is followed by a chart. Charts are foll
 Note: the graphemes used here, with the exception of those recommended for special status by RFC3986<sup id="a22">[22](#f22)</sup> are presented because they are evidenced in the corpus.
 
 These definitions and conventions are observed throughout this work:
-* An __alphabet__ is a list of __letters__ used to transcribe a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes.
+* An __alphabet__ is a list of __letters__ used to transcribe a language. Alphabets usually have an order for pedagogical purposes, and for dictionary sorting purposes. At a technical level, SIL's NRSI<sup id="a1">[1](#f1)</sup> provides this: _a segmental writing system having symbols for individual sounds, rather than for syllables or morphemes. In a true alphabet, consonants and vowels are written as independent letters, in contrast to an abugida or an abjad. In a perfectly phonemic alphabet, phonemes and letters would be predictable in both directions; that is, the sound of a word could be predicted from its spelling and vice-versa. A phonetic alphabet is also predictable in this way, however it uses separate letters for separate allophones, whereas a phonemic alphabet may describe allophones of the same phoneme using a single letter_.
 * __Letters__ are typographical units for the purposes of pedagogy.
 * __Characters__ are single Unicode code points.
+* __Graphemes__ are typographical units. Often in a writing system these units carry meaning.
+* __Multigraph__ ([from SIL's NRSI](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary#multig)) a combination of two or more written symbols or orthographic characters (e.g. letters) that are used together within an orthography to represent a single sound. (Combinations consisting of two characters are also known as __digraphs__.).
 * A __linguistic description__ would include phonetic or phonological details for the characters used in the encoding of the text.
-* A list of __phonemes__ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer __letters__/components than a list of phonemes in the same language.
-* A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and _other Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "multi-graphs", "diacritics", "digraphs", "digram", "encoding", "dipthong" -->
+* A list of __phonemes__ is a list of unique and distinctive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer __letters__/components than a list of phonemes in the same language.
+* A __writing system description__ includes things like *casing correspondences*, *usage rules for casing*, *punctuation characters*, *usage rules for punctuation marks*, *letters*, *numbers*, and *characters used in Internet use*, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a __Locale__ description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "dipthong" -->
 *  The following characters are used to provide special meaning to text outside of tables:
   * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
    *  Content within forward slashes denotes phonemic representations `//`.
@@ -63,12 +65,12 @@ These definitions and conventions are observed throughout this work:
 ##### Casing rules
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
 
-1. The first word of a sentence is capitalized.
-2. Proper nouns are capitalized.
-3.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
-4. Surnames are not capitalized as is the custom in French literature.
-5. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages.
-6. Tone marks preceding words (stems [a-zA-Z]) do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
+1. Tone marks preceding the [a-zA-Z] portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
+2. The first word of a sentence is capitalized.
+3. Proper nouns are capitalized.
+4.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
+5. Surnames are not capitalized as is the custom in French literature.
+6. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages, which use a Latin script.
 7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
 
 ##### Punctuation
@@ -474,7 +476,7 @@ A new testament is also known to exist, but is not included in this repository o
 
 #### Metrics
 ##### Pre text clean up stats
-It should be noted that the percentages of characters and the percentages of phonemes presented here are attested only in this corpus. This corpus is not necessarily natural speech, and some characters may be over represented because _˗Pamɛbhamɛ_, which was targeted at new readers, published a chart of the alphabet in nearly every issue.
+It should be noted that the percentages of characters and the percentages of phonemes presented here are attested only in this corpus. This corpus is not necessarily natural speech, and some characters may be over represented because _˗Pamɛbhamɛ_, which was targeted at new readers, published a chart of the alphabet in nearly every issue, with some, but not many, words in French.
 
 First round were off a bit because 4 issues of the local news paper did not get added to the file `mass-text.txt` (later renamed to `proof-of-concept-text.txt`), round three includes all the issues of _-Pamɛbhamɛ_ and the chapters of _While waiting for a medical doctor_.
 Linux Command Line:
@@ -484,11 +486,10 @@ Round |Lines  | Words  |  Characters
 --|--|---|--
 First |  11686 | 46192  |  221389
 Second  | 14491 |  55986 | 269437
+Third | 15756 | 86466 | 416782
 
 UnicodeCharacterCount Stats for round three:
 Presented in frequency order.
-
-
 
 ## Provenance and text conditioning
 Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (trnaslated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.
@@ -560,7 +561,7 @@ $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec
 
 
 #### Typographical Encoding Errors
-In the course of text production it several different look alike characters have been used. This is common for languages that do not have a Keyboard layout that will restrict (or guarantee the consistency) of the characters used to produce texts in that language.
+In the course of text production several different look-alike characters have been used. This is common for languages that do not have a Keyboard layout that will restrict (or guarantee the consistency) of the characters used to produce texts in that language.
 
 1. Correct equal signs
 
