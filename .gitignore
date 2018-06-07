@@ -9,3 +9,9 @@ $RECYCLE.BIN/
 .Parent
 #Corpus related files
 #counter.py
+#combined-*.txt
+Screen*.png
+no-BOM.txt
+no-tags.txt
+new-no.txt
+Practice-files/

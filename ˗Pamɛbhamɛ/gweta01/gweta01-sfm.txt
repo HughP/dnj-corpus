@@ -1,4 +1,4 @@
-\newspaper -Pamɛbhamɛ
+\newspaper ˗Pamɛbhamɛ
 \volume-eng 001
 \volume-or "Nimlʋʋ : 001
 \date 2005 'Zë Zë -kwɛ
