@@ -39,7 +39,7 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 
 **Writing System Note**: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. As a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `"ban- ? =Yaa'-` where there are extra spaces around the question mark.
 
-#### Writing system,  orthographic, linguistic, and alphabet  descriptions for encoding of text in Eastern Dan version 3.
+#### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
 
 No formal published writing system description exists for Eastern Dan. Several community oriented readers,<sup id="a19">[19](#f19)</sup><sup>,</sup><sup id="a20">[20](#f20)</sup> offer alphabet and orthography level descriptions. Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the corespondences between linguistic units and typographical units.
 
@@ -85,12 +85,12 @@ U+005D | ] |unknown
 U+2026 | … |unknown
 U+201A | ‚ | Errors - Should be U+002C
 U+002F | /  |unknown
-U+00BB | »  | Opens a direct speech statement
-U+00AB  | «   | Closes a direct speech statement  
+U+00BB | »  | Closes a direct speech statement
+U+00AB  | «   | Opens a direct speech statement  
  U+0021  | !   | Closes an exclamation, interjection or emphatic statement
  U+003B | ;  | unknown
- U+2039 | ‹  | Closes a quote inside of a direct speech statement
- U+203A | ›  | Opens a quote inside of a direct speech statement
+ U+2039 | ‹  | Opens a quote inside of a direct speech statement
+ U+203A | ›  | Closes a quote inside of a direct speech statement
  U+003C | < | Error - All cases are double i.e. << and should be replaced with U+00AB
  U+003E | >| Error - All cases are double i.e. >> and should be replaced with U+00BB
  U+003F | ? | Closes a question statement
@@ -443,8 +443,10 @@ r
 y
 ```
 ##### Tone marking
+<!--
 
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
+-->
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description | Usage Note
 -------------|-----|----|----|----
@@ -653,6 +655,7 @@ U+0020	 	124711
 
 <b id="f21">21 </b>Moran, Steven & Robert Forkel. 2017 (November 16). cldf/segments: segments 1.2.1 (Version v1.2.1). Zenodo. http://doi.org/10.5281/zenodo.1051157 . [↩](#a21)
 
+<!--
 
 ```
 Some text <sup id="a1">[1](#f1)</sup>
@@ -664,6 +667,7 @@ Then from within the footnote, link back to it.
 ```
 <b id="f1">1</b> Footnote content here. [↩](#a1)
 ```
+-->
 
 ## Intellectual property ownership and licenses
 ### Text (corpus) content
@@ -672,9 +676,10 @@ If authors of content were employed by SIL, SIL International would be the copyr
 
 Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license. Use under the _fair use_ doctrine is assumed.
 
-### Hugh Paterson's contribution
+### Hugh Paterson's Contribution
 The `README.md` which is Hugh Paterson III's contribution is copyright Hugh Paterson III 2018, and licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
-The `generate-corpus.bash` script is  also Hugh's contribution and is licensed under the MIT version [provided](paterson-license.md).
 
+The `generate-corpus.bash` script is also Hugh's contribution and is licensed under the MIT version [provided](paterson-license.md).
 
-Other content such as the content contained uner the flder `/SILPUA` is licensed as originally offered (MIT).
+### SIL International's Contribution
+Other content such as the content contained under the folder `/SILPUA` is licensed as originally offered (MIT).
