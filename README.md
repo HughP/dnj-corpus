@@ -130,7 +130,23 @@ _
 +
 ```
 
-#### Number Characters
+##### Number Characters
+###### Based on rules presented in 1994.
+Unfortunately no math symbols or other numeric related characters are provided. Unicode points are provided here as an added point of reference. They are not in the source text.
+Codepoint   | Grapheme  
+-------------|-----
+U+0030      | 0
+U+0031      | 1     
+U+0032      | 2     
+U+0033      | 3    
+U+0034      | 4  
+U+0035      | 5    
+U+0036      | 6     
+U+0037      | 7     
+U+0038      | 8
+U+0039      | 9
+
+###### Based on the corpus
 As evidenced in the corpus, when writing Eastern Dan with the Latin script the following numbers are used.
 
 Codepoint   | Grapheme  
