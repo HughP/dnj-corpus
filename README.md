@@ -60,7 +60,7 @@ These definitions and conventions are observed throughout this work:
    *  Content within forward slashes denotes phonemic representations `//`.
    * Content within angle brackets orthographic or graphemic representations `〈〉`.
    * Content within double-slashes or pipes morphophonemic representations `// //` or `| |`.
-   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉	 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following mentions.
+   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following mentions.
 
 ##### Casing rules
 ###### Based on rules presented in 1994.
