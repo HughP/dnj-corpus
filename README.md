@@ -467,7 +467,7 @@ u
 
 Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
-                             | Labial   |   Dental     |    Palatal    | Velar  | Labio-velar|
+| Labial   |   Dental     |    Palatal    | Velar  | Labio-velar|
 |----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
 | **Voiceless Stops**        |    p     |      t       |               |   k    |  kp, kw  |
 | **Voiced Stops**           |    b     |      d       |               |   g    |  gb, gw  |
@@ -552,7 +552,7 @@ No Casing |, |  | |
 
 #### Reasonable characters needed for French
 
-French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them. 
+French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
 ###### Based on rules presented in 1994.
 
