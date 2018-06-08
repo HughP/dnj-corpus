@@ -77,6 +77,15 @@ Based on data within the corpus, casing rules appear to follow general French ca
 6. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages, which use a Latin script.
 7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
 
+##### Word breaks
+Because Eastern Dan uses characters which look like punctuation, and often the actual punctuation characters are used, it is necessary to overcompensate to keep characters representing tone attached to the rest to the string that represents the word. This is demonstrated in the corpus.
+
+###### Based on rules presented in 1994.
+Word break rules are not discussed. But one may assume that tone marks should never separate from the rest of their word. It would just be wierd to insert a hyphen into a word that uses a hyphen as a letter.
+
+###### Based on the corpus
+Various kinds of _special_ characters are used to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
+
 ##### Punctuation
 ###### Based on rules presented in 1994.
 The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes"  of punctuation of the orthography of French.
