@@ -64,12 +64,12 @@ These definitions and conventions are observed throughout this work:
 
 ##### Casing rules
 ###### Based on rules presented in 1994.
-
+No specific casing rules are discussed.
 
 ###### Based on the corpus
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
 
-1. Tone marks preceding the [a-zA-Z] portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
+1. Tone marks preceding the [a-zA-Z] portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized. Yet tone marks are considered part of the word and should not have word breaks between them and the words they belong with.
 2. The first word of a sentence is capitalized.
 3. Proper nouns are capitalized.
 4.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
