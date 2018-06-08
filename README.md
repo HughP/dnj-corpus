@@ -282,9 +282,10 @@ _
 ```
 
 ###### Based on rules presented in 1994.
-
+The interent was not discussed in the 1994 orthography book.
 
 ###### Based on the corpus
+This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan. 
 
 #### Alphabet
 ##### Based on rules presented in 1994.
