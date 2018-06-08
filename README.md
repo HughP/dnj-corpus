@@ -29,7 +29,7 @@ Version 1 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12
 Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
 _Western Dan_ | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
 Version 3 | (2005??)-2014 | These texts contain U+201C,U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only  U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
-Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication towards diacritic indication of tone.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
+Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication via punctuation towards diacritic indication of tone over the the stem.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
 
 ## Corpus Description
 ### Writing system
@@ -63,6 +63,10 @@ These definitions and conventions are observed throughout this work:
    * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉	 U+203D 'INTERROBANG' a more natural prose style using one or more of the three referents will be used for following mentions.
 
 ##### Casing rules
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
 Based on data within the corpus, casing rules appear to follow general French casing norms, with two noted exceptions.
 
 1. Tone marks preceding the [a-zA-Z] portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized.
@@ -85,8 +89,8 @@ U+005D | ] |unknown
 U+2026 | … |unknown
 U+201A | ‚ | Errors - Should be U+002C
 U+002F | /  |unknown
-U+00BB | »  | Closes a direct speech statement
-U+00AB  | «  | Opens a direct speech statement  
+U+00AB  | «  | Open a direct speech statement - Usage seems to be the opposite.
+U+00BB | »  | Closes a direct speech statement - Usage seems to be the opposite.
  U+0021  | !   | Closes an exclamation, interjection or emphatic statement
  U+003B | ;  | unknown
  U+2039 | ‹  | Opens a quote inside of a direct speech statement
@@ -160,7 +164,8 @@ Number oriented notes:
 * Thousands separator is 〈.〉 U+002E 'FULL STOP'.
 * The is a shortened form of the word "number" in many transcription traditions. Unicode has a special character for this 〈№〉 U+2116 'NUMERO SIGN'. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of 〈°〉  U+00B0 'DEGREE SIGN', and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form 〈no〉 (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form 〈nos〉 can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."<sup id="a23">[23](#f23)</sup>
 
-#### Reasonable characters needed for Internet use
+##### Reasonable characters needed for Internet use
+
 According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) <sup id="a24">[24](#f24)</sup>the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
 
 This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using  〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the internet does not use the same quote marks that French and Eastern Dan do does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
@@ -233,9 +238,14 @@ _
 <
 ```
 
-<!-- #### Reasonable characters needed for French -->
+###### Based on rules presented in 1994.
 
-##### Alphabet
+
+###### Based on the corpus
+
+#### Alphabet
+##### Based on rules presented in 1994.
+
 
 Pedagogically the following as been presented in Eastern Dan "learning to write" materials<sup id="a25">[25](#f25)</sup>.
 
@@ -286,6 +296,10 @@ Uun	uun
 Ʋʋ	ʋʋ
 
 ##### Vowels
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
 Phoneme chart (Oral)<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
 Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan  This bring the total to 22 vowels.
@@ -345,7 +359,6 @@ U+0041, U+0061 | A, a | |
  U+004F, U+006F | O, o | |
 U+0055, U+0075 | U, u | |
 
-
 ```
 ng
 ɛa
@@ -363,6 +376,10 @@ u
 ```
 
 ##### Consonants
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
 
 Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
@@ -415,6 +432,10 @@ r
 y
 ```
 ##### Tone marking
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
 <!--
 
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
@@ -437,6 +458,14 @@ No Casing |, |  | |
 '-
 '
 ```
+
+#### Reasonable characters needed for French
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
+
+
 ##### Unicode PUA reliance
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
