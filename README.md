@@ -669,6 +669,8 @@ Replace normal equal sign U+003D with letter equal sign U+A78A.
  ```
 cat proof-no-PUA-no-BOM-no-TAGS.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g' > Corrected-equal.txt
 ```
+
+**Still not completed:**
 2. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
  ```
@@ -681,6 +683,7 @@ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-e
 cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+001E}/\N{U+02D7}/g' > Corrected-equal-letterU-nbs.txt
 ```
 
+**Still not completed:**
 4. Corrected bad commas U+201A --> U+002C
 
 ```
@@ -692,27 +695,40 @@ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Corr
 cat Corrected-equal-letterU-nbs-comma.txt| perl -CS -pe 's/\N{U+00A0}/\N{U+0020}/g' > Corrected-equal-letterU-nbs-comma-bs.txt
 ```
 
-U+0009	 	482
-U+000A	 	30690
-U+000C	 	220
-U+000D	 	1340
-U+001E	 	5442
-U+0020	 	124711
-
+**Still not completed:**
 6. Correct minus signs
  Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
+* This solution is too greedy. I need to convert hyphens between numbers back to regular hyphens.
+
 
   ```
   sed 's/[_ –-]/$(echo -ne '\u02D7')/g' mass-text.txt > spell-corrected-mass-text.txt
   ```
 
- This solution is too greedy. I need to convert hyphens between numbers back to hyphens.
-
-
+**Still not completed:**
 7. Corrected non-letter apostrophe to letter apostrophe
 
+**Still not completed:**
 8. Correct double apostrophe to proper quote marks.
+
+**Still not completed:**
 9. French Quotes
+
+10. Remove French words.
+11. Correct sequences of comma dieresis, via the correct spelling of that word.
+
+ ```
+grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
+```
+12. Figure out what to do with the following:
+
+ U+0009	 	482
+ U+000A	 	30690
+ U+000C	 	220
+ U+000D	 	1340
+ U+001E	 	5442
+ U+0020	 	124711
+
 
 ## Bibliography
 
