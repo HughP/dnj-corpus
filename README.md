@@ -41,7 +41,7 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 
 #### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
 
-No formal published writing system description exists for Eastern Dan. Several community oriented readers,<sup id="a19">[19](#f19)</sup><sup>,</sup><sup id="a20">[20](#f20)</sup> offer alphabet and orthography level descriptions. Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the corespondences between linguistic units and typographical units.
+The closest thing to a formal writing system description for Eastern Dan is a 1994<sup id="a19">[19](#f19)</sup> community oriented reader which covers, Vowels, Consonants, Numbers, and punctuation. The 1994 reader improves upon a 1982 community oriented reader<sup id="a20">[20](#f20)</sup> by offering sections on numbers and punctuation. However, neither book presents an alphabetic order, or and alphabet in whole. Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the correspondences between linguistic units and typographical units.
 
 In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization by the python library [segments](https://pypi.org/project/segments/).<sup id="a21">[21](#f21)</sup>
 Note: the graphemes used here, with the exception of those recommended for special status by RFC3986<sup id="a22">[22](#f22)</sup> are presented because they are evidenced in the corpus.
@@ -86,7 +86,7 @@ U+2026 | … |unknown
 U+201A | ‚ | Errors - Should be U+002C
 U+002F | /  |unknown
 U+00BB | »  | Closes a direct speech statement
-U+00AB  | «   | Opens a direct speech statement  
+U+00AB  | «  | Opens a direct speech statement  
  U+0021  | !   | Closes an exclamation, interjection or emphatic statement
  U+003B | ;  | unknown
  U+2039 | ‹  | Opens a quote inside of a direct speech statement
@@ -652,6 +652,10 @@ U+0020	 	124711
 <b id="f17">17 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a17)
 
 <b id="f18">18 </b>Vydrin,Valentin & David Roberts. Forthcoming. Tonal oral reading errors in the orthography of Eastern Dan (Côte d’Ivoire). In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a18)
+
+<b id="f19">19 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670.  [↩](#a19)
+
+<b id="f20">20 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713.  [↩](#a20)
 
 <b id="f21">21 </b>Moran, Steven & Robert Forkel. 2017 (November 16). cldf/segments: segments 1.2.1 (Version v1.2.1). Zenodo. http://doi.org/10.5281/zenodo.1051157 . [↩](#a21)
 
