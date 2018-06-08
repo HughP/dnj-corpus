@@ -3,7 +3,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+000A	 	31512
 	U+000C	 	220
 	U+000D	 	1794
-	U+0020	 	147210
+	U+0020	 	147958
 	U+0021	!	136
 	U+0022	"	6690
 	U+0027	'	14432
@@ -17,7 +17,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+002F	/	34
 	U+0030	0	1734
 	U+0031	1	602
-	U+0032	2	872
+	U+0032	2	1620
 	U+0033	3	272
 	U+0034	4	220
 	U+0035	5	362
@@ -32,7 +32,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+003F	?	402
 	U+0041	A	2088
 	U+0042	B	842
-	U+0043	C	30
+	U+0043	C	778
 	U+0044	D	1534
 	U+0045	E	216
 	U+0046	F	194
@@ -55,7 +55,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+0059	Y	1952
 	U+005A	Z	770
 	U+005B	[	20
-	U+005C	\	2
+	U+005C	\	750
 	U+005D	]	20
 	U+005F	_	2
 	U+0061	a	59638
@@ -81,7 +81,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+0075	u	15938
 	U+0076	v	936
 	U+0077	w	16550
-	U+0078	x	170
+	U+0078	x	918
 	U+0079	y	14854
 	U+007A	z	3928
 	U+0080	 	19658
@@ -103,7 +103,6 @@ Character count for 'proof-of-concept-text.txt':
 	U+009C	 	4452
 	U+009D	 	154
 	U+009E	 	738
-	U+00A0	 	748
 	U+00A2	¢	4246
 	U+00A6	¦	8
 	U+00A8	¨	2
