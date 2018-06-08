@@ -6,7 +6,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 * **ISO 639-3 language tag**: [dnj](https://iso639-3.sil.org/code/dnj)
 * **Language Name**: Dan
 * **Language variety demonstrated in this corpus**: Eastern Dan
-* **Script**: Can is written in Latin script.
+* **Script**: Latin script.
 
 <!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
 
