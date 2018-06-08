@@ -78,6 +78,24 @@ Based on data within the corpus, casing rules appear to follow general French ca
 7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
 
 ##### Punctuation
+###### Based on rules presented in 1994.
+The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes"  of punctuation of the orthography of French.
+Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0.  So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode points are provided here as an added point of reference. They are not in the source text.
+
+Codepoint   | Grapheme | Usage
+-------------|-----|----
+U+00AB  | «  | les guillemets ouvrant et
+U+00BB | »  | fermant un discourse direct
+ U+0021  | !   | le point d'interrogation marque la présence d'une exclamation
+ U+003B | ;  | le point-virgule entrecoupe deux parties d'une longue phrase
+ U+003C | < | les guillemets simples ouvrant et
+ U+003E | >| fermant un discourse direct placé dans un autre discourse direct.
+ U+003F | ? | le point d'interrogation marque la présence d'une question
+U+002E | . | le point marquant la fin d'une pensée
+U+002C | , | la virgule donne l'occasion de prendre haleine
+ U+003A | :  | le double point marque le début d'un discourse direct
+
+###### Based on the corpus
 Based on data within the corpus, the following punctuation marks are observed.  Their usages, as far as can be determined, from the corpus are indicated in the table.
 
 Codepoint   | Grapheme | Usage
