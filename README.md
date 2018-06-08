@@ -282,18 +282,59 @@ _
 ```
 
 ###### Based on rules presented in 1994.
-The interent was not discussed in the 1994 orthography book.
+The Internet was not discussed in the 1994 reading primer.
 
 ###### Based on the corpus
-This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan.
+This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the Internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan.
 
 #### Alphabet
 ##### Based on rules presented in 1994.
-Actually neither the 1994 reading primer nor the 1982 reading primer present or address the issue of an alphabet, or alphabetical ordering. Both resources present their audiences with a list of pedagogical learning units which match well with the phonemics of Eastern Dan (with a few exceptions).
+Actually neither the 1994<sup id="a28">[28](#f28)</sup> reading primer nor the 1982<sup id="a29">[29](#f29)</sup> reading primer present or address the issue of an alphabet, or alphabetical ordering. Both resources present their audiences with a list of pedagogical learning units which match well with the phonemics of Eastern Dan (with a few exceptions). They present these in _functional units_ (a term I borrow from Holm 1971<sup id="a30">[30](#f30)</sup> and Venezky 1970<sup id="a31">[31](#f31)</sup> 1967<sup id="a32">[32](#f32)</sup>), ordered and grouped by place of articulation (phonetic detail). Therefore, as according to the information which is available, it would appear that no alphabet statement has been made for Eastern Dan.
 
+That said, a letter list should be possible, and relevant to this section, though any ordering presented here would only be for piratical reasons, and is not intended to be prescriptive.
+In this presentation I present diacritics as a component of the letters on which they occur. I do this because the diacritics themselves do not have a consistent meaning in the orthography. I do not list every functional unit, only the letters from which functional units can be created. This is true for vowels, tone patterns, and double articulated consonants.
+Based on the letters presented in the 1994 primer the following letters would need to be in an alphabet. This list includes 36 letters; 32 with casing pairs for a total of 68 alphabetic graphemes.
+
+```
+=
+-
+'
+"
+Aa
+Bb
+Dd
+Ee
+Ɛɛ
+Ëë
+Ëë
+Ff
+Gg
+Hh
+Ii
+Ɩɩ
+Ɩ
+Kk
+Ll
+Nn
+Mm
+Oo
+Ɔɔ
+Öö
+Pp
+Rr
+Ss
+Tt
+Uu
+Üü
+Vv
+Ϋϋ
+Ʋʋ
+Ww
+Yy
+Zz
+```
+<!--
 Pedagogically the following as been presented in Eastern Dan "learning to write" materials<sup id="a25">[25](#f25)</sup>.
-
-Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
 Aa	aa
 An	an
@@ -338,18 +379,12 @@ Uun	uun
 Ϋϋ	ϋϋ
 Ʋ	ʋ
 Ʋʋ	ʋʋ
-
+-->
 ##### Vowels
-###### Based on rules presented in 1994.
 
-
-###### Based on the corpus
 Phoneme chart (Oral)<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
 Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan  This bring the total to 22 vowels.
-
-
-
 
 |    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
@@ -369,6 +404,13 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 | **Open**       |       |   ã   |   ɒ̃  |
 
 /ŋ/
+
+###### Based on rules presented in 1994.
+
+
+###### Based on the corpus
+
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
 
 <!--
@@ -469,6 +511,7 @@ n
 f
 s
 v
+t
 z
 l
 w
@@ -720,7 +763,11 @@ U+0020	 	124711
 
 <b id="f29">29 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670.  [↩](#a29)
 
+<b id="f30">30 </b>Holm, Wayne. 1971. Navajo Reading Study: Grapheme and unit frequencies in Navajo. Reading Studies progress report № 12. University of New Mexico. https://eric.ed.gov/?id=ED059806. [↩](#a30)
 
+<b id="f31">31 </b>Venezky, Richard. 1970. The structure of English Orthography. (Janua linguarum., Series minor 82). Mouton: The Hague. http://www.worldcat.org/oclc/840415997 [↩](#a30)
+
+<b id="f32">32 </b>Venezky, Richard. 1967. English Orthography: It's graphical structure and its Relation to sound. Reading Research Quarterly.  2 (3): 75-105. [↩](#a30)
 
 
 <!--
