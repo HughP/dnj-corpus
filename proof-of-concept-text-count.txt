@@ -29,7 +29,6 @@ Character count for 'proof-of-concept-text.txt':
 	U+003A	:	488
 	U+003B	;	79
 	U+003C	<	62
-	U+003D	=	5447
 	U+003E	>	71
 	U+003F	?	201
 	U+0041	A	1044
@@ -122,4 +121,5 @@ Character count for 'proof-of-concept-text.txt':
 	U+2026	…	7
 	U+2039	‹	142
 	U+203A	›	140
+	U+A78A	꞊	5447
 	U+FFF9	￹	17
