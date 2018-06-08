@@ -122,5 +122,5 @@ Character count for 'proof-of-concept-text.txt':
 	U+2026	…	14
 	U+2039	‹	284
 	U+203A	›	280
-	U+FEFF	﻿	58
+	U+FEFF	﻿	59
 	U+FFF9	￹	34
