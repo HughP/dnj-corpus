@@ -3,7 +3,7 @@ Character count for 'proof-of-concept-text.txt':
 	U+000A	 	15756
 	U+000C	 	110
 	U+000D	 	897
-	U+0020	 	73605
+	U+0020	 	73979
 	U+0021	!	68
 	U+0022	"	3345
 	U+0027	'	7216
@@ -102,7 +102,6 @@ Character count for 'proof-of-concept-text.txt':
 	U+009C	 	4370
 	U+009D	 	123
 	U+009E	 	5447
-	U+00A0	 	374
 	U+00A2	¢	13
 	U+00A6	¦	7
 	U+00A7	§	21
