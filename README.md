@@ -10,7 +10,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 <!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
 
-**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. as recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
+**Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. As recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
 
 **Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
@@ -18,7 +18,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 ### Latin Orthography History
 
-**Orthography Note**: It is the case that there are multiple writing systems for different speech varieties of the "same" ISO 639-3 designated languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+**Orthography Note**: It is the case that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
@@ -239,6 +239,8 @@ _
 
 Pedagogically the following as been presented in Eastern Dan "learning to write" materials<sup id="a25">[25](#f25)</sup>.
 
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
+
 Aa	aa
 An	an
 Aan	aan
@@ -284,16 +286,32 @@ Uun	uun
 Ʋʋ	ʋʋ
 
 ##### Vowels
+Phoneme chart (Oral)<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
-|                | Front | Near-front | Central | Near-back | Back |
-|----------------|:-----:|:----------:|:-------:|:---------:|:----:|
-| **Close**      |  i y  |            |   ɨ ʉ   |           |  ɯ u |
-| **Near-close** |       |     ɪ ʏ    |   ɪ̈ ʊ̈   |     ʊ     |      |
-| **Close-mid**  |  e ø  |            |   ɘ ɵ   |           |  ɤ o |
-| **Mid**        |  e̞ ø̞  |            |   ə ɵ̞   |           |  ɤ̞ o̞ |
-| **Open-mid**   |  ɛ œ  |            |   ɜ ɞ   |           |  ʌ ɔ |
-| **Near-open**  |   æ   |            |    ɐ    |           |      |
-| **Open**       |  a ɶ  |            |   ä ɒ̈   |           |  ɑ ɒ |
+Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan  This bring the total to 22 vowels.
+
+
+
+
+|    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
+|----------------|:-----:|:-----:|:----:|
+| **Close**      |  i    |   ɯ   |   u  |
+| **Near-close** |       |       |      |
+| **Mid**        |  e    |   ɤ   |   o  |
+| **Open-mid**   |  ɛ    |   ʌ   |   ɔ  |
+| **Near-open**  |   æ   |       |      |
+| **Open**       |       |   a   |   ɒ  |
+
+|    _**Nasal**_  | Front Unrounded | Back Unrounded | Back Rounded |
+|----------------|:-----:|:-----:|:----:|
+| **Close**      |  ĩ    |   ɯ̃   |   ũ  |
+| **Near-close** |       |       |      |
+| **Open-mid**   |  ɛ̃    |   ʌ̃   |   ɔ̃  |
+| **Near-open**  |   æ̃   |       |      |
+| **Open**       |       |   ã   |   ɒ̃  |
+
+/ŋ/
+
 
 <!--
 > Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
@@ -304,7 +322,6 @@ Uun	uun
 <ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]1 on a xH tone syllable and [ɤ] elsewhere.2
 The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
 -->
-Eastern Dan is claimed to have a 10 point vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉. These are not diphthongs (vowels that start at one phonetic value and finish at another value). Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought as a single character or letter of the alphabet. Dieresis is not a separable unit. The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
@@ -346,75 +363,29 @@ u
 ```
 
 ##### Consonants
-<!--
 
-|                            | Bilabial | Labio-dental | Linguo-labial | Dental | Alveolar | Palato-alveolar | Retroflex | Alveolo-palatal | Palatal | Velar | Uvular | Pharyngeal / Epiglottal | Glottal |
-|----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|:---------------:|:---------:|:---------------:|:-------:|:-----:|:------:|:-----------------------:|:-------:|
-| **Nasal**                  |    m̥ m   |        ɱ     |      n̼̊ n̼      |        |    n̥ n   |                 |    ɳ̊ ɳ    |                 |   ɲ̊ ɲ   |  ŋ̊ ŋ  |   ɴ̥ ɴ  |           — —           |   — —   |
-| **Stop**                   |    p b   |      p̪ b̪     |      t̼ d̼      |        |    t d   |                 |    ʈ ɖ    |                 |   c ɟ   |  k ɡ  |   q ɢ  |            ʡ            |   ʔ —   |
-| **Sibilant affricate**     |    — —   |      — —     |      — —      |        |   ts dz  |      tʃ dʒ      |   ʈʂ ɖʐ   |      tɕ dʑ      |   — —   |  — —  |   — —  |           — —           |   — —   |
-| **Non-sibilant affricate** |   pɸ bβ  |     p̪f b̪v    |               |  tθ dð |   tθ̠ dð̠  |     t̠ɹ̠̊˔ d̠ɹ̠˔     |           |                 |  cç ɟʝ  | kx ɡɣ |   qχ   |          ʡħ ʡʕ          |   ʔh —  |
-| **Sibilant fricative**     |    — —   |      — —     |      — —      |        |    s z   |       ʃ ʒ       |    ʂ ʐ    |       ɕ ʑ       |   — —   |  — —  |   — —  |           — —           |   — —   |
-| **Non-sibilant fricative** |    ɸ β   |      f v     |      θ̼ ð̼      |   θ ð  |    θ̱ ð̠   |      ɹ̠̊˔ ɹ̠˔      |           |                 |   ç ʝ   |  x ɣ  |   χ ʁ  |           ħ ʕ           |  h ɦ ʔ̞  |
-| **Approximant**            |    ɸ˕    |      ʋ       |               |   θ̞    |    ɹ̥ ɹ   |                 |    ɻ̊ ɻ    |                 |   j̊ j   |  ɰ̊ ɰ  |        |                         |         |
-| **Flap or tap**            |      ⱱ̟   |        ⱱ     |        ɾ̼      |        |    ɾ̥ ɾ   |                 |    ɽ̊ ɽ    |       — —       |   — —   |  — —  |     ɢ̆  |             ʡ̮           |   — —   |
-| **Trill**                  |      ʙ   |              |        r̼      |        |    r̥ r   |                 |   ɽr̥ ɽr   |       — —       |   — —   |  — —  |   ʀ̥ ʀ  |           ʜ ʢ           |   — —   |
-| **Lateral affricate**      |    — —   |      — —     |               |        |   tɬ dɮ  |                 |   ʈɭ̊˔     |                 |  cʎ̥˔    | kʟ̝̊ ɡʟ̝ |        |           — —           |   — —   |
-| **Lateral fricative**      |    — —   |      — —     |               |        |    ɬ ɮ   |                 |    ɭ̊˔     |                 |   ʎ̥˔ ʎ̝  |  ʟ̝̊ ʟ̝  |        |           — —           |   — —   |
-| **Lateral approximant**    |    — —   |      — —     |        l̼      |        |    l̥ l   |                 |    ɭ̊ ɭ    |                 |   ʎ̥ ʎ   |    ʟ  |     ʟ̠  |           — —           |   — —   |
-| **Lateral flap**           |    — —   |      — —     |        ɺ̼      |        |      ɺ   |                 |      ɭ̆    |                 |     ʎ̮   |       |        |           — —           |   — —   |
--->
-The presentation of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
+Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
+                             | Labial   |   Dental     |    Palatal    | Velar  | Labio-velar|
+|----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
+| **Voiceless Stops**        |    p     |      t       |               |   k    |  kp, kw  |
+| **Voiced Stops**           |    b     |      d       |               |   g    |  gb, gw  |
+| **Voiceless fricatives**   |    f     |      s       |               |        |          |
+| **Voiced Fricatives**      |    v     |      z       |               |        |          |
+| **Implosives**             |    ɓ     |      ɗ       |               |        |          |
+| **Continuants**            |          |      l       |      y        |        |   w      |
+
 
 <!--
+
 The existing orthography contains three cases of consonant over-representation:
 <l, r>: the phoneme /l/ is pronounced [ɾ] and spelled <r> following a coronal consonant (/t, d, s, z, y/) and [l] elsewhere;
 <bh, m>: the phoneme /ɓ/ is pronounced and spelled [m] preceding a nasal vowel and [ɓ] elsewhere;
 <dh, n>: the phoneme /ɗ/ is pronounced and spelled [n] preceding a nasal vowel and [ɗ] elsewhere.
 The allophonic graphemes <r, m, n> were all included in the orthography out of a desire to facilitate transition to and from French; their presence also conforms to regional practice.
 
-Labial
-Dental
-Palatal
-Velar
-Labio-velar
-Voiceless stops
-p
-t
-
-k
-kp, kw
-Voiced stops
-b
-d
-
-g
-gb, gw
-Voiceless fricatives
-f
-s
-
-
-
-Voiced fricatives
-v
-z
-
-
-
-Implosives
-ɓ <bh, m>
-ɗ <dh, n>
-
-
-
-Continuants
-
-l <l, r>
-y
-
-w
 -->
+The presentation order of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
+
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
