@@ -466,14 +466,15 @@ u
 
 Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
-| Labial   |   Dental     |    Palatal    | Velar  | Labio-velar|
-|----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
-| **Voiceless Stops**        |    p     |      t       |               |   k    |  kp, kw  |
-| **Voiced Stops**           |    b     |      d       |               |   g    |  gb, gw  |
-| **Voiceless fricatives**   |    f     |      s       |               |        |          |
-| **Voiced Fricatives**      |    v     |      z       |               |        |          |
-| **Implosives**             |    ɓ     |      ɗ       |               |        |          |
-| **Continuants**            |          |      l       |      y        |        |   w      |
+
+|Labial   |   Dental     |    Palatal    | Velar  | Labio-velar
+----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
+ **Voiceless Stops**        |    p     |      t       |               |   k    |  kp, kw  
+ **Voiced Stops**           |    b     |      d       |               |   g    |  gb, gw  
+ **Voiceless fricatives**   |    f     |      s       |               |        |          
+ **Voiced Fricatives**      |    v     |      z       |               |        |          
+ **Implosives**             |    ɓ     |      ɗ       |               |        |          
+ **Continuants**            |          |      l       |      y        |        |   w      
 
 
 ###### Based on rules presented in 1994.
