@@ -115,6 +115,205 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #
 #  git commit proof-of-concept-text-count.txt -m "Corpus Numbers after moving non-breaking space"
 
+cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+0027}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
 
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
+#Corrected non-letter apostrophe U+0027/U+2019 to letter apostrophe  U+02BC
+
+cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2019}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+#ʼ
+#Let's move double instances of <ʼ U+02BC > to <ˮ U+02EE>
+sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
+#cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2019}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
+
+# rm proof-of-concept-text.txt
+# mv proof-of-concept-text2.txt proof-of-concept-text.txt
+sed -e 's/<</«/g' -i proof-of-concept-text.txt
+sed -e 's/>>/»/g' -i proof-of-concept-text.txt
+
+#Let's move double instances of <U+201D	”	> to <U+02BC ˮ>
+sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
+
+#Let's move double instances of <U+201C	“	> to <U+02EE	ˮ	>
+sed -e 's/“/ˮ/g' -i proof-of-concept-text.txt
 # # #git diff -t=kdiff3
+
+#
+# Lʼorthographe DAN
+# Voici ce que nous pouvons utiliser pour
+# savoir lire et écrire en langue dan.
+# Les consonnes et les voyelles que vous ne
+# voyez pas ici sont les mêmes quʼ en français.
+# Attention:
+# 1. c, h, j, qu et x nʼexistent pas en dan.
+# 2. r ne se trouve jamais au début dʼun mot.
+# Voici le reste de lʼ alphabet :
+# Lettres Exemple
+# Traduction
+# Aa
+# "kaa
+# gale
+# An
+# "gan
+# tirer
+# Aan
+# saan
+# cadeau
+# aɔ
+# kaɔ
+# perdrix
+# aɔn
+# ‘daɔnaraignée
+# bh
+# -bho
+# cabris
+# dh
+# dhe
+# mère
+# ee
+# ꞊wee
+# sel
+# ɛ
+# "pɛ
+# déchirer
+# ɛɛ
+# ꞊wɛɛ
+# moquerie
+# ɛn
+# -gɛn
+# pied
+# ɛɛn
+# ꞊gblɛɛn
+# long
+# ë
+# pë
+# chose
+#
+# ëë
+# ën
+# ëën
+# ɛa
+# ɛan
+# gw
+# in
+# iin
+# ɩ
+# ɩɩ
+# kw
+# ng1
+# oo
+# ɔ
+# ɔn
+# ɔɔn
+# ö
+# öö
+# u
+# un
+# uun
+#
+# "këë
+# ʼkën
+# ꞊klëën
+# "kpɛa
+# gɛan"
+# -gwë
+# "bin
+# "iin
+# "wɩ
+# "gbɩɩ꞊kwaa
+# gbeng
+# -zoo
+# ʼpɔ
+# "yɔn
+# ꞊yɔɔn
+# pö
+# töö
+# "su
+# bun
+# ꞊yuun
+#
+# daba
+# rassasier
+# entourer
+# sec
+# scorpion
+# caillou
+# fleur
+# ou
+# parler
+# fort
+# main gauche
+# nuit
+# chenille
+# credit
+# huile
+# sang
+# dire
+# panier
+# lune
+# tombeau
+# asticot
+#
+# ü
+# üü
+# ün
+# üün
+# ϋ
+# ϋϋ
+# ʋ
+# ʋʋ
+#
+# ʼgü
+# "güü
+# ꞊blün
+# glüün
+# "gϋ
+# "bhϋϋ
+# "tʋ
+# "tʋʋ
+#
+# intérieur
+# amère
+# miette
+# rouler
+# brûler
+# tarir
+# oreille
+# sauce
+#
+# -Wo ʼdho -kɔ ( Les tons )
+# très haut
+# haut
+# moyen
+# bas
+# très bas
+# très haut + très bas
+# haut + très bas
+# moyen + très bas saabas + très bas
+# moyen + très haut gɛan"
+# moyen + haut
+#
+# "dhü
+# ʼkɔ
+# dë
+# ꞊zɛ
+# -dhɔ
+# "klangʼyënngsavon
+# ꞊gööscorpion
+# kpuuʼ
+#
+# arbre
+# maison
+# père
+# termite
+# amour
+# singe
+# soleil
+# iroko
+# souche
