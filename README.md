@@ -691,7 +691,7 @@ To replace them:
 $ sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 ```
 
-5. Corrected non-letter apostrophe 〈'〉 U+0027 〈'〉 U+2019 to letter apostrophe 〈ʼ〉 U+02BC
+5. Corrected non-letter apostrophe 〈'〉 U+0027 〈’〉 U+2019 to letter apostrophe 〈ʼ〉 U+02BC
 To move both of these characters to the alphabetic apostrophe:
  ```
 perl -CS -pe 's/\N{U+0027}/\N{U+02BC}/g'
@@ -714,12 +714,12 @@ sed -e 's/>>/»/g' -i proof-of-concept-text.txt
 ```
 
 8. Fix bad regular Quotes
- Let's move double instances of <U+201D	”	> to <U+02BC ˮ>
+ Let's move instances of <U+201D	”	> to <U+02EE ˮ>
  ```
 sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 ```
 
- Let's move double instances of <U+201C	“	> to <U+02EE	ˮ	>
+ Let's move instances of <U+201C	“	> to <U+02EE	ˮ	>
  ```
 sed -e 's/“/ˮ/g' -i proof-of-concept-text.txt
 ```
@@ -742,7 +742,7 @@ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-e
 
 **Still not completed:**
 10. Correct minus signs
- Underscore, dash, and minus are all moved to U+02D7 which is modifier letter minus.
+ Underscore, dash, and minus are all moved to 〈˗〉 U+02D7 which is modifier letter minus.
 * This solution is too greedy. I need to convert hyphens between numbers back to regular hyphens.
 
   ```
