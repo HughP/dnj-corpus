@@ -15,9 +15,41 @@ The 2 specifies that the second one should apply, and the g specifies that all t
 ```
 echo 汉典“馑”字的基本解释馑馑 | perl -CS -pe 's/\N{U+9991}/Jin/g'
 ```
+To concatenate and make markdown tables.
+
+UnicodeCCount.pl -m proof-of-concept-text.txt | tail -n +2 >file2.txt
+
+join -1 1 -2 1 -o 1.1,1.2,1.3,2.3 file1.txt file2.txt > file3.txt && sed -i 's/ /|/g' file3.txt && cat file3.txt
+
+$ sed -i '1s/^/Codepoint|glyph| Start Count|Character Name/' file
+$ sed -i '2s/^/:----:|:----:| :----:|:----:/' file
 
 
-## Awk
+
+
+    cat numb
+
+10   15
+20   35
+40   45
+45   55
+58   70
+
+so to perform action
+
+awk 'p{print $1-p}{p=$2}' numb
+
+output
+
+5
+5
+0
+3
+
+
+
+
+|## Awk
 
 
 
