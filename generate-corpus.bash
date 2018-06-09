@@ -144,6 +144,10 @@ sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 sed -e 's/“/ˮ/g' -i proof-of-concept-text.txt
 # # #git diff -t=kdiff3
 
+#Lets take care of these backward Letters
+sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
+
+
 #
 # Lʼorthographe DAN
 # Voici ce que nous pouvons utiliser pour
