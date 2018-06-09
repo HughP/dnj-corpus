@@ -298,10 +298,10 @@ In this presentation I present diacritics as a component of the letters on which
 Based on the letters presented in the 1994 primer the following letters would need to be in an alphabet. This list includes 36 letters; 32 with casing pairs for a total of 68 alphabetic graphemes.
 
 ```
-=
--
-'
-"
+꞊
+˗
+ʼ
+ˮ
 Aa
 Bb
 Dd
@@ -314,7 +314,6 @@ Gg
 Hh
 Ii
 Ɩɩ
-Ɩ
 Kk
 Ll
 Nn
