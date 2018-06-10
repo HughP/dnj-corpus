@@ -570,7 +570,7 @@ French is the National language in the country where the desist population of Ea
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
 
-* Usage of U+F173 COMBINING MACRON-GRAVE. U+F173 was deprecated because the character was added to Unicode 5.0 as U+1DC6. There were 22 occurrences in a toolbox file which is not part of this corpus.
+* Usage of U+F173 COMBINING MACRON-GRAVE. U+F173 was deprecated because the character was added to Unicode 5.0 as 〈◌᷆〉 U+1DC6 'COMBINING MACRON-GRAVE'. There were 22 occurrences in a toolbox file which is not part of this corpus.
 
 ### Content
 
