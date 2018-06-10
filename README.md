@@ -97,14 +97,14 @@ Codepoint   | Grapheme | Usage
 -------------|-----|----
 U+00AB  | «  | les guillemets ouvrant et
 U+00BB | »  | fermant un discourse direct
- U+0021  | !   | le point d'interrogation marque la présence d'une exclamation
- U+003B | ;  | le point-virgule entrecoupe deux parties d'une longue phrase
- U+003C | < | les guillemets simples ouvrant et
- U+003E | >| fermant un discourse direct placé dans un autre discourse direct.
- U+003F | ? | le point d'interrogation marque la présence d'une question
+U+0021  | !   | le point d'interrogation marque la présence d'une exclamation
+U+003B | ;  | le point-virgule entrecoupe deux parties d'une longue phrase
+U+003C | < | les guillemets simples ouvrant et
+U+003E | >| fermant un discourse direct placé dans un autre discourse direct.
+U+003F | ? | le point d'interrogation marque la présence d'une question
 U+002E | . | le point marquant la fin d'une pensée
 U+002C | , | la virgule donne l'occasion de prendre haleine
- U+003A | :  | le double point marque le début d'un discourse direct
+U+003A | :  | le double point marque le début d'un discourse direct
 
 ###### Based on the corpus
 Based on data within the corpus, the following punctuation marks are observed.  Their usages, as far as can be determined, from the corpus are indicated in the table.
@@ -165,13 +165,13 @@ Unfortunately no math symbols or other numeric related characters are provided. 
 Codepoint   | Grapheme  
 -------------|-----
 U+0030      | 0
-U+0031      | 1     
-U+0032      | 2     
-U+0033      | 3    
+U+0031      | 1
+U+0032      | 2
+U+0033      | 3
 U+0034      | 4  
-U+0035      | 5    
-U+0036      | 6     
-U+0037      | 7     
+U+0035      | 5
+U+0036      | 6
+U+0037      | 7
 U+0038      | 8
 U+0039      | 9
 
@@ -237,9 +237,9 @@ U+002E | .
 U+002F | /
 U+003A | :
 U+003B | ;  
- U+003C | <
+U+003C | <
 U+003D | =
- U+003E | >  
+U+003E | >  
 U+003F | ?
 U+0040 | @
 U+005C |  \\
@@ -437,12 +437,12 @@ U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounde
 U+0190, U+025B | Ɛ, ɛ | ɛ |
 U+00CB, U+00EB | Ë, ë | |
 U+00D6, U+00F6 | Ö, ö | |
- U+00DC, U+00FC | Ü, ü | |
+U+00DC, U+00FC | Ü, ü | |
 U+0045, U+0065 | E, e | |
 U+0049, U+0069 | I, i | i |
 U+0186, U+0254 | Ɔ, ɔ | |
 U+0041, U+0061 | A, a | |
- U+004F, U+006F | O, o | |
+U+004F, U+006F | O, o | |
 U+0055, U+0075 | U, u | |
 
 ```
