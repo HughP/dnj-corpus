@@ -8,7 +8,6 @@ Dd
 Ee
 Ɛɛ
 Ëë
-Ëë
 Ff
 Gg
 Hh
