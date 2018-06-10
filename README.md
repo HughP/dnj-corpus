@@ -545,15 +545,15 @@ No Casing |, |  | |
 
 ###### Pre-Stem
 ```
-'
-=
--
+ʼ
+꞊
+˗
 ```
 ###### Post-Stem
 ```
--
-'-
-'
+˗
+ʼ˗
+ʼ
 ```
 
 #### Reasonable characters needed for French
