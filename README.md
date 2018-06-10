@@ -208,6 +208,11 @@ Number oriented notes:
 
 * Thousands separator is 〈.〉 U+002E 'FULL STOP'.
 * The is a shortened form of the word "number" in many transcription traditions. Unicode has a special character for this 〈№〉 U+2116 'NUMERO SIGN'. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of 〈°〉  U+00B0 'DEGREE SIGN', and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form 〈no〉 (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form 〈nos〉 can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."<sup id="a24">[24](#f24)</sup>
+* Telephone numbers are written in series of two digits. These digits can be separated with 〈.〉 U+002E or spaces.
+ ```
+ grep -n -P "\s\d" proof-of-concept-text.txt
+```
+* A series of numbers is separated by a comma and a space. e.g. 〈1, 2, 3〉
 
 ##### Reasonable characters needed for Internet use
 
