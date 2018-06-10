@@ -294,6 +294,8 @@ The Internet was not discussed in the 1994 reading primer.
 ###### Based on the corpus
 This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the Internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan.
 
+However, the local paper evidently did have some online preasence at _www.pamebhame.info_. This was some time around 2008. A quick check of the internet archvie shows that no content was preserved in the [internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
+
 #### Alphabet
 ##### Based on rules presented in 1994.
 Actually neither the 1994<sup id="a28">[28](#f28)</sup> reading primer nor the 1982<sup id="a29">[29](#f29)</sup> reading primer present or address the issue of an alphabet, or alphabetical ordering. Both resources present their audiences with a list of pedagogical learning units which match well with the phonemics of Eastern Dan (with a few exceptions). They present these in _functional units_ (a term I borrow from Holm 1971<sup id="a30">[30](#f30)</sup> and Venezky 1970<sup id="a31">[31](#f31)</sup> 1967<sup id="a32">[32](#f32)</sup>), ordered and grouped by place of articulation (phonetic detail). Therefore, as according to the information which is available, it would appear that no alphabet statement has been made for Eastern Dan.
