@@ -120,19 +120,19 @@ U+201A | ‚ | Errors - Should be U+002C
 U+002F | /  |unknown
 U+00AB  | «  | Open a direct speech statement - Usage seems to be the opposite.
 U+00BB | »  | Closes a direct speech statement - Usage seems to be the opposite.
- U+0021  | !   | Closes an exclamation, interjection or emphatic statement
- U+003B | ;  | unknown
- U+2039 | ‹  | Opens a quote inside of a direct speech statement
- U+203A | ›  | Closes a quote inside of a direct speech statement
- U+003C | < | Error - All cases are double i.e. << and should be replaced with U+00AB
- U+003E | >| Error - All cases are double i.e. >> and should be replaced with U+00BB
- U+003F | ? | Closes a question statement
+U+0021  | !   | Closes an exclamation, interjection or emphatic statement
+U+003B | ;  | unknown
+U+2039 | ‹  | Opens a quote inside of a direct speech statement
+U+203A | ›  | Closes a quote inside of a direct speech statement
+U+003C | < | Error - All cases are double i.e. << and should be replaced with U+00AB
+U+003E | >| Error - All cases are double i.e. >> and should be replaced with U+00BB
+U+003F | ? | Closes a question statement
 U+002E | . | unknown
 U+002C | , | unknown
 U+0029 | )| Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
 U+0028 | ( | Opens a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
- U+003A | :  |unknown
- U+002B | + | Precedes a telephone number to indicate country code
+U+003A | :  |unknown
+U+002B | + | Precedes a telephone number to indicate country code
 
 ```
 °
