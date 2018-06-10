@@ -652,10 +652,9 @@ The combined issues of _˗Pamɛbhamɛ_ and the three files representing _While w
 #### Character Maintenance
 1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
-```
+ ```
 $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -if utf8 -of utf8
 ```
-
 2. Remove all BOM marks (they were created or concatenated into the middle of the file with the `cat` command).
 
   ```
