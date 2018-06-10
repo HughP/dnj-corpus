@@ -340,19 +340,27 @@ Ww
 Yy
 Zz
 ```
-<!--
-Pedagogically the following as been presented in Eastern Dan "learning to write" materials<sup id="a25">[25](#f25)</sup>.
+###### Functional units
+Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
+The following is a list of functional units an their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `*` indicates some letters, and the tone marks themselves - represent themselves.
+
+```
+A a
 Aa	aa
 An	an
 Aan	aan
 Aɔ	aɔ
 Aɔn	aɔn
 Bh	bh
+D d
 Dh	dh
+E e
 Ee	ee
 Ɛ	ɛ
 Ɛɛ	ɛɛ
+Ɛa	ɛa
+Ɛan	ɛan
 Ɛn	ɛn
 Ɛɛn	ɛɛn
 Ë	ë
