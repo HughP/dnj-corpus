@@ -27,7 +27,6 @@ Tt
 Uu
 Üü
 Vv
-Ϋϋ
 Ʋʋ
 Ww
 Yy
