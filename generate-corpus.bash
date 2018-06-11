@@ -39,12 +39,12 @@ cp proof-of-concept-text.txt initial-starting-corpus.txt
 # git commit proof-of-concept-text-count.txt -m "base numbers of corpus before character changes"
 
 
-################
-## Large level changes ##
-###############
+##############################
+## Large level changes - Character Maintenance ##
+##############################
 
 
-#As far as I know txtconv does not do in place editing.
+#1. As far as I know txtconv does not do in place editing.
 txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -if utf8 -of utf8 -u 2
 
 rm proof-of-concept-text.txt
@@ -56,7 +56,7 @@ mv proof-no-PUA.txt proof-of-concept-text.txt
 #
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after PUA character changes"
 
-#No-BOM
+#2. No-BOM
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-of-concept-text2.txt
 rm proof-of-concept-text.txt
@@ -68,7 +68,7 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after BOM character changes"
 
-#No headding tags
+#3. No headding tags
 sed -e 's/<[^>]*>//g' -i proof-of-concept-text.txt
 
 # git commit proof-of-concept-text.txt -m "Corpus after removing heading tags character changes"
@@ -80,12 +80,11 @@ sed -e 's/<[^>]*>//g' -i proof-of-concept-text.txt
 # #No French
 # #perl -i -CS -pe 's/\N{U+FEFF}//g' proof-of-concept-text.txt
 
-## #############
-## Character changes ##
-###############
+## ############## #################
+## Character changes - Typographical Encoding Errors##
+#################################
 
-## Equal sign U+003D --> U+A78A##
-
+##1. Equal sign U+003D --> U+A78A##
 #Replace normal equal sign U+003D with letter equal sign U+A78A.
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g' > proof-of-concept-text2.txt
 
@@ -99,7 +98,7 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #  git commit proof-of-concept-text-count.txt -m "Corpus Numbers after correcting equals sign characters changes"
 # #
 
-##Fix non-breaking space U+00A0 -->U+0020 ##
+##2. Fix non-breaking space U+00A0 -->U+0020 ##
 echo "Fixing non-breaking spaces..."
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+00A0}/\N{U+0020}/g' >  proof-of-concept-text2.txt
 
@@ -112,7 +111,7 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 #  git commit proof-of-concept-text-count.txt -m "Corpus Numbers after moving non-breaking space"
 
-## Non-Breaking Hyphen U+001E --> U+02D7##
+##3. Non-Breaking Hyphen U+001E --> U+02D7##
 
  #Corrected bad non-breaking hyphen.
 #MS Word saved the non-breaking hyphen as x1E. This was then interpreed as \00 \1E. So was a non breaking Hypehn, but should actually be U+02D7.
@@ -128,7 +127,7 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after correcting bad non-breaking hyphen"
 
-##Character Order coorection ##
+##4. Character Order coorection ##
 echo "Typing in the correct order can be a problem."
 grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
 #Lets take care of these backward Letters
@@ -137,51 +136,51 @@ sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
 echo "We fixed that: See they are gone!"
 
-#Now lets get rid of those upsilons
+##5. Now lets get rid of those upsilons
 sed -e 's/ϋ/ʋ̈/g' -i proof-of-concept-text.txt
 
-##Corrected non-letter apostrophe U+0027 to letter apostrophe U+02BC
+##6a. Corrected non-letter apostrophe U+0027 to letter apostrophe U+02BC
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+0027}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##Corrected non-letter single quote U+2019 to letter apostrophe  U+02BC
+##6b. Corrected non-letter single quote U+2019 to letter apostrophe  U+02BC
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2019}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##Let's move instances of U+2018 to letter apostrophe  U+02BC
+##6c. Let's move instances of U+2018 to letter apostrophe  U+02BC
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2018}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##Let's move instances of <U+201D	”	> to <U+02BC ˮ>
+##7a. Let's move instances of <U+201D	”	> to <U+02BC ˮ>
 sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 
-##Let's move instances of <U+201C	“	> to <U+02EE	ˮ	>
+##7b. Let's move instances of <U+201C	“	> to <U+02EE	ˮ	>
 sed -e 's/“/ˮ/g' -i proof-of-concept-text.txt
 
-##Let's move instances of <U+0022	"	> to <U+02EE	ˮ	>
+##7c. Let's move instances of <U+0022	"	> to <U+02EE	ˮ	>
 sed -e 's/"/ˮ/g' -i proof-of-concept-text.txt
 
-##Lets fix the typos of double single quotes.
+##8. Lets fix the typos of double single quotes.
 #Let's move double instances of <ʼ U+02BC > to <ˮ U+02EE>
 sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 
-## Fix the french quotes
+##9a. Fix the french quotes
 sed -e 's/<</«/g' -i proof-of-concept-text.txt
 sed -e 's/>>/»/g' -i proof-of-concept-text.txt
 
-## Fix cases of double single french quotes, looking like double quotes.
+##9b. Fix cases of double single french quotes, looking like double quotes.
 sed -e 's/‹‹/«/g' -i proof-of-concept-text.txt
 sed -e 's/››/»/g' -i proof-of-concept-text.txt
 
-##Correct minus signs
+##10a.Correct "minus" signs
 ## Fix the dashes U+2013 --> U+02D7
 echo "La-sha"
 echo ""
@@ -191,8 +190,9 @@ echo "See they are everywhere"
 
 sed -e 's/–/˗/g' -i proof-of-concept-text.txt
 
-##Fix undeerscore
+##10b. Fix undeerscore
 sed -e 's/_/˗/g' -i proof-of-concept-text.txt
+
 
 
 #Fix wrong comma
