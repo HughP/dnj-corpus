@@ -350,7 +350,7 @@ Zz
 ###### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
-The following is a list of functional units an their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `*` indicates some letters, and the tone marks themselves - represent themselves.
+The following is a list of functional units ans their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `*` indicates some letters, and the tone marks themselves - represent themselves.
 
 ```
 A a
@@ -446,7 +446,7 @@ uë
 
 Phoneme chart (Oral)<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
-Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan<sup id="a1">[__(cite this)__](#f1)</sup> . This bring the total to 22 vowels.
+Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Length has been analyzed as two sequential vowels. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan<sup id="a1">[__(cite this)__](#f1)</sup> . This bring the total to 22 vowels.
 
 |    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
@@ -469,7 +469,21 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 ###### Based on rules presented in 1994.
 
+Nasal Vowels are indicated with by an 〈n〉 following the vowel.
 
+
+###### Diphthongs
+```
+iϋ
+iö
+ië
+ia
+ian
+ɩa
+uë
+ʋë
+ϋü
+```
 
 ###### Based on the corpus
 
@@ -485,7 +499,7 @@ Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality 
 The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
 -->
 
-Codepoint | Grapheme | IPA equivalent | Phonetic description
+Codepoint | Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
@@ -638,18 +652,142 @@ A new testament is also known to exist, but is not included in this repository o
 ##### Pre text clean up stats
 It should be noted that the percentages of characters and the percentages of phonemes presented here are attested only in this corpus. This corpus is not necessarily natural speech, and some characters may be over represented because _˗Pamɛbhamɛ_, which was targeted at new readers, published a chart of the alphabet in nearly every issue, with some, but not many, words in French.
 
-First round were off a bit because 4 issues of the local news paper did not get added to the file `mass-text.txt` (later renamed to `proof-of-concept-text.txt`), round three includes all the issues of _-Pamɛbhamɛ_ and the chapters of _While waiting for a medical doctor_.
-Linux Command Line:
-`wc -l -w -m`
+Linux Command Line `wc -l -w -m`stats are presented for the before and after text clean up.
+ `initial-starting-corpus.txt` includes all of the  _-Pamɛbhamɛ_ and the chapters of _While waiting for a medical doctor_.
 
 Round |Lines  | Words  |  Characters
 --|--|---|--
-First |  11686 | 46192  |  221389
-Second  | 14491 |  55986 | 269437
-Third | 15756 | 86466 | 416782
+Initial Starting corpus | 15756 | 86466 | 416782
 
-UnicodeCharacterCount Stats for round three:
-Presented in frequency order.
+Character level stats:
+
+Coed Point| Glyph|Count|Unicode Name
+:-----:|:-----:|:-----:|:-----:
+U+0009| |241|CHARACTER TABULATION
+U+000A| |15756|LINE FEED
+U+000C| |110|FORM FEED
+U+000D| |897|CARRIAGE RETURN
+U+001E| |2721|INFORMATION SEPARATOR TWO
+U+0020| |73737|SPACE
+U+0021|!|70|EXCLAMATION MARK
+U+0022|"|3346|QUOTATION MARK
+U+0027|'|7223|APOSTROPHE
+U+0028|(|482|LEFT PARENTHESIS
+U+0029|)|483|RIGHT PARENTHESIS
+U+002A|\*|20|ASTERISK
+U+002B|+|110|PLUS SIGN
+U+002C|,|4751|COMMA
+U+002D|-|27491|HYPHEN-MINUS
+U+002E|.|4181|FULL STOP
+U+002F|/|96|SOLIDUS
+U+0030|0|867|DIGIT ZERO
+U+0031|1|301|DIGIT ONE
+U+0032|2|436|DIGIT TWO
+U+0033|3|136|DIGIT THREE
+U+0034|4|110|DIGIT FOUR
+U+0035|5|181|DIGIT FIVE
+U+0036|6|81|DIGIT SIX
+U+0037|7|160|DIGIT SEVEN
+U+0038|8|268|DIGIT EIGHT
+U+0039|9|116|DIGIT NINE
+U+003A|:|488|COLON
+U+003B|;|79|SEMICOLON
+U+003C|<|252|LESS-THAN SIGN
+U+003D|=|5458|EQUALS SIGN
+U+003E|>|246|GREATER-THAN SIGN
+U+003F|?|202|QUESTION MARK
+U+0041|A|1044|LATIN CAPITAL LETTER A
+U+0042|B|424|LATIN CAPITAL LETTER B
+U+0043|C|15|LATIN CAPITAL LETTER C
+U+0044|D|767|LATIN CAPITAL LETTER D
+U+0045|E|108|LATIN CAPITAL LETTER E
+U+0046|F|97|LATIN CAPITAL LETTER F
+U+0047|G|448|LATIN CAPITAL LETTER G
+U+0048|H|26|LATIN CAPITAL LETTER H
+U+0049|I|66|LATIN CAPITAL LETTER I
+U+004A|J|9|LATIN CAPITAL LETTER J
+U+004B|K|1224|LATIN CAPITAL LETTER K
+U+004C|L|145|LATIN CAPITAL LETTER L
+U+004D|M|671|LATIN CAPITAL LETTER M
+U+004E|N|356|LATIN CAPITAL LETTER N
+U+004F|O|50|LATIN CAPITAL LETTER O
+U+0050|P|301|LATIN CAPITAL LETTER P
+U+0052|R|8|LATIN CAPITAL LETTER R
+U+0053|S|479|LATIN CAPITAL LETTER S
+U+0054|T|275|LATIN CAPITAL LETTER T
+U+0055|U|50|LATIN CAPITAL LETTER U
+U+0056|V|121|LATIN CAPITAL LETTER V
+U+0057|W|510|LATIN CAPITAL LETTER W
+U+0059|Y|977|LATIN CAPITAL LETTER Y
+U+005A|Z|386|LATIN CAPITAL LETTER Z
+U+005B|[|10|LEFT SQUARE BRACKET
+U+005C|\\|1|REVERSE SOLIDUS
+U+005D|]|10|RIGHT SQUARE BRACKET
+U+005F|\_|1|LOW LINE
+U+0061|a|29865|LATIN SMALL LETTER A
+U+0062|b|9802|LATIN SMALL LETTER B
+U+0063|c|436|LATIN SMALL LETTER C
+U+0064|d|12050|LATIN SMALL LETTER D
+U+0065|e|5906|LATIN SMALL LETTER E
+U+0066|f|430|LATIN SMALL LETTER F
+U+0067|g|10278|LATIN SMALL LETTER G
+U+0068|h|15463|LATIN SMALL LETTER H
+U+0069|i|8567|LATIN SMALL LETTER I
+U+006A|j|71|LATIN SMALL LETTER J
+U+006B|k|11978|LATIN SMALL LETTER K
+U+006C|l|3995|LATIN SMALL LETTER L
+U+006D|m|4363|LATIN SMALL LETTER M
+U+006E|n|16368|LATIN SMALL LETTER N
+U+006F|o|10311|LATIN SMALL LETTER O
+U+0070|p|4505|LATIN SMALL LETTER P
+U+0071|q|103|LATIN SMALL LETTER Q
+U+0072|r|1762|LATIN SMALL LETTER R
+U+0073|s|6557|LATIN SMALL LETTER S
+U+0074|t|3756|LATIN SMALL LETTER T
+U+0075|u|7973|LATIN SMALL LETTER U
+U+0076|v|469|LATIN SMALL LETTER V
+U+0077|w|8286|LATIN SMALL LETTER W
+U+0078|x|85|LATIN SMALL LETTER X
+U+0079|y|7445|LATIN SMALL LETTER Y
+U+007A|z|1969|LATIN SMALL LETTER Z
+U+00A0| |374|NO-BREAK SPACE
+U+00A8|¨|1|DIAERESIS
+U+00AB|«|102|LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+U+00B0|°|1|DEGREE SIGN
+U+00BB|»|100|RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+U+00CB|Ë|46|LATIN CAPITAL LETTER E WITH DIAERESIS
+U+00D6|Ö|73|LATIN CAPITAL LETTER O WITH DIAERESIS
+U+00DC|Ü|71|LATIN CAPITAL LETTER U WITH DIAERESIS
+U+00E7|ç|21|LATIN SMALL LETTER C WITH CEDILLA
+U+00E8|è|221|LATIN SMALL LETTER E WITH GRAVE
+U+00E9|é|107|LATIN SMALL LETTER E WITH ACUTE
+U+00EA|ê|28|LATIN SMALL LETTER E WITH CIRCUMFLEX
+U+00EB|ë|8411|LATIN SMALL LETTER E WITH DIAERESIS
+U+00EE|î|3|LATIN SMALL LETTER I WITH CIRCUMFLEX
+U+00F6|ö|12699|LATIN SMALL LETTER O WITH DIAERESIS
+U+00FB|û|26|LATIN SMALL LETTER U WITH CIRCUMFLEX
+U+00FC|ü|5868|LATIN SMALL LETTER U WITH DIAERESIS
+U+0186|Ɔ|58|LATIN CAPITAL LETTER OPEN O
+U+0190|Ɛ|70|LATIN CAPITAL LETTER OPEN E
+U+0254|ɔ|8144|LATIN SMALL LETTER OPEN O
+U+025B|ɛ|11951|LATIN SMALL LETTER OPEN E
+U+0269|ɩ|993|LATIN SMALL LETTER IOTA
+U+028B|ʋ|1443|LATIN SMALL LETTER V WITH HOOK
+U+0304| |1|COMBINING MACRON
+U+0308| |3269|COMBINING DIAERESIS
+U+03CB|ϋ|1322|GREEK SMALL LETTER UPSILON WITH DIALYTIKA
+U+2013|–|1065|EN DASH
+U+2018|‘|12285|LEFT SINGLE QUOTATION MARK
+U+2019|’|748|RIGHT SINGLE QUOTATION MARK
+U+201A|‚|7|SINGLE LOW-9 QUOTATION MARK
+U+201C|“|4306|LEFT DOUBLE QUOTATION MARK
+U+201D|”|123|RIGHT DOUBLE QUOTATION MARK
+U+2022|•|13|BULLET
+U+2026|…|7|HORIZONTAL ELLIPSIS
+U+2039|‹|142|SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+U+203A|›|140|SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+U+FEFF| |58|ZERO WIDTH NO-BREAK SPACE
+U+FFF9| |17|INTERLINEAR ANNOTATION ANCHOR
 
 ## Provenance and text conditioning
 Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (trnaslated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.

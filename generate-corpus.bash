@@ -137,6 +137,9 @@ sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
 echo "We fixed that: See they are gone!"
 
+#Now lets get rid of those upsilons
+sed -e 's/ϋ/ʋ̈/g' -i proof-of-concept-text.txt
+
 ##Corrected non-letter apostrophe U+0027 to letter apostrophe U+02BC
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+0027}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
