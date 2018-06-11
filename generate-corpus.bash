@@ -159,7 +159,7 @@ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2018}/\N{U+02BC}/g' >  proo
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##7a. Let's move instances of <U+201D	”	> to <U+02BC ˮ>
+##7a. Let's move instances of <U+201D	”	> to <U+02EE	ˮ	>
 sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 
 ##7b. Let's move instances of <U+201C	“	> to <U+02EE	ˮ	>
