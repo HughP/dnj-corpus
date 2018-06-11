@@ -169,13 +169,13 @@ _
 ##### Number Characters
 ###### Based on rules presented in 1994.
 Unfortunately no math symbols or other numeric related characters are provided. Unicode points are provided here as an added point of reference. They are not in the source text.
-Codepoint   | Grapheme  
+Codepoint   | Grapheme
 -------------|-----
 U+0030      | 0
 U+0031      | 1
 U+0032      | 2
 U+0033      | 3
-U+0034      | 4  
+U+0034      | 4
 U+0035      | 5
 U+0036      | 6
 U+0037      | 7
@@ -185,16 +185,16 @@ U+0039      | 9
 ###### Based on the corpus
 As evidenced in the corpus, as it was originally delivered, when writing Eastern Dan with the Latin script the following numbers are used.
 
-Codepoint   | Grapheme  
+Codepoint   | Grapheme
 -------------|-----
 U+0030      | 0
-U+0031      | 1     
-U+0032      | 2     
-U+0033      | 3    
-U+0034      | 4  
-U+0035      | 5    
-U+0036      | 6     
-U+0037      | 7     
+U+0031      | 1
+U+0032      | 2
+U+0033      | 3
+U+0034      | 4
+U+0035      | 5
+U+0036      | 6
+U+0037      | 7
 U+0038      | 8
 U+0039      | 9
 
@@ -248,10 +248,10 @@ U+002D | -
 U+002E | .
 U+002F | /
 U+003A | :
-U+003B | ;  
+U+003B | ;
 U+003C | <
 U+003D | =
-U+003E | >  
+U+003E | >
 U+003F | ?
 U+0040 | @
 U+005C |  \\
@@ -341,7 +341,7 @@ Tt
 Uu
 Üü
 Vv
-Ϋϋ
+Ʋ̈ʋ̈
 Ʋʋ
 Ww
 Yy
@@ -355,20 +355,23 @@ The following is a list of functional units ans their phonological representatio
 <!-- It was previously thought that maybe the following were valid characters, but they are not. The following are Upsilon, Latin Letter v with hook is the correct character.
 Ϋ	ϋ
 Ϋϋ	ϋϋ
+
+Correct character is
+Ʋ̈ ʋ̈
 -->
 
 
 ```
-A a
+A	a
 Aa	aa
 An	an
 Aan	aan
 Aɔ	aɔ
 Aɔn	aɔn
 Bh	bh
-D d
+D	d
 Dh	dh
-E e
+E	e
 Ee	ee
 Ɛ	ɛ
 Ɛɛ	ɛɛ
@@ -382,24 +385,24 @@ Ee	ee
 Ëën	ëën
 Ɛa	ɛa
 Ɛan	ɛan
-F f
-G g
-Gb gb
+F	f
+G	g
+Gb	gb
 Gw	gw
-I **
+I	i
 In	in
-Ii ii
+Ii	ii
 Iin	iin
 Ɩ	ɩ
 Ɩɩ	ɩɩ
-K k
-Kp kp
-Kw kw
-L l
-M m
-N n
+K	k
+Kp	kp
+Kw	kw
+L	l
+M	m
+N	n
 Ng	ng
-O o
+O	o
 Oo	oo
 Ö	ö
 Öö	öö
@@ -407,25 +410,27 @@ Oo	oo
 Ɔɔ	ɔɔ
 Ɔn	ɔn
 Ɔɔn	ɔɔn
-P p
-R r
-S s
-T t
+P	p
+R	r
+S	s
+T	t
 U	u
-Uu uu
+Uu	uu
 Un	un
 Uun	uun
 Ü	ü
 Üü	üü
 Ün	ün
 Üün	üün
-V v
-W w
-Y y
-Z z
+V	v
+W	w
+Y	y
+Z	z
 Ʋ	ʋ
 Ʋʋ	ʋʋ
-iϋ
+Ʋ̈	ʋ̈
+Ʋ̈ʋ̈	ʋ̈ʋ̈
+iʋ̈
 iö
 ië
 ia
@@ -433,7 +438,7 @@ ian
 ɩa
 uë
 ʋë
-ϋü
+ʋ̈ü
 〈ˮ*\s〉
 〈ʼ*\s〉
 〈\s*\s〉
@@ -478,7 +483,7 @@ Nasal Vowels are indicated with by an 〈n〉 following the vowel.
 
 ###### Diphthongs
 ```
-iϋ
+iʋ̈
 iö
 ië
 ia
@@ -486,7 +491,7 @@ ian
 ɩa
 uë
 ʋë
-ϋü
+ʋ̈ü
 ```
 
 ###### Based on the corpus
@@ -509,7 +514,7 @@ Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
 U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | long nasalized front open unrounded vowel
 U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | long front open unrounded vowel
-U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | |  
+U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | |
 U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | |
 U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | |
 U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | |
@@ -548,12 +553,12 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
 
 |Labial   |   Dental     |    Palatal    | Velar  | Labio-velar
 ----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
- Voiceless Stops        |    p     |      t       |               |   k    |  kp, kw  
- Voiced Stops           |    b     |      d       |               |   g    |  gb, gw  
- Voiceless fricatives   |    f     |      s       |               |        |          
- Voiced Fricatives      |    v     |      z       |               |        |          
- Implosives             |    ɓ     |      ɗ       |               |        |          
- Continuants            |          |      l       |      y        |        |   w      
+ Voiceless Stops        |    p     |      t       |               |   k    |  kp, kw
+ Voiced Stops           |    b     |      d       |               |   g    |  gb, gw
+ Voiceless fricatives   |    f     |      s       |               |        |
+ Voiced Fricatives      |    v     |      z       |               |        |
+ Implosives             |    ɓ     |      ɗ       |               |        |
+ Continuants            |          |      l       |      y        |        |   w
 
 
 ###### Based on rules presented in 1994.
@@ -856,7 +861,7 @@ $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec
 ```
 2. Remove all BOM marks (they were created or concatenated into the middle of the file with the `cat` command).
 
-  ```
+ ```
  $ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
 ```
 
@@ -895,11 +900,11 @@ To replace them:
 $ sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 ```
 
-5.  Correct case of the mis-use of small letter upsilon
+5. Correct case of the mis-use of small letter upsilon
 
  U+03CB 〈ϋ〉 'GREEK SMALL LETTER UPSILON WITH DIALYTIKA'; target 1322 instances.
 
- Visual similarities between  U+03CB and U+028B + U+0308 have lead some to use UPSILON WITH DIALYTIKA instead of LATIN LETTER V WITH HOOK + COMBINING DIERESES. This is only attested in the corpus to occur in lower case instances. But it is a problem if one uses a conversion tool to convert lower case to upper case (such as is often in text processing or word processing tools, or via the command line like `$ cat some-file-in-Eastern-Dan.txt | perl -CS -pe 's/\p{Ll}/\p{Lu}/g' > display-file-as-uppercase.txt`), because U+03CB is paired with U+03AB 〈Ϋ〉  rather than being paired with U+01B2 + U+0308 〈__(ʋ̈)__〉.
+ Visual similarities between  U+03CB and U+028B + U+0308 have lead some to use UPSILON WITH DIALYTIKA instead of LATIN LETTER V WITH HOOK + COMBINING DIERESES. This is only attested in the corpus to occur in lower case instances. But it is a problem if one uses a conversion tool to convert lower case to upper case (such as is often in text processing or word processing tools, or via the command line like `$ cat some-file-in-Eastern-Dan.txt | perl -CS -pe 's/\p{Ll}/\p{Lu}/g' > display-file-as-uppercase.txt`), because U+03CB is paired with U+03AB 〈Ϋ〉  rather than being paired with U+01B2 + U+0308 〈__(Ʋ̈)__〉.
 
  **Note**: `tr '[:lower:]' '[:upper:]'` doesn't work because [POSIX classes](https://www.regular-expressions.info/posixbrackets.html) do not support characters which are above the ASCII range, [Unicode characteristics](https://www.regular-expressions.info/unicode.html) are needed to do this.<!-- there is a great chart of what explicit characters are in each POSIX class here: https://unix.stackexchange.com/questions/128192/command-to-retrieve-the-list-of-characters-in-a-given-character-class-in-the-cur  -->
 
@@ -963,7 +968,7 @@ sed -e 's/››/»/g' -i proof-of-concept-text.txt
 ```
 
 9. Correct minus signs
- Underscore 〈\_〉U+005F , dash 〈–〉 U+2013, and minus 〈-〉 are used to represent what is supposed to be a 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'. A simple solution is too greedy. Hyphen-minus between numbers is an apropiate use of this character.
+ Underscore 〈\_〉U+005F , dash 〈–〉 U+2013, and minus 〈-〉 are used to represent what is supposed to be a 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'. A simple solution is too greedy. Hyphen-minus between numbers is an appropriate use of this character.
 
  Visual inspection via `grep` shows that all dashes 〈–〉 U+2013 'EN DASH', should be U+02D7.
 ```
