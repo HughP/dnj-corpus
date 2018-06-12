@@ -186,14 +186,32 @@ echo "La-sha"
 echo ""
 grep -n -P "–" proof-of-concept-text.txt | tail -1
 echo ""
-echo "See they are everywhere"
+echo "See they are everywhere." "$(grep -n -P "\s–\s" proof-of-concept-text.txt| wc -l)" of "$(grep -n -P "–" proof-of-concept-text.txt| wc -l)" "are ambiguous."
+
+grep -n -P "\s–\s" proof-of-concept-text.txt
+echo ""
+echo ""
+echo "We moved them so that they associated to the right... connecting to words to the right."
+exit 1
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s–\s/\s–/g' >  proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+grep -n -P "\s–\s" proof-of-concept-text.txt
+echo " Yep. We really did that."
 
 sed -e 's/–/˗/g' -i proof-of-concept-text.txt
 
 ##10b. Fix undeerscore
 sed -e 's/_/˗/g' -i proof-of-concept-text.txt
 
+##10c. There are still some real minus signs we need to take care of.
 
+##11. Remove U+2022	•	BULLET
+#There are only 13 instances. It is unlikely that this character is best accessed through a keyboard. So we will drop it from the corpus.
+
+sed -e 's/•//g' -i proof-of-concept-text.txt
 
 #Fix wrong comma
 # cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' proof-of-concept-text.txt > proof-of-concept-text2.txt
