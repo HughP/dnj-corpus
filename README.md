@@ -555,7 +555,7 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
 
 
  |Labial |Dental|Palatal  | Velar| Labio-velar
------|:-----:|:-----:|:------:|:------:|:--------: 
+-----|:-----:|:-----:|:------:|:------:|:--------:
  Voiceless Stops        |    p     |      t       |               |   k    |  kp, kw
  Voiced Stops           |    b     |      d       |               |   g    |  gb, gw
  Voiceless fricatives   |    f     |      s       |               |        |
@@ -620,20 +620,17 @@ There are four characters which are used to indicate one of ten possible tone pa
 
 Codepoint | Grapheme Pattern | IPA equivalent | Phonologicall description | Usage Note
 -------------|-----|----|----|----
- U+02EE, No casing  |〈ˮ*\s〉 | ˥ |xH | double quote before the word
-U+02BC ,No Casing | 〈ʼ*\s〉 | ˦ | H | single quote before the word
-Null, No Casing | 〈\s*\s〉 | ˧ | M | no marking at all
-U+A78A, No Casing |〈꞊\*\s〉 | ˨ | L | equals sign before the word
-U+02D7, No Casing | 〈˗\*\s〉 | ˩ | xL | minus sign before the word
-No Casing | 〈ˮ*˗〉 |  | xH falling to L |
-No Casing | 〈ʼ*˗〉 |  | H falling to L |
-No Casing |〈\s*˗〉 |  | |
-No Casing |, |  | |
-No Casing |, |  | |
+ U+02EE, No casing  |〈ˮ\p{L}\s〉 | ˥ |xH | double quote starting the word
+U+02BC ,No Casing | 〈ʼ\p{L}\s〉 | ˦ | H | apostrophe starting the word
+Null, No Casing | 〈\s\p{L}\s〉 | ˧ | M | no marking at all for tone
+U+A78A, No Casing |〈꞊\\p{L}\s〉 | ˨ | L | equals sign starting the word
+U+02D7, No Casing | 〈˗\\p{L}\s〉 | ˩ | xL | minus sign starting the word
+No Casing | 〈ˮ\p{L}˗〉 |  | xH falling to L |double quote starting the word with minus at the end of the string
+No Casing | 〈ʼ\p{L}˗〉 |  | H falling to L | apostrophe starting the word with minus at the end of the string
+No Casing |〈\s\p{L}˗〉 |  | M falling to L | Null in front followed by minus at the end of the string
+No Casing |〈\s\p{L}ʼ〉 |  | M Raising to H| Null in front followed by apostrophe at the end of the string
+No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by double quote at the end of the string
 
-〈꞊\*\s˗〉
-〈\s*ʼ〉
-〈\s*ˮ〉
 
 ###### Pre-Stem
 ```
@@ -643,14 +640,15 @@ No Casing |, |  | |
 ˗
 ```
 ###### Post-Stem
-```
+  ```
 ˗
-ʼ˗
 ʼ
+ˮ
 ```
 
 ###### Based on the corpus
 
+<!--  This pattern doesn't seem to be in the documentation. ʼ˗  -->
 
 #### Reasonable characters needed for French
 
