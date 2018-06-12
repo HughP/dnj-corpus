@@ -139,7 +139,8 @@ echo "We fixed that: See they are gone!"
 ##5. Now lets get rid of those upsilons
 sed -e 's/ϋ/ʋ̈/g' -i proof-of-concept-text.txt
 
-##6a. Corrected non-letter apostrophe U+0027 to letter apostrophe U+02BC
+##Bad single quote like characters
+##6a. Correct non-letter apostrophe U+0027 to letter apostrophe U+02BC
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+0027}/\N{U+02BC}/g' >  proof-of-concept-text2.txt
 
@@ -159,6 +160,7 @@ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+2018}/\N{U+02BC}/g' >  proo
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
+##Bad double quote like characters
 ##7a. Let's move instances of <U+201D	”	> to <U+02EE	ˮ	>
 sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 
@@ -192,7 +194,7 @@ grep -n -P "\s–\s" proof-of-concept-text.txt
 echo ""
 echo ""
 echo "We moved them so that they associated to the right... connecting to words to the right."
-exit 1
+
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s–\s/\s–/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
@@ -245,7 +247,12 @@ sed -e 's/Lʼorthographe DAN//g' -i proof-of-concept-text.txt
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after correcting bad comma"
 #
 
-
+# #Now is a great time to get rid of all those extra spaces.
+#
+# cat proof-of-concept-text.txt | perl -CS -pe 's/\s\s/\s/g' >  proof-of-concept-text2.txt
+# echo "space zap"
+# rm proof-of-concept-text.txt
+# mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 
 
