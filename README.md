@@ -1109,8 +1109,7 @@ $ sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 10. Correct minus signs
  Underscore 〈\_〉 U+005F , EN Dash 〈–〉 U+2013, and Minus-hyphen 〈-〉 U+002D are used to represent what is supposed to be a 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'. A simple solution is too greedy. Hyphen-minus between numbers is an appropriate use of this character.
 
-
-  Underscore 〈\_〉U+005F is a simple case with only one instance.
+  LOW LINE 〈\_〉U+005F (Underscore) is a simple case with only one instance.
 
   ```
    $ grep -n -P "_" proof-of-concept-text.txt
@@ -1120,7 +1119,7 @@ $ sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
   $ sed -e 's/_/˗/g' -i proof-of-concept-text.txt
   ```
 
- Visual inspection via `grep` shows that most dashes 〈–〉 U+2013 'EN DASH', should be U+02D7.
+ Visual inspection via `grep` shows that most dashes 〈–〉 U+2013 'EN DASH', should be 〈˗〉 U+02D7.
 ```
  $ grep -n -P "–" proof-of-concept-text.txt
  ```
@@ -1189,7 +1188,6 @@ grep -n -P "\s[–-]\s" proof-of-concept-text.txt
  ```
  Since we already got rid of the spaces on the dash in these overlapping cases we will do the same in those cases with minus-hyphen. However, other cases obviously need to go in other directions (attach left, rather than right). So, we are going to try and attach these.
 
-
  Minus is used with numbers
 
   ```
@@ -1222,15 +1220,15 @@ $ grep -n -P "\d-" proof-of-concept-text.txt
   grep -n -P "[^\d\S]-" proof-of-concept-text.txt
 ```
 
-```
+ ```
 $ sed -e 's/[^\d\S]-/˗/g' -i proof-of-concept-text.txt
 ```
 
-```
+ ```
 grep -n -P "\s-\s\D[^ʼ]" proof-of-concept-text.txt
 ```
 
-11. Remove U+2022	•	BULLET
+11. Remove U+2022 〈•〉 BULLET
 
  There are only 13 instances. It is unlikely that this character is best accessed through a keyboard. So we will drop it from the corpus.
 
@@ -1238,62 +1236,41 @@ grep -n -P "\s-\s\D[^ʼ]" proof-of-concept-text.txt
  $ sed -e 's/•//g' -i proof-of-concept-text.txt
  ```
 
-**Still not completed:**
-9. Corrected bad commas __()__ U+201A --> U+002C
+12. Corrected bad commas 〈,〉
 
-```
+ There were several 'SINGLE LOW-9 QUOTATION MARK' 〈‚〉 U+201A these were moved to regular comma 〈,〉 U+002C 'COMMA'.
+
+ ```
 $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Corrected-equal-letterU-nbs-comma.txt
 ```
 
 **Still not completed:**
-10. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
+13. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
  ```
 cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-equal-letterU.txt
 ```
 
-11. Remove French words.
+14. Remove French words.
 
-12. Figure out what to do with the following:
-
+15. Figure out what to do with the following:
+< & > Should they go to the smaller French quotes?
 U+FFF9		17	INTERLINEAR ANNOTATION ANCHOR
 U+0304		1	COMBINING MACRON
 U+2013	–	1064	EN DASH
-U+2018	‘	12254	LEFT SINGLE QUOTATION MARK
-U+201A	‚	7	SINGLE LOW-9 QUOTATION MARK
-U+2022	•	13	BULLET
-U+028B	ʋ	1443	LATIN SMALL LETTER V WITH HOOK
 U+00E7	ç	21	LATIN SMALL LETTER C WITH CEDILLA
 U+00E8	è	221	LATIN SMALL LETTER E WITH GRAVE
 U+00E9	é	107	LATIN SMALL LETTER E WITH ACUTE
 U+00EA	ê	28	LATIN SMALL LETTER E WITH CIRCUMFLEX
-U+00EB	ë	8400	LATIN SMALL LETTER E WITH DIAERESIS
 U+00EE	î	3	LATIN SMALL LETTER I WITH CIRCUMFLEX
-U+00F6	ö	12678	LATIN SMALL LETTER O WITH DIAERESIS
 U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
-U+00FC	ü	5863	LATIN SMALL LETTER U WITH DIAERESIS
 U+00A8	¨	1	DIAERESIS
-U+005F	_	1	LOW LINE
-
  U+0009	 	482
  U+000A	 	30690
  U+000C	 	220
  U+000D	 	1340
- U+001E	 	5442
  U+0020	 	124711
 
-13. reflect on the following.
- Re 〈ϋ〉  U+03CB: GREEK SMALL LETTER UPSILON WITH DIALYTIK
-
- There are a lot of cases where this character was achieved by not by using above Unicode character but by combining upsilon with dialytik after the fact. I assume this is because of how they capture it on the keyboard.
- Let's see if a copy-paste enlarged will help:
- ʋ̈ ϋ
-
- The first char above is as-is in the text (badly rendered in my browser), the second is U+03CB inserted via a character-picker tool.
-
- So KLA is not going to handle the two-step method, only the plain U+03CB one-key (or AltGr-u / whatever) method.
-
- BTW I assume it is upsilon character? Please advise if not :-)
 ## Bibliography
 
 <!-- <b id="f1">1</b> Footnote content here. [↩](#a1)
