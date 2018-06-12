@@ -1,6 +1,6 @@
 {
-    "file":"mass-text.txt",
-    "initials":["=", null],
-    "finals":["-", "\""],
-    "alphabet":"ewgönësaɔkübmuiopɛzfhyrdlvEWGÖNËSAƆKÜBMUIOPƐZFHYRDLV"
+    "file":"proof-of-concept-text.txt",
+    "initials":["꞊", null, "ˮ", "ʼ","˗"],
+    "finals":["˗", "ˮ", "ʼ", null],
+    "alphabet":"AaBbDdEeƐɛËëFfGgHhIiƖɩKkLlNnMmOoƆɔÖöPpRrSsTtUuÜüVvƲ̈ʋ̈ƲʋWwYyZz"
 }
