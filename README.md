@@ -169,6 +169,7 @@ _
 ##### Number Characters
 ###### Based on rules presented in 1994.
 Unfortunately no math symbols or other numeric related characters are provided. Unicode points are provided here as an added point of reference. They are not in the source text.
+
 Codepoint   | Grapheme
 -------------|-----
 U+0030      | 0
@@ -551,9 +552,8 @@ u
 
 Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
-
-|Labial   |   Dental     |    Palatal    | Velar  | Labio-velar
-----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:|
+ |Labial   |   Dental     |    Palatal    | Velar  | Labio-velar
+----------------------------|:--------:|:------------:|:-------------:|:------:|:--------:
  Voiceless Stops        |    p     |      t       |               |   k    |  kp, kw
  Voiced Stops           |    b     |      d       |               |   g    |  gb, gw
  Voiceless fricatives   |    f     |      s       |               |        |
@@ -612,11 +612,7 @@ p
 There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
 
 ###### Based on rules presented in 1994.
-
-
-###### Based on the corpus
 <!--
-
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
 -->
 
@@ -650,6 +646,9 @@ No Casing |, |  | |
 ʼ˗
 ʼ
 ```
+
+###### Based on the corpus
+
 
 #### Reasonable characters needed for French
 
