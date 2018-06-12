@@ -213,11 +213,30 @@ sed -e 's/_/˗/g' -i proof-of-concept-text.txt
 
 sed -e 's/•//g' -i proof-of-concept-text.txt
 
-#Fix wrong comma
-# cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' proof-of-concept-text.txt > proof-of-concept-text2.txt
-#
-# rm proof-of-concept-text.txt
-# mv proof-of-concept-text2.txt proof-of-concept-text.txt
+#12. Fix wrong comma
+
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+
+##Generate French text
+# For the first 9 times copy from Lʼorthographe|Voici DAN to ˮNimlʋʋ but don't include ˮNimlʋʋ. dump that in file clean the file with this:
+
+#grep -P "^\S+" french-content-sections.txt |tr "ˮ" " ˮ"| tr " " "\n" | sort | grep  -P "^[^-|ʼ|꞊|w|y|:|)|+|(|ɔ|K|k|ü|ϋ]"| grep -v "[öɛɔüë21ʋɩ]"| uniq > bad-french.txt
+#note that this has an upsilon in it and that should go away. we can add all the unique characters from Dan orthgrphy to thie excluding lines. There is still one or two cases of something french without a space in front of it.
+# "klangʼyënngsavon
+# ꞊gööscorpion
+
+
+##Practice on French
+sed -e '/Voici/,/Traduction/d' -i proof-of-concept-text.txt
+sed -e 's/Lʼorthographe DAN//g' -i proof-of-concept-text.txt
+
+
+#araignée
 #
 # git commit proof-of-concept-text.txt -m "Corpus after correcting bad comma"
 #
