@@ -351,7 +351,7 @@ Zz
 ###### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
-The following is a list of functional units ans their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `*` indicates some letters, and the tone marks themselves - represent themselves.
+The following is a list of functional units and their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `*` indicates some letters, and the tone marks themselves - represent themselves.
 
 <!-- It was previously thought that maybe the following were valid characters, but they are not. The following are Upsilon, Latin Letter v with hook is the correct character.
 Ϋ	ϋ
@@ -871,7 +871,7 @@ U+0057|W|508|LATIN CAPITAL LETTER W
 U+0059|Y|976|LATIN CAPITAL LETTER Y
 U+005A|Z|385|LATIN CAPITAL LETTER Z
 U+005B|[|10|LEFT SQUARE BRACKET
-U+005C|\\|1|REVERSE SOLIDUS
+U+005C|&#92;|1|REVERSE SOLIDUS
 U+005D|]|10|RIGHT SQUARE BRACKET
 U+0061|a|29482|LATIN SMALL LETTER A
 U+0062|b|9744|LATIN SMALL LETTER B
@@ -1321,7 +1321,7 @@ U+00A8	¨	1	DIAERESIS
 
 <b id="f25">25 </b>RFC 3986 http://www.ietf.org/rfc/rfc3986.txt. [↩](#a25)
 
-<b id="f26">26 </b>W3C. 2017. HTML5. Recomendation. https://www.w3.org/TR/html5/ .[↩](#a26)
+<b id="f26">26 </b>W3C. 2017. HTML5. Recommendation. https://www.w3.org/TR/html5/ .[↩](#a26)
 
 <b id="f27">27 </b>Github Engineering. 2017. GitHub Flavored Markdown Spec https://github.github.com/gfm/. [↩](#a27)
 
