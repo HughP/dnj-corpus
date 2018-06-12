@@ -745,7 +745,7 @@ U+0057|W|510|LATIN CAPITAL LETTER W
 U+0059|Y|977|LATIN CAPITAL LETTER Y
 U+005A|Z|386|LATIN CAPITAL LETTER Z
 U+005B|[|10|LEFT SQUARE BRACKET
-U+005C|\ &#92;|1|REVERSE SOLIDUS
+U+005C| &#92;|1|REVERSE SOLIDUS
 U+005D|]|10|RIGHT SQUARE BRACKET
 U+005F|\_|1|LOW LINE
 U+0061|a|29865|LATIN SMALL LETTER A
@@ -1253,7 +1253,7 @@ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-e
 14. Remove French words.
 
 15. Figure out what to do with the following:
-< & > Should they go to the smaller French quotes?
+ ```< & > Should they go to the smaller French quotes?
 U+FFF9		17	INTERLINEAR ANNOTATION ANCHOR
 U+0304		1	COMBINING MACRON
 U+2013	–	1064	EN DASH
@@ -1269,7 +1269,7 @@ U+00A8	¨	1	DIAERESIS
  U+000C	 	220
  U+000D	 	1340
  U+0020	 	124711
-
+```
 ## Bibliography
 
 <!-- <b id="f1">1</b> Footnote content here. [↩](#a1)
