@@ -609,6 +609,8 @@ p
 ```
 ##### Tone marking
 
+There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
+
 ###### Based on rules presented in 1994.
 
 
@@ -618,10 +620,22 @@ p
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
 -->
 
-Codepoint | Grapheme | IPA equivalent | Phonetic description | Usage Note
+Codepoint | Grapheme Pattern | IPA equivalent | Phonologicall description | Usage Note
 -------------|-----|----|----|----
+ U+02EE, No casing  |〈ˮ*\s〉 | ˥ |xH | double quote before the word
+U+02BC ,No Casing | 〈ʼ*\s〉 | ˦ | H | single quote before the word
+Null, No Casing | 〈\s*\s〉 | ˧ | M | no marking at all
+U+A78A, No Casing |〈꞊\*\s〉 | ˨ | L | equals sign before the word
+U+02D7, No Casing | 〈˗\*\s〉 | ˩ | xL | minus sign before the word
+No Casing | 〈ˮ*˗〉 |  | xH falling to L |
+No Casing | 〈ʼ*˗〉 |  | H falling to L |
+No Casing |〈\s*˗〉 |  | |
+No Casing |, |  | |
 No Casing |, |  | |
 
+〈꞊\*\s˗〉
+〈\s*ʼ〉
+〈\s*ˮ〉
 
 ###### Pre-Stem
 ```
