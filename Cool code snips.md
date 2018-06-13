@@ -1,5 +1,9 @@
 # Cool Code snippets
 
+
+sed remove html TAGS
+https://stackoverflow.com/questions/19878056/sed-remove-tags-from-html-file?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
 ## sed
  ``` Replace all of them, then undo the first one:
 
