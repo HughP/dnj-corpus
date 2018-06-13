@@ -133,11 +133,18 @@ grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
 #Lets take care of these backward Letters
 sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 
-grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt
+grep -n -P "\x{2C}\x{0308}" proof-of-concept-text.txt |wc -l
 echo "We fixed that: See they are gone!"
 
 ##5. Now lets get rid of those upsilons
 sed -e 's/ϋ/ʋ̈/g' -i proof-of-concept-text.txt
+echo "   Just corrected all UPSILONS to LATIN HOOKED V with DIAERESIS."
+
+##10.d This blelongs with minus, but if we change all the quotes to letter quotes the \p{L} does not work any more...
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s-\s(?=\p{L})/\s-/g' >  proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 ##Bad single quote like characters
 ##6a. Correct non-letter apostrophe U+0027 to letter apostrophe U+02BC
@@ -184,31 +191,93 @@ sed -e 's/››/»/g' -i proof-of-concept-text.txt
 
 ##10a.Correct "minus" signs
 ## Fix the dashes U+2013 --> U+02D7
-echo "La-sha"
-echo ""
+echo "LA-SHA"
 grep -n -P "–" proof-of-concept-text.txt | tail -1
 echo ""
-echo "See they are everywhere." "$(grep -n -P "\s–\s" proof-of-concept-text.txt| wc -l)" of "$(grep -n -P "–" proof-of-concept-text.txt| wc -l)" "are ambiguous."
-
+echo "See DASHES are everywhere:" "$(grep -n -P "\s–\s" proof-of-concept-text.txt| wc -l)" of "$(grep -n -P "–" proof-of-concept-text.txt| wc -l)" "are ambiguous."
+echo ""
+echo ""
+echo "In which cases are DASHES occuring with spaces on both sides?"
+grep -n -P "\s–\s" proof-of-concept-text.txt | wc -l
 grep -n -P "\s–\s" proof-of-concept-text.txt
-echo ""
-echo ""
-echo "We moved them so that they associated to the right... connecting to words to the right."
 
-cat proof-of-concept-text.txt | perl -CS -pe 's/\s–\s/\s–/g' >  proof-of-concept-text2.txt
+echo ""
+echo "We are going to move them so that they associated to the right... connecting to words to the right."
+
+sed -e 's/ – /\ –/g' -i proof-of-concept-text.txt
+
+echo "If there is something between this line and 'Yep.' then FAIL."
+grep -n -P "\s–\s" proof-of-concept-text.txt
+grep -n -P "\s–\s" proof-of-concept-text.txt | wc -l
+echo "Yep. We really did that."
+
+sed -e 's/–/˗/g' -i proof-of-concept-text.txt
+echo "   Just moved all DASHES to LETTER MINUS."
+
+##10b. Fix undeerscore
+sed -e 's/_/˗/g' -i proof-of-concept-text.txt
+echo "   Just moved all UNDERSCORES to LETTER MINUS."
+
+##10c. There are still some real minus signs we need to take care of.
+#We can avoid minus used btween digits and target word beginings like this:
+#sed -e 's/[^\d\S]-/˗/g' -i proof-of-concept-text.txt
+echo "Lets look for cases puntuation or LM followed by letter minus"
+grep -n -P "\s(\p{P}|\p{Lm})(˗)" proof-of-concept-text.txt
+echo "Just looked for puntuation or LM followed by letter minus"
+#sed -e 's/\s-\s/\s˗/g' -i proof-of-concept-text.txt
+
+##
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s-(?=\s)/\N{U+002D}/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-grep -n -P "\s–\s" proof-of-concept-text.txt
-echo " Yep. We really did that."
+#This fixes two instances of comma space minus space  Maybe -- needs tested again.
+#sed -e 's/,\s-[^\S]/-,/g' -i proof-of-concept-text.txt
+#grep -n -P -- "(\p{L})-(?=\p{L})" proof-of-concept-text.txt
 
-sed -e 's/–/˗/g' -i proof-of-concept-text.txt
 
-##10b. Fix undeerscore
-sed -e 's/_/˗/g' -i proof-of-concept-text.txt
+##13 Full stop de-encapselation by spaces
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g' > proof-of-concept-text2.txt
 
-##10c. There are still some real minus signs we need to take care of.
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+##14 comma de-encapselation by spaces
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+#One comma had an inversion with spaces
+sed -e 's/,/, /g' -i proof-of-concept-text.txt
+
+##15 redusin double spaces to single spaces too agressive
+# cat proof-of-concept-text.txt | perl -CS -pe 's/\s{1,}/\s/g' > proof-of-concept-text2.txt
+#
+# rm proof-of-concept-text.txt
+# mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+exit 1
+# I might need some look ahead or look behind help https://www.perlmonks.org/?node_id=518444 here is where I can use javascript help https://regexper.com/documentation.html perl regexhelps http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003288497.htm regex perl case conversion: https://www.regular-expressions.info/replacecase.html
+
+#sed delete 5 lines following a pattern (I was looking for lines between two terms and 5 lines before) https://stackoverflow.com/questions/4396974/sed-or-awk-delete-n-lines-following-a-pattern
+
+#remove lines with french words: https://askubuntu.com/questions/354993/how-to-remove-lines-from-the-text-file-containing-specific-words-through-termina
+
+# use sed to replace multiline string: https://unix.stackexchange.com/questions/26284/how-can-i-use-sed-to-replace-a-multi-line-string
+#sed multi-line delete https://stackoverflow.com/questions/37680636/sed-multiline-delete-with-pattern
+
+# perl regular expressions https://www.tutorialspoint.com/perl/perl_regular_expressions.htm
+
+# print only lines which match regular expression (emulates "grep") (use this to create french content) https://gist.github.com/un33k/1162378
+#sed -n '/regexp/p'           # method 1
+#sed '/regexp/!d' # method 2
+
+#find https://alvinalexander.com/unix/edu/examples/find.shtml
+
+grep -n -P "\s-[^-]\s" proof-of-concept-text.txt
+grep -n -P "\s-\s" proof-of-concept-text.txt
 
 ##11. Remove U+2022	•	BULLET
 #There are only 13 instances. It is unlikely that this character is best accessed through a keyboard. So we will drop it from the corpus.
