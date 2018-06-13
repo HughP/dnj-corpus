@@ -655,8 +655,8 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
 ###### Based on rules presented in 1994.
-
-
+French is used in the book bu there is no indication or attempt to define French writing norms or requirements as they are applied in CI.
+<!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
 
@@ -969,7 +969,7 @@ Three folders containing some `.txt` files are held in the `While-waiting-for-a-
 The folder `sil-pua` contains [`teckit`](http://scripts.sil.org/TECkit) files for transferring deprecated Unicode points from SIL's PUA area to their accepted and final Unicode point values.
 
 ### Converted Files
-The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized.
+The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized. The code presented here is not always exactly what was used. For exact code consult `generate-corpus.bash` which is also fairly well annotated. 
 
 All of the following commands can be executed by running the `generate-corpus.bash` script. The final product will be `dan-typing-corpus.txt`.
 
@@ -1187,7 +1187,7 @@ grep -n -P "\s[–-]\s" proof-of-concept-text.txt
  ```
  Since we already got rid of the spaces on the dash in these overlapping cases we will do the same in those cases with minus-hyphen. However, other cases obviously need to go in other directions (attach left, rather than right). So, we are going to try and attach these.
 
- Minus is used with numbers
+ Minus is used with numbers.
 
   ```
 $ grep -n -P "\d-" proof-of-concept-text.txt
@@ -1242,7 +1242,25 @@ grep -n -P "\s-\s\D[^ʼ]" proof-of-concept-text.txt
  ```
 $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Corrected-equal-letterU-nbs-comma.txt
 ```
+13. Space padded full stop 〈.〉
 
+ It is the case the 25 instances of U+002E 〈.〉 FULL STOP have a space on both sides. This is fixed so that the full stop does not have a space between it and the preceding word.
+  ```
+  $ grep -n -P -- "\s[.](?=\s)" proof-of-concept-text.txt | wc -l
+  ```
+  ```
+  $ perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g'
+  ```
+
+  14. Space padded Comma 〈,〉
+
+ It is the case the 56 instances of U+002C 〈,〉 COMMA have a space on both sides. This is fixed so that the comma does not have a space between it and the preceding word.
+  ```
+$ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
+```
+ ```
+$ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
+```
 **Still not completed:**
 13. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
