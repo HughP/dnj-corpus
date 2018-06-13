@@ -182,8 +182,14 @@ sed -e 's/"/ˮ/g' -i proof-of-concept-text.txt
 sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 
 ##9a. Fix the french quotes
-sed -e 's/<</«/g' -i proof-of-concept-text.txt
-sed -e 's/>>/»/g' -i proof-of-concept-text.txt
+echo "Fixing French Quote marks"
+#old#sed -e 's/<</«/g' -i proof-of-concept-text.txt
+#old#sed -e 's/>>/»/g' -i proof-of-concept-text.txt
+sed -e 's/</‹/g' -i proof-of-concept-text.txt
+sed -e 's/>/›/g' -i proof-of-concept-text.txt
+
+##This was needed or interesting when using 9.a the old version.
+#echo "Funny thing is that there are still" "$(grep -n -P ">" proof-of-concept-text.txt| wc -l)" " '>' left and" "$(grep -n -P "<" proof-of-concept-text.txt| wc -l)" " '<' left."
 
 ##9b. Fix cases of double single french quotes, looking like double quotes.
 sed -e 's/‹‹/«/g' -i proof-of-concept-text.txt
