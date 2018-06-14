@@ -97,7 +97,7 @@ Based on data within the corpus as originally delivered, casing rules appear to 
 1. Tone marks preceding the non-tone mark portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized. Yet tone marks are considered part of the word and should not have word breaks between them and the words they belong with.
 2. The first word of a sentence is capitalized.
 3. Proper nouns are capitalized.
-4.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
+4. Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
 5. Surnames are not capitalized as is the custom in French literature.
 6. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages, which use a Latin script.
 7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
@@ -137,27 +137,27 @@ Based on data within the corpus, as it was originally delivered, the following p
 Codepoint   | Grapheme | Usage
 -------------|-----|----
 U+00B0 | ° | Used as part of the abbreviation for number 〈n°〉.
-U+005F | _ | unknown
+U+005F | _ | Error - should be
 U+005B | [  |unknown
 U+005D | ] |unknown
 U+2026 | … |unknown
 U+201A | ‚ | Errors - Should be U+002C
-U+002F | /  |unknown
-U+00AB  | «  | Open a direct speech statement - Usage seems to be the opposite.
-U+00BB | »  | Closes a direct speech statement - Usage seems to be the opposite.
-U+0021  | !   | Closes an exclamation, interjection or emphatic statement
-U+003B | ;  | unknown
-U+2039 | ‹  | Opens a quote inside of a direct speech statement
-U+203A | ›  | Closes a quote inside of a direct speech statement
-U+003C | < | Error - All cases are double i.e. << and should be replaced with U+00AB
-U+003E | >| Error - All cases are double i.e. >> and should be replaced with U+00BB
+U+002F | / |unknown
+U+00AB  | « | Open a direct speech statement - Usage seems to vary between open and close.
+U+00BB | » | Closes a direct speech statement - Usage seems to vary between open and close.
+U+0021  | ! | Closes an exclamation, interjection or emphatic statement
+U+003B | ; | unknown
+U+2039 | ‹ | Opens a quote inside of a direct speech statement
+U+203A | › | Closes a quote inside of a direct speech statement
+U+003C | < | Error - Most cases are double i.e. << and should be replaced with U+00AB
+U+003E | > | Error - Most cases are double i.e. >> and should be replaced with U+00BB
 U+003F | ? | Closes a question statement
-U+002E | . | unknown
+U+002E | . | Completes a thought, occurs between numbers.
 U+002C | , | unknown
-U+0029 | )| Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
+U+0029 | ) | Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
 U+0028 | ( | Opens a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
-U+003A | :  |unknown
-U+002B | + | Precedes a telephone number to indicate country code
+U+003A | : |unknown
+U+002B | + | Precedes a telephone number to indicate country code, used to conjoin thoughts. eg. xH-tone + Mid-tone
 
 ```
 °
@@ -238,7 +238,7 @@ Number oriented notes:
  ```
  grep -n -P "\s\d" proof-of-concept-text.txt
 ```
-* A series of numbers is separated by a comma and a space. e.g. 〈1, 2, 3〉
+* A list of numbers is separated by a comma and a space. e.g. 〈1, 2, 3〉
 
 ##### Reasonable characters needed for Internet use
 
@@ -377,7 +377,7 @@ The following is a list of functional units and their phonological representatio
 
 Correct character is
 Ʋ̈ ʋ̈
-Some browsers or fonts might not render this correctly, but CharisSIL and DoulosSIL the Unicode compliant fonts do render this correctly.
+Some browsers or fonts might not render this correctly, but CharisSIL and DoulosSIL (the Unicode compliant versions) do render this correctly.
 -->
 
 
@@ -403,8 +403,6 @@ Ee	ee
 Ëë	ëë
 Ën	ën
 Ëën	ëën
-Ɛa	ɛa
-Ɛan	ɛan
 F	f
 G	g
 Gb	gb
@@ -496,10 +494,65 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 /ŋ/
 
-###### Based on content presented in 1994.
+<!--
+> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
+
+>The existing orthography contains three cases of vowel over-representation:
+<e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
+<o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
+<ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]15 ((U+04B1 CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE https://en.wikipedia.org/wiki/Near-close_back_unrounded_vowel)) on a xH tone syllable and [ɤ] elsewhere.2
+The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
+-->
+
+###### Based on content presented in 1994
 
 Nasal Vowels are indicated with by an 〈n〉 following the vowel.
 
+Ʋ	ʋ
+Ʋʋ	ʋʋ
+Ʋ̈	ʋ̈
+Ʋ̈ʋ̈	ʋ̈ʋ̈
+U	u
+Uu	uu
+Un	un
+Uun	uun
+Ü	ü
+Üü	üü
+Ün	ün
+Üün	üün
+Ng	ng
+O	o
+Oo	oo
+Ö	ö
+Öö	öö
+Ɔ	ɔ
+Ɔɔ	ɔɔ
+Ɔn	ɔn
+Ɔɔn	ɔɔn
+I	i
+In	in
+Ii	ii
+Iin	iin
+Ɩ	ɩ
+Ɩɩ	ɩɩ
+E	e
+Ee	ee
+Ɛ	ɛ
+Ɛɛ	ɛɛ
+Ɛa	ɛa
+Ɛan	ɛan
+Ɛn	ɛn
+Ɛɛn	ɛɛn
+Ë	ë
+Ëë	ëë
+Ën	ën
+Ëën	ëën
+A	a
+Aa	aa
+An	an
+Aan	aan
+Aɔ	aɔ
+Aɔn	aɔn
 
 ###### Diphthongs
 ```
@@ -516,19 +569,10 @@ uë
 
 ###### Based on the corpus
 
-Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. **Casing note**: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
-<!--
-> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
 
->The existing orthography contains three cases of vowel over-representation:
-<e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
-<o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
-<ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]1 on a xH tone syllable and [ɤ] elsewhere.2
-The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
--->
-
-Codepoint | Functional Unit | IPA equivalent | Phonetic description
+Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
@@ -539,17 +583,22 @@ U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | æ | short front unrounded vowel
 U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | ɒ̃ |short nasalized back rounded vowel
 U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | ɒ | short back rounded vowel
 U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
-U+0190, U+025B | Ɛ, ɛ | ɛ |
+U+0190, U+025B | Ɛ, ɛ | ɛ | short open-mid front unrounded vowel
+U+0190 U+025B, U+025B U+025B | Ɛɛ, ɛɛ | ɛɛ | long open-mid front unrounded vowel
 U+00CB, U+00EB | Ë, ë |  |
-U+00D6, U+00F6 | Ö, ö | ɤ |
+U+00D6, U+00F6 | Ö, ö | ɤ | Close-mid back unrounded vowel
 U+00DC, U+00FC | Ü, ü | |
-U+0045, U+0065 | E, e | |
-U+0049, U+0069 | I, i | i |
-U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃|
-U+0041, U+0061 | A, a | |
-U+004F, U+006F | O, o | |
-U+0055, U+0075 | U, u | |
-<!-- I need my handbook of the IPA to reference the Unicode code points and symbol names -->
+U+0045, U+0065 | E, e | |Close-mid front unrounded vowel
+U+0049, U+0069 | I, i | i | close front unrounded vowel
+U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃| Open-mid back rounded vowel
+U+0041, U+0061 | A, a | | short Open front unrounded vowel
+U+004F, U+006F | O, o | | Close-mid back rounded vowel
+U+0055, U+0075 | U, u | | Close back rounded vowel
+<!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
+Voiced Bilabial implosive
+Voiced dental or alveolar implosive
+turned m Close back unrounded vowel
+-->
 ```
 Ng  ng
 Aan	aan
@@ -562,6 +611,7 @@ ia
 Ɛɛn	ɛɛn
 Ɛn	ɛn
 Ɛɛ	ɛɛ
+
 An	an
 Aɔn	aɔn
 Aɔ	aɔ
@@ -575,10 +625,12 @@ In	in
 I	i
 Ɩɩ	ɩɩ
 Ɩ	ɩ
+
 A	a
 E	e
 Ɛ	ɛ
 Ë	ë
+
 O	o
 Oo	oo
 Ö	ö
@@ -623,7 +675,7 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
  Continuants            |          |      l       |      y        |        |   w
 
 
-###### Based on rules presented in 1994.
+###### Based on rules presented in 1994
 
 
 ###### Based on the corpus
