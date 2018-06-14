@@ -61,16 +61,30 @@ These definitions and conventions are observed throughout this work:
 * **Multigraph** ([from SIL's NRSI](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary#multig)) a combination of two or more written symbols or orthographic characters (e.g. letters) that are used together within an orthography to represent a single sound. (Combinations consisting of two characters are also known as **digraphs**.).
 * A **linguistic description** would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of **phonemes** is a list of unique and contrastive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer **letters**/components than a list of phonemes in the same language.
-* A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "dipthong", "Functional Unit" -->
+* A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "diphthong", "Functional Unit"    I should add a section about these
+
+
+[1] Davison, Phil. 2009. Weh Orthography Guide. Yaounde, Cameroon: SIL International. http://www.silcam.org/documents/WehOrthographyGuide.pdf
+[2] Stirtz, Timothy M. 2014. ꞌBëlï Phonology, Tone and Orthography. SIL Electronic Working Papers 2014.002: 1-30.
+[3] Forster, Keith. 2007. Orthography & Punctuation Conventions for Kuna. <Accessed: 31. October 2014>.http://www.sil.org/resources/archives/10627
+[4] Hosken, Martin. 2003. Creating an Orthography Description.
+[5] Moe, Ron. Developing an orthography for a Bantu Language.
+[6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
+[7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
+and
+cover page: https://www.sil.org/orthography/fonts-and-technical-issues
+Statement: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf
+
+-->
 *  The following characters are used to provide special meaning to text outside of tables:
   * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
-   *  Content within forward slashes denotes phonemic representations `//`.
-   * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
-   * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
-   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
+  * Content within forward slashes denotes phonemic representations `//`.
+  * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
+  * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
+  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
 
 ##### Casing rules
-###### Based on rules presented in 1994.
+###### Based on rules presented in 1994
 No specific casing rules are discussed.
 
 ###### Based on the corpus
@@ -89,29 +103,29 @@ Orthographic word breaks are indicated by a space, generally U+0020. Because Eas
 
 The use of normal text editors with the standard characters for the glyphs representing tone result in line and word breaks which are unexpected for Eastern Dan readers and Writers. The solution for the orthography version 3 is to use 'MODIFIER LETTER' equivalent characters for tone marks, instead of standard characters found in many of the global languages using Latin scripts for these glyphs.
 
-###### Based on rules presented in 1994.
+###### Based on rules presented in 1994
 Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter.
 
 ###### Based on the corpus
 Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
 
 ##### Punctuation
-###### Based on rules presented in 1994.
-The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes"  of punctuation of the orthography of French.
+###### Based on rules presented in 1994
+The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes" of punctuation of the orthography of French.
 Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0.  So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode points are provided here as an added point of reference. They are not in the source text.
 
 Codepoint   | Grapheme | Usage
 -------------|-----|----
-U+00AB  | «  | les guillemets ouvrant et
-U+00BB | »  | fermant un discourse direct
-U+0021  | !   | le point d'interrogation marque la présence d'une exclamation
-U+003B | ;  | le point-virgule entrecoupe deux parties d'une longue phrase
-U+003C | < | les guillemets simples ouvrant et
-U+003E | >| fermant un discourse direct placé dans un autre discourse direct.
-U+003F | ? | le point d'interrogation marque la présence d'une question
-U+002E | . | le point marquant la fin d'une pensée
-U+002C | , | la virgule donne l'occasion de prendre haleine
-U+003A | :  | le double point marque le début d'un discourse direct
+U+00AB  | « | les guillemets ouvrant et (tr. [eng]: opening indicator for marking a quote)
+U+00BB | » | fermant un discourse direct (tr. [eng]: closing indicator for marking a quote)
+U+0021  | ! | le point d'interrogation marque la présence d'une exclamation (tr. [eng]: following an exclamation)
+U+003B | ; | le point-virgule entrecoupe deux parties d'une longue phrase (tr. [eng]: joins two long phrases)
+U+003C | < | les guillemets simples ouvrant et (tr. [eng]: opening indicator for marking a quote inside a quote)
+U+003E | > | fermant un discourse direct placé dans un autre discourse direct (tr. [eng]: closing indicator for marking a quote inside a quote)
+U+003F | ? | le point d'interrogation marque la présence d'une question (tr. [eng]: following a question)
+U+002E | . | le point marquant la fin d'une pensée (tr. [eng]: finishing a thought)
+U+002C | , | la virgule donne l'occasion de prendre haleine (tr. [eng]: taking a breath)
+U+003A | : | le double point marque le début d'un discourse direct (tr. [eng]: marking the start of a quote)
 
 ###### Based on the corpus
 Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table.
