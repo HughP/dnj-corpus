@@ -7,11 +7,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 * **Language Name**: Dan
 * **Language variety demonstrated in this corpus**: Eastern Dan
 * **Script**: Latin script.
-<!-- Socio-dynamics of writing:
-Main location of use:
-Main user base:
-Multi-lingualism:
--->
+
 <!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
 
 **Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. As recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
@@ -65,30 +61,16 @@ These definitions and conventions are observed throughout this work:
 * **Multigraph** ([from SIL's NRSI](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary#multig)) a combination of two or more written symbols or orthographic characters (e.g. letters) that are used together within an orthography to represent a single sound. (Combinations consisting of two characters are also known as **digraphs**.).
 * A **linguistic description** would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of **phonemes** is a list of unique and contrastive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer **letters**/components than a list of phonemes in the same language.
-* A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "diphthong", "Functional Unit"    I should add a section about these
-
-
-[1] Davison, Phil. 2009. Weh Orthography Guide. Yaounde, Cameroon: SIL International. http://www.silcam.org/documents/WehOrthographyGuide.pdf
-[2] Stirtz, Timothy M. 2014. ꞌBëlï Phonology, Tone and Orthography. SIL Electronic Working Papers 2014.002: 1-30. 
-[3] Forster, Keith. 2007. Orthography & Punctuation Conventions for Kuna. <Accessed: 31. October 2014>.http://www.sil.org/resources/archives/10627
-[4] Hosken, Martin. 2003. Creating an Orthography Description.
-[5] Moe, Ron. Developing an orthography for a Bantu Language.
-[6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
-[7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
-and 
-cover page: https://www.sil.org/orthography/fonts-and-technical-issues
-Statement: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf
-
--->
+* A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_. <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "dipthong", "Functional Unit" -->
 *  The following characters are used to provide special meaning to text outside of tables:
   * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
-  * Content within forward slashes denotes phonemic representations `//`.
-  * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
-  * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
-  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
+   *  Content within forward slashes denotes phonemic representations `//`.
+   * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
+   * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
+   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
 
 ##### Casing rules
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 No specific casing rules are discussed.
 
 ###### Based on the corpus
@@ -97,7 +79,7 @@ Based on data within the corpus as originally delivered, casing rules appear to 
 1. Tone marks preceding the non-tone mark portion of the word do not get capitalized, but the characters following the tone marks [a-zA-Z] do get capitalized. Yet tone marks are considered part of the word and should not have word breaks between them and the words they belong with.
 2. The first word of a sentence is capitalized.
 3. Proper nouns are capitalized.
-4. Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
+4.  Unlike French where, when an article is the first word of a sentence both the first word and the second word are capitalized, in Eastern Dan only the first word is capitalized.
 5. Surnames are not capitalized as is the custom in French literature.
 6. Uppercase can be used as a style choice in titles of creative works, much as is the case in many languages, which use a Latin script.
 7. Only the first letter of a digraph is capitalized. i.e. 〈"Ɛa-〉 is correct whereas 〈"ƐA-〉 is not.
@@ -107,29 +89,29 @@ Orthographic word breaks are indicated by a space, generally U+0020. Because Eas
 
 The use of normal text editors with the standard characters for the glyphs representing tone result in line and word breaks which are unexpected for Eastern Dan readers and Writers. The solution for the orthography version 3 is to use 'MODIFIER LETTER' equivalent characters for tone marks, instead of standard characters found in many of the global languages using Latin scripts for these glyphs.
 
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter.
 
 ###### Based on the corpus
 Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
 
 ##### Punctuation
-###### Based on rules presented in 1994
-The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes" of punctuation of the orthography of French.
+###### Based on rules presented in 1994.
+The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes"  of punctuation of the orthography of French.
 Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0.  So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode points are provided here as an added point of reference. They are not in the source text.
 
 Codepoint   | Grapheme | Usage
 -------------|-----|----
-U+00AB  | « | les guillemets ouvrant et (tr. [eng]: opening indicator for marking a quote)
-U+00BB | » | fermant un discourse direct (tr. [eng]: closing indicator for marking a quote)
-U+0021  | ! | le point d'interrogation marque la présence d'une exclamation (tr. [eng]: following an exclamation)
-U+003B | ; | le point-virgule entrecoupe deux parties d'une longue phrase (tr. [eng]: joins two long phrases)
-U+003C | < | les guillemets simples ouvrant et (tr. [eng]: opening indicator for marking a quote inside a quote)
-U+003E | > | fermant un discourse direct placé dans un autre discourse direct (tr. [eng]: closing indicator for marking a quote inside a quote)
-U+003F | ? | le point d'interrogation marque la présence d'une question (tr. [eng]: following a question)
-U+002E | . | le point marquant la fin d'une pensée (tr. [eng]: finishing a thought)
-U+002C | , | la virgule donne l'occasion de prendre haleine (tr. [eng]: taking a breath)
-U+003A | : | le double point marque le début d'un discourse direct (tr. [eng]: marking the start of a quote)
+U+00AB  | «  | les guillemets ouvrant et
+U+00BB | »  | fermant un discourse direct
+U+0021  | !   | le point d'interrogation marque la présence d'une exclamation
+U+003B | ;  | le point-virgule entrecoupe deux parties d'une longue phrase
+U+003C | < | les guillemets simples ouvrant et
+U+003E | >| fermant un discourse direct placé dans un autre discourse direct.
+U+003F | ? | le point d'interrogation marque la présence d'une question
+U+002E | . | le point marquant la fin d'une pensée
+U+002C | , | la virgule donne l'occasion de prendre haleine
+U+003A | :  | le double point marque le début d'un discourse direct
 
 ###### Based on the corpus
 Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table.
@@ -137,27 +119,27 @@ Based on data within the corpus, as it was originally delivered, the following p
 Codepoint   | Grapheme | Usage
 -------------|-----|----
 U+00B0 | ° | Used as part of the abbreviation for number 〈n°〉.
-U+005F | _ | Error - should be 
+U+005F | _ | unknown
 U+005B | [  |unknown
 U+005D | ] |unknown
 U+2026 | … |unknown
 U+201A | ‚ | Errors - Should be U+002C
-U+002F | / |unknown
-U+00AB  | « | Open a direct speech statement - Usage seems to vary between open and close.
-U+00BB | » | Closes a direct speech statement - Usage seems to vary between open and close.
-U+0021  | ! | Closes an exclamation, interjection or emphatic statement
-U+003B | ; | unknown
-U+2039 | ‹ | Opens a quote inside of a direct speech statement
-U+203A | › | Closes a quote inside of a direct speech statement
-U+003C | < | Error - Most cases are double i.e. << and should be replaced with U+00AB
-U+003E | > | Error - Most cases are double i.e. >> and should be replaced with U+00BB
+U+002F | /  |unknown
+U+00AB  | «  | Open a direct speech statement - Usage seems to be the opposite.
+U+00BB | »  | Closes a direct speech statement - Usage seems to be the opposite.
+U+0021  | !   | Closes an exclamation, interjection or emphatic statement
+U+003B | ;  | unknown
+U+2039 | ‹  | Opens a quote inside of a direct speech statement
+U+203A | ›  | Closes a quote inside of a direct speech statement
+U+003C | < | Error - All cases are double i.e. << and should be replaced with U+00AB
+U+003E | >| Error - All cases are double i.e. >> and should be replaced with U+00BB
 U+003F | ? | Closes a question statement
-U+002E | . | Completes a thought, occurs between numbers.
+U+002E | . | unknown
 U+002C | , | unknown
-U+0029 | ) | Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
+U+0029 | )| Closes a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
 U+0028 | ( | Opens a parenthetical. Often a number, but sometimes a word in another language, or an alternate transcription of a name.
-U+003A | : |unknown
-U+002B | + | Precedes a telephone number to indicate country code, used to conjoin thoughts. eg. xH-tone + Mid-tone
+U+003A | :  |unknown
+U+002B | + | Precedes a telephone number to indicate country code
 
 ```
 °
@@ -185,7 +167,7 @@ _
 ```
 
 ##### Number Characters
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 Unfortunately no math symbols or other numeric related characters are provided. Unicode points are provided here as an added point of reference. They are not in the source text.
 
 Codepoint   | Grapheme
@@ -238,7 +220,7 @@ Number oriented notes:
  ```
  grep -n -P "\s\d" proof-of-concept-text.txt
 ```
-* A list of numbers is separated by a comma and a space. e.g. 〈1, 2, 3〉
+* A series of numbers is separated by a comma and a space. e.g. 〈1, 2, 3〉
 
 ##### Reasonable characters needed for Internet use
 
@@ -314,16 +296,16 @@ _
 <
 ```
 
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 The Internet was not discussed in the 1994 reading primer.
 
 ###### Based on the corpus
 This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the Internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan.
 
-It is worthy to not that the local paper evidently did have some online presence at _www.pamebhame.info_. This was some time around 2008. A quick check of the Internet archive shows that no content was preserved in the [Internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
+It is worthy to not that the local paper evidently did have some online preasence at _www.pamebhame.info_. This was some time around 2008. A quick check of the Internet archive shows that no content was preserved in the [Internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
 
 #### Alphabet
-##### Based on rules presented in 1994
+##### Based on rules presented in 1994.
 Actually neither the 1994<sup id="a28">[28](#f28)</sup> reading primer nor the 1982<sup id="a29">[29](#f29)</sup> reading primer present or address the issue of an alphabet, or alphabetical ordering. Both resources present their audiences with a list of pedagogical learning units which match well with the phonemics of Eastern Dan (with a few exceptions). They present these in _functional units_ (a term I borrow from Holm 1971<sup id="a30">[30](#f30)</sup> and Venezky 1970<sup id="a31">[31](#f31)</sup> 1967<sup id="a32">[32](#f32)</sup>), ordered and grouped by place of articulation (phonetic detail). Therefore, as according to the information which is available, it would appear that no alphabet statement has been made for Eastern Dan.
 
 That said, a letter list should be possible, and relevant to this section, though any ordering presented here would only be for piratical reasons, and is not intended to be prescriptive.
@@ -377,7 +359,7 @@ The following is a list of functional units and their phonological representatio
 
 Correct character is
 Ʋ̈ ʋ̈
-Some browsers or fonts might not render this correctly, but CharisSIL and DoulosSIL (the Unicode compliant versions) do render this correctly.
+Some browsers or fonts might not render this correctly, but CharisSIL and DoulosSIL the Unicode compliant fonts do render this correctly.
 -->
 
 
@@ -403,6 +385,8 @@ Ee	ee
 Ëë	ëë
 Ën	ën
 Ëën	ëën
+Ɛa	ɛa
+Ɛan	ɛan
 F	f
 G	g
 Gb	gb
@@ -494,65 +478,10 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 /ŋ/
 
-<!--
-> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
-
->The existing orthography contains three cases of vowel over-representation:
-<e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
-<o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
-<ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]15 ((U+04B1 CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE https://en.wikipedia.org/wiki/Near-close_back_unrounded_vowel)) on a xH tone syllable and [ɤ] elsewhere.2
-The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
--->
-
-###### Based on content presented in 1994
+###### Based on content presented in 1994.
 
 Nasal Vowels are indicated with by an 〈n〉 following the vowel.
 
-Ʋ	ʋ
-Ʋʋ	ʋʋ
-Ʋ̈	ʋ̈
-Ʋ̈ʋ̈	ʋ̈ʋ̈
-U	u
-Uu	uu
-Un	un
-Uun	uun
-Ü	ü
-Üü	üü
-Ün	ün
-Üün	üün
-Ng	ng
-O	o
-Oo	oo
-Ö	ö
-Öö	öö
-Ɔ	ɔ
-Ɔɔ	ɔɔ
-Ɔn	ɔn
-Ɔɔn	ɔɔn
-I	i
-In	in
-Ii	ii
-Iin	iin
-Ɩ	ɩ
-Ɩɩ	ɩɩ
-E	e
-Ee	ee
-Ɛ	ɛ
-Ɛɛ	ɛɛ
-Ɛa	ɛa
-Ɛan	ɛan
-Ɛn	ɛn
-Ɛɛn	ɛɛn
-Ë	ë
-Ëë	ëë
-Ën	ën
-Ëën	ëën
-A	a
-Aa	aa
-An	an
-Aan	aan
-Aɔ	aɔ
-Aɔn	aɔn
 
 ###### Diphthongs
 ```
@@ -569,10 +498,19 @@ uë
 
 ###### Based on the corpus
 
-Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. **Casing note**: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
 
+<!--
+> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
 
-Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
+>The existing orthography contains three cases of vowel over-representation:
+<e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
+<o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
+<ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]1 on a xH tone syllable and [ɤ] elsewhere.2
+The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
+-->
+
+Codepoint | Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
@@ -583,22 +521,17 @@ U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | æ | short front unrounded vowel
 U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | ɒ̃ |short nasalized back rounded vowel
 U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | ɒ | short back rounded vowel
 U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
-U+0190, U+025B | Ɛ, ɛ | ɛ | short open-mid front unrounded vowel
-U+0190 U+025B, U+025B U+025B | Ɛɛ, ɛɛ | ɛɛ | long open-mid front unrounded vowel
+U+0190, U+025B | Ɛ, ɛ | ɛ |
 U+00CB, U+00EB | Ë, ë |  |
-U+00D6, U+00F6 | Ö, ö | ɤ | Close-mid back unrounded vowel
+U+00D6, U+00F6 | Ö, ö | ɤ |
 U+00DC, U+00FC | Ü, ü | |
-U+0045, U+0065 | E, e | |Close-mid front unrounded vowel
-U+0049, U+0069 | I, i | i | close front unrounded vowel
-U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃| Open-mid back rounded vowel
-U+0041, U+0061 | A, a | | short Open front unrounded vowel
-U+004F, U+006F | O, o | | Close-mid back rounded vowel
-U+0055, U+0075 | U, u | | Close back rounded vowel
-<!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
-Voiced Bilabial implosive
-Voiced dental or alveolar implosive
-turned m Close back unrounded vowel
--->
+U+0045, U+0065 | E, e | |
+U+0049, U+0069 | I, i | i |
+U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃|
+U+0041, U+0061 | A, a | |
+U+004F, U+006F | O, o | |
+U+0055, U+0075 | U, u | |
+<!-- I need my handbook of the IPA to reference the Unicode code points and symbol names -->
 ```
 Ng  ng
 Aan	aan
@@ -611,7 +544,6 @@ ia
 Ɛɛn	ɛɛn
 Ɛn	ɛn
 Ɛɛ	ɛɛ
-
 An	an
 Aɔn	aɔn
 Aɔ	aɔ
@@ -625,12 +557,10 @@ In	in
 I	i
 Ɩɩ	ɩɩ
 Ɩ	ɩ
-
 A	a
 E	e
 Ɛ	ɛ
 Ë	ë
-
 O	o
 Oo	oo
 Ö	ö
@@ -675,7 +605,7 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
  Continuants            |          |      l       |      y        |        |   w
 
 
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 
 
 ###### Based on the corpus
@@ -724,7 +654,7 @@ p
 
 There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
 
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 <!--
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
 -->
@@ -765,7 +695,7 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 
 French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
-###### Based on rules presented in 1994
+###### Based on rules presented in 1994.
 French is used in the book bu there is no indication or attempt to define French writing norms or requirements as they are applied in CI.
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
