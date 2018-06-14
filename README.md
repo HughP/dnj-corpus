@@ -1013,7 +1013,7 @@ Three folders containing some `.txt` files are held in the `While-waiting-for-a-
 The folder `sil-pua` contains [`teckit`](http://scripts.sil.org/TECkit) files for transferring deprecated Unicode points from SIL's PUA area to their accepted and final Unicode point values.
 
 ### Converted Files
-The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized. The code presented here is not always exactly what was used. For exact code consult `generate-corpus.bash` which is also fairly well annotated. 
+The following transforms were performed on the original files to extract the text from the originally provided formats, and to clean up character inconsistencies, so that corpus analysis for text input could be optimized. The code presented here is not always exactly what was used. For exact code consult `generate-corpus.bash` which is also fairly well annotated.
 
 All of the following commands can be executed by running the `generate-corpus.bash` script. The final product will be `dan-typing-corpus.txt`.
 
