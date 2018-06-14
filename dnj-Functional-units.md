@@ -19,13 +19,11 @@ Ee	ee
 Ëë	ëë
 Ën	ën
 Ëën	ëën
-Ɛa	ɛa
-Ɛan	ɛan
 F f
 G g
 Gb gb
 Gw	gw
-I **
+I i
 In	in
 Ii ii
 Iin	iin
@@ -62,11 +60,11 @@ V v
 W w
 Y y
 Z z
-Ϋ	ϋ
-Ϋϋ	ϋϋ
+Ʋ̈	ʋ̈
+Ʋ̈ʋ̈	ʋ̈ʋ̈
 Ʋ	ʋ
 Ʋʋ	ʋʋ
-iϋ
+iʋ̈
 iö
 ië
 ia
@@ -74,7 +72,7 @@ ian
 ɩa
 uë
 ʋë
-ϋü
+ʋ̈ü
 〈ˮ*\s〉
 〈ʼ*\s〉
 〈\s*\s〉
