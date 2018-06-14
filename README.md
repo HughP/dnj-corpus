@@ -478,7 +478,7 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 /ŋ/
 
-###### Based on rules presented in 1994.
+###### Based on content presented in 1994.
 
 Nasal Vowels are indicated with by an 〈n〉 following the vowel.
 
@@ -516,36 +516,80 @@ Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
 U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | long nasalized front open unrounded vowel
 U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | long front open unrounded vowel
-U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | |
-U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | |
-U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | |
-U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | |
+U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | | short front unrounded vowel
+U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | æ | short front unrounded vowel
+U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | ɒ̃ |short nasalized back rounded vowel
+U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | ɒ | short back rounded vowel
 U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
 U+0190, U+025B | Ɛ, ɛ | ɛ |
-U+00CB, U+00EB | Ë, ë | |
-U+00D6, U+00F6 | Ö, ö | |
+U+00CB, U+00EB | Ë, ë |  |
+U+00D6, U+00F6 | Ö, ö | ɤ |
 U+00DC, U+00FC | Ü, ü | |
 U+0045, U+0065 | E, e | |
 U+0049, U+0069 | I, i | i |
-U+0186, U+0254 | Ɔ, ɔ | |
+U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃|
 U+0041, U+0061 | A, a | |
 U+004F, U+006F | O, o | |
 U+0055, U+0075 | U, u | |
-
+<!-- I need my handbook of the IPA to reference the Unicode code points and symbol names -->
 ```
-ng
-ɛa
-ɛ
-ë
-ö
-ü
-e
-i
-aɔ
-ɔ
-a
-o
-u
+Ng  ng
+Aan	aan
+Aa	aa
+ian
+ia
+ɩa
+Ɛan	ɛan
+Ɛa	ɛa
+Ɛɛn	ɛɛn
+Ɛn	ɛn
+Ɛɛ	ɛɛ
+
+An	an
+Aɔn	aɔn
+Aɔ	aɔ
+Ëën	ëën
+Ee	ee
+Ëë	ëë
+Ën	ën
+Iin	iin
+Ii	ii
+In	in
+I	i
+Ɩɩ	ɩɩ
+Ɩ	ɩ
+
+A	a
+E	e
+Ɛ	ɛ
+Ë	ë
+
+O	o
+Oo	oo
+Ö	ö
+Öö	öö
+Ɔ	ɔ
+Ɔɔ	ɔɔ
+Ɔn	ɔn
+Ɔɔn	ɔɔn
+U	u
+Uu	uu
+Un	un
+Uun	uun
+Ü	ü
+Üü	üü
+Ün	ün
+Üün	üün
+Ʋ	ʋ
+Ʋʋ	ʋʋ
+Ʋ̈	ʋ̈
+Ʋ̈ʋ̈	ʋ̈ʋ̈
+iʋ̈
+iö
+ië
+uë
+ʋë
+ʋ̈ü
 ```
 
 ##### Consonants
