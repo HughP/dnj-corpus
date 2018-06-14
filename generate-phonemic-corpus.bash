@@ -3,11 +3,11 @@
 #Copyright: 2018 Hugh Paterson III
 #Licenses: MIT as indicated in paterson-license.md
 #Note: Still need to check the Unicode points of the characters replaced via this script. suspect are:
-# U+026F	ɯ	5850	LATIN SMALL LETTER TURNED M
-# U+028C	ʌ	8384	LATIN SMALL LETTER TURNED V
-# U+039B	Λ	46	GREEK CAPITAL LETTER LAMDA
+# U+026F	ɯ	5850	LATIN SMALL LETTER TURNED M <!-- correct
+# U+028C	ʌ	8384	LATIN SMALL LETTER TURNED V <!-- correct
+# U+0245	Ʌ	46	GREEK CAPITAL LETTER LAMDA <-- replaced
 # U+0261	ɡ	1766	LATIN SMALL LETTER SCRIPT G
-# U+019C	Ɯ	71	LATIN CAPITAL LETTER TURNED M
+# U+019C	Ɯ	71	LATIN CAPITAL LETTER TURNED M <!-- correct
 #I need my handbook of the IPA to reference the Unicode code points and symbol names
 
 rm phonemic-corpus.txt
@@ -29,7 +29,7 @@ sed -e 's/ɛa/æ/g' -i phonemic-corpus.txt
 
 #Gb gb ɡ͡b
 sed -e 's/Gb/G͡b/g' -i phonemic-corpus.txt
-sed -e 's/gb/ɡ͡b/g' -i phonemic-corpus.txt
+sed -e 's/gb/g͡b/g' -i phonemic-corpus.txt
 
 # Kp kp k͡p
 sed -e 's/Kp/K͡p/g' -i phonemic-corpus.txt
@@ -69,12 +69,12 @@ sed -e 's/Ü/Ɯ/g' -i phonemic-corpus.txt #This will target all ɯ, both single 
 sed -e 's/ʋ̈ü/ɤɯ/g' -i phonemic-corpus.txt
 sed -e 's/ü/ɯ/g' -i phonemic-corpus.txt #This will target all ɯ, both single and double
 
-#Λ U+0245 ʌ U+028C; ië uë ʋë
-sed -e 's/Ëën/Λ̃ʌ̃/g' -i phonemic-corpus.txt
+#Ʌ U+0245 ʌ U+028C; ië uë ʋë
+sed -e 's/Ëën/Ʌ̃ʌ̃/g' -i phonemic-corpus.txt
 sed -e 's/ëën/ʌ̃ʌ̃/g' -i phonemic-corpus.txt
-sed -e 's/Ën/Λ̃/g' -i phonemic-corpus.txt
+sed -e 's/Ën/Ʌ̃/g' -i phonemic-corpus.txt
 sed -e 's/ën/ʌ̃/g' -i phonemic-corpus.txt
-sed -e 's/Ë/Λ/g' -i phonemic-corpus.txt
+sed -e 's/Ë/Ʌ/g' -i phonemic-corpus.txt
 sed -e 's/ë/ʌ/g' -i phonemic-corpus.txt
 
 # In	in Iin	iin ian
