@@ -264,7 +264,6 @@ sed -e 's/,/, /g' -i proof-of-concept-text.txt
 # rm proof-of-concept-text.txt
 # mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-exit 1
 # I might need some look ahead or look behind help https://www.perlmonks.org/?node_id=518444 here is where I can use javascript help https://regexper.com/documentation.html perl regexhelps http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003288497.htm regex perl case conversion: https://www.regular-expressions.info/replacecase.html
 
 #sed delete 5 lines following a pattern (I was looking for lines between two terms and 5 lines before) https://stackoverflow.com/questions/4396974/sed-or-awk-delete-n-lines-following-a-pattern
@@ -509,3 +508,4 @@ sed -e 's/Lʼorthographe DAN//g' -i proof-of-concept-text.txt
 echo
 echo "Try the corpus now"
 echo
+./generate-phonemic-corpus.bash
