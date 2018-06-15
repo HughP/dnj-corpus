@@ -769,7 +769,9 @@ French is used in the book but there is no indication or attempt to define Frenc
 
 
 #### Summary of characters needed in a multilingual writing context
+
  ![A combined character set for Dan writing](combined-character-set.png)
+ 
 ##### Unicode PUA reliance
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
