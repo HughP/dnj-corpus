@@ -8,7 +8,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 * **Main location of language use**:  Ivory coast (Côte d'Ivoire)
 * **Language variety demonstrated in this corpus**: Eastern Dan
 * **Script**: Latin script.
-* **Sociological-dynamics of writing**: Dan has been written for at least 40 years. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.<sup id="a1">[1](#f1)</sup>
+* **Sociological-dynamics of writing**: Dan has been written for at least 40 years<sup id="a1">[1](#f1)</sup>. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.
 * **Main user base**: Of approximately 1.65 Million Dan users 650,000 are users of Eastern Dan.<sup id="a2">[2](#f2)</sup>
 * **Multi-lingualism**: A high percentage of Dan users are multi-lingual in French [[fra]](https://iso639-3.sil.org/code/fra) (oral and written competencies) and Interethnic Jula [[dyu]](https://iso639-3.sil.org/code/dyu) (oral); some have competencies in Guéré [[wec]](https://iso639-3.sil.org/code/wec) (oral) and Wobé [[wob]](https://iso639-3.sil.org/code/wob) (oral).<sup id="a33">[33](#f33)</sup>
 * **Digital language use**: Some digital language use has been noted in the past (2008). Some digital use in SMS and Facebook is expected.
@@ -24,7 +24,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
  ![Font Example](dnj-font-example.png)
 
-(_Image rendered in LibreOffice and provided by Ian Douglas_)
+_Image provided by Ian Douglas, rendered in LibreOffice_
 
 ### Latin Orthography History
 
@@ -52,7 +52,9 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
 ### Writing system
 
 * BCP47: dnj_Latn_CI
-* Orthography version: 3
+ (But this tag needs to take into account the following tow points and doesn't.)
+   * Eastern Dan
+   * Orthography version: 3
 
 **Writing System Note**: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. As a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaaʼ˗` where there are extra spaces around the question mark.
 
@@ -774,7 +776,7 @@ French is used in the book but there is no indication or attempt to define Frenc
 
  ![A combined character set for Dan writing](combined-character-set.png)
 
- (_Image rendered in LibreOffice and provided by Ian Douglas_)
+ _Image provided by Ian Douglas, rendered in LibreOffice_
 
 ##### Unicode PUA reliance
 
@@ -1406,8 +1408,9 @@ U+00A8	¨	1	DIAERESIS
 ```
 ## Bibliography
 
-<!-- <b id="f1">1</b> Footnote content here. [↩](#a1)
-<b id="f2">2</b> Footnote content here. [↩](#a2) -->
+<b id="f1">1 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages.  [↩](#a1)
+
+<b id="f2">2 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a2)
 
 <b id="f3">3 </b>Simons, Gary. F., & Charles D. Fennig (Eds.) 2017. Ethnologue: Languages of the World, 20th edition. Dallas, TX: SIL International. Online: https://www.ethnologue.com/language/dnj [↩](#a3)
 
@@ -1465,10 +1468,11 @@ U+00A8	¨	1	DIAERESIS
 
 <b id="f30">30 </b>Holm, Wayne. 1971. Navajo Reading Study: Grapheme and unit frequencies in Navajo. Reading Studies progress report № 12. University of New Mexico. https://eric.ed.gov/?id=ED059806. [↩](#a30)
 
-<b id="f31">31 </b>Venezky, Richard. 1970. The structure of English Orthography. (Janua linguarum., Series minor 82). Mouton: The Hague. http://www.worldcat.org/oclc/840415997 [↩](#a30)
+<b id="f31">31 </b>Venezky, Richard. 1970. The structure of English Orthography. (Janua linguarum., Series minor 82). Mouton: The Hague. http://www.worldcat.org/oclc/840415997 [↩](#a31)
 
-<b id="f32">32 </b>Venezky, Richard. 1967. English Orthography: It's graphical structure and its Relation to sound. Reading Research Quarterly.  2 (3): 75-105. [↩](#a30)
+<b id="f32">32 </b>Venezky, Richard. 1967. English Orthography: It's graphical structure and its Relation to sound. Reading Research Quarterly.  2 (3): 75-105. [↩](#a32)
 
+<b id="f33">33 </b> Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a33)
 
 <!--
 
