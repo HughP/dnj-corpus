@@ -3,20 +3,20 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 ## Language Description
 
-* **ISO 639-3 language tag**: [dnj](https://iso639-3.sil.org/code/dnj)
+* **ISO 639-3 language tag**: [[dnj]](https://iso639-3.sil.org/code/dnj)
 * **Language Name**: Dan
+* **Main location of language use**:  Ivory coast (Côte d'Ivoire)
 * **Language variety demonstrated in this corpus**: Eastern Dan
 * **Script**: Latin script.
-<!-- Socio-dynamics of writing:
-Main location of use:
-Main user base:
-Multi-lingualism:
--->
-<!--<sup id="a1">[1](#f1)</sup><sup>,</sup><sup id="a2">[2](#f2)</sup>-->
+* **Sociological-dynamics of writing**: Dan has been written for at least 40 years. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.<sup id="a1">[1](#f1)</sup>
+* **Main user base**: Of approximately 1.65 Million Dan users 650,000 are users of Eastern Dan.<sup id="a2">[2](#f2)</sup>
+* **Multi-lingualism**: A high percentage of Dan users are multi-lingual in French [[fra]](https://iso639-3.sil.org/code/fra) (oral and written competencies) and Interethnic Jula [[dyu]](https://iso639-3.sil.org/code/dyu) (oral); some have competencies in Guéré [[wec]](https://iso639-3.sil.org/code/wec) (oral) and Wobé [[wob]](https://iso639-3.sil.org/code/wob) (oral).<sup id="a33">[33](#f33)</sup>
+* **Digital language use**: Some digital language use has been noted in the past (2008). Some digital use in SMS and Facebook is expected.
+* **Digital Support Infrastructure**: None. ([Locale data in CLDR](http://www.unicode.org/cldr/charts/latest/supplemental/territory_language_information.html#CI), Keyboard layout, spell check, text-to-voice, voice-to -text, Part of-speech tagging, etc.)
 
 **Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. As recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
 
-**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
+**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: [dnj_Latn_CI](http://www.unicode.org/cldr/charts/latest/supplemental/likely_subtags.html). Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
 **Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽  The second case is more grammatical in nature. Most fonts don't support 〈‽〉	 U+203D 'INTERROBANG'.
 
