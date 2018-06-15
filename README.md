@@ -20,12 +20,9 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 **Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case is more grammatical in nature. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
 
-**Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. These fonts can be used as embeded fonts, but it would be nice if professional font makers would enable Dan users to have a variety of type face options.
-
+**Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. [These fonts can be used as embeded fonts](https://software.sil.org/charis/support/features-demo/), but it would be nice if professional font makers would enable Dan users (and other minority language users) to have a variety of type face options.
 
  ![Font Example](dnj-font-example.png)
-
-
 
 ### Latin Orthography History
 
@@ -150,7 +147,7 @@ U+005F | _ | Error - should be U+02D7
 U+005B | [  |unknown
 U+005D | ] |unknown
 U+2026 | … |unknown
-U+201A | ‚ | Errors - Should be U+002C
+U+201A | ‚ | Error - Should be U+002C
 U+002F | / |unknown
 U+00AB  | « | Open a direct speech statement - Usage seems to vary between open and close.
 U+00BB | » | Closes a direct speech statement - Usage seems to vary between open and close.
@@ -183,12 +180,12 @@ _
 ‹
 ›
 <
- >
- ?
+>
+?
 .
 ,
- )
- (
+)
+(
 :
 +
 ```
@@ -766,11 +763,13 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
 ###### Based on rules presented in 1994
-French is used in the book bu there is no indication or attempt to define French writing norms or requirements as they are applied in CI.
+French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in CI.
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
 
+#### Summary of characters needed in a multilingual writing context
+ ![A combined character set for Dan writing](combined-character-set.png)
 ##### Unicode PUA reliance
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
