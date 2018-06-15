@@ -18,7 +18,12 @@ Multi-lingualism:
 
 **Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
-**Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽  The second case is more grammatical in nature. Most fonts don't support 〈‽〉	 U+203D 'INTERROBANG'.
+**Font Note **: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case is more grammatical in nature. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
+
+**Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. These fonts can be used as embeded fonts, but it would be nice if professional font makers would enable Dan users to have a variety of type face options.
+
+ ![Font Example](dnj-font-example.png)
+
 
 ### Latin Orthography History
 
@@ -139,7 +144,7 @@ Based on data within the corpus, as it was originally delivered, the following p
 Codepoint   | Grapheme | Usage
 -------------|-----|----
 U+00B0 | ° | Used as part of the abbreviation for number 〈n°〉.
-U+005F | _ | Error - should be
+U+005F | _ | Error - should be U+02D7
 U+005B | [  |unknown
 U+005D | ] |unknown
 U+2026 | … |unknown
@@ -151,8 +156,8 @@ U+0021  | ! | Closes an exclamation, interjection or emphatic statement
 U+003B | ; | unknown
 U+2039 | ‹ | Opens a quote inside of a direct speech statement
 U+203A | › | Closes a quote inside of a direct speech statement
-U+003C | < | Error - Most cases are double i.e. << and should be replaced with U+00AB
-U+003E | > | Error - Most cases are double i.e. >> and should be replaced with U+00BB
+U+003C | < | Error - Most cases are double i.e. << and should be replaced with U+00AB; other cases should be U+2039
+U+003E | > | Error - Most cases are double i.e. >> and should be replaced with U+00BB; other cases should be U+203A
 U+003F | ? | Closes a question statement
 U+002E | . | Completes a thought, occurs between numbers.
 U+002C | , | unknown
@@ -322,7 +327,7 @@ The Internet was not discussed in the 1994 reading primer.
 ###### Based on the corpus
 This corpus does not represent Internet communication, therefore it seems a bit presumptive to suggest that any character in this corpus represents use on the Internet. Though this should be a consideration for keyboard layout and text production tools for Eastern Dan.
 
-It is worthy to not that the local paper evidently did have some online presence at _www.pamebhame.info_. This was some time around 2008. A quick check of the Internet archive shows that no content was preserved in the [Internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
+It is worth noting that the local paper evidently did have some online presence at _www.pamebhame.info_. This was some time around 2008. A quick check of the Internet archive shows that no content was preserved in the [Internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
 
 #### Alphabet
 ##### Based on rules presented in 1994
@@ -372,15 +377,6 @@ Zz
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
 The following is a list of functional units and their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `\p{L}` indicates some letter(s), and the tone marks themselves - represent themselves.
-
-<!-- It was previously thought that maybe the following were valid characters, but they are not. The following are Upsilon, Latin Letter v with hook is the correct character.
-Ϋ	ϋ
-Ϋϋ	ϋϋ
-
-Correct character is
-Ʋ̈ ʋ̈
-Some browsers or fonts might not render this correctly, but CharisSIL and DoulosSIL (the Unicode compliant versions) do render this correctly.
--->
 
 
 ```
