@@ -22,9 +22,9 @@ Multi-lingualism:
 
 **Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. These fonts can be used as embeded fonts, but it would be nice if professional font makers would enable Dan users to have a variety of type face options.
 
- <p align="center"> 
+
  ![Font Example](dnj-font-example.png)
- </p>
+
 
 
 ### Latin Orthography History
