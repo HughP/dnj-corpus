@@ -24,6 +24,8 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
  ![Font Example](dnj-font-example.png)
 
+(_Image rendered in LibreOffice and provided by Ian Douglas_)
+
 ### Latin Orthography History
 
 **Orthography Note**: It is the case that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
@@ -771,7 +773,9 @@ French is used in the book but there is no indication or attempt to define Frenc
 #### Summary of characters needed in a multilingual writing context
 
  ![A combined character set for Dan writing](combined-character-set.png)
- 
+
+ (_Image rendered in LibreOffice and provided by Ian Douglas_)
+
 ##### Unicode PUA reliance
 
 Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan texts, should be checked for PUA characters. Known used characters have been:
