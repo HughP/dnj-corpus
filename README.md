@@ -18,11 +18,11 @@ Multi-lingualism:
 
 **Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: dnj-Latn. Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
 
-**Font Note **: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case is more grammatical in nature. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
+**Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case is more grammatical in nature. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
 
 **Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. These fonts can be used as embeded fonts, but it would be nice if professional font makers would enable Dan users to have a variety of type face options.
 
- ![Font Example](dnj-font-example.png)
+ <p align="center"> ![Font Example](dnj-font-example.png)</p>
 
 
 ### Latin Orthography History
@@ -50,7 +50,7 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
 
 ### Writing system
 
-* BCP47: dnj-Latn
+* BCP47: dnj_Latn_CI
 * Orthography version: 3
 
 **Writing System Note**: In this writing system tone is shown in part through characters with the Unicode attributes for punctuation. Various characters before or after the stem (word) indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. As a result many applications do not properly type set or interact with the "words" in the ways that many users of "global" languages expect. One notable result is that the use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaaʼ˗` where there are extra spaces around the question mark.
@@ -88,11 +88,11 @@ Statement: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf
 
 -->
 *  The following characters are used to provide special meaning to text outside of tables:
-  * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
-  * Content within forward slashes denotes phonemic representations `//`.
-  * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
-  * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
-  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
+   * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
+   * Content within forward slashes denotes phonemic representations `//`.
+   * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
+   * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
+   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
 
 ##### Casing rules
 ###### Based on rules presented in 1994
