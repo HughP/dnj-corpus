@@ -26,7 +26,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 _Image provided by Ian Douglas, rendered in LibreOffice_
 
-A list with examples of successful fonts is provided in `[dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf](dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf)`. Contribution by Ian Douglas.
+A list with examples of successful fonts is provided in [`dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf`](dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf). Contribution by Ian Douglas.
 
 ### Latin Orthography History
 
