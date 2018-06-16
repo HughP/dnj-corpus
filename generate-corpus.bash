@@ -301,15 +301,28 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 ##Generate French text
 # For the first 9 times copy from Lʼorthographe|Voici DAN to ˮNimlʋʋ but don't include ˮNimlʋʋ. dump that in file clean the file with this:
 
-#grep -P "^\S+" french-content-sections.txt |tr "ˮ" " ˮ"| tr " " "\n" | sort | grep  -P "^[^-|ʼ|꞊|w|y|:|)|+|(|ɔ|K|k|ü|ϋ]"| grep -v "[öɛɔüë21ʋɩ]"| uniq > bad-french.txt
+
+awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt | tr "," " ," | tr "." " ." | sed 's/kaatie/kaa tie/g' | sed 's/saabas/saa bas/g' | sed 's/saasavon/saa savon/g' | tr " " "\n" | grep  -P "^[^,|.|)|+|(|:|1|2|0|4|9]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩc]" | sort -u | awk '!/Aa/ && /bh/ && /ën/ && /dh/ && !/Dh/ && !/uu/ && !/An/ && !/u/ && !/ëë/ && !/ng/ && !/ë/ && !/ee/ && !/gw/ && !/gb/ && !/aa/ && !/kw/ && !/Gana/ && !/oo/ && !/Togo/' |grep -P "aa"
+
+
+#awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt | tr " " "\n" | grep  -P "^[^)|+|(|:]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩ]" | uniq | sort -u
+
+
+
+awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=
+0} flag ' proof-of-concept-text.txt
+
+sed -n '/Voici/,/Traduction/{p; /Voici/q}'
+
+#grep -P "^\S+" french-content-sections.txt |tr "ˮ" " ˮ"| tr " " "\n" | sort | grep  -P "^[^-|ʼ|꞊|:|)|+|(|ɔ|K|k|ü|ϋ]"| grep -v "[öɛɔüë21ʋɩ]"| uniq > bad-french.txt
 #note that this has an upsilon in it and that should go away. we can add all the unique characters from Dan orthgrphy to thie excluding lines. There is still one or two cases of something french without a space in front of it.
 # "klangʼyënngsavon
 # ꞊gööscorpion
 
 
 ##Practice on French
-sed -e '/Voici/,/Traduction/d' -i proof-of-concept-text.txt
-sed -e 's/Lʼorthographe DAN//g' -i proof-of-concept-text.txt
+#sed -e '/Voici/,/Traduction/d' -i proof-of-concept-text.txt
+#sed -e 's/Lʼorthographe DAN//g' -i proof-of-concept-text.txt
 
 
 #araignée

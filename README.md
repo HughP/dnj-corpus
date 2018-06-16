@@ -22,9 +22,11 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 **Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered prior to uppercase letter. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. [These fonts can be used as embeded fonts](https://software.sil.org/charis/support/features-demo/), but it would be nice if professional font makers would enable Dan users (and other minority language users) to have a variety of type face options.
 
- ![Font Example](dnj-font-example.png)
+ ![Font Example](dnj-Font-Face/dnj-font-example.png)
 
 _Image provided by Ian Douglas, rendered in LibreOffice_
+
+A list with examples of successful fonts is provided in `[dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf](dnj-Font-Face/dnj-fra-successful-rendering-fonts.pdf)`. Contribution by Ian Douglas.
 
 ### Latin Orthography History
 
@@ -774,7 +776,7 @@ French is used in the book but there is no indication or attempt to define Frenc
 
 #### Summary of characters needed in a multilingual writing context
 
- ![A combined character set for Dan writing](combined-character-set.png)
+ ![A combined character set for Dan writing](dnj-Font-Face/combined-character-set.png)
 
  _Image provided by Ian Douglas, rendered in LibreOffice_
 
