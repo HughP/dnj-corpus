@@ -396,8 +396,7 @@ Zz
 ###### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
-The following is a list of functional units and their phonological representations. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `\p{L}` indicates some letter(s), and the tone marks themselves - represent themselves.
-
+The following is a list of functional units presented with both sets of casing options. Because these functional units, it is assumed that there is some level of phonemic reality to which these graphical units relate. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `\p{L}` indicates some letter(s), and the tone marks themselves - represent themselves.
 
 ```
 A	a
@@ -466,15 +465,15 @@ Z	z
 Ʋʋ	ʋʋ
 Ʋ̈	ʋ̈
 Ʋ̈ʋ̈	ʋ̈ʋ̈
-iʋ̈
-iö
-ië
-ia
-ian
-ɩa
-uë
-ʋë
-ʋ̈ü
+	iʋ̈
+	iö
+	ië
+	ia
+	ian
+	ɩa
+	uë
+	ʋë
+	ʋ̈ü
 〈ˮ\p{L}\s〉
 〈ʼ\p{L}\s〉
 〈\s\p{L}\s〉
