@@ -58,7 +58,7 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
    * Eastern Dan
    * Orthography version: 3
 
-**Writing System Note**: When orthography version three was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the default characters used would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the development of a unique written text development culture.  From observing the corpus three notable instances present themselves:
+**Writing System Note**: When orthography version three was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the default characters used would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the development of a unique written text development culture.  From observing the corpus three notable instances present themselves:
  * The use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaa˗` where there are extra spaces around the question mark. Presumably this is to provide visual clarity for  mental processing of punctuation marks.
  * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan to the best of the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone —  something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
  * The hyphen in French can take on several linking usages:
@@ -66,6 +66,7 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
    * It can occur in set expressions like ` vis-à-vis`
    * It can occur in hyphenated names like `Jean-Luc`
 
+<!-- Citation: https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
   Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
 
  * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen. Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
@@ -102,13 +103,10 @@ These definitions and conventions are observed throughout this work:
 [5] Moe, Ron. Developing an orthography for a Bantu Language.
 [6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
 [7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
-and
-cover page: https://www.sil.org/orthography/fonts-and-technical-issues
-Statement: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf
 
 -->
 *  The following characters are used to provide special meaning to text outside of tables:
-   * Content within square brackets denotes either phonetic representations or ISO639-3 codes  `[]`.
+   * Content within square brackets denotes either phonetic representations (such as allophones) or ISO639-3 codes  `[]`.
    * Content within forward slashes denotes phonemic representations `//`.
    * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
    * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
@@ -1493,6 +1491,8 @@ U+00A8	¨	1	DIAERESIS
 <b id="f34">34 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a34)
 
 <b id="f35">35 </b>Bolli, Margert. 1991. Orthography difficulties to be overcome by Dan people literate in French. SIL Notes on Literacy. 65: 25-34. [↩](#a35)
+
+<b id="f36">36 </b>SIL International. 2018. Best practice when using non-alphabetic characters in orthographies: Helping languages succeed in the modern world. Cover Page: https://www.sil.org/orthography/fonts-and-technical-issues ; PDF: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf Accessed: 17 June 2018. [↩](#a36)
 
 <!--
 
