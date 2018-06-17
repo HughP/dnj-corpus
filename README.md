@@ -3,7 +3,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 ## Language Description
 
-* **ISO 639-3 language tag**: [[dnj]](https://iso639-3.sil.org/code/dnj)
+* **ISO 639-3 language tag**: [[dnj](https://iso639-3.sil.org/code/dnj)]
 * **Language Name**: Dan
 * **Main location of language use**:  Ivory coast (Côte d'Ivoire)
 * **Language variety demonstrated in this corpus**: Eastern Dan
