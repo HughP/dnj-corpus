@@ -10,7 +10,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 * **Script**: Latin script.
 * **Sociological-dynamics of writing**: Dan has been written for at least 40 years (1978)<sup id="a1">[1](#f1)</sup>. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.
 * **Main user base**: Of approximately 1.65 Million Dan users 650,000 are users of Eastern Dan.<sup id="a2">[2](#f2)</sup>
-* **Multi-lingualism**: A high percentage of Dan users are multi-lingual in French [[fra]](https://iso639-3.sil.org/code/fra) (oral and written competencies) and Interethnic Jula [[dyu]](https://iso639-3.sil.org/code/dyu) (oral); some have competencies in Guéré [[wec]](https://iso639-3.sil.org/code/wec) (oral) and Wobé [[wob]](https://iso639-3.sil.org/code/wob) (oral).<sup id="a33">[33](#f33)</sup>
+* **Multi-lingualism**: A high percentage of Dan users are multi-lingual in French [[fra](https://iso639-3.sil.org/code/fra)] (oral and written competencies) and Interethnic Jula [[dyu](https://iso639-3.sil.org/code/dyu)] (oral); some have competencies in Guéré [[wec](https://iso639-3.sil.org/code/wec)] (oral) and Wobé [[wob](https://iso639-3.sil.org/code/wob)] (oral).<sup id="a33">[33](#f33)</sup>
 * **Digital language use**: Some digital language use has been noted in the past (2008). Some digital use in SMS and Facebook is expected.
 * **Digital Support Infrastructure**: None. ([Locale data in CLDR](http://www.unicode.org/cldr/charts/latest/supplemental/territory_language_information.html#CI), Keyboard layout, spell check, text-to-voice, voice-to -text, Part of-speech tagging, etc.)
 
