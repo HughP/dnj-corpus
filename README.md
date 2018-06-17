@@ -65,11 +65,13 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
    * It can connect morphology `celui-ci`or parts of speech (infinitive + pro noun) `aide-moi`
    * It can occur in set expressions like ` vis-à-vis`
    * It can occur in hyphenated names like `Jean-Luc`
+
  Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
  * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen. Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
    * It can enumerate the elements of a list
    * It can emphasize a comment
    * It can indicate each change of speaker.
+
  It is not clearly laid out how Dan writing system(s) (1978, 1982, 1994, 2000, 2014) handle these functions. One possibility is to use a rounded glyph like a bullet for some of these functions (though the actual future of this need is in orthography version 3 is in question). Pedagogically punctuation, especially for discourse functions (typically beyond the simple sentence), should likely become part of the training to read Dan literacy program. In the past a deconstructionist approach<sup id="a35">[35](#f35)</sup> highlighting the differences between French and Dan, has been taken for users of French learning to read Dan. This approach has been successful. Perhaps the same approach with a learning unit on word boundaries and discourse level punctuation, would increase the confidence and clarity of Dan writers.
 
 #### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
