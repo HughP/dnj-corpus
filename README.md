@@ -5,7 +5,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 * **ISO 639-3 language tag**: [[dnj](https://iso639-3.sil.org/code/dnj)]
 * **Language Name**: Dan
-* **Main location of language use**:  Ivory coast (Côte d'Ivoire)
+* **Main location of language use**:  Ivory Coast (Côte d'Ivoire)
 * **Language variety demonstrated in this corpus**: Eastern Dan
 * **Script**: Latin script.
 * **Sociological-dynamics of writing**: Dan has been written for at least 40 years (1978)<sup id="a1">[1](#f1)</sup>. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.
@@ -51,9 +51,10 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 ### The data and its presentation here in the introduction to the corpus
 
 The data has two states.
-  1. As first received from sources.
-  2. As finally processed for use in Keyboard layout analysis.
-The reason for these two states is 1) to faithfully represent the corpus as it was originally received; 2) It is felt that this state most faifully represents the text processing and publishing "natural language use" which Dan Language users encounter. However, to do the keyboard optimization, it is important to look at the intended characters that language users thought they were using. It is quite evident that automation has changed a great deal of the intended characters into something unintended. This intended state is what is needed to optimize a keyboard layout.
+  1. As first received from sources. (as orginal files and as the consolidation of the extracted text from those original files: `initial-starting-corpus.txt`)
+  2. As finally processed for use in Keyboard layout analysis: `proof-of-concept-text.txt`, `phonemic-corpus.txt`
+
+The reason for these two states is to faithfully represent the corpus as it was originally received. It is felt that this state most faifully represents the text processing and publishing "natural language use" which Dan Language users encounter. However, to do the keyboard optimization, it is important to look at the intended characters that language users thought they were using. It is quite evident that automation has changed a great deal of the intended characters into something unintended. This intended state is what is needed to optimize a keyboard layout.
 
 ### Writing system
 
@@ -71,7 +72,7 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
    * It can occur in hyphenated names like `Jean-Luc`
 <!-- Citation: https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 
-   Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
+    Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
 
  * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen. Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
    * It can enumerate the elements of a list
@@ -106,7 +107,6 @@ These definitions and conventions are observed throughout this work:
 [5] Moe, Ron. Developing an orthography for a Bantu Language.
 [6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
 [7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
-
 -->
 *  The following characters are used to provide special meaning to text outside of tables:
    * Content within square brackets denotes either phonetic representations (such as allophones) or ISO639-3 codes  `[]`.
@@ -136,7 +136,7 @@ Orthographic word breaks are indicated by a space, generally U+0020. Because Eas
 The use of normal text editors with the standard characters for the glyphs representing tone result in line and word breaks which are unexpected for Eastern Dan readers and Writers. The solution for the orthography version 3 is to use 'MODIFIER LETTER' equivalent characters for tone marks, instead of standard characters found in many of the global languages using Latin scripts for these glyphs.
 
 ###### Based on rules presented in 1994
-Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter.
+Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter. So presumably hyphenation is not allowed in this orthography either.
 
 ###### Based on the corpus
 Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
@@ -160,7 +160,7 @@ U+002C | , | la virgule donne l'occasion de prendre haleine (tr. [eng]: taking a
 U+003A | : | le double point marque le début d'un discourse direct (tr. [eng]: marking the start of a quote)
 
 ###### Based on the corpus
-Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table.
+Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table.  __( what about ˮlʼautre jourˮ)__
 
 Codepoint   | Grapheme | Usage
 -------------|-----|----
@@ -216,7 +216,7 @@ _
 ###### Based on rules presented in 1994
 Unfortunately no math symbols or other numeric related characters are provided. Unicode codepoints are provided here as an added point of reference. They are not in the source text.
 
-Codepoint   | Grapheme
+Codepoint | Grapheme
 -------------|-----
 U+0030      | 0
 U+0031      | 1
@@ -781,10 +781,18 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 
 #### Reasonable characters needed for French
 
-French is the National language in the country where the desist population of Eastern Dan speakers reside. It makse some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
+French is the National language in the country where the desist population of Eastern Dan speakers reside. It makes some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
 ###### Based on rules presented in 1994
-French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in CI.
+French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in Ivory Coast (Côte d'Ivoire).
+The introduction to Dan orthography as presented in _˗Pamɛbhamɛ_ states:
+>  c, h, j, qu et x n'existent pas en dan.
+
+Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not exist in Dan." While this may be true at a very strict level, several issues come to light immediately:
+1. 〈h〉 is present in 〈bh〉 and 〈dh〉
+2. 〈j〉 is often used in loan wors like _Abidjan_.
+
+So if we were to include characters which are not frequently used in Dan
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
@@ -1196,7 +1204,8 @@ and
 $ perl -CS -pe 's/\N{U+2018}/\N{U+02BC}/g'
 ```
 7. Fix bad double quotes
-
+8.
+__(How do we keep the "good" double quotes?)__
  Corrected non-letter double quote 〈"〉 U+0022, 〈”〉 U+201D, and 〈“〉 U+201C to 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE.
 
  Let's move instances of 〈”〉 U+201D to 〈ˮ〉 U+02EE
@@ -1405,23 +1414,43 @@ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-e
 
 14. Remove French words.
 
-15. Figure out what to do with the following:
+15. Remove bad line encodings
+
+Different operating systems use different line ending encodings to indicate line endings. We are going to regularize these.
+
+ Move line feed to enter/return.
+ ```
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+```
+
+Move form feed to enter/return.
+
+```
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+```
+
+16. Figure out what to do with the following:
  ```< & > Should they go to the smaller French quotes?
 U+FFF9		17	INTERLINEAR ANNOTATION ANCHOR
 U+0304		1	COMBINING MACRON
 U+2013	–	1064	EN DASH
 U+00E7	ç	21	LATIN SMALL LETTER C WITH CEDILLA
 U+00E8	è	221	LATIN SMALL LETTER E WITH GRAVE
+One or two non-French cases of mistyping
 U+00E9	é	107	LATIN SMALL LETTER E WITH ACUTE
 U+00EA	ê	28	LATIN SMALL LETTER E WITH CIRCUMFLEX
+ʼö ya ˗a ˗ga ˗sê --> e+diaeresis others are french
 U+00EE	î	3	LATIN SMALL LETTER I WITH CIRCUMFLEX
 U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 U+00A8	¨	1	DIAERESIS
- U+0009	 	482
- U+000A	 	30690
- U+000C	 	220
- U+000D	 	1340
- U+0020	 	124711
 ```
 ## Bibliography
 
