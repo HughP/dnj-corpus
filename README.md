@@ -1,5 +1,5 @@
 # dnj-corpus
-A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (chapters) from _While waiting for a medical doctor_ translated into Eastern Dan.
+A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (chapters) from _While waiting for a medical doctor_ translated into Eastern Dan. This corpus description also attempts a modest application of the principles set out by Martin Hosken for _Writing System Descriptions_.<sup id="a39">[39](#f39)</sup>
 
 ## Language Description
 
@@ -30,15 +30,19 @@ A list with examples of successful fonts is provided in [`dnj-Font-Face/dnj-fra-
 
 ### Latin Orthography History
 
-**Orthography Note**: It is the case that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated languages, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+**Orthography Note**: It can be, and is in fact the case in Dan, that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated language, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+
+**Developmental note**: Based on the narrative developed in the literature, literacy work and orthography evolutionary steps taken under the mentors Margrit Bolli & Eva Flik generally was focused on Western Dan first and then soon after or simultaneously were adapted to eastern Dan. A distinct narrative for Eastern Dan, independent from Western Dan does not appear until 1982. However, some literacy was happening in Eastern Dan under their mentorship as early as 1972.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
-Version 0.1 | pre-1970 protestant  |  Imported from Liberia | Mission Biblique  |  R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
-Version 0.2  | pre-1970 catholic  |  concurrent with but separate from version 0.1 | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
-  Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
-Version 1 | 1982-1990 | ?? | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
-Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. |   |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
+Version 0.1a | pre-1970 protestant  |  Imported from Liberia | Mission Biblique  |  R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
+Version 0.1b  | pre-1970 catholic  |  concurrent with but separate from version 0.1a | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
+Version 0.2  | pre-1972  |  high tone is marked at the begining of the word with an apostrophe | Margrit Bolli / Eva Flik  |  Margrit Bolli<sup id="a37">[37](#f37)</sup>.
+Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
+Version 0.4 |  1978 | full stop 〈.〉 is at the beginning of words to indicate low tone, 〈ô〉is used, 〈.CVV'-〉 is a tone pattern used to indicate low-mid-fall | Margrit Bolli / Eva Flik | Marking tone with Punctuation<sup id="a38">[38](#f38)</sup> (In this resource the author does not indicate if they are discussing Eastern Dan, Western Dan, or both. In the 1982 version of the _Western Dan_ reading primer the word final apostrophe hyphen sequences is present.)
+Version 1 | 1982-1990 | No indication of full stop 〈.〉 usage at the beginning of words. No indication of word final apostrophe hyphen sequences 〈CVV'-〉. | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
+Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. The letters 〈ɩ〉, 〈ʋ̈〉, 〈ʋ〉 appear, which did not appear in orthography version 1. | Margrit Bolli / Eva Flik  |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
 _Western Dan_ | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
 Version 3 | (2005??)-2014 | These texts contain U+201C, U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
 Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication via punctuation towards diacritic indication of tone over the the stem.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
@@ -89,17 +93,16 @@ These definitions and conventions are observed throughout this work:
 * **Characters** are single Unicode code points.
 * **Graphemes** are typographical units. Often in a writing system these units carry meaning.
 * **Multigraph** ([from SIL's NRSI](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary#multig)) a combination of two or more written symbols or orthographic characters (e.g. letters) that are used together within an orthography to represent a single sound. (Combinations consisting of two characters are also known as **digraphs**.).
+* A **digram** is a sequence of two graphemes. Whereas a **digraph** is a sequence of two letters to indicate a single sound, a digram is any sequence of two units in an orthography, sometimes this term is used in the literature synonymously with **bigram**. In literature that uses the terms digram/bigram sometimes the compared units are whole words, or syllables.
 * A **linguistic description** would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of **phonemes** is a list of unique and contrastive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer **letters**/components than a list of phonemes in the same language.
 * A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_.
+<!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "encoding", "diphthong", "Functional Unit"    I should add a section about these
 
-<!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "digram", "encoding", "diphthong", "Functional Unit"    I should add a section about these
-
-
+ Deborah Anderson, with Rick McGowan and Ken Whistler (and incorporating comments by Lorna Priest).2005 .Unicode Technical Note #19: Recommendations for Creating New Orthographies. https://www.unicode.org/notes/tn19/
 [1] Davison, Phil. 2009. Weh Orthography Guide. Yaounde, Cameroon: SIL International. http://www.silcam.org/documents/WehOrthographyGuide.pdf
 [2] Stirtz, Timothy M. 2014. ꞌBëlï Phonology, Tone and Orthography. SIL Electronic Working Papers 2014.002: 1-30.
 [3] Forster, Keith. 2007. Orthography & Punctuation Conventions for Kuna. <Accessed: 31. October 2014>.http://www.sil.org/resources/archives/10627
-[4] Hosken, Martin. 2003. Creating an Orthography Description.
 [5] Moe, Ron. Developing an orthography for a Bantu Language.
 [6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
 [7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
@@ -1494,6 +1497,11 @@ U+00A8	¨	1	DIAERESIS
 
 <b id="f36">36 </b>SIL International. 2018. Best practice when using non-alphabetic characters in orthographies: Helping languages succeed in the modern world. Cover Page: https://www.sil.org/orthography/fonts-and-technical-issues ; PDF: https://www.sil.org/sites/default/files/tone_and_unicode_issues.pdf Accessed: 17 June 2018. [↩](#a36)
 
+<b id="f37">37 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a37)
+
+<b id="f38">38 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a38)
+
+<b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. [↩](#a39)
 <!--
 
 ```
