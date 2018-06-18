@@ -69,9 +69,9 @@ The reason for these two states is 1) to faithfully represent the corpus as it w
    * It can connect morphology `celui-ci`or parts of speech (infinitive + pro noun) `aide-moi`
    * It can occur in set expressions like ` vis-à-vis`
    * It can occur in hyphenated names like `Jean-Luc`
-
 <!-- Citation: https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
-  Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
+
+   Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
 
  * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen. Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
    * It can enumerate the elements of a list
