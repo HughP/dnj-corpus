@@ -518,6 +518,23 @@ sed -n '/Voici/,/Traduction/{p; /Voici/q}'
 # soleil
 # iroko
 # souche
+
+#15 fix mixed line feeds
+#15.a Move line feed to enter/return.
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+#15.b Move form feed to enter/return.
+
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
 echo
 echo "Try the corpus now"
 echo
