@@ -1,4 +1,4 @@
-# dnj-corpus
+separate# dnj-corpus
 A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (chapters) from _While waiting for a medical doctor_ translated into Eastern Dan. This corpus description also attempts a modest application of the principles set out by Martin Hosken for _Writing System Descriptions_.<sup id="a39">[39](#f39)</sup>
 
 ## Language Description
@@ -16,9 +16,9 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 **Language Note**: Dan is considered by some to be a macro language comprised of a dialect chain of over 40 dialects <sup id="a3">[3](#f3)</sup><sup>,</sup><sup id="a4">[4](#f4)</sup>. As recently as 2012 the ISO 639-3 registrar approved a request ([2012-083](https://iso639-3.sil.org/request/2012-083))<sup id="a5">[5](#f5)</sup> to split one of these dialects off into its own language (Kla [[lda](https://iso639-3.sil.org/code/lda)]). Eastern and Western Dan have had their own separate writing traditions for over 40 years. There are significant segmental and suprasegmental differences between Eastern and Western Dan.
 
-**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: [dnj_Latn_CI](http://www.unicode.org/cldr/charts/latest/supplemental/likely_subtags.html). Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography as this one, even if it is from the same language variety.
+**Script Note**: There may be several orthographies from different dialects which would all qualify as BCP47<sup id="a6">[6](#f6)</sup>: [dnj_Latn_CI](http://www.unicode.org/cldr/charts/latest/supplemental/likely_subtags.html). Crúbadán language data for Eastern Dan uses: `dnj-x-east` <sup id="a7">[7](#f7)</sup>but it is unclear if that corpus is based on the same orthography this corpus (orthography version 3), even if the language content is from the same language variety.
 
-**Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case is more grammatical in nature. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
+**Font Note**: It has been Hugh's professional experience that in many cases fonts used to encode minority languages often fail to include two very important features. The first is that some classes of diacritics and characters do not combine elegantly for users. For instance: 〈◌̊〉 U+030A 'COMBINING RING ABOVE', does not elegantly combine with 〈🦄〉 U+1F984 'UNICORN FACE' to allow users to put a ring on the unicorn's horn‽ The second case impacts the fluidity of grammatical expression by minority language users. Most fonts don't support 〈‽〉 U+203D 'INTERROBANG'.
 
 **Text Rendering Note**: It appears that many fonts do not successfully render some glyphs from the Dan orthography. This is especially noticeable with regards to two sets of glyphs: 〈Ʋ̈, ʋ̈〉'LATIN LETTER V WITH HOOK + COMBINING DIERESES', 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', and 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. The issue with the Latin letter V with hook is that generally the height of the base character (when it is supported in fonts) is set too high for the line height to accommodate the adding of combining diereses on top of the base character. Font rendering engines then push the combining diereses to the right. Default fonts in web browsers are particularly susceptible to the issue of pushing the combining diereses to the right. The second issue is that 〈꞊〉 U+A78A and 〈˗〉 U+02D7 are set to display at half the vertical height of lower case letters. However, it is often the case that these glyphs are rendered adjacent to uppercase letters. This gives the visual effect that the modifier letters are too low, or too small for practical use. CharisSIL and DoulosSIL (the Unicode compliant versions) do render all glyphs correctly. [These fonts can be used as embeded fonts](https://software.sil.org/charis/support/features-demo/), but it would be nice if professional font makers would enable Dan users (and other minority language users) to have a variety of type face options.
 
@@ -30,9 +30,9 @@ A list with examples of successful fonts is provided in [`dnj-Font-Face/dnj-fra-
 
 ### Latin Orthography History
 
-**Orthography Note**: It can be, and is in fact the case in Dan, that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated language, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time.
+**Orthography Note**: It can be, and is in fact the case in Dan, that there are multiple writing systems for different speech varieties of the same ISO 639-3 designated language, simultaneously. That is separate groups (socio-logical, or dialectical, or both) , are writing the same "language" in different ways at the same time, and these seperate groups have iterated the way they write their varieties over time.
 
-**Developmental note**: Based on the narrative developed in the literature, literacy work and orthography evolutionary steps taken under the mentors Margrit Bolli & Eva Flik generally was focused on Western Dan first and then soon after or simultaneously were adapted to eastern Dan. A distinct narrative for Eastern Dan, independent from Western Dan does not appear until 1982. However, some literacy was happening in Eastern Dan under their mentorship as early as 1972.
+**Developmental Note**: Based on the narrative developed in the literature, evolutionary steps in the development of community literacy - including the progressive refinement of the orthography — taken under the mentors Margrit Bolli & Eva Flik generally focused on Western Dan first and then soon after or simultaneously was adapted to Eastern Dan. A distinct narrative for Eastern Dan, independent from Western Dan does not appear until 1982. However, some literacy was happening in Eastern Dan under their mentorship as early as 1972.
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
@@ -63,7 +63,7 @@ The reason for these two states is to faithfully represent the corpus as it was 
    * Eastern Dan
    * Orthography version: 3
 
-**Writing System Note**: When orthography version three was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the most frequently chosen characters by Dan authors would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the evolution of a unique print media culture for users of Dan.  From observing the corpus five notable, and previously undiscussed instances present themselves:
+**Writing System Note**: When orthography version 3 was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the most frequently chosen characters by Dan authors would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the evolution of a unique print media culture for users of Dan.  From observing the corpus five notable, and previously undiscussed instances present themselves:
  * The use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaa˗` where there are extra spaces around the question mark. Presumably this is to provide visual clarity for  mental processing of punctuation marks.
  * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan, to the best efforts given the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone —  something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
  * The hyphen in French can take on several linking usages:
@@ -74,12 +74,12 @@ The reason for these two states is to faithfully represent the corpus as it was 
 
   Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
 
- * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen. Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
+ * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen (and sometiemes these are in the same phrases). Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
    * It can enumerate the elements of a list
    * It can emphasize a comment
-   * It can indicate each change of speaker.
+   * It can indicate a change of speaker.
 
- It is not clearly laid out how Dan writing system(s) (1978, 1982, 1994, 2000, 2014) handle these functions. One possibility is to use a rounded glyph like a bullet for some of these functions (though the actual future of this need is in orthography version 3 is in question). Pedagogically punctuation, especially for discourse functions (typically beyond the simple sentence), should likely become part of the training to read Dan literacy program. In the past a deconstructionist approach<sup id="a35">[35](#f35)</sup> highlighting the differences between French and Dan, has been taken for users of French learning to read Dan. This approach has been successful. Perhaps the same approach with a learning unit on word boundaries and discourse level punctuation, would increase the confidence and clarity of Dan writers.
+ It is not clearly laid out how Dan writing system(s) (1978, 1982, 1994, 2000, 2014) handle these functions in print media. One possibility is to use a rounded glyph like a bullet for some of these functions (though the actual future of this need is in question as orthography version 3 is potentially giving way to version 4). Pedagogically punctuation, especially for discourse functions (typically beyond the simple sentence), should likely become part of the training provided in Dan literacy programs. In the past a deconstructionist approach<sup id="a35">[35](#f35)</sup> highlighting the differences between French and Dan, has been taken for users of French learning to read Dan. This approach has been successful. Perhaps the same approach with a learning unit on word boundaries and discourse level punctuation, would increase the confidence and clarity of Dan writers.
  * Typographically expressing more than one language in a document is confusing to authors. Some authors when writing in Dan and referencing a French word  will put the word in parenthesis, other authors use type face to distinguish languages and at least one instance was found of using English style smart quotes to set off French words. All of these use strategies preserve the use of French quotes for direct speech usage — commonly called 'quotes'. The evolution of print media and the evolution of typographic tradition in Eastern Dan (and other language which often generate multi-lingual documents, especially if they use punctuation to indicate tone) would benefit form a standardized method of indicating a language change (code switch) with in the document. One possibility would be the introduction in the curriculum of other uses for quote marks.
  * The use of French style quote marks 〈«〉, 〈»〉 is confusing to Dan authors. That is, opening and closing quote marks appear to be used interchangeably in opening quotations. Additionally, there are quite a few cases where closing quote marks are missing. If software engineers for grammar and spelling checkers can manage, adding a function which checks for closing quote marks (of any kind), much like is done for programmers in IDEs, would benefit many new writers of minority languages.
 
@@ -527,7 +527,7 @@ The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthograp
 ###### Based on content presented in 1994
 
 Nasal Vowels are indicated with by an 〈n〉 following the vowel.
-
+```
 Ʋ	ʋ
 Ʋʋ	ʋʋ
 Ʋ̈	ʋ̈
@@ -573,7 +573,7 @@ An	an
 Aan	aan
 Aɔ	aɔ
 Aɔn	aɔn
-
+```
 ###### Diphthongs
 ```
 iʋ̈
@@ -645,12 +645,10 @@ In	in
 I	i
 Ɩɩ	ɩɩ
 Ɩ	ɩ
-
 A	a
 E	e
 Ɛ	ɛ
 Ë	ë
-
 O	o
 Oo	oo
 Ö	ö
@@ -697,7 +695,31 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
 
 ###### Based on rules presented in 1994
 
+```
+Kp  kp
+Kw kw
+K k
+Gb  gb
+Gw  gw
+G g
+Bh  bh
+Dh  dh
+B b
+D d
+M m
+N n
+F f
+S s
+V v
+T t
+Z z
+L l
+W w
+R r
+Y y
+P p
 
+```
 ###### Based on the corpus
 
 <!--
@@ -719,26 +741,29 @@ Uppercase, lowercase |, |  |
 
 
 ```
-kp
-kw
-k
-gb
-gw
-g
-bh
-dh
-m
-n
-f
-s
-v
-t
-z
-l
-w
-r
-y
-p
+Kp  kp
+Kw kw
+K k
+Gb  gb
+Gw  gw
+G g
+Bh  bh
+Dh  dh
+B b
+D d
+M m
+N n
+F f
+S s
+V v
+T t
+Z z
+L l
+W w
+R r
+Y y
+P p
+
 ```
 ##### Tone marking
 
@@ -791,10 +816,11 @@ The introduction to Dan orthography as presented in _˗Pamɛbhamɛ_ states:
 >  c, h, j, qu et x n'existent pas en dan.
 
 Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not exist in Dan." While this may be true at a very strict level, several issues come to light immediately:
-1. 〈h〉 is present in 〈bh〉 and 〈dh〉
-2. 〈j〉 is often used in loan wors like _Abidjan_.
+1. 〈h〉 is present in 〈bh〉 and 〈dh〉, therefore is in the writing system, and orthography, and is a letter.
+2. 〈j〉 is often used in loan words like _Abidjan_.
+3. 〈qu〉 is not a letter, and 〈u〉 is clearly in Dan's writing system and orthography — as a letter.
 
-So if we were to include characters which are not frequently used in Dan
+So if we were to include characters which are not frequently used in Dan, but are in some way needed in the writing system we might come close to some sort of statement like that of
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
