@@ -77,8 +77,8 @@ sed -e 's/<[^>]*>//g' -i proof-of-concept-text.txt
 #
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after removing heading tags"
 #
-# #No French
-# #perl -i -CS -pe 's/\N{U+FEFF}//g' proof-of-concept-text.txt
+# #No French could go here. or not.
+
 
 ## ############## #################
 ## Character changes - Typographical Encoding Errors##
@@ -141,6 +141,7 @@ sed -e 's/ϋ/ʋ̈/g' -i proof-of-concept-text.txt
 echo "   Just corrected all UPSILONS to LATIN HOOKED V with DIAERESIS."
 
 ##10.d This blelongs with minus, but if we change all the quotes to letter quotes the \p{L} does not work any more...
+#Change space hyphen space (followed by a letter) to space hyphen
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s-\s(?=\p{L})/\s-/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
@@ -229,7 +230,7 @@ echo "   Just moved all UNDERSCORES to LETTER MINUS."
 #sed -e 's/[^\d\S]-/˗/g' -i proof-of-concept-text.txt
 echo "Lets look for cases puntuation or LM followed by letter minus"
 grep -n -P "\s(\p{P}|\p{Lm})(˗)" proof-of-concept-text.txt
-echo "Just looked for puntuation or LM followed by letter minus"
+echo "Just looked for puntuation or LM followed by letter minus. This will tell us if we are missing spaces."
 #sed -e 's/\s-\s/\s˗/g' -i proof-of-concept-text.txt
 
 ##
@@ -281,16 +282,23 @@ sed -e 's/,/, /g' -i proof-of-concept-text.txt
 
 #find https://alvinalexander.com/unix/edu/examples/find.shtml
 
-grep -n -P "\s-[^-]\s" proof-of-concept-text.txt
-grep -n -P "\s-\s" proof-of-concept-text.txt
+#grep -n -P "\s-[^-]\s" proof-of-concept-text.txt
+#grep -n -P "\s-\s" proof-of-concept-text.txt
 
 ##11. Remove U+2022	•	BULLET
 #There are only 13 instances. It is unlikely that this character is best accessed through a keyboard. So we will drop it from the corpus.
-
+echo "BULLETS 〈•〉〈•〉〈•〉"
+grep -P "•" proof-of-concept-text.txt | sed -r 's/(.{8}).*/\1/g'
 sed -e 's/•//g' -i proof-of-concept-text.txt
+echo "NO MORE BULLETS 〈•〉〈•〉〈•〉"
+#12. Fix wrong comma (low quote mark)
 
-#12. Fix wrong comma
-
+echo "LOW QUOTE MARKS"
+grep -P "‚" proof-of-concept-text.txt
+echo "None none of the" "$(grep -P "‚" proof-of-concept-text.txt | wc -l )" " cases seem to be actual quote useages."
+echo ""
+echo "END OF LOW QUOTE MARKS"
+echo ""
 cat proof-of-concept-text.txt  |
 perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > proof-of-concept-text2.txt
 
@@ -302,17 +310,16 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 # For the first 9 times copy from Lʼorthographe|Voici DAN to ˮNimlʋʋ but don't include ˮNimlʋʋ. dump that in file clean the file with this:
 
 
-awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt | tr "," " ," | tr "." " ." | sed 's/kaatie/kaa tie/g' | sed 's/saabas/saa bas/g' | sed 's/saasavon/saa savon/g' | tr " " "\n" | grep  -P "^[^,|.|)|+|(|:|1|2|0|4|9]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩc]" | sort -u | awk '!/Aa/ && /bh/ && /ën/ && /dh/ && !/Dh/ && !/uu/ && !/An/ && !/u/ && !/ëë/ && !/ng/ && !/ë/ && !/ee/ && !/gw/ && !/gb/ && !/aa/ && !/kw/ && !/Gana/ && !/oo/ && !/Togo/' |grep -P "aa"
+#awk '/Lʼorthographe/{flag=1}/ˮNimlʋʋ/{flag=0} flag' proof-of-concept-text.txt | tr "," " ," | tr "." " ." | sed 's/kaatie/kaa tie/g' | sed 's/saabas/saa bas/g' | sed 's/saasavon/saa savon/g' | sed 's/klanghaut/klang haut/g' | tr " " "\n" | grep  -P "^[^,|.|)|+|(|:|1|2|0|4|9]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩ]" | sort -u | awk '!/Aa/ && /bh/ && /ën/ && /dh/ && !/Dh/ && !/uu/ && !/An/ && !/ u / && !/ëë/ && !/ng/ && !/ë/ && !/ee/ && !/gw/ && !/gb/ && !/aa/ && !/kw/ && !/Gana/ && !/oo/ && !/Togo/' |grep -P "u"
 
 
 #awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt | tr " " "\n" | grep  -P "^[^)|+|(|:]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩ]" | uniq | sort -u
 
 
 
-awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=
-0} flag ' proof-of-concept-text.txt
+#awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt
 
-sed -n '/Voici/,/Traduction/{p; /Voici/q}'
+#sed -n '/Voici/,/Traduction/{p; /Voici/q}'
 
 #grep -P "^\S+" french-content-sections.txt |tr "ˮ" " ˮ"| tr " " "\n" | sort | grep  -P "^[^-|ʼ|꞊|:|)|+|(|ɔ|K|k|ü|ϋ]"| grep -v "[öɛɔüë21ʋɩ]"| uniq > bad-french.txt
 #note that this has an upsilon in it and that should go away. we can add all the unique characters from Dan orthgrphy to thie excluding lines. There is still one or two cases of something french without a space in front of it.
@@ -531,6 +538,14 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 cat proof-of-concept-text.txt  |
 perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+#Multible spaces into single spaces
+sed -e 's/ +/ /g' -i proof-of-concept-text.txt
+
+cat -s proof-of-concept-text.txt > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
