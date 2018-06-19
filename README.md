@@ -646,8 +646,6 @@ U+0049, U+0069 | I, i | i | Short close front unrounded vowel
  | Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
 
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
-Voiced Bilabial implosive
-Voiced dental or alveolar implosive
 ⟨ɯ̞̈⟩ - kept because the brackets are different.
 -->
 ```
@@ -768,8 +766,28 @@ The presentation order of consonants here does not represent the alphabet of Dan
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
 Uppercase, lowercase |, |  |
-
-
+| Kp, kp|  | 
+| Kw, kw |  | 
+| K, k |  | Voiceless velar stop
+| Gb, gb|  | 
+| Gw, gw|  | 
+| G, g	 |  | Voiced velar stop
+| Bh, bh|  | Voiced bilabial implosive
+| Dh, dh|  | Voiced dental implosive
+| B, b	 |  | Voiced bilabial stop
+| D, d	 |  | Voiced dental stop
+| M, m	 |  | 
+| N, n	 |  | 
+| F, f	 |  | 
+| S, s	 |  | 
+| V, v	 |  | 
+| T, t	 |  | 
+| Z, z	 |  | 
+| L, l	 |  | 
+| W, w	 |  | 
+| R, r	 |  | 
+| Y, y	 |  | 
+| P, p	 | p | Voiceless bilabial stop
 
 ```
 Kp  kp
