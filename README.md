@@ -493,9 +493,9 @@ Z	z
 ```
 ##### Vowels
 
-Phoneme chart (Oral)<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
+Phoneme chart (Oral)<sup id="a42">[SIL1982](#f42)</sup><sup>,</sup><sup id="a43">[V&K 2008](#f43)</sup><sup>,</sup><sup id="a46">[Ch10](#f46)</sup>
 
-Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Length has been analyzed as two sequential vowels. Pitch patterns are covered under the tone marking section. Nasalization is occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan<sup id="a1">[__(cite this)__](#f1)</sup> . This bring the total to 22 vowels.
+Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Length has been analyzed as two sequential vowels. Pitch patterns are covered under the tone marking section. Nasalization occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan.<sup id="a44">[SIL1982](#f44)</sup><sup>,</sup><sup id="a45">[V&K 2008](#f45)</sup> This bring the total to 22 vowels.
 
 |    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
@@ -517,19 +517,20 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 /ŋ/
 
+Allophonic variation of vowels does occur. In some dialects these allophones have been considered phonemic. However the phonemic status is not attested ubiquitously in Eastern Dan. This accounts for the addition of three letters 〈ɩ〉, 〈ʋ〉, and 〈ʋ̈〉 between the 1982 and the 1994 versions of the reading primers. These allophones are the result of Extra High Tone interaction with the phonemes: /e/, /o/, /ɤ/ respectively.
+
 <!--
-> Eastern Dan has a rich inventory of vowel phonemes: twelve oral and nine nasal, each of which can occur as single vowels or sequences of two identical vowels. The velar nasal /ŋ/ is also best interpreted as a vowel (with a restricted distribution), because it occurs in the same phonotactic slot as vowels and bears tone as vowels do. This brings the total number of vowels to 22.
 
 >The existing orthography contains three cases of vowel over-representation:
 <e, ɩ>: the phoneme /e/ is pronounced [ɪ] on a xH tone syllable and [e] elsewhere;
 <o, ʋ>: the phoneme /o/ is pronounced [ʊ] on a xH tone syllable and [o] elsewhere;
 <ö, ʋ̈>: the phoneme /ɤ/ is pronounced [ұ]15 ((U+04B1 CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE https://en.wikipedia.org/wiki/Near-close_back_unrounded_vowel)) on a xH tone syllable and [ɤ] elsewhere.2
-The allophonic graphemes <ɩ, ʋ ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
+The allophonic graphemes <ɩ, ʋ, ʋ̈> were relative latecomers to the orthography – they are not listed in the 1982 version of the orthography guide – following the discovery that they are contrastive in Man and some other dialects.
 -->
 
 ###### Based on content presented in 1994
 
-Nasal Vowels are indicated with by an 〈n〉 following the vowel.
+The following is a list of functional units which represent vowels. All of these functional units are attested in the 1994 primer. Nasal Vowels are indicated with by an 〈n〉 following the vowel, though 〈n〉can be a self standing letter in the orthography too.
 ```
 Ʋ	ʋ
 Ʋʋ	ʋʋ
@@ -592,35 +593,61 @@ uë
 
 ###### Based on the corpus
 
-Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. The detailed representation here allows for vowels to be tokenized.
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. <!-- The detailed representation here allows for vowels to be tokenized. -->
 
 
 Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
 Uppercase, lowercase |, |  |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
-U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | long nasalized front open unrounded vowel
-U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | long front open unrounded vowel
-U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | | short front unrounded vowel
-U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | æ | short front unrounded vowel
-U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | ɒ̃ |short nasalized back rounded vowel
-U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | ɒ | short back rounded vowel
-U+0041 U+006E, U+0061 U+006E| An, an | ã | short nasalized front open unrounded vowel
-U+0190, U+025B | Ɛ, ɛ | ɛ | short open-mid front unrounded vowel
-U+0190 U+025B, U+025B U+025B | Ɛɛ, ɛɛ | ɛɛ | long open-mid front unrounded vowel
-U+00CB, U+00EB | Ë, ë |  |
-U+00D6, U+00F6 | Ö, ö | ɤ | Close-mid back unrounded vowel
-U+00DC, U+00FC | Ü, ü | |
-U+0045, U+0065 | E, e | |Close-mid front unrounded vowel
-U+0049, U+0069 | I, i | i | close front unrounded vowel
-U+0186, U+0254 | Ɔ, ɔ | ɔ ɔ̃| Open-mid back rounded vowel
-U+0041, U+0061 | A, a | | short Open front unrounded vowel
-U+004F, U+006F | O, o | | Close-mid back rounded vowel
-U+0055, U+0075 | U, u | | Close back rounded vowel
+U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | Long nasalized front open unrounded vowel
+U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | Long front open unrounded vowel
+U+0190 U+0061 U+006E, U+025B U+0061 U+006E | Ɛan, ɛan | æ̃ | Short nasalized near-open front unrounded vowel
+U+0190 U+0061, U+025B U+0061| Ɛa, ɛa | æ | Short near-open front unrounded vowel
+U+0041 U+0254, U+0061 U+0254 | Aɔn, aɔn | ɒ̃ |Short nasalized back rounded vowel
+U+0041 U+0254, U+0061 U+0254 | Aɔ, aɔ | ɒ | Short back rounded vowel
+U+0041 U+006E, U+0061 U+006E| An, an | ã | Short nasalized front open unrounded vowel
+U+0190, U+025B | Ɛ, ɛ | ɛ | Short open-mid front unrounded vowel
+U+0190 U+025B, U+025B U+025B | Ɛɛ, ɛɛ | ɛɛ | Long open-mid front unrounded vowel
+U+0190 U+025B U+006E, U+025B U+025B U+006E | Ɛɛn, ɛɛn | ɛ̃ɛ̃ | Long nasalized open-mid front unrounded vowel
+U+0190 U+006E, U+025B U+006E | Ɛn, ɛn | ɛ̃ | Short nasalized open-mid front unrounded vowel
+U+0186, U+0254 | Ɔ, ɔ | ɔ | Short open-mid back rounded vowel
+U+0186 U+0254, U+0254 U+0254 | Ɔɔ, ɔɔ | ɔɔ | Long open-mid back rounded vowel
+U+0186 U+0254 U+006E, U+0254 U+0254 U+006E | Ɔɔn, ɔɔn | ɔ̃ɔ̃ | Long nasalized open-mid back rounded vowel
+U+0186 U+006E, U+0254 U+006E | Ɔn, ɔn | ɔ̃ | Short nasalized open-mid back rounded vowel
+U+00DC, U+00FC | Ü, ü | ɯ | Short close back unrounded vowel
+U+00DC U+00FC,U+00FC U+00FC | Üü, üü | ɯɯ | Long close back unrounded vowel
+U+00CB, U+00EB | Ë, ë | ʌ | Short open-mid back unrounded vowel
+U+00D6, U+00F6 | Ö, ö | ɤ | Short close-mid back unrounded vowel
+U+00D6 U+00F6, U+00F6 U+00F6 | Öö, öö | ɤɤ | Long close-mid back unrounded vowel
+U+00CB U+00EB, U+00EB U+00EB | Ëë, ëë | ʌʌ | Long open-mid back unrounded vowel
+U+00CB U+00EB U+006E, U+00EB U+00EB U+006E | Ëën, ëën | ʌ̃ʌ̃ | Long nasalized open-mid back unrounded vowel
+U+00CB U+006E, U+00EB U+006E | Ën, ën | ʌ̃ | Short nasalized open-mid back unrounded vowel
+U+0045, U+0065 | E, e | e | Short close-mid front unrounded vowel
+U+0045 U+0065, U+0065 U+0065 | Ee, ee | ee | Long close-mid front unrounded vowel
+U+0041, U+0061 | A, a | a | Short open front unrounded vowel
+U+00DC U+006E, U+00FC U+006E | Ün, ün | ɯ̃ | Short nasalized close back unrounded vowel
+U+00DC U+00FC U+006E,U+00FC U+00FC U+006E | Üün, üün | ɯ̃ɯ̃ | Long nasalized close back unrounded vowel
+U+0055, U+0075 | U, u | u | Short close back rounded vowel
+U+0055 U+0075, U+0075 U+0075 | Uu, uu | uu | Long close back rounded vowel
+U+0055 U+006E, U+0075 U+006E | Un, un | ũ | Short nasalized close back rounded vowel
+U+0055 U+0075 U+006E, U+0075 U+0075 U+006E | Uun, uun | ũũ | Long nasalized close back rounded vowel
+U+004F, U+006F | O, o | o | Short close-mid back rounded vowel
+U+004F U+006F, U+006F U+006F | Oo, oo | oo | Long close-mid back rounded vowel
+U+0049 U+0069 U+006E, U+0069 U+0069 U+006E | Iin, iin | ĩĩ | Long nasalized close front unrounded vowel
+U+0049 U+0069, U+0069 U+0069 | Ii, ii | ii | Long close front unrounded vowel
+U+0049 U+006E, U+0069 U+006E | In, in | ĩ | Short nasalized close front unrounded vowel
+U+0049, U+0069 | I, i | i | Short close front unrounded vowel
+ | Ɩɩ, ɩɩ |  | 
+ | Ɩ, ɩ |  | 
+  | Ʋ, ʋ |  | 
+    | Ʋʋ, ʋʋ |  | 
+    | Ʋ̈, ʋ̈ |  | 
+    | Ʋ̈ʋ̈, ʋ̈ʋ̈ |  | 
+
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
 Voiced Bilabial implosive
 Voiced dental or alveolar implosive
-turned m Close back unrounded vowel
 -->
 ```
 Ng  ng
@@ -1575,7 +1602,18 @@ U+00A8	¨	1	DIAERESIS
 
 <b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](#a40)
 
-<b id="f41">41 </b>Umaoka, Yoshito n/d.  Unicode Technical Standard #35: Unicode Locale Data Markup Language (LDML) - Part 2: General. Version 33. Online: https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars[↩](#a41)
+<b id="f41">41 </b>Umaoka, Yoshito n/d.  Unicode Technical Standard #35: Unicode Locale Data Markup Language (LDML) - Part 2: General. Version 33. Online: https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars [↩](#a41)
+
+<b id="f42">42 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a42)
+
+<b id="f43">43 </b>BVydrin & Kességbeu. 2008. Dictionnaire Dan - Fraçais (dan de l'Est) avec une esquisse de grammaire du dan de l'Est et un index français-dan 1èré ´dition. St. Pétersbourg: Musé d'anthropologie et d'ethnographie, Académie des sciences de la Russie. [↩](#a43)
+
+<b id="f44">44 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a44)
+
+<b id="f45">45 </b>BVydrin & Kességbeu. 2008. Dictionnaire Dan - Fraçais (dan de l'Est) avec une esquisse de grammaire du dan de l'Est et un index français-dan 1èré ´dition. St. Pétersbourg: Musé d'anthropologie et d'ethnographie, Académie des sciences de la Russie. [↩](#a45)
+
+<b id="f46">46 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a46)
+
 <!--
 ```
 Some text <sup id="a1">[1](#f1)</sup>
