@@ -63,9 +63,9 @@ The reason for these two states is to faithfully represent the corpus as it was 
    * Eastern Dan
    * Orthography version: 3
 
-**Writing System Note**: When orthography version three was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the default characters used would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the development of a unique written text development culture.  From observing the corpus three notable instances present themselves:
+**Writing System Note**: When orthography version three was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the most frequently chosen characters by Dan authors would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the evolution of a unique print media culture for users of Dan.  From observing the corpus five notable, and previously undiscussed instances present themselves:
  * The use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaa˗` where there are extra spaces around the question mark. Presumably this is to provide visual clarity for  mental processing of punctuation marks.
- * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan to the best of the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone —  something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
+ * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan, to the best efforts given the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone —  something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
  * The hyphen in French can take on several linking usages:
    * It can connect morphology `celui-ci`or parts of speech (infinitive + pro noun) `aide-moi`
    * It can occur in set expressions like ` vis-à-vis`
@@ -80,6 +80,8 @@ The reason for these two states is to faithfully represent the corpus as it was 
    * It can indicate each change of speaker.
 
  It is not clearly laid out how Dan writing system(s) (1978, 1982, 1994, 2000, 2014) handle these functions. One possibility is to use a rounded glyph like a bullet for some of these functions (though the actual future of this need is in orthography version 3 is in question). Pedagogically punctuation, especially for discourse functions (typically beyond the simple sentence), should likely become part of the training to read Dan literacy program. In the past a deconstructionist approach<sup id="a35">[35](#f35)</sup> highlighting the differences between French and Dan, has been taken for users of French learning to read Dan. This approach has been successful. Perhaps the same approach with a learning unit on word boundaries and discourse level punctuation, would increase the confidence and clarity of Dan writers.
+ * Typographically expressing more than one language in a document is confusing to authors. Some authors when writing in Dan and referencing a French word  will put the word in parenthesis, other authors use type face to distinguish languages and at least one instance was found of using English style smart quotes to set off French words. All of these use strategies preserve the use of French quotes for direct speech usage — commonly called 'quotes'. The evolution of print media and the evolution of typographic tradition in Eastern Dan (and other language which often generate multi-lingual documents, especially if they use punctuation to indicate tone) would benefit form a standardized method of indicating a language change (code switch) with in the document. One possibility would be the introduction in the curriculum of other uses for quote marks.
+ * The use of French style quote marks 〈«〉, 〈»〉 is confusing to Dan authors. That is, opening and closing quote marks appear to be used interchangeably in opening quotations. Additionally, there are quite a few cases where closing quote marks are missing. If software engineers for grammar and spelling checkers can manage, adding a function which checks for closing quote marks (of any kind), much like is done for programmers in IDEs, would benefit many new writers of minority languages.
 
 #### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
 
@@ -1232,13 +1234,13 @@ $ sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 
 9. French Quotes
 
-  This seems to fix the typos that are generated by not having access to the correct character via a keyboard. Interestingly there are still 45 instances of 〈<〉 left. Some of these are obviously quote marks. But not all of them. I'm just not sure. Most of them do not have a closing tag.
+  This seems to fix the typos that are generated by not having access to the correct character via a keyboard, although the 1994 reader does use the 〈<〉 glyph instead of the 〈‹〉 glyph. We take this to be a typo in the book. Interestingly there are still 45 instances of 〈<〉 left if we convert them directly as 〈<<〉 to 〈«〉. Some of these are obviously quote marks. But not all of them. I'm just not sure. Most of them do not have a closing tag.
 
  ```
- $ sed -e 's/<</«/g' -i proof-of-concept-text.txt
+ $ sed -e 's/</‹/g' -i proof-of-concept-text.txt
  ```
  ```
- $ sed -e 's/>>/»/g' -i proof-of-concept-text.txt
+ $ sed -e 's/>/›/g' -i proof-of-concept-text.txt
 ```
 
  Fix cases of double single French quotes. This is where two symbols together make the "look a like" to intended out come.
@@ -1288,11 +1290,11 @@ $ sed -e 's/–/˗/g' -i proof-of-concept-text.txt
  Minus becomes a bit more complex, because it is correctly used with numbers, and there are misspellings - mostly in that the tone marks are separated from words. However, of the 26 cases of detached minus sign that occur in the corpus, some of them do pattern with the unattached dash, so maybe a real use case for dash can be argued.
 
  ```
- grep -n -P "\s-\s" proof-of-concept-text.txt | wc -l
+$ grep -n -P "\s-\s" proof-of-concept-text.txt | wc -l
 ```
 
  ```
-grep -n -P "\s[–-]\s" proof-of-concept-text.txt
+$ grep -n -P "\s[–-]\s" proof-of-concept-text.txt
  ```
  ```
  318:ʼwii kë - a ʼwɔn ma
@@ -1360,7 +1362,7 @@ $ grep -n -P "\d-" proof-of-concept-text.txt
  We can target all minus signs that are not followed by a digit and are (not-not) preceded by a space. This should give us all word initial minus signs.
 
   ```
-  grep -n -P "[^\d\S]-" proof-of-concept-text.txt
+$ grep -n -P "[^\d\S]-" proof-of-concept-text.txt
 ```
 
  ```
@@ -1368,7 +1370,7 @@ $ sed -e 's/[^\d\S]-/˗/g' -i proof-of-concept-text.txt
 ```
 
  ```
-grep -n -P "\s-\s\D[^ʼ]" proof-of-concept-text.txt
+$ grep -n -P "\s-\s\D[^ʼ]" proof-of-concept-text.txt
 ```
 
 11. Remove U+2022 〈•〉 BULLET
@@ -1396,48 +1398,53 @@ $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Co
   $ perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g'
   ```
 
-  14. Space padded Comma 〈,〉
+14. Space padded Comma 〈,〉
 
  It is the case the 56 instances of U+002C 〈,〉 COMMA have a space on both sides. This is fixed so that the comma does not have a space between it and the preceding word.
-  ```
+```
 $ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
 ```
  ```
 $ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
 ```
+
+15. Remove bad line encodings
+
+ Different operating systems use different line ending encodings to indicate line endings. We are going to regularize these.
+
+ Move  U+000A 〈 〉 'LINE FEED' to U+000D 〈 〉 Enter/Return.
+
+ ```
+$ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+$ rm proof-of-concept-text.txt
+$ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+```
+
+ Move form feed to enter/return.
+
+```
+$ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+
+$ rm proof-of-concept-text.txt
+$ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+```
+
+
+
 **Still not completed:**
 13. Replace U+FFF9 with 'LATIN SMALL LETTER U WITH GRAVE' (U+00F9) target 34
 
  ```
-cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-equal-letterU.txt
+$ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected-equal-letterU.txt
 ```
 
 14. Remove French words.
 
-15. Remove bad line encodings
-
-Different operating systems use different line ending encodings to indicate line endings. We are going to regularize these.
-
- Move line feed to enter/return.
- ```
-cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
-
-rm proof-of-concept-text.txt
-mv proof-of-concept-text2.txt proof-of-concept-text.txt
-```
-
-Move form feed to enter/return.
-
-```
-cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
-
-rm proof-of-concept-text.txt
-mv proof-of-concept-text2.txt proof-of-concept-text.txt
-```
 
 16. Figure out what to do with the following:
+
  ```< & > Should they go to the smaller French quotes?
 U+FFF9		17	INTERLINEAR ANNOTATION ANCHOR
 U+0304		1	COMBINING MACRON
