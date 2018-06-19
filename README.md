@@ -817,12 +817,17 @@ French is used in the book but there is no indication or attempt to define Frenc
 The introduction to Dan orthography as presented in _˗Pamɛbhamɛ_ states:
 >  c, h, j, qu et x n'existent pas en dan.
 
-Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not exist in Dan." While this may be true at a very strict level, several issues come to light immediately:
+Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not exist in Dan." While this may be true at a very strict level (when considering functional units rather than actual characters), several issues come to light immediately:
 1. 〈h〉 is present in 〈bh〉 and 〈dh〉, therefore is in the writing system, and orthography, and is a letter.
 2. 〈j〉 is often used in loan words like _Abidjan_.
 3. 〈qu〉 is not a letter, and 〈u〉 is clearly in Dan's writing system and orthography — as a letter.
 
-So if we were to include characters which are not frequently used in Dan, but are in some way needed in the writing system we might come close to some sort of statement like that of auxiliary characters. Auxiliary characters are characters which are not in an alphabet, might not be in a sort order but are needed in a writing system. Unicode informally [defines them in TR35](https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars). <sup id="a41">[41](#f41)</sup>
+So if we were to include characters which are not frequently used in Dan, but are in some way needed in the writing system we might come close to some sort of statement like that of auxiliary characters. Auxiliary characters are characters which are not in an alphabet, might not be in a sort order but are needed in a writing system. Unicode informally [defines five categories of characters in TR35](https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars). <sup id="a41">[41](#f41)</sup>
+ * main / standard
+ * auxiliary
+ * index
+ * punctuation
+ * number
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
