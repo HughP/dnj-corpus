@@ -85,7 +85,7 @@ The reason for these two states is to faithfully represent the corpus as it was 
 
 #### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
 
-The closest thing to a formal writing system description for Eastern Dan is a 1994<sup id="a19">[19](#f19)</sup> community oriented reader which covers, Vowels, Consonants, Numbers, and punctuation. The 1994 reader improves upon a 1982 community oriented reader<sup id="a20">[20](#f20)</sup> by offering sections on numbers and punctuation. However, neither book presents an alphabetic order, or an alphabet in whole (all at one time). In, fact because the readers are designed as transitional learners, coming from French, the mode of comparison is to French writing. To the point one might ask: "is the presentation of writing in Dan 'French orthography adapted for Dan', or is it a 'unique writing system for Dan' ready to stand on its own and greet a world of writing systems"? Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the correspondences between linguistic units and typographical units.
+The closest thing to a formal writing system description for Eastern Dan is a 1994<sup id="a19">[19](#f19)</sup> community oriented reader which covers, Vowels, Consonants, Numbers, and punctuation. The 1994 reader improves upon a 1982 community oriented reader<sup id="a20">[20](#f20)</sup> by offering sections on numbers and punctuation. However, neither book presents an alphabetic order, or an alphabet in whole (all at one time). In, fact because the readers are designed for transitional learners, coming from French, the mode of comparison is to French writing. The comparisons to French writing, and pedagogical assumptions what Dan readers/writers already know about French are so strong, that one might ask: "is the presentation of writing in Dan 'French orthography adapted for Dan', or is it a 'unique writing system for Dan' ready to stand on its own and greet a world of writing systems"? Several forthcoming works do offer a formal linguistic description of the orthography, orthography testing, and a newly proposed orthography, but these works fail to provide details at the technical and writing system levels, focusing rather on the correspondences between linguistic units and typographical units.
 
 In this section a short prose discussion is followed by a chart. Charts are followed by list presented in crucial ordering for tokenization by the python library [segments](https://pypi.org/project/segments/).<sup id="a21">[21](#f21)</sup>
 Note: the graphemes used here, with the exception of those recommended for special status by RFC3986<sup id="a22">[22](#f22)</sup> are presented because they are evidenced in the corpus.
@@ -100,7 +100,7 @@ These definitions and conventions are observed throughout this work:
 * A **linguistic description** would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of **phonemes** is a list of unique and contrastive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer **letters**/components than a list of phonemes in the same language.
 * A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_.
-* As laid out by Peter Constable,<sup id="a40">[40](#f40)</sup> a **Writing System** is a superordinate category of a collection of technologies and/or metadata on how an orthography is to be implemented.
+* As laid out by Peter Constable,<sup id="a40">[40](#f40)</sup> a **Writing System** is a superordinate category of a collection of technologies and/or metadata on how an orthography is to be implemented. The following image situates the terms and relationships around orthographies and languages.
 ![Orthography](Orthography.jpg)
 <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "encoding", "diphthong", "Functional Unit"    I should add a section about these
 
@@ -810,7 +810,7 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 
 #### Reasonable characters needed for French
 
-French is the National language in the country where the desist population of Eastern Dan speakers reside. It makes some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
+French is the national language in the country where the desist population of Eastern Dan speakers reside. It makes some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
 ###### Based on rules presented in 1994
 French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in Ivory Coast (Côte d'Ivoire).
@@ -822,7 +822,7 @@ Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not
 2. 〈j〉 is often used in loan words like _Abidjan_.
 3. 〈qu〉 is not a letter, and 〈u〉 is clearly in Dan's writing system and orthography — as a letter.
 
-So if we were to include characters which are not frequently used in Dan, but are in some way needed in the writing system we might come close to some sort of statement like that of
+So if we were to include characters which are not frequently used in Dan, but are in some way needed in the writing system we might come close to some sort of statement like that of auxiliary characters. Auxiliary characters are characters which are not in an alphabet, might not be in a sort order but are needed in a writing system. Unicode informally [defines them in TR35](https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars). <sup id="a41">[41](#f41)</sup>
 <!-- https://www.thoughtco.com/how-to-use-french-punctuation-4086509 https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 ###### Based on the corpus
 
@@ -1568,8 +1568,9 @@ U+00A8	¨	1	DIAERESIS
 <b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. [↩](#a39)
 
 <b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](#a40)
-<!--
 
+<b id="f41">41 </b>Umaoka, Yoshito n/d.  Unicode Technical Standard #35: Unicode Locale Data Markup Language (LDML) - Part 2: General. Version 33. Online: https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars[↩](#a41)
+<!--
 ```
 Some text <sup id="a1">[1](#f1)</sup>
 
