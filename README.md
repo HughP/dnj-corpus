@@ -510,6 +510,7 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 |----------------|:-----:|:-----:|:----:|
 | **Close**      |  ĩ    |   ɯ̃   |   ũ  |
 | **Near-close** |       |       |      |
+| **Mid**        |       |       |      |
 | **Open-mid**   |  ɛ̃    |   ʌ̃   |   ɔ̃  |
 | **Near-open**  |   æ̃   |       |      |
 | **Open**       |       |   ã   |   ɒ̃  |
