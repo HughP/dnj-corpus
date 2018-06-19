@@ -1,4 +1,4 @@
-separate# dnj-corpus
+# dnj-corpus
 A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (chapters) from _While waiting for a medical doctor_ translated into Eastern Dan. This corpus description also attempts a modest application of the principles set out by Martin Hosken for _Writing System Descriptions_.<sup id="a39">[39](#f39)</sup>
 
 ## Language Description
@@ -100,6 +100,8 @@ These definitions and conventions are observed throughout this work:
 * A **linguistic description** would include phonetic or phonological details for the characters used in the encoding of the text.
 * A list of **phonemes** is a list of unique and contrastive sound units in a language. Many times an alphabet is based on a list of phonemes. But to the extent that two typographical characters are used together in a pattern (digraph) to indicate when co-occurring that they represent a phoneme then an alphabet might have fewer **letters**/components than a list of phonemes in the same language.
 * A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_.
+* As laid out by Peter Constable,<sup id="a40">[40](#f40)</sup> a **Writing System** is a superordinate category of a collection of technologies and/or metadata on how an orthography is to be implemented.
+![Orthography](Orthography.jpg)
 <!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "encoding", "diphthong", "Functional Unit"    I should add a section about these
 
  Deborah Anderson, with Rick McGowan and Ken Whistler (and incorporating comments by Lorna Priest).2005 .Unicode Technical Note #19: Recommendations for Creating New Orthographies. https://www.unicode.org/notes/tn19/
@@ -115,7 +117,7 @@ These definitions and conventions are observed throughout this work:
    * Content within forward slashes denotes phonemic representations `//`.
    * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
    * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
-   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions,, using any one of these three parts.
+   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions (using any one of these three parts).
 
 ##### Casing rules
 ###### Based on rules presented in 1994
@@ -1564,6 +1566,8 @@ U+00A8	¨	1	DIAERESIS
 <b id="f38">38 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a38)
 
 <b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. [↩](#a39)
+
+<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](#a40)
 <!--
 
 ```
