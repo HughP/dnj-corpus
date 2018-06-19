@@ -765,23 +765,23 @@ The presentation order of consonants here does not represent the alphabet of Dan
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
-Uppercase, lowercase |, |  |
-| Kp, kp|  | 
-| Kw, kw |  | 
-| K, k |  | Voiceless velar stop
-| Gb, gb|  | 
-| Gw, gw|  | 
-| G, g	 |  | Voiced velar stop
-| Bh, bh|  | Voiced bilabial implosive
-| Dh, dh|  | Voiced dental implosive
-| B, b	 |  | Voiced bilabial stop
-| D, d	 |  | Voiced dental stop
-| M, m	 |  | 
-| N, n	 |  | 
-| F, f	 |  | 
+Uppercase, lowercase | , |  |
+| Kp, kp| k͡p | 
+| Kw, kw | k͡w | 
+| K, k | k | Voiceless velar stop
+| Gb, gb| g͡b | 
+| Gw, gw| g͡w | 
+| G, g | ɡ | Voiced velar stop
+| Bh, bh| ɓ | Voiced bilabial implosive
+| Dh, dh| ɗ | Voiced dental implosive
+| B, b	 | b | Voiced bilabial stop
+| D, d	 | d | Voiced dental stop
+| M, m	 | m | 
+| N, n	 | n | 
+| F, f	 | f | 
 | S, s	 |  | 
 | V, v	 |  | 
-| T, t	 |  | 
+| T, t	 | t | 
 | Z, z	 |  | 
 | L, l	 |  | 
 | W, w	 |  | 
