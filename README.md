@@ -638,16 +638,17 @@ U+0049 U+0069 U+006E, U+0069 U+0069 U+006E | Iin, iin | ĩĩ | Long nasalized 
 U+0049 U+0069, U+0069 U+0069 | Ii, ii | ii | Long close front unrounded vowel
 U+0049 U+006E, U+0069 U+006E | In, in | ĩ | Short nasalized close front unrounded vowel
 U+0049, U+0069 | I, i | i | Short close front unrounded vowel
- | Ɩɩ, ɩɩ |  | 
- | Ɩ, ɩ |  | 
-  | Ʋ, ʋ |  | 
-    | Ʋʋ, ʋʋ |  | 
-    | Ʋ̈, ʋ̈ |  | 
-    | Ʋ̈ʋ̈, ʋ̈ʋ̈ |  | 
+ | Ɩɩ, ɩɩ | /ee/,[ɪɪ] | 
+ | Ɩ, ɩ | /e/, [ɪ] | 
+ | Ʋ, ʋ | /o/, [ʊ] | 
+ | Ʋʋ, ʋʋ | /oo/, [ʊʊ] | 
+ | Ʋ̈, ʋ̈ | /ɤ/, [ʊ̜] or [ɯ̞̈]| Short near-close (near) back unrounded vowel
+ | Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
 
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
 Voiced Bilabial implosive
 Voiced dental or alveolar implosive
+⟨ɯ̞̈⟩ - kept because the brackets are different.
 -->
 ```
 Ng  ng
