@@ -638,12 +638,12 @@ U+0049 U+0069 U+006E, U+0069 U+0069 U+006E | Iin, iin | ĩĩ | Long nasalized 
 U+0049 U+0069, U+0069 U+0069 | Ii, ii | ii | Long close front unrounded vowel
 U+0049 U+006E, U+0069 U+006E | In, in | ĩ | Short nasalized close front unrounded vowel
 U+0049, U+0069 | I, i | i | Short close front unrounded vowel
- | Ɩɩ, ɩɩ | /ee/,[ɪɪ] |
- | Ɩ, ɩ | /e/, [ɪ] |
- | Ʋ, ʋ | /o/, [ʊ] |
- | Ʋʋ, ʋʋ | /oo/, [ʊʊ] |
- | Ʋ̈, ʋ̈ | /ɤ/, [ʊ̜] or [ɯ̞̈]| Short near-close (near) back unrounded vowel
- | Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
+ U+0196 U+0269, U+0269 U+0269| Ɩɩ, ɩɩ | /ee/,[ɪɪ] | Long near-close front unrounded vowel
+ U+0196, U+0269| Ɩ, ɩ | /e/, [ɪ] | Short near-close front unrounded vowel
+  U+01B2, U+028B | Ʋ, ʋ | /o/, [ʊ] | Short near-close near-back rounded vowel
+  U+01B2 U+028B, U+028B U+028B | Ʋʋ, ʋʋ | /oo/, [ʊʊ] | Long near-close near-back rounded vowel
+ U+01B2 U+0308, U+028B U+0308 | Ʋ̈, ʋ̈ | /ɤ/, [ʊ̜] or [ɯ̞̈]| Short near-close (near) back unrounded vowel
+ U+01B2 U+0308 U+028B U+0308, U+028B U+0308 U+028B U+0308| Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
 
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
 ⟨ɯ̞̈⟩ - kept because the brackets are different.
