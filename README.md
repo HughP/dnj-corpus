@@ -648,17 +648,20 @@ U+0049, U+0069 | I, i | i | Short close front unrounded vowel
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
 ⟨ɯ̞̈⟩ - kept because the brackets are different.
 -->
+**Diphthongs**
 
 Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
-Uppercase, lowercase |, |  |
+**Diphthongs**  | |  |
 U+0069 U+028B U+0308 | iʋ̈ | iɯ̞̈ |
 U+0069 U+00F6 | iö | iɤ |
 U+0069 U+00EB | ië | iʌ |
 U+0075 U+00EB | uë | uʌ |
 U+028B U+00EB | ʋë | ʊʌ |
 U+028B U+00EB | ʋ̈ü | ʊɯ |
-
+U+0069 U+0061 | ia | ia |
+U+0069 U+0061 | ian | ĩã |
+U+0196 U+0061 | ɩa | /ea/, [ɪ]a |
 
 ##### Consonants
 
@@ -1558,19 +1561,6 @@ U+00A8	¨	1	DIAERESIS
 <b id="f45">45 </b>BVydrin & Kességbeu. 2008. Dictionnaire Dan - Fraçais (dan de l'Est) avec une esquisse de grammaire du dan de l'Est et un index français-dan 1èré ´dition. St. Pétersbourg: Musé d'anthropologie et d'ethnographie, Académie des sciences de la Russie. [↩](#a45)
 
 <b id="f46">46 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a46)
-
-<!--
-```
-Some text <sup id="a1">[1](#f1)</sup>
-
-```
-
-Then from within the footnote, link back to it.
-
-```
-<b id="f1">1</b> Footnote content here. [↩](#a1)
-```
--->
 
 ## Intellectual property ownership and licenses
 ### Text (corpus) content
