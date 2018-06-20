@@ -648,68 +648,29 @@ U+0049, U+0069 | I, i | i | Short close front unrounded vowel
 <!-- I need my handbook of the IPA to reference the Unicode code points and symbol names ae Near-open front unrounded vowel
 ⟨ɯ̞̈⟩ - kept because the brackets are different.
 -->
-```
-Ng  ng
-Aan	aan
-Aa	aa
-ian
-ia
-ɩa
-Ɛan	ɛan
-Ɛa	ɛa
-Ɛɛn	ɛɛn
-Ɛn	ɛn
-Ɛɛ	ɛɛ
 
-An	an
-Aɔn	aɔn
-Aɔ	aɔ
-Ëën	ëën
-Ee	ee
-Ëë	ëë
-Ën	ën
-Iin	iin
-Ii	ii
-In	in
-I	i
-Ɩɩ	ɩɩ
-Ɩ	ɩ
-A	a
-E	e
-Ɛ	ɛ
-Ë	ë
-O	o
-Oo	oo
-Ö	ö
-Öö	öö
-Ɔ	ɔ
-Ɔɔ	ɔɔ
-Ɔn	ɔn
-Ɔɔn	ɔɔn
-U	u
-Uu	uu
-Un	un
-Uun	uun
-Ü	ü
-Üü	üü
-Ün	ün
-Üün	üün
-Ʋ	ʋ
-Ʋʋ	ʋʋ
-Ʋ̈	ʋ̈
-Ʋ̈ʋ̈	ʋ̈ʋ̈
-iʋ̈
-iö
-ië
-uë
-ʋë
-ʋ̈ü
-```
+Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
+-------------|:----:|:----:|----
+Uppercase, lowercase |, |  |
+U+0069 U+028B U+0308 | iʋ̈ | iɯ̞̈ |
+U+0069 U+00F6 | iö | iɤ |
+U+0069 U+00EB | ië | iʌ |
+U+0075 U+00EB | uë | uʌ |
+U+028B U+00EB | ʋë | ʊʌ |
+U+028B U+00EB | ʋ̈ü | ʊɯ |
+
 
 ##### Consonants
 
 Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008](#f2)</sup><sup>,</sup><sup id="a2">[Ch10](#f2)</sup>
 
+<!--
+
+The existing orthography contains three cases of consonant over-representation:
+<l, r>: the phoneme /l/ is pronounced [ɾ] and spelled <r> following a coronal consonant (/t, d, s, z, y/) and [l] elsewhere;
+<bh, m>: the phoneme /ɓ/ is pronounced and spelled [m] preceding a nasal vowel and [ɓ] elsewhere;
+<dh, n>: the phoneme /ɗ/ is pronounced and spelled [n] preceding a nasal vowel and [ɗ] elsewhere.
+The allophonic graphemes <r, m, n> were all included in the orthography out of a desire to facilitate transition to and from French; their presence also conforms to regional practice. -->
 
 
 | |Labial |Dental|Palatal  | Velar| Labio-velar
@@ -751,15 +712,6 @@ P p
 ```
 ###### Based on the corpus
 
-<!--
-
-The existing orthography contains three cases of consonant over-representation:
-<l, r>: the phoneme /l/ is pronounced [ɾ] and spelled <r> following a coronal consonant (/t, d, s, z, y/) and [l] elsewhere;
-<bh, m>: the phoneme /ɓ/ is pronounced and spelled [m] preceding a nasal vowel and [ɓ] elsewhere;
-<dh, n>: the phoneme /ɗ/ is pronounced and spelled [n] preceding a nasal vowel and [ɗ] elsewhere.
-The allophonic graphemes <r, m, n> were all included in the orthography out of a desire to facilitate transition to and from French; their presence also conforms to regional practice.
-
--->
 The presentation order of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
@@ -778,15 +730,15 @@ U+0044, U+0064 | D, d | d | Voiced dental stop
 U+004D, U+006D | M, m | m | Bilabial nasal
 | N, n | n | Dental nasal
 | F, f	 | f |
-| S, s	 |  |
+| S, s	 | s |
 | V, v	 |  |
 | T, t	 | t |
 | Z, z	 |  |
-| L, l	 |  |
-U+0057, U+0077 | W, w	 |  |
+| L, l	 | l |
+U+0057, U+0077 | W, w  |  |
 | R, r	 |  |
 | Y, y	 |  |
-U+0050, U+0070 | P, p	 | p | Voiceless bilabial stop
+U+0050, U+0070 | P, p  | p | Voiceless bilabial stop
 
 ##### Tone marking
 
