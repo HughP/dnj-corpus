@@ -208,9 +208,12 @@ echo "In which cases are DASHES occuring with spaces on both sides?"
 grep -n -P "\s–\s" proof-of-concept-text.txt | wc -l
 grep -n -P "\s–\s" proof-of-concept-text.txt
 
-echo ""
-echo "We are going to move them so that they associated to the right... connecting to words to the right."
+grep -n -P "\s-\s" proof-of-concept-text.txt | wc -l
+grep -n -P "\s-\s" proof-of-concept-text.txt
 
+exit 1
+echo "We are going to move them so that they associated to the right... connecting to words to the right."
+exit 1
 sed -e 's/ – /\ –/g' -i proof-of-concept-text.txt
 
 echo "If there is something between this line and 'Yep.' then FAIL."

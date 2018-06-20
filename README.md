@@ -638,10 +638,10 @@ U+0049 U+0069 U+006E, U+0069 U+0069 U+006E | Iin, iin | ĩĩ | Long nasalized 
 U+0049 U+0069, U+0069 U+0069 | Ii, ii | ii | Long close front unrounded vowel
 U+0049 U+006E, U+0069 U+006E | In, in | ĩ | Short nasalized close front unrounded vowel
 U+0049, U+0069 | I, i | i | Short close front unrounded vowel
- | Ɩɩ, ɩɩ | /ee/,[ɪɪ] | 
- | Ɩ, ɩ | /e/, [ɪ] | 
- | Ʋ, ʋ | /o/, [ʊ] | 
- | Ʋʋ, ʋʋ | /oo/, [ʊʊ] | 
+ | Ɩɩ, ɩɩ | /ee/,[ɪɪ] |
+ | Ɩ, ɩ | /e/, [ɪ] |
+ | Ʋ, ʋ | /o/, [ʊ] |
+ | Ʋʋ, ʋʋ | /oo/, [ʊʊ] |
  | Ʋ̈, ʋ̈ | /ɤ/, [ʊ̜] or [ɯ̞̈]| Short near-close (near) back unrounded vowel
  | Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
 
@@ -719,20 +719,20 @@ Phoneme chart<sup id="a1">[SIL1982](#f1)</sup><sup>,</sup><sup id="a2">[V&K 2008
 | Voiceless fricatives   |    f     |      s       |               |        |
 | Voiced Fricatives      |    v     |      z       |               |        |
 | Implosives             |    ɓ     |      ɗ       |               |        |
-| Continuants            |          |      l       |      y        |        |   w
+| Continuants            |    r      |      l       |      y        |        |   w
 
 
-###### Based on rules presented in 1994
+###### Based on data presented in 1994
 
 ```
-Kp  kp
+Kp kp
 Kw kw
 K k
-Gb  gb
-Gw  gw
+Gb gb
+Gw gw
 G g
-Bh  bh
-Dh  dh
+Bh bh
+Dh dh
 B b
 D d
 M m
@@ -762,58 +762,32 @@ The allophonic graphemes <r, m, n> were all included in the orthography out of a
 -->
 The presentation order of consonants here does not represent the alphabet of Dan, but rather the order required to tokenized the text into phonemes.
 
-
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
 Uppercase, lowercase | , |  |
-| Kp, kp| k͡p | 
-| Kw, kw | k͡w | 
-| K, k | k | Voiceless velar stop
-| Gb, gb| g͡b | 
-| Gw, gw| g͡w | 
-| G, g | ɡ | Voiced velar stop
-| Bh, bh| ɓ | Voiced bilabial implosive
-| Dh, dh| ɗ | Voiced dental implosive
-| B, b	 | b | Voiced bilabial stop
-| D, d	 | d | Voiced dental stop
-| M, m	 | m | 
-| N, n	 | n | 
-| F, f	 | f | 
-| S, s	 |  | 
-| V, v	 |  | 
-| T, t	 | t | 
-| Z, z	 |  | 
-| L, l	 |  | 
-| W, w	 |  | 
-| R, r	 |  | 
-| Y, y	 |  | 
-| P, p	 | p | Voiceless bilabial stop
+U+004B U+0070, U+006B U+0070| Kp, kp| k͡p |
+U+004B U+0077, U+006B U+0077| Kw, kw | k͡w |
+U+004B, U+006B | K, k | k | Voiceless velar stop
+U+0047 U+0062, U+0067 U+0062| Gb, gb| g͡b |
+U+0047 U+0077, U+0067 U+0077| Gw, gw| g͡w |
+U+0047, U+0067 | G, g | ɡ | Voiced velar stop
+U+0042 U+0068, U+0062 U+0068| Bh, bh| ɓ | Voiced bilabial implosive
+U+0044 U+0068, U+0064 U+0068 | Dh, dh| ɗ | Voiced dental implosive
+U+0042, U+0062 | B, b | b | Voiced bilabial stop
+U+0044, U+0064 | D, d | d | Voiced dental stop
+U+004D, U+006D | M, m | m | Bilabial nasal
+| N, n | n | Dental nasal
+| F, f	 | f |
+| S, s	 |  |
+| V, v	 |  |
+| T, t	 | t |
+| Z, z	 |  |
+| L, l	 |  |
+U+0057, U+0077 | W, w	 |  |
+| R, r	 |  |
+| Y, y	 |  |
+U+0050, U+0070 | P, p	 | p | Voiceless bilabial stop
 
-```
-Kp  kp
-Kw kw
-K k
-Gb  gb
-Gw  gw
-G g
-Bh  bh
-Dh  dh
-B b
-D d
-M m
-N n
-F f
-S s
-V v
-T t
-Z z
-L l
-W w
-R r
-Y y
-P p
-
-```
 ##### Tone marking
 
 There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
