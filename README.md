@@ -120,7 +120,7 @@ These definitions and conventions are observed throughout this work:
    * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions (using any one of these three parts).
 
 ##### Casing rules
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 No specific casing rules are discussed.
 
 ###### Based on the corpus
@@ -139,14 +139,14 @@ Orthographic word breaks are indicated by a space, generally U+0020. Because Eas
 
 The use of normal text editors with the standard characters for the glyphs representing tone result in line and word breaks which are unexpected for Eastern Dan readers and Writers. The solution for the orthography version 3 is to use 'MODIFIER LETTER' equivalent characters for tone marks, instead of standard characters found in many of the global languages using Latin scripts for these glyphs.
 
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter. So presumably hyphenation is not allowed in this orthography either.
 
 ###### Based on the corpus
 Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
 
 ##### Punctuation
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes" of punctuation of the orthography of French.
 Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0.  So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode codepoints are provided here as an added point of reference. They are not in the source text.
 
@@ -217,7 +217,7 @@ _
 ```
 
 ##### Number Characters
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 Unfortunately no math symbols or other numeric related characters are provided. Unicode codepoints are provided here as an added point of reference. They are not in the source text.
 
 Codepoint | Grapheme
@@ -346,7 +346,7 @@ _
 <
 ```
 
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 The Internet was not discussed in the 1994 reading primer.
 
 ###### Based on the corpus
@@ -355,7 +355,7 @@ This corpus does not represent Internet communication, therefore it seems a bit 
 It is worth noting that the local paper evidently did have some online presence at _www.pamebhame.info_. This was some time around 2008. A quick check of the Internet archive shows that no content was preserved in the [Internet archive](https://web.archive.org/web/*/http://pamebhame.info/robots.txt).
 
 #### Alphabet
-##### Based on rules presented in 1994
+##### Based on content presented in 1994
 Actually neither the 1994<sup id="a28">[28](#f28)</sup> reading primer nor the 1982<sup id="a29">[29](#f29)</sup> reading primer present or address the issue of an alphabet, or alphabetical ordering. Both resources present their audiences with a list of pedagogical learning units which match well with the phonemics of Eastern Dan (with a few exceptions). They present these in _functional units_ (a term I borrow from Holm 1971<sup id="a30">[30](#f30)</sup> and Venezky 1970<sup id="a31">[31](#f31)</sup> 1967<sup id="a32">[32](#f32)</sup>), ordered and grouped by place of articulation (phonetic detail). Therefore, as according to the information which is available, it would appear that no alphabet statement has been made for Eastern Dan.
 
 That said, a letter list should be possible, and relevant to this section, though any ordering presented here would only be for practical reasons, and is not intended to be prescriptive.
@@ -517,7 +517,7 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 /ŋ/
 
-Allophonic variation of vowels does occur. In some dialects these allophones have been considered phonemic. However the phonemic status is not attested ubiquitously in Eastern Dan. This accounts for the addition of three letters 〈ɩ〉, 〈ʋ〉, and 〈ʋ̈〉 between the 1982 and the 1994 versions of the reading primers. These allophones are the result of Extra High Tone interaction with the phonemes: /e/, /o/, /ɤ/ respectively.
+Allophonic variation of vowels does occur. In some dialects these allophones have been considered phonemic. However the phonemic status is not attested ubiquitously in Eastern Dan. Eastern Dan's writing system attempts to be pan-dialectical. This accounts for the addition of three letters 〈ɩ〉, 〈ʋ〉, and 〈ʋ̈〉 between the 1982 and the 1994 versions of the reading primers. These allophones are the result of Extra High Tone interaction with the phonemes: /e/, /o/, /ɤ/ respectively.
 
 <!--
 
@@ -732,22 +732,22 @@ U+0042, U+0062 | B, b | b | Voiced bilabial stop
 U+0044, U+0064 | D, d | d | Voiced dental stop
 U+004D, U+006D | M, m | m | Bilabial nasal
 | N, n | n | Dental nasal
-| F, f	 | f |
-| S, s	 | s |
-| V, v	 |  |
-| T, t	 | t |
-| Z, z	 |  |
-| L, l	 | l |
+| F, f | f | Voiceless labial dental fricative
+| S, s | s |
+| V, v | v | Voiced labial dental fricative
+| T, t | t | Voiceless dental stop
+| Z, z |  |
+| L, l | l |
 U+0057, U+0077 | W, w  |  |
-| R, r	 |  |
-| Y, y	 |  |
+| R, r |  |
+| Y, y |  |
 U+0050, U+0070 | P, p  | p | Voiceless bilabial stop
 
 ##### Tone marking
 
 There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
 
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 <!--
 >The earliest version of this orthography underdifferentiated the xH and H tones; they were both written with a preposed apostrophe, e.g. /kɔ́/ <‘kô> house. Also, L tone was written with a preposed stop /zɛ̀/ <.zè> termite (Thomas 1978, 12). This was later revised to the system that is still in use today (Table 4).
 -->
@@ -788,7 +788,7 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 
 French is the national language in the country where the desist population of Eastern Dan speakers reside. It makes some sense to add the necessary characters to a text input solution. However, those characters are separated out so that it is possible to design a text input solution without them.
 
-###### Based on rules presented in 1994
+###### Based on content presented in 1994
 French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in Ivory Coast (Côte d'Ivoire).
 The introduction to Dan orthography as presented in _˗Pamɛbhamɛ_ states:
 >  c, h, j, qu et x n'existent pas en dan.

@@ -10,7 +10,7 @@
 rm proof-of-concept-text.txt
 rm initial-starting-corpus.txt
 git rm -f proof-of-concept-text.txt
-git rm proof-of-concept-text-count.txt
+git rm proof-of-concept-text-count*.txt
 
 ########################
 ## Gather raw files and conbine them ##
@@ -32,7 +32,7 @@ cp proof-of-concept-text.txt initial-starting-corpus.txt
 # git commit proof-of-concept-text.txt -m "base of corpus before character changes"
 
 ##Get a base set of numbers to work with so that we can compart changes numerically
-# UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count.txt
+UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count-1-original.txt
 #
 # git add proof-of-concept-text-count.txt
 #
@@ -52,7 +52,7 @@ mv proof-no-PUA.txt proof-of-concept-text.txt
 
 # git commit proof-of-concept-text.txt -m "Corpus after PUA character changes"
 #
-# UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count.txt
+#UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count.txt
 #
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after PUA character changes"
 
@@ -73,12 +73,10 @@ sed -e 's/<[^>]*>//g' -i proof-of-concept-text.txt
 
 # git commit proof-of-concept-text.txt -m "Corpus after removing heading tags character changes"
 #
-# UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count.txt
+UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count-2-noHTML.txt
 #
 # git commit proof-of-concept-text-count.txt -m "Corpus Numbers after removing heading tags"
 #
-# #No French could go here. or not.
-
 
 ## ############## #################
 ## Character changes - Typographical Encoding Errors##
@@ -211,9 +209,8 @@ grep -n -P "\s–\s" proof-of-concept-text.txt
 grep -n -P "\s-\s" proof-of-concept-text.txt | wc -l
 grep -n -P "\s-\s" proof-of-concept-text.txt
 
-exit 1
 echo "We are going to move them so that they associated to the right... connecting to words to the right."
-exit 1
+
 sed -e 's/ – /\ –/g' -i proof-of-concept-text.txt
 
 echo "If there is something between this line and 'Yep.' then FAIL."
@@ -254,7 +251,7 @@ rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 ##14 comma de-encapselation by spaces
-cat proof-of-concept-text.txt | perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt | perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -308,6 +305,24 @@ perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > proof-of-concept-text2.txt
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
+#Fix French: Visual inspection has shown that French words with apostrophes often have unnecessary spaces after them. This is a manual hack to fix that. Also French has real apostrophes not letter apostrophes.
+
+sed -e "s/nʼexistent/n'existent/g" -i proof-of-concept-text.txt
+sed -e "s/quʼ en/qu'en/g" -i proof-of-concept-text.txt
+sed -e "s/lʼ /l'/g" -i proof-of-concept-text.txt
+sed -e "s/Lʼ /L'/g" -i proof-of-concept-text.txt
+sed -e "s/dʼ un /d'un/g" -i proof-of-concept-text.txt
+sed -e "s/Dʼ/D'/g" -i proof-of-concept-text.txt
+
+#Then let's disentagle some of the French-Dan words
+sed -e 's/kaatie/kaa tie/g' -i proof-of-concept-text.txt
+sed -e 's/saabas/saa bas/g' -i proof-of-concept-text.txt
+sed -e 's/saasavon/saa savon/g' -i proof-of-concept-text.txt
+sed -e 's/klanghaut/klang haut/g' -i proof-of-concept-text.txt
+UnicodeCCount.pl proof-of-concept-text.txt > proof-of-concept-text-count-5-fixfrench.txt
+
+sed '/^\s*$/d' -i proof-of-concept-text.txt
+sed -i '/^$/d' proof-of-concept-text.txt
 
 ##Generate French text
 # For the first 9 times copy from Lʼorthographe|Voici DAN to ˮNimlʋʋ but don't include ˮNimlʋʋ. dump that in file clean the file with this:
@@ -328,6 +343,14 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #note that this has an upsilon in it and that should go away. we can add all the unique characters from Dan orthgrphy to thie excluding lines. There is still one or two cases of something french without a space in front of it.
 # "klangʼyënngsavon
 # ꞊gööscorpion
+
+
+# #No French could go here. or not.
+
+#awk '/Lʼorthographe/{flag=1}/ˮNimlʋʋ/{flag=0} flag' proof-of-concept-text.txt | tr "," " ," | tr "." " ." | sed 's/kaatie/kaa tie/g' | sed 's/saabas/saa bas/g' | sed 's/saasavon/saa savon/g' | sed 's/klanghaut/klang haut/g' | tr " " "\n" | grep  -P "^[^,|.|)|+|(|:|1|2|0|4|9]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩ]" | sort -u | awk '!/Aa/ && /bh/ && /ën/ && /dh/ && !/Dh/ && !/uu/ && !/An/ && !/ u / && !/ëë/ && !/ng/ && !/ë/ && !/ee/ && !/gw/ && !/gb/ && !/aa/ && !/kw/ && !/Gana/ && !/oo/ && !/Togo/' |grep -P "u"
+
+
+#awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag ' proof-of-concept-text.txt | tr " " "\n" | grep  -P "^[^)|+|(|:]"| grep -v "[-ʼ꞊ˮöɛɔüʋɩ]" | uniq | sort -u
 
 
 ##Practice on French
@@ -529,24 +552,32 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 # iroko
 # souche
 
+
+
 #15 fix mixed line feeds
-#15.a Move line feed to enter/return.
+#15.a Move enter/return to line feed.
 cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+perl -CS -pe 's/\N{U+000D}/\N{U+000A}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-#15.b Move form feed to enter/return.
+#15.b Move form feed to line feed.
 
 cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+perl -CS -pe 's/\N{U+000C}/\N{U+000A}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+cat proof-of-concept-text.txt  |
+perl -CS -pe 's/(\R)(?:\h*\R)+/$1$1/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 #Multible spaces into single spaces
-sed -e 's/ +/ /g' -i proof-of-concept-text.txt
+sed -e 's/\s+/ /g' -i proof-of-concept-text.txt
 
 cat -s proof-of-concept-text.txt > proof-of-concept-text2.txt
 
