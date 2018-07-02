@@ -222,32 +222,32 @@ Unfortunately no math symbols or other numeric related characters are provided. 
 
 Codepoint | Grapheme
 -------------|-----
-U+0030      | 0
-U+0031      | 1
-U+0032      | 2
-U+0033      | 3
-U+0034      | 4
-U+0035      | 5
-U+0036      | 6
-U+0037      | 7
-U+0038      | 8
-U+0039      | 9
+U+0030  | 0
+U+0031  | 1
+U+0032  | 2
+U+0033  | 3
+U+0034  | 4
+U+0035  | 5
+U+0036  | 6
+U+0037  | 7
+U+0038  | 8
+U+0039  | 9
 
 ###### Based on the corpus
 As evidenced in the corpus, as it was originally delivered, when writing Eastern Dan with the Latin script the following numbers are used.
 
 Codepoint   | Grapheme
 -------------|-----
-U+0030      | 0
-U+0031      | 1
-U+0032      | 2
-U+0033      | 3
-U+0034      | 4
-U+0035      | 5
-U+0036      | 6
-U+0037      | 7
-U+0038      | 8
-U+0039      | 9
+U+0030  | 0
+U+0031  | 1
+U+0032  | 2
+U+0033  | 3
+U+0034  | 4
+U+0035  | 5
+U+0036  | 6
+U+0037  | 7
+U+0038  | 8
+U+0039  | 9
 
 ```
 0
@@ -362,42 +362,49 @@ That said, a letter list should be possible, and relevant to this section, thoug
 In this presentation I present diacritics as a component of the letters on which they occur. I do this because the diacritics themselves do not have a consistent meaning in the orthography. I do not list every functional unit, only the letters from which functional units can be created. This is true for vowels, tone patterns, and double articulated consonants.
 Based on the letters presented in the 1994 primer the following letters would need to be in an alphabet. This list includes 36 letters; 32 with casing pairs for a total of 68 alphabetic graphemes. A list of functional units will be presented in a separate section.
 
-```
-꞊
-˗
-ʼ
-ˮ
-Aa
-Bb
-Dd
-Ee
-Ɛɛ
-Ëë
-Ff
-Gg
-Hh
-Ii
-Ɩɩ
-Kk
-Ll
-Nn
-Mm
-Oo
-Ɔɔ
-Öö
-Pp
-Rr
-Ss
-Tt
-Uu
-Üü
-Vv
-Ʋ̈ʋ̈
-Ʋʋ
-Ww
-Yy
-Zz
-```
+|: Uppercase :|: Lowercase :|: Glyph:|: Glyph :|: Approximate Unicode Name |
+|---------------|---------------|-------|-------|---------------------------------------------------|
+| NFD Encoding  | NFD Encoding  |    |    |  |
+| U+0041 | U+0061    | A | a | LATIN LETTER A|
+| U+0042    | U+0062    | B | b | LATIN LETTER B        |
+| U+0044    | U+0064    | D | d | LATIN LETTER D        |
+| U+0045    | U+0065    | E | e | LATIN LETTER E        |
+| U+0045 U+0308 | U+0065 U+0308 | Ë    | ë    | LATIN LETTER E with COMBINING DIAERESIS   |
+| U+0046    | U+0066    | F | f | LATIN LETTER F        |
+| U+0047    | U+0067    | G | g | LATIN LETTER G        |
+| U+0048    | U+0068    | H | h | LATIN LETTER H        |
+| U+0049    | U+0069    | I | i | LATIN LETTER I        |
+| U+004B    | U+006B    | K | k | LATIN LETTER K        |
+| U+004C    | U+006C    | L | l | LATIN LETTER L        |
+| U+004D    | U+006D    | M | m | LATIN LETTER M        |
+| U+004E    | U+006E    | N | n | LATIN LETTER N        |
+| U+004F    | U+006F    | O | o | LATIN LETTER O        |
+| U+004F U+0308 | U+006F U+0308 | Ö    | ö    | LATIN LETTER O with COMBINING DIAERESIS   |
+| U+0050    | U+0070    | P | p | LATIN LETTER P        |
+| U+0052    | U+0072    | R | r | LATIN LETTER R        |
+| U+0053    | U+0073    | S | s | LATIN LETTER S        |
+| U+0054    | U+0074    | T | t | LATIN LETTER T        |
+| U+0055    | U+0075    | U | u | LATIN LETTER U        |
+| U+0055 U+0308 | U+0075 U+0308 | Ü    | ü    | LATIN LETTER U with COMBINING DIAERESIS   |
+| U+0056    | U+0076    | V | v | LATIN LETTER V        |
+| U+0057    | U+0077    | W | w | LATIN LETTER W        |
+| U+0059    | U+0079    | Y | y | LATIN LETTER Y        |
+| U+005A    | U+007A    | Z | z | LATIN LETTER Z        |
+| U+0186    | U+0254    | Ɔ | ɔ | LATIN LETTER OPEN O       |
+| U+0190    | U+025B    | Ɛ | ɛ | LATIN LETTER OPEN E       |
+| U+0196    | U+0269    | Ɩ | ɩ | LATIN LETTER IOTA         |
+| U+01B2    | U+028B    | Ʋ | ʋ | LATIN LETTER V WITH HOOK      |
+| U+01B2 U+0308 | U+028B U+0308 | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS |
+| N/a   | U+02BC    | ʼ |   | MODIFIER LETTER APOSTROPHE        |
+| N/a   | U+02D7    | ˗ |   | MODIFIER LETTER MINUS SIGN        |
+| N/a   | U+02EE    | ˮ |   | MODIFIER LETTER DOUBLE APOSTROPHE     |
+| N/a   | U+A78A    | ꞊ |   | MODIFIER LETTER SHORT EQUALS SIGN     |
+| NFC Encoding  | NFC Encoding  |   |   |           |
+| U+00CB    | U+00EB    | Ë    | ë    | LATIN LETTER E WITH DIAERESIS     |
+| U+00D6    | U+00F6    | Ö    | ö    | LATIN LETTER O WITH DIAERESIS     |
+| U+00DC    | U+00FC    | Ü    | ü    | LATIN LETTER U WITH DIAERESIS     |
+| None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS   |
+
 ###### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
@@ -499,21 +506,21 @@ Linguistically, Eastern Dan is claimed to have a 12 point vowel system with leng
 
 |    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
-| **Close**      |  i    |   ɯ   |   u  |
-| **Near-close** |       |       |      |
-| **Mid**        |  e    |   ɤ   |   o  |
+| **Close**  |  i    |   ɯ   |   u  |
+| **Near-close** |   |   |  |
+| **Mid**    |  e    |   ɤ   |   o  |
 | **Open-mid**   |  ɛ    |   ʌ   |   ɔ  |
-| **Near-open**  |   æ   |       |      |
-| **Open**       |       |   a   |   ɒ  |
+| **Near-open**  |   æ   |   |  |
+| **Open**   |   |   a   |   ɒ  |
 
 |    _**Nasal**_  | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
-| **Close**      |  ĩ    |   ɯ̃   |   ũ  |
-| **Near-close** |       |       |      |
-| **Mid**        |       |       |      |
+| **Close**  |  ĩ    |   ɯ̃   |   ũ  |
+| **Near-close** |   |   |  |
+| **Mid**    |   |   |  |
 | **Open-mid**   |  ɛ̃    |   ʌ̃   |   ɔ̃  |
-| **Near-open**  |   æ̃   |       |      |
-| **Open**       |       |   ã   |   ɒ̃  |
+| **Near-open**  |   æ̃   |   |  |
+| **Open**   |   |   ã   |   ɒ̃  |
 
 /ŋ/
 
@@ -678,12 +685,12 @@ The allophonic graphemes <r, m, n> were all included in the orthography out of a
 
 | |Labial |Dental|Palatal  | Velar| Labio-velar
 |-----|:-----:|:-----:|:------:|:------:|:--------:
-| Voiceless Stops        |    p     |      t       |               |   k    |  kp, kw
-| Voiced Stops           |    b     |      d       |               |   g    |  gb, gw
-| Voiceless fricatives   |    f     |      s       |               |        |
-| Voiced Fricatives      |    v     |      z       |               |        |
-| Implosives             |    ɓ     |      ɗ       |               |        |
-| Continuants            |    r      |      l       |      y        |        |   w
+| Voiceless Stops    |    p |  t   |   |   k    |  kp, kw
+| Voiced Stops   |    b |  d   |   |   g    |  gb, gw
+| Voiceless fricatives   |    f |  s   |   |    |
+| Voiced Fricatives  |    v |  z   |   |    |
+| Implosives     |    ɓ |  ɗ   |   |    |
+| Continuants    |    r  |  l   |  y    |    |   w
 
 
 ###### Based on data presented in 1994
@@ -1546,33 +1553,6 @@ U+00A8	¨	1	DIAERESIS
 
 <b id="f38">38 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a38)
 
-<b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. [↩](#a39)
+<b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. http://scripts.sil.org/cms/scripts/page.php?cat_id=EncodingPrinciples [↩](#a39)
 
-<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](#a40)
-
-<b id="f41">41 </b>Umaoka, Yoshito n/d.  Unicode Technical Standard #35: Unicode Locale Data Markup Language (LDML) - Part 2: General. Version 33. Online: https://www.unicode.org/reports/tr35/tr35-general.html#Exemplars [↩](#a41)
-
-<b id="f42">42 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a42)
-
-<b id="f43">43 </b>BVydrin & Kességbeu. 2008. Dictionnaire Dan - Fraçais (dan de l'Est) avec une esquisse de grammaire du dan de l'Est et un index français-dan 1èré ´dition. St. Pétersbourg: Musé d'anthropologie et d'ethnographie, Académie des sciences de la Russie. [↩](#a43)
-
-<b id="f44">44 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a44)
-
-<b id="f45">45 </b>BVydrin & Kességbeu. 2008. Dictionnaire Dan - Fraçais (dan de l'Est) avec une esquisse de grammaire du dan de l'Est et un index français-dan 1èré ´dition. St. Pétersbourg: Musé d'anthropologie et d'ethnographie, Académie des sciences de la Russie. [↩](#a45)
-
-<b id="f46">46 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a46)
-
-## Intellectual property ownership and licenses
-### Text (corpus) content
-Copyright claims are un-clear.
-If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the authors, or their employer. It does not readily seem that the authors are attributed in the corpus, but they might be in the orthography.
-
-Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license. Use under the _fair use_ doctrine is assumed.
-
-### Hugh Paterson's Contribution
-The `README.md` which is Hugh Paterson III's contribution is copyright Hugh Paterson III 2018, and licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
-
-The `generate-corpus.bash` script is also Hugh's contribution and is licensed under the MIT version [provided](paterson-license.md).
-
-### SIL International's Contribution
-Other content such as the content contained under the folder `/SILPUA` is licensed as originally offered (MIT).
+<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](
