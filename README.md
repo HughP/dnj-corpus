@@ -364,7 +364,7 @@ Based on the letters presented in the 1994 primer the following letters would ne
 
 | Uppercase | Lowercase | Glyph| Glyph | Approximate Unicode Name |
 |---------------|---------------|-------|-------|---------------------------------------------------|
-| _NFD Encoding_  | _NFD Encoding_  |    |    |  |
+| _NFD Encoding_  | _NFD Encoding_  |    |    | _Full Unicode Names containt 'CAPITAL' or 'SMALL'_|
 | U+0041 | U+0061    | A | a | LATIN LETTER A|
 | U+0042    | U+0062    | B | b | LATIN LETTER B        |
 | U+0044    | U+0064    | D | d | LATIN LETTER D        |
@@ -405,7 +405,7 @@ Based on the letters presented in the 1994 primer the following letters would ne
 | U+00DC    | U+00FC    | Ü    | ü    | LATIN LETTER U WITH DIAERESIS     |
 | None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS (NFD and NFC are the same as this is a composed form only character)   |
 
-###### Functional units
+##### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
 The following is a list of functional units presented with both sets of casing options. Because these functional units, it is assumed that there is some level of phonemic reality to which these graphical units relate. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `\p{L}` indicates some letter(s), and the tone marks themselves - represent themselves.
