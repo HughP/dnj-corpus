@@ -360,11 +360,11 @@ Actually neither the 1994<sup id="a28">[28](#f28)</sup> reading primer nor the 1
 
 That said, a letter list should be possible, and relevant to this section, though any ordering presented here would only be for practical reasons, and is not intended to be prescriptive.
 In this presentation I present diacritics as a component of the letters on which they occur. I do this because the diacritics themselves do not have a consistent meaning in the orthography. I do not list every functional unit, only the letters from which functional units can be created. This is true for vowels, tone patterns, and double articulated consonants.
-Based on the letters presented in the 1994 primer the following letters would need to be in an alphabet. This list includes 36 letters; 32 with casing pairs for a total of 68 alphabetic graphemes. A list of functional units will be presented in a separate section.
+Based on the letters presented in the 1994 primer the following letters would need to be in an alphabet. This list includes 36 letters; 32 with casing pairs for a total of 68 alphabetic graphemes. A list of functional units will be presented in a separate section. [CSV of this table](dnj-Settings/dnj-Alphabet.csv),[Text string of uncased letters followed by case matched letters](dnj-Settings/dnj-Alphabet.md)
 
-|: Uppercase :|: Lowercase :|: Glyph:|: Glyph :|: Approximate Unicode Name |
+| Uppercase | Lowercase | Glyph| Glyph | Approximate Unicode Name |
 |---------------|---------------|-------|-------|---------------------------------------------------|
-| NFD Encoding  | NFD Encoding  |    |    |  |
+| _NFD Encoding_  | _NFD Encoding_  |    |    |  |
 | U+0041 | U+0061    | A | a | LATIN LETTER A|
 | U+0042    | U+0062    | B | b | LATIN LETTER B        |
 | U+0044    | U+0064    | D | d | LATIN LETTER D        |
@@ -399,11 +399,11 @@ Based on the letters presented in the 1994 primer the following letters would ne
 | N/a   | U+02D7    | ˗ |   | MODIFIER LETTER MINUS SIGN        |
 | N/a   | U+02EE    | ˮ |   | MODIFIER LETTER DOUBLE APOSTROPHE     |
 | N/a   | U+A78A    | ꞊ |   | MODIFIER LETTER SHORT EQUALS SIGN     |
-| NFC Encoding  | NFC Encoding  |   |   |           |
+| _NFC Encoding_  | _NFC Encoding_  |   |   |           |
 | U+00CB    | U+00EB    | Ë    | ë    | LATIN LETTER E WITH DIAERESIS     |
 | U+00D6    | U+00F6    | Ö    | ö    | LATIN LETTER O WITH DIAERESIS     |
 | U+00DC    | U+00FC    | Ü    | ü    | LATIN LETTER U WITH DIAERESIS     |
-| None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS   |
+| None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS (NFD and NFC are the same as this is a composed form only character)   |
 
 ###### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
