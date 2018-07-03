@@ -364,7 +364,7 @@ Based on the letters presented in the 1994 primer the following letters would ne
 
 | Uppercase | Lowercase | Glyph| Glyph | Approximate Unicode Name |
 |---------------|---------------|-------|-------|---------------------------------------------------|
-| _NFD Encoding_  | _NFD Encoding_  |    |    | _Full Unicode Names containt 'CAPITAL' or 'SMALL'_|
+| _NFD Encoding_  | _NFD Encoding_  |    |    | _Full Unicode Names contain 'CAPITAL' or 'SMALL'._|
 | U+0041 | U+0061    | A | a | LATIN LETTER A|
 | U+0042    | U+0062    | B | b | LATIN LETTER B        |
 | U+0044    | U+0064    | D | d | LATIN LETTER D        |
@@ -405,7 +405,7 @@ Based on the letters presented in the 1994 primer the following letters would ne
 | U+00DC    | U+00FC    | Ü    | ü    | LATIN LETTER U WITH DIAERESIS     |
 | None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS (NFD and NFC are the same as this is a composed form only character)   |
 
-##### Functional units
+#### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
 
 The following is a list of functional units presented with both sets of casing options. Because these functional units, it is assumed that there is some level of phonemic reality to which these graphical units relate. The tonal patterns are written as Perl RegularExpressions in angle brackets. `\s` indicates a space (word boundaries), `\p{L}` indicates some letter(s), and the tone marks themselves - represent themselves.
@@ -726,7 +726,7 @@ The presentation order of consonants here does not represent the alphabet of Dan
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
-Uppercase, lowercase | , |  |
+_Uppercase, lowercase_ | , |  |
 U+004B U+0070, U+006B U+0070| Kp, kp| k͡p |
 U+004B U+0077, U+006B U+0077| Kw, kw | k͡w |
 U+004B, U+006B | K, k | k | Voiceless velar stop
@@ -738,16 +738,16 @@ U+0044 U+0068, U+0064 U+0068 | Dh, dh| ɗ | Voiced dental implosive
 U+0042, U+0062 | B, b | b | Voiced bilabial stop
 U+0044, U+0064 | D, d | d | Voiced dental stop
 U+004D, U+006D | M, m | m | Bilabial nasal
-| N, n | n | Dental nasal
-| F, f | f | Voiceless labial dental fricative
-| S, s | s |
-| V, v | v | Voiced labial dental fricative
-| T, t | t | Voiceless dental stop
-| Z, z |  |
-| L, l | l |
+U+004E, U+006E | N, n | n | Dental nasal
+U+0046, U+0066 | F, f | f | Voiceless labial dental fricative
+U+0053, U+0073 | S, s | s |
+U+0056, U+0076 | V, v | v | Voiced labial dental fricative
+U+0054, U+0074 | T, t | t | Voiceless dental stop
+U+005A, U+007A | Z, z |  |
+U+004C, U+006C | L, l | l |
 U+0057, U+0077 | W, w  |  |
-| R, r |  |
-| Y, y |  |
+U+0052, U+0072 | R, r |  |
+U+0059, U+0079 | Y, y |  |
 U+0050, U+0070 | P, p  | p | Voiceless bilabial stop
 
 ##### Tone marking
