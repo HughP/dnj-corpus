@@ -14,19 +14,12 @@ rm Remove-French.txt
 rm proof-of-concept-text.txt
 rm proof-of-concept-text2.txt
 rm Set-of-all-words-to-filter-french-from.txt
-rm proof-of-concept-text-count-1*.txt
-rm proof-of-concept-text-count-2*.txt
-rm proof-of-concept-text-count-3*.txt
-rm proof-of-concept-text-count-4*.txt
-rm proof-of-concept-text-count-5*.txt
-rm proof-of-concept-text-count-6*.txt
-rm proof-of-concept-text-count-7*.txt
-rm proof-of-concept-text-count-8*.txt
-
+rm proof-of-concept-text-count-*.txt
 rm initial-starting-corpus.txt
 git rm -f proof-of-concept-text.txt
 git rm proof-of-concept-text-count*.txt
-
+rm phonemic-corpus.txt
+exit 1
 ########################
 ## Gather raw files and conbine them ##
 ########################
