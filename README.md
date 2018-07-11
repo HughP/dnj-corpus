@@ -1158,7 +1158,19 @@ $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec
  $ cat proof-no-PUA.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-no-PUA-no-BOM.txt
 ```
 
-3. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt  > proof-no-PUA-no-BOM-no-TAGS.txt` could be used. _Actually_ if  the script is used, the `sed` command is used in the script.
+3. Make sure all the text is encoded as UTF-8 normalized as NFC.
+
+```
+cat proof-of-concept-text.txt | uconv -x -nfd > initial-starting-corpus-nfd.txt
+
+cat proof-of-concept-text-nfd.txt | uconv -x -nfc > initial-starting-corpus-nfc.txt
+
+rm proof-of-concept-text.txt
+rm proof-of-concept-text-nfd.txt
+mv proof-of-concept-text-nfc.txt proof-of-concept-text.txt
+```
+
+4. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt  > proof-no-PUA-no-BOM-no-TAGS.txt` could be used. _Actually_ if  the script is used, the `sed` command is used in the script.
 
 #### Typographical Encoding Errors
 In the course of text production several instances of different look-alike characters have been used. This is common for languages that do not have a Keyboard layout that will restrict (or guarantee the consistency) of the characters used to produce texts in that language.
@@ -1417,36 +1429,54 @@ $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Co
 14. Space padded Comma 〈,〉
 
  It is the case the 56 instances of U+002C 〈,〉 COMMA have a space on both sides. This is fixed so that the comma does not have a space between it and the preceding word.
-```
-$ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
-```
- ```
-$ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
-```
+  ```
+  $ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
+  ```
+  ```
+  $ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
+  ```
 
 15. Remove bad line encodings
 
  Different operating systems use different line ending encodings to indicate line endings. We are going to regularize these.
 
  Move  U+000A 〈 〉 'LINE FEED' to U+000D 〈 〉 Enter/Return.
+  ```
+  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+  ```
+
+16. Get rid of wayward U+00A8 Diaeresis and replace it with SPACE
+
+ Diaeresis U+00A8 is on second a in waa¨ here:
+>waa¨ʼwëë˗ ˮgblü ˮsɔɔdo
+
+  ```
+  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+00A8}/ /g' > proof-of-concept-text2.txt$ rm proof-of-concept-text.txt
+  $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+```
+
+17. Move form feed to enter/return.
 
  ```
-$ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
-
-$ rm proof-of-concept-text.txt
-$ mv proof-of-concept-text2.txt proof-of-concept-text.txt
-
-```
-
- Move form feed to enter/return.
-
-```
 $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
-
 $ rm proof-of-concept-text.txt
 $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 ```
 
+18.  Remove  17 instances of U+FFF9 INTERLINEAR ANNOTATION ANCHOR
+
+  ```
+  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+FFF9}//g' > proof-of-concept-text2.txt
+
+  $ rm proof-of-concept-text.txt
+  $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+```
+
+19.  Remove  U+0304 COMBINING MACRON
+
+  ```
+  $ sed -e 's/b̄h/bh/g' -i proof-of-concept-text.txt
+  ```
 
 
 **Still not completed:**
@@ -1462,8 +1492,6 @@ $ cat Corrected-equal.txt | perl -CS -pe 's/\N{U+FFF9}/\N{U+00F9}/g' > Corrected
 16. Figure out what to do with the following:
 
  ```< & > Should they go to the smaller French quotes?
-U+FFF9		17	INTERLINEAR ANNOTATION ANCHOR
-U+0304		1	COMBINING MACRON
 U+2013	–	1064	EN DASH
 U+00E7	ç	21	LATIN SMALL LETTER C WITH CEDILLA
 U+00E8	è	221	LATIN SMALL LETTER E WITH GRAVE
@@ -1473,8 +1501,10 @@ U+00EA	ê	28	LATIN SMALL LETTER E WITH CIRCUMFLEX
 ʼö ya ˗a ˗ga ˗sê --> e+diaeresis others are french
 U+00EE	î	3	LATIN SMALL LETTER I WITH CIRCUMFLEX
 U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
-U+00A8	¨	1	DIAERESIS
 ```
+
+
+
 ## Bibliography
 
 <b id="f1">1 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages.  [↩](#a1)
