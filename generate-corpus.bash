@@ -53,7 +53,6 @@ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -
 rm proof-of-concept-text.txt
 mv proof-no-PUA.txt proof-of-concept-text.txt
 
-
 #2. No-BOM
 #Use perl to remove BOM markers
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+FEFF}//g' > proof-of-concept-text2.txt
@@ -90,9 +89,8 @@ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g' > proof
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
-#
+
 UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-text-count-3-goodequals.txt
-# #
 
 #Table 2
 join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5  corpustable.txt proof-of-concept-text-count-3-goodequals.txt > corpustable3.txt
@@ -100,6 +98,7 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5  corpustabl
 ##2. Fix non-breaking space U+00A0 -->U+0020 ##
 echo "Fixing non-breaking spaces..."
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+00A0}/\N{U+0020}/g' >  proof-of-concept-text2.txt
+
 cp proof-of-concept-text2.txt proof-of-concept-text-nbsp.txt
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -144,8 +143,7 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,2.3,1.7  co
 
 sed -e 's/b̄h/bh/g' -i proof-of-concept-text.txt
 
-# cat proof-of-concept-text.txt  |
-# perl -CS -pe 's/\N{U+0304}//g' > proof-of-concept-text2.txt
+# cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+0304}//g' > proof-of-concept-text2.txt
 #
 # rm proof-of-concept-text.txt
 # mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -155,15 +153,13 @@ sed -e 's/b̄h/bh/g' -i proof-of-concept-text.txt
 # Diaeresis U+00A8 is on second a in waa¨ here:
 # waa¨ʼwëë˗ ˮgblü ˮsɔɔdo
 
-cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+00A8}/ /g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+00A8}/ /g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 # Remove  17 instances of INTERLINEAR ANNOTATION ANCHOR
-cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+FFF9}//g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+FFF9}//g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -239,7 +235,7 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9
 echo "LA-SHA"
 grep -n -P "–" proof-of-concept-text.txt | tail -1
 echo ""
-echo "See DASHES are everywhere:" "$(grep -n -P "\s–\s" proof-of-concept-text.txt| wc -l)" of "$(grep -n -P "–" proof-of-concept-text.txt| wc -l)" "are ambiguous."
+echo "See DASHES are everywhere:" "$(grep -n -P "\s–\s" proof-of-concept-text.txt | wc -l)" of "$(grep -n -P "–" proof-of-concept-text.txt | wc -l)" "are ambiguous."
 #Some dashes have space on both sides of them it is ambiousous as to if they are real dashes or miss typed minus signs. since in all cases they could, according to the orthography go to the right or left we are going to attach them to the right because there is no other tone marks on the words to the right. This is only 7 cases though.
 echo "We are going to move them so that they associated to the right... connecting to words to the right."
 
@@ -378,8 +374,7 @@ echo "None none of the" "$(grep -P "‚" proof-of-concept-text.txt | wc -l )" " 
 echo ""
 echo "END OF LOW QUOTE MARKS"
 echo ""
-cat proof-of-concept-text.txt  |
-perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -407,7 +402,6 @@ rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 sed -e 's/˗a˗/˗a ˗/g' -i proof-of-concept-text.txt
-
 
 grep -P -- "\p{L}\p{Lm}\p{L}" proof-of-concept-text.txt | tr " " "\n" | tr "[:upper:]" "[:lower:]" | sort | uniq -c | grep -P "\p{L}\p{Lm}\p{L}"
 
