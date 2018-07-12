@@ -9,6 +9,8 @@
 ## Delete older copies of corpus when generating new ones ##
 ####################################
 
+#By running these delete commands we are able to start clean with new files each running of the script.
+
 rm corpustable*.txt
 rm Remove-French.txt
 rm proof-of-concept-text.txt
@@ -19,7 +21,7 @@ rm initial-starting-corpus.txt
 git rm -f proof-of-concept-text.txt
 git rm proof-of-concept-text-count*.txt
 rm phonemic-corpus.txt
-exit 1
+
 ########################
 ## Gather raw files and conbine them ##
 ########################
@@ -429,7 +431,7 @@ sed -e 's/kaatie/kaa tie/g' -i proof-of-concept-text.txt
 sed -e 's/saabas/saa bas/g' -i proof-of-concept-text.txt
 sed -e 's/saasavon/saa savon/g' -i proof-of-concept-text.txt
 sed -e 's/klanghaut/klang haut/g' -i proof-of-concept-text.txt
-UnicodeCCount.pl -n proof-of-concept-text.txt > proof-of-concept-text-count-16-fixfrench.txt
+UnicodeCCount.pl -n proof-of-concept-text.txt > proof-of-concept-text-count-14-fixfrench.txt
 
 #Fix French: Visual inspection has shown that French words with apostrophes often have unnecessary spaces after them. This is a manual hack to fix that.
 
@@ -477,10 +479,10 @@ sed -e "s/Lʼ/L'/g" -i proof-of-concept-text.txt
 sed -e "s/dʼ un/d'un/g" -i proof-of-concept-text.txt
 sed -e "s/Dʼ/D'/g" -i proof-of-concept-text.txt
 
-UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-text-count-14-pre-french.txt
+UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-text-count-15-pre-french.txt
 
 #Table 13
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,1.11,1.12,1.13,1.14,1.15,2.3,1.16  corpustable13.txt proof-of-concept-text-count-14-pre-french.txt > corpustable14.txt
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,1.11,1.12,1.13,1.14,1.15,2.3,1.16  corpustable13.txt proof-of-concept-text-count-15-pre-french.txt > corpustable14.txt
 
 sed -e "s/nʼexistent/n'existent/g" -i Remove-French.txt
 sed -e "s/quʼen/qu'en/g" -i Remove-French.txt
@@ -525,11 +527,10 @@ sed -e "s/L'orthographe DAN//g" -i proof-of-concept-text.txt
 sed -e 's/ê/ë/g' -i proof-of-concept-text.txt
 sed -e 's/꞊misié/꞊misië/g' -i proof-of-concept-text.txt
 
-UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-text-count-15-post-french.txt
+UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-text-count-16-post-french.txt
 
 #Table 14
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,1.11,1.12,1.13,1.14,1.15,1.16,2.3,1.17 corpustable14.txt proof-of-concept-text-count-15-post-french.txt > corpustable15.txt
-
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,1.11,1.12,1.13,1.14,1.15,1.16,2.3,1.17 corpustable14.txt proof-of-concept-text-count-16-post-french.txt > corpustable15.txt
 
 #Remove spaces from around the closing punctuation.
 cat proof-of-concept-text.txt | perl -CS -pe 's/(\s)(\p{Pe})/\2/g' > proof-of-concept-text2.txt
@@ -575,6 +576,13 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 sed -e 's/˗˗/˗ ˗/g' -i proof-of-concept-text.txt
 #cat proof-of-concept-text.txt  | perl -CS -pe 's/(\R)(?:\h*\R)+/$1$1/g' > proof-of-concept-text2.txt
 
+UnicodeCCount.pl -n proof-of-concept-text.txt > proof-of-concept-text-count-17-end-of-text.txt
+
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,2.3,1.4 proof-of-concept-text-count-1-original.txt proof-of-concept-text-count-15-pre-french.txt > tabel-1.txt
+
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5 tabel-1.txt proof-of-concept-text-count-16-post-french.txt > tabel-2.txt
+
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6 tabel-2.txt proof-of-concept-text-count-17-end-of-text.txt > tabel-3.txt
 echo
 echo "Try the corpus now"
 echo
