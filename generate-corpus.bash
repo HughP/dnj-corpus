@@ -11,7 +11,9 @@
 
 #By running these delete commands we are able to start clean with new files each running of the script.
 
+rm tabel-*.txt
 rm corpustable*.txt
+rm Table-for-Readme-File.txt
 rm Remove-French.txt
 rm proof-of-concept-text.txt
 rm proof-of-concept-text2.txt
@@ -539,7 +541,7 @@ rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 #Remove new lines from lines which do not also end with punctuation.
-cat proof-of-concept-text.txt  | perl -CS -pe 's/[^\p{P}]\N{U+000A}/ /g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt  | perl -CS -pe 's/([^\p{P}])(\N{U+000A})/\1/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -582,7 +584,7 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,2.3,1.4 proof-of-concep
 
 join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5 tabel-1.txt proof-of-concept-text-count-16-post-french.txt > tabel-2.txt
 
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6 tabel-2.txt proof-of-concept-text-count-17-end-of-text.txt > tabel-3.txt
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6 tabel-2.txt proof-of-concept-text-count-17-end-of-text.txt > Table-for-Readme-File.txt
 echo
 echo "Try the corpus now"
 echo

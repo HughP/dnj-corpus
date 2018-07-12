@@ -5,7 +5,7 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 * **ISO 639-3 language tag**: [[dnj](https://iso639-3.sil.org/code/dnj)]
 * **Language Name**: Dan
-* **Main location of language use**:  Ivory Coast (Côte d'Ivoire)
+* **Main location of language use**: Ivory Coast (Côte d'Ivoire)
 * **Language variety demonstrated in this corpus**: Eastern Dan
 * **Script**: Latin script.
 * **Sociological-dynamics of writing**: Dan has been written for at least 40 years (1978)<sup id="a1">[1](#f1)</sup>. Written tradition has been heavily influenced by French, according to how French is written in Côte d'Ivoire.
@@ -36,23 +36,23 @@ A list with examples of successful fonts is provided in [`dnj-Font-Face/dnj-fra-
 
 Version | Date | Evolutionary steps | Mentor/Artist | Reference
 -------------|----|----|-------------|-------------
-Version 0.1a | pre-1970 protestant  |  Imported from Liberia | Mission Biblique  |  R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
-Version 0.1b  | pre-1970 catholic  |  concurrent with but separate from version 0.1a | Roman Catholic Church  |  R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
-Version 0.2  | pre-1972  |  high tone is marked at the begining of the word with an apostrophe | Margrit Bolli / Eva Flik  |  Margrit Bolli<sup id="a37">[37](#f37)</sup>.
-Version 0.3 |  1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
-Version 0.4 |  1978 | full stop 〈.〉 is at the beginning of words to indicate low tone, 〈ô〉is used, 〈.CVV'-〉 is a tone pattern used to indicate low-mid-fall | Margrit Bolli / Eva Flik | Marking tone with Punctuation<sup id="a38">[38](#f38)</sup> (In this resource the author does not indicate if they are discussing Eastern Dan, Western Dan, or both. In the 1982 version of the _Western Dan_ reading primer the word final apostrophe hyphen sequences is present.)
+Version 0.1a | pre-1970 protestant | Imported from Liberia | Mission Biblique | R & V Forthcoming<sup id="a8">[8](#f8)</sup>.
+Version 0.1b | pre-1970 catholic | concurrent with but separate from version 0.1a | Roman Catholic Church | R & V Forthcoming<sup id="a9">[9](#f9)</sup>.
+Version 0.2 | pre-1972 | high tone is marked at the begining of the word with an apostrophe | Margrit Bolli / Eva Flik | Margrit Bolli<sup id="a37">[37](#f37)</sup>.
+Version 0.3 | 1974 | ?? | Margrit Bolli / Eva Flik | Tiémoko Sébastien Baba <sup id="a10">[10](#f10)</sup> (reader; no orthography statement) R & V Forthcoming<sup id="a11">[11](#f11)</sup>
+Version 0.4 | 1978 | full stop 〈.〉 is at the beginning of words to indicate low tone, 〈ô〉is used, 〈.CVV'-〉 is a tone pattern used to indicate low-mid-fall | Margrit Bolli / Eva Flik | Marking tone with Punctuation<sup id="a38">[38](#f38)</sup> (In this resource the author does not indicate if they are discussing Eastern Dan, Western Dan, or both. In the 1982 version of the _Western Dan_ reading primer the word final apostrophe hyphen sequences is present.)
 Version 1 | 1982-1990 | No indication of full stop 〈.〉 usage at the beginning of words. No indication of word final apostrophe hyphen sequences 〈CVV'-〉. | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a12">[12](#f12)</sup>(Transitional Primer)
-Version 2  | 1994  |  The start of using double U+0022 at the end of words appears in a course book for learning to read. The letters 〈ɩ〉, 〈ʋ̈〉, 〈ʋ〉 appear, which did not appear in orthography version 1. | Margrit Bolli / Eva Flik  |  Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
-_Western Dan_ | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup>  Published in 2000.
+Version 2 | 1994 | The start of using double U+0022 at the end of words appears in a course book for learning to read. The letters 〈ɩ〉, 〈ʋ̈〉, 〈ʋ〉 appear, which did not appear in orthography version 1. | Margrit Bolli / Eva Flik | Bolli & Flik<sup id="a13">[13](#f13)</sup> (Transitional Primer)
+_Western Dan_ | 2000 | In _Western Dan_ Biblical text preprints (for community circulation) use U+2013 instead of U+002D to indicate tone. (Forever muddling which character is correct in all future writing.) | Margrit Bolli / Eva Flik | See Ruth<sup id="a14">[14](#f14)</sup> and Jonah<sup id="a15">[15](#f15)</sup> Published in 2000.
 Version 3 | (2005??)-2014 | These texts contain U+201C, U+201D, and U+0022 as tone markers before and after words. (It might have been the idea that only U+0027 would be used twice and that human input habits chose to input U+0022 as a quicker step, and then word processing software auto-corrected some of these to U+201C, and U+201D) | Margrit Bolli/Valentin Vydrin | This corpus is representative of this stage in the orthography.
-Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication via punctuation towards diacritic indication of tone over the the stem.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>,  R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
+Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers. In general away from digraphs towards single graphemes, and away from pre and post stem tone indication via punctuation towards diacritic indication of tone over the the stem.| Valentin Vydrin | Roberts, Brown, Vydrin Forthcoming<sup id="a16">[16](#f16)</sup>, R & V Forthcoming<sup id="a17">[17](#f17)</sup>, V & R Forthcoming<sup id="a18">[18](#f18)</sup>
 
 ## Corpus Description
 ### The data and its presentation here in the introduction to the corpus
 
 The data has two states.
-  1. As first received from sources. (as orginal files and as the consolidation of the extracted text from those original files: `initial-starting-corpus.txt`)
-  2. As finally processed for use in Keyboard layout analysis: `proof-of-concept-text.txt`, `phonemic-corpus.txt`
+ 1. As first received from sources. (as orginal files and as the consolidation of the extracted text from those original files: `initial-starting-corpus.txt`)
+ 2. As finally processed for use in Keyboard layout analysis: `proof-of-concept-text.txt`, `phonemic-corpus.txt`
 
 The reason for these two states is to faithfully represent the corpus as it was originally received. It is felt that this state most faifully represents the text processing and publishing "natural language use" which Dan Language users encounter. However, to do the keyboard optimization, it is important to look at the intended characters that language users thought they were using. It is quite evident that automation has changed a great deal of the intended characters into something unintended. This intended state is what is needed to optimize a keyboard layout.
 
@@ -60,27 +60,27 @@ The reason for these two states is to faithfully represent the corpus as it was 
 
 * BCP47: dnj_Latn_CI
  (But this tag needs to take into account the following two points and doesn't.)
-   * Eastern Dan
-   * Orthography version: 3
+  * Eastern Dan
+  * Orthography version: 3
 
-**Writing System Note**: When orthography version 3 was established, the target technology for implementation of text the writing system was French  typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the most frequently chosen characters by Dan authors would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge.  As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the evolution of a unique print media culture for users of Dan.  From observing the corpus five notable, and previously undiscussed instances present themselves:
- * The use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaa˗` where there are extra spaces around the question mark. Presumably this is to provide visual clarity for  mental processing of punctuation marks.
- * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan, to the best efforts given the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone —  something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
+**Writing System Note**: When orthography version 3 was established, the target technology for implementation of text the writing system was French typewriters.<sup id="a34">[34](#f34)</sup> As technology advanced (the event of Unicode), the indication of tone often became confusing. Well, only confusing in the sense that the most frequently chosen characters by Dan authors would normally use the Unicode attributes for punctuation. And it is these characters before or after the stem (word) that indicate the pitch melody of the orthographic word. These characters are not used in expected ways according to their Unicode attributes as encoded in the original documents for this corpus. Now, it is true that there are Unicode characters which do have the same visual characteristics and also have letter attributes instead of punctuation attributes. These letter characters are recommended as a best practice in orthography development.<sup id="a36">[36](#f36)</sup> However, enabling Dan writers to encode their language with the the most appropriate Unicode characters has been a challenge. As a result many applications do not properly typeset or interact with Dan "words" in the ways that many users of "global" languages expect. This and the influence of French writing norms has resulted in the evolution of a unique print media culture for users of Dan. From observing the corpus five notable, and previously undiscussed instances present themselves:
+ * The use of space around proper punctuation marks is not always as one would expect for an orthography written in a Latin script. That is, it is not uncommon to see something like `ˮban˗ ? ꞊Yaa˗` where there are extra spaces around the question mark. Presumably this is to provide visual clarity for mental processing of punctuation marks.
+ * While French allows for apostrophe in the middle of words to show elision `qu'en`, Dan does not. In fact Dan, to the best efforts given the knowledge available, does not need to use the apostrophe and uses the glyph to indicate tone — something much different than the use dictated by French. In the corpus, there are cases where a space follows an apostrophe in French words, indicating that at some level mixed language texts are typographically being processed as Dan language texts.
  * The hyphen in French can take on several linking usages:
-   * It can connect morphology `celui-ci`or parts of speech (infinitive + pro noun) `aide-moi`
-   * It can occur in set expressions like ` vis-à-vis`
-   * It can occur in hyphenated names like `Jean-Luc`
+  * It can connect morphology `celui-ci`or parts of speech (infinitive + pro noun) `aide-moi`
+  * It can occur in set expressions like ` vis-à-vis`
+  * It can occur in hyphenated names like `Jean-Luc`
 <!-- Citation: https://www.thoughtco.com/hyphens-and-dashes-in-french-4086573 -->
 
-  Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
+ Dan, however does not have these same typographical liberties with the usage of the hyphen glyph indicating tone. There are several cases in the corpus where it was observed that a space was not separating hyphen from two (otherwise distinct) words. Judgment calls were made to insert spaces to fix this in the final corpus used in analysis.
 
  * Similar visually to the hyphen, is the Dash. Dash, at least in French typographical tradition, is set off with spaces on each side. 'EN DASH' is observed in the corpus. In fact sometimes it is observed with spaces surrounding it — but so is hyphen (and sometiemes these are in the same phrases). Therefore it is really difficult (no doubt for native writers and readers too) to determine if, Dash is correctly used and typographically indicating a Dash or typographically a tone mark. In the French typographic tradition dashes can serve several functions:
-   * It can enumerate the elements of a list
-   * It can emphasize a comment
-   * It can indicate a change of speaker.
+  * It can enumerate the elements of a list
+  * It can emphasize a comment
+  * It can indicate a change of speaker.
 
  It is not clearly laid out how Dan writing system(s) (1978, 1982, 1994, 2000, 2014) handle these functions in print media. One possibility is to use a rounded glyph like a bullet for some of these functions (though the actual future of this need is in question as orthography version 3 is potentially giving way to version 4). Pedagogically punctuation, especially for discourse functions (typically beyond the simple sentence), should likely become part of the training provided in Dan literacy programs. In the past a deconstructionist approach<sup id="a35">[35](#f35)</sup> highlighting the differences between French and Dan, has been taken for users of French learning to read Dan. This approach has been successful. Perhaps the same approach with a learning unit on word boundaries and discourse level punctuation, would increase the confidence and clarity of Dan writers.
- * Typographically expressing more than one language in a document is confusing to authors. Some authors when writing in Dan and referencing a French word  will put the word in parenthesis, other authors use type face to distinguish languages and at least one instance was found of using English style smart quotes to set off French words. All of these use strategies preserve the use of French quotes for direct speech usage — commonly called 'quotes'. The evolution of print media and the evolution of typographic tradition in Eastern Dan (and other language which often generate multi-lingual documents, especially if they use punctuation to indicate tone) would benefit form a standardized method of indicating a language change (code switch) with in the document. One possibility would be the introduction in the curriculum of other uses for quote marks.
+ * Typographically expressing more than one language in a document is confusing to authors. Some authors when writing in Dan and referencing a French word will put the word in parenthesis, other authors use type face to distinguish languages and at least one instance was found of using English style smart quotes to set off French words. All of these use strategies preserve the use of French quotes for direct speech usage — commonly called 'quotes'. The evolution of print media and the evolution of typographic tradition in Eastern Dan (and other language which often generate multi-lingual documents, especially if they use punctuation to indicate tone) would benefit form a standardized method of indicating a language change (code switch) with in the document. One possibility would be the introduction in the curriculum of other uses for quote marks.
  * The use of French style quote marks 〈«〉, 〈»〉 is confusing to Dan authors. That is, opening and closing quote marks appear to be used interchangeably in opening quotations. Additionally, there are quite a few cases where closing quote marks are missing. If software engineers for grammar and spelling checkers can manage, adding a function which checks for closing quote marks (of any kind), much like is done for programmers in IDEs, would benefit many new writers of minority languages.
 
 #### Writing system, orthographic, linguistic, and alphabet descriptions for encoding of text in Eastern Dan version 3.
@@ -102,7 +102,7 @@ These definitions and conventions are observed throughout this work:
 * A **writing system description** includes things like _casing correspondences_, _usage rules for casing_, _punctuation characters_, _usage rules for punctuation marks_, _letters_, _numbers_, and _characters used in Internet use_, with their Unicode code points used in technical encodings. A writing system description, more than just an orthography is needed to fully support a language on digital tools. It is necessary for creating a **Locale** description and is useful for creating a custom Keyboard layout, and other _Natural Language Processing Tools_.
 * As laid out by Peter Constable,<sup id="a40">[40](#f40)</sup> a **Writing System** is a superordinate category of a collection of technologies and/or metadata on how an orthography is to be implemented. The following image situates the terms and relationships around orthographies and languages.
 ![Orthography](Orthography.jpg)
-<!-- not yet defined are  "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "encoding", "diphthong", "Functional Unit"    I should add a section about these
+<!-- not yet defined are "graphemes", "diacritic — a written symbol which is structurally dependent upon another symbol; that is, a symbol that does not occur independently, but always occurs with and is visually positioned in relation to another character, usually above or below. Diacritics are also sometimes referred to as accents. For example, acute, grave, circumflex, etc. from SIL http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=glossary", "encoding", "diphthong", "Functional Unit" I should add a section about these
 
  Deborah Anderson, with Rick McGowan and Ken Whistler (and incorporating comments by Lorna Priest).2005 .Unicode Technical Note #19: Recommendations for Creating New Orthographies. https://www.unicode.org/notes/tn19/
 [1] Davison, Phil. 2009. Weh Orthography Guide. Yaounde, Cameroon: SIL International. http://www.silcam.org/documents/WehOrthographyGuide.pdf
@@ -112,12 +112,12 @@ These definitions and conventions are observed throughout this work:
 [6] Schroeder, Leila. 2008. Bantu Orthography Manual: For linguistic and literacy fieldworkers, 2010 edn (SIL e-Books 9). Dallas, Tx.: SIL International. http://www.sil.org/resources/publications/entry/9241
 [7] Eaton, Helen. Suba-Simbiti Orthography Sketch.
 -->
-*  The following characters are used to provide special meaning to text outside of tables:
-   * Content within square brackets denotes either phonetic representations (such as allophones) or ISO639-3 codes  `[]`.
-   * Content within forward slashes denotes phonemic representations `//`.
-   * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
-   * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
-   * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions (using any one of these three parts).
+* The following characters are used to provide special meaning to text outside of tables:
+  * Content within square brackets denotes either phonetic representations (such as allophones) or ISO639-3 codes `[]`.
+  * Content within forward slashes denotes phonemic representations `//`.
+  * Content within angle brackets denotes orthographic or graphemic representations `〈〉`.
+  * Content within double-slashes or pipes denotes morphophonemic representations `// //` or `| |`.
+  * In prose sections, Unicode characters will appear in the following order upon first mention: 〈‽〉 U+203D 'INTERROBANG'. A more natural prose style will be used for subsequent mentions (using any one of these three parts).
 
 ##### Casing rules
 ###### Based on content presented in 1994
@@ -143,18 +143,18 @@ The use of normal text editors with the standard characters for the glyphs repre
 Word break rules are not discussed. But reading is taught with single words bounded by spaces. This occurs at the sentence level too. One may assume that tone marks should never separate from the rest of their word. It would just be weird to insert a hyphen into a word that uses a hyphen as a letter. So presumably hyphenation is not allowed in this orthography either.
 
 ###### Based on the corpus
-Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉  U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
+Various kinds of _special_ characters are used in the corpus as it was originally delivered, to prevent word breaks in undesired places. Sometimes 〈 〉 U+00A0 'NO-BREAK SPACE' and sometimes 〈‑〉 U+2011 'NON-BREAKING HYPHEN' was used to control line and word breaking behavior.
 
 ##### Punctuation
 ###### Based on content presented in 1994
 The readers' guide says that, in general the orthography for Dan utilizes "les mêmes signes" of punctuation of the orthography of French.
-Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0.  So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode codepoints are provided here as an added point of reference. They are not in the source text.
+Unicode version 1.0 was released in 1991, and by 1994 was at version 1.1.0. So it is highly unlikely that the authors of the literacy primers were thinking about matching their orthography symbols to Unicode characters. Unicode codepoints are provided here as an added point of reference. They are not in the source text.
 
-Codepoint   | Grapheme | Usage
+Codepoint  | Grapheme | Usage
 -------------|-----|----
-U+00AB  | « | les guillemets ouvrant et (tr. [eng]: opening indicator for marking a quote)
+U+00AB | « | les guillemets ouvrant et (tr. [eng]: opening indicator for marking a quote)
 U+00BB | » | fermant un discourse direct (tr. [eng]: closing indicator for marking a quote)
-U+0021  | ! | le point d'interrogation marque la présence d'une exclamation (tr. [eng]: following an exclamation)
+U+0021 | ! | le point d'interrogation marque la présence d'une exclamation (tr. [eng]: following an exclamation)
 U+003B | ; | le point-virgule entrecoupe deux parties d'une longue phrase (tr. [eng]: joins two long phrases)
 U+003C | < | les guillemets simples ouvrant et (tr. [eng]: opening indicator for marking a quote inside a quote)
 U+003E | > | fermant un discourse direct placé dans un autre discourse direct (tr. [eng]: closing indicator for marking a quote inside a quote)
@@ -164,20 +164,20 @@ U+002C | , | la virgule donne l'occasion de prendre haleine (tr. [eng]: taking a
 U+003A | : | le double point marque le début d'un discourse direct (tr. [eng]: marking the start of a quote)
 
 ###### Based on the corpus
-Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table.  __( what about ˮlʼautre jourˮ)__
+Based on data within the corpus, as it was originally delivered, the following punctuation marks are observed. Their usages, as far as can be determined, from the corpus are indicated in the table. __( what about ˮlʼautre jourˮ)__
 
-Codepoint   | Grapheme | Usage
+Codepoint  | Grapheme | Usage
 -------------|-----|----
 U+00B0 | ° | Used as part of the abbreviation for number 〈n°〉.
 U+005F | _ | Error - should be U+02D7
-U+005B | [  |unknown
+U+005B | [ |unknown
 U+005D | ] |unknown
 U+2026 | … |unknown
 U+201A | ‚ | Error - Should be U+002C
 U+002F | / |unknown
-U+00AB  | « | Open a direct speech statement - Usage seems to vary between open and close.
+U+00AB | « | Open a direct speech statement - Usage seems to vary between open and close.
 U+00BB | » | Closes a direct speech statement - Usage seems to vary between open and close.
-U+0021  | ! | Closes an exclamation, interjection or emphatic statement
+U+0021 | ! | Closes an exclamation, interjection or emphatic statement
 U+003B | ; | unknown
 U+2039 | ‹ | Opens a quote inside of a direct speech statement
 U+203A | › | Closes a quote inside of a direct speech statement
@@ -222,32 +222,32 @@ Unfortunately no math symbols or other numeric related characters are provided. 
 
 Codepoint | Grapheme
 -------------|-----
-U+0030  | 0
-U+0031  | 1
-U+0032  | 2
-U+0033  | 3
-U+0034  | 4
-U+0035  | 5
-U+0036  | 6
-U+0037  | 7
-U+0038  | 8
-U+0039  | 9
+U+0030 | 0
+U+0031 | 1
+U+0032 | 2
+U+0033 | 3
+U+0034 | 4
+U+0035 | 5
+U+0036 | 6
+U+0037 | 7
+U+0038 | 8
+U+0039 | 9
 
 ###### Based on the corpus
 As evidenced in the corpus, as it was originally delivered, when writing Eastern Dan with the Latin script the following numbers are used.
 
-Codepoint   | Grapheme
+Codepoint  | Grapheme
 -------------|-----
-U+0030  | 0
-U+0031  | 1
-U+0032  | 2
-U+0033  | 3
-U+0034  | 4
-U+0035  | 5
-U+0036  | 6
-U+0037  | 7
-U+0038  | 8
-U+0039  | 9
+U+0030 | 0
+U+0031 | 1
+U+0032 | 2
+U+0033 | 3
+U+0034 | 4
+U+0035 | 5
+U+0036 | 6
+U+0037 | 7
+U+0038 | 8
+U+0039 | 9
 
 ```
 0
@@ -265,7 +265,7 @@ U+0039  | 9
 Number oriented notes:
 
 * Thousands separator is 〈.〉 U+002E 'FULL STOP'.
-* The is a shortened form of the word "number" in many transcription traditions. Unicode has a special character for this 〈№〉 U+2116 'NUMERO SIGN'. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of 〈°〉  U+00B0 'DEGREE SIGN', and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form 〈no〉 (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form 〈nos〉 can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."<sup id="a24">[24](#f24)</sup>
+* The is a shortened form of the word "number" in many transcription traditions. Unicode has a special character for this 〈№〉 U+2116 'NUMERO SIGN'. Typographical norm in Dan appear to follows French social practice, rather than best practice for encoding. This was evidenced only one time in the corpus and is the source of 〈°〉 U+00B0 'DEGREE SIGN', and likely deserves further investigation before strong claims are made about what method should be used in Eastern Dan writing. [Wikipedia suggests](https://en.wikipedia.org/w/index.php?title=Numero_sign&oldid=842034015#French) that "the numero symbol is not in common use in France and does not appear on a standard AZERTY keyboard. Instead, the French Imprimerie nationale recommends the use of the form 〈no〉 (an 〈n〉 followed by a superscript lowercase 〈o〉). The plural form 〈nos〉 can also be used. In practice, the 〈o〉 is often replaced by the degree symbol 〈°〉, which is visually similar to the superscript 〈o〉 and is easily accessible on an AZERTY keyboard."<sup id="a24">[24](#f24)</sup>
 * Telephone numbers are written in series of two digits. These digits can be separated with 〈.〉 U+002E or spaces.
  ```
  grep -n -P "\s\d" proof-of-concept-text.txt
@@ -276,12 +276,12 @@ Number oriented notes:
 
 According to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt) <sup id="a25">[25](#f25)</sup>the following characters are needed for reasonable Internet use in the URL and URI syntax. In the Internet domain these characters can sometimes have a reserved meaning. Therefore they should be given appropriate consideration in all orthographies. So while their typographical function may or may not be present in the everyday writing of Eastern Dan, as Eastern Dan speakers become more digitally active with their language, these characters will increase in their usage by Eastern Dan language users.
 
-This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using  〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the Internet does not use the same quote marks that French and Eastern Dan do, does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
+This does not preclude any language based denotation that the orthography may make on these characters. For instance there is a long typographical history in Eastern Dan of using 〈=〉 U+003D 'EQUALS SIGN' as a tone marking character. It is even the case that the original text of this corpus was encoded with this character, no doubt for practical reasons of keyboard accessibility. However the more appropriate character is 〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'. Typographically across fonts, it is common that these characters appear the same, however their Unicode properties are different. U+A78A can not be substituted for Internet use and U+003D will not properly join with other text to form words in text processing software. By way of analogy, just because the Internet does not use the same quote marks that French and Eastern Dan do, does not mean that these languages need to change, only that accessing these characters and their social contribution is a needed consideration in orthography statements and written language development.
 
-Unmentioned in RFC 3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉  U+003E 'GREATER-THAN SIGN', and 〈<〉 U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5<sup id="a26">[26](#f26)</sup>. Markdown<sup id="a27">[27](#f27)</sup>, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
-The following table represents RFC 3986 plus 〈", <, >, |, \`, \ 〉.  Many of these characters are evidenced in the corpus. However some are not evidenced. <!-- Need to show which ones -->
+Unmentioned in RFC 3986 is the use of 〈"〉 U+0022 'QUOTATION MARK', 〈>〉 U+003E 'GREATER-THAN SIGN', and 〈<〉 U+003C 'GREATER-THAN SIGN' which are all highly important in various mark-ups like HTML5<sup id="a26">[26](#f26)</sup>. Markdown<sup id="a27">[27](#f27)</sup>, a common text markup language, requires 〈\`〉 U+0060 'GRAVE ACCENT', 〈|〉 U+007C 'VERTICAL LINE', and 〈\〉 U+005C 'REVERSE SOLIDUS'.
+The following table represents RFC 3986 plus 〈", <, >, |, \`, \ 〉. Many of these characters are evidenced in the corpus. However some are not evidenced. <!-- Need to show which ones -->
 
-Codepoint   | Grapheme
+Codepoint  | Grapheme
 -------------|-----
 U+0021 | !
 U+0022 | "
@@ -305,7 +305,7 @@ U+003D | =
 U+003E | >
 U+003F | ?
 U+0040 | @
-U+005C |  \\
+U+005C | \\
 U+005B | [
 U+005D | ]
 U+005F | _
@@ -364,46 +364,46 @@ Based on the letters presented in the 1994 primer the following letters would ne
 
 | Uppercase | Lowercase | Glyph| Glyph | Approximate Unicode Name |
 |---------------|---------------|-------|-------|---------------------------------------------------|
-| _NFD Encoding_  | _NFD Encoding_  |    |    | _Full Unicode Names contain 'CAPITAL' or 'SMALL'._|
-| U+0041 | U+0061    | A | a | LATIN LETTER A|
-| U+0042    | U+0062    | B | b | LATIN LETTER B        |
-| U+0044    | U+0064    | D | d | LATIN LETTER D        |
-| U+0045    | U+0065    | E | e | LATIN LETTER E        |
-| U+0045 U+0308 | U+0065 U+0308 | Ë    | ë    | LATIN LETTER E with COMBINING DIAERESIS   |
-| U+0046    | U+0066    | F | f | LATIN LETTER F        |
-| U+0047    | U+0067    | G | g | LATIN LETTER G        |
-| U+0048    | U+0068    | H | h | LATIN LETTER H        |
-| U+0049    | U+0069    | I | i | LATIN LETTER I        |
-| U+004B    | U+006B    | K | k | LATIN LETTER K        |
-| U+004C    | U+006C    | L | l | LATIN LETTER L        |
-| U+004D    | U+006D    | M | m | LATIN LETTER M        |
-| U+004E    | U+006E    | N | n | LATIN LETTER N        |
-| U+004F    | U+006F    | O | o | LATIN LETTER O        |
-| U+004F U+0308 | U+006F U+0308 | Ö    | ö    | LATIN LETTER O with COMBINING DIAERESIS   |
-| U+0050    | U+0070    | P | p | LATIN LETTER P        |
-| U+0052    | U+0072    | R | r | LATIN LETTER R        |
-| U+0053    | U+0073    | S | s | LATIN LETTER S        |
-| U+0054    | U+0074    | T | t | LATIN LETTER T        |
-| U+0055    | U+0075    | U | u | LATIN LETTER U        |
-| U+0055 U+0308 | U+0075 U+0308 | Ü    | ü    | LATIN LETTER U with COMBINING DIAERESIS   |
-| U+0056    | U+0076    | V | v | LATIN LETTER V        |
-| U+0057    | U+0077    | W | w | LATIN LETTER W        |
-| U+0059    | U+0079    | Y | y | LATIN LETTER Y        |
-| U+005A    | U+007A    | Z | z | LATIN LETTER Z        |
-| U+0186    | U+0254    | Ɔ | ɔ | LATIN LETTER OPEN O       |
-| U+0190    | U+025B    | Ɛ | ɛ | LATIN LETTER OPEN E       |
-| U+0196    | U+0269    | Ɩ | ɩ | LATIN LETTER IOTA         |
-| U+01B2    | U+028B    | Ʋ | ʋ | LATIN LETTER V WITH HOOK      |
-| U+01B2 U+0308 | U+028B U+0308 | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS |
-| N/a   | U+02BC    | ʼ |   | MODIFIER LETTER APOSTROPHE        |
-| N/a   | U+02D7    | ˗ |   | MODIFIER LETTER MINUS SIGN        |
-| N/a   | U+02EE    | ˮ |   | MODIFIER LETTER DOUBLE APOSTROPHE     |
-| N/a   | U+A78A    | ꞊ |   | MODIFIER LETTER SHORT EQUALS SIGN     |
-| _NFC Encoding_  | _NFC Encoding_  |   |   |  |
-| U+00CB    | U+00EB    | Ë    | ë    | LATIN LETTER E WITH DIAERESIS     |
-| U+00D6    | U+00F6    | Ö    | ö    | LATIN LETTER O WITH DIAERESIS     |
-| U+00DC    | U+00FC    | Ü    | ü    | LATIN LETTER U WITH DIAERESIS     |
-| None  | None  | Ʋ̈    | ʋ̈    | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS (NFD and NFC are the same as this is a composed form only character)   |
+| _NFD Encoding_ | _NFD Encoding_ | | | _Full Unicode Names contain 'CAPITAL' or 'SMALL'._|
+| U+0041 | U+0061 | A | a | LATIN LETTER A|
+| U+0042 | U+0062 | B | b | LATIN LETTER B |
+| U+0044 | U+0064 | D | d | LATIN LETTER D |
+| U+0045 | U+0065 | E | e | LATIN LETTER E |
+| U+0045 U+0308 | U+0065 U+0308 | Ë | ë | LATIN LETTER E with COMBINING DIAERESIS  |
+| U+0046 | U+0066 | F | f | LATIN LETTER F |
+| U+0047 | U+0067 | G | g | LATIN LETTER G |
+| U+0048 | U+0068 | H | h | LATIN LETTER H |
+| U+0049 | U+0069 | I | i | LATIN LETTER I |
+| U+004B | U+006B | K | k | LATIN LETTER K |
+| U+004C | U+006C | L | l | LATIN LETTER L |
+| U+004D | U+006D | M | m | LATIN LETTER M |
+| U+004E | U+006E | N | n | LATIN LETTER N |
+| U+004F | U+006F | O | o | LATIN LETTER O |
+| U+004F U+0308 | U+006F U+0308 | Ö | ö | LATIN LETTER O with COMBINING DIAERESIS  |
+| U+0050 | U+0070 | P | p | LATIN LETTER P |
+| U+0052 | U+0072 | R | r | LATIN LETTER R |
+| U+0053 | U+0073 | S | s | LATIN LETTER S |
+| U+0054 | U+0074 | T | t | LATIN LETTER T |
+| U+0055 | U+0075 | U | u | LATIN LETTER U |
+| U+0055 U+0308 | U+0075 U+0308 | Ü | ü | LATIN LETTER U with COMBINING DIAERESIS  |
+| U+0056 | U+0076 | V | v | LATIN LETTER V |
+| U+0057 | U+0077 | W | w | LATIN LETTER W |
+| U+0059 | U+0079 | Y | y | LATIN LETTER Y |
+| U+005A | U+007A | Z | z | LATIN LETTER Z |
+| U+0186 | U+0254 | Ɔ | ɔ | LATIN LETTER OPEN O |
+| U+0190 | U+025B | Ɛ | ɛ | LATIN LETTER OPEN E |
+| U+0196 | U+0269 | Ɩ | ɩ | LATIN LETTER IOTA  |
+| U+01B2 | U+028B | Ʋ | ʋ | LATIN LETTER V WITH HOOK  |
+| U+01B2 U+0308 | U+028B U+0308 | Ʋ̈ | ʋ̈ | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS |
+| N/a  | U+02BC | ʼ |  | MODIFIER LETTER APOSTROPHE |
+| N/a  | U+02D7 | ˗ |  | MODIFIER LETTER MINUS SIGN |
+| N/a  | U+02EE | ˮ |  | MODIFIER LETTER DOUBLE APOSTROPHE |
+| N/a  | U+A78A | ꞊ |  | MODIFIER LETTER SHORT EQUALS SIGN |
+| _NFC Encoding_ | _NFC Encoding_ |  |  | |
+| U+00CB | U+00EB | Ë | ë | LATIN LETTER E WITH DIAERESIS |
+| U+00D6 | U+00F6 | Ö | ö | LATIN LETTER O WITH DIAERESIS |
+| U+00DC | U+00FC | Ü | ü | LATIN LETTER U WITH DIAERESIS |
+| None | None | Ʋ̈ | ʋ̈ | LATIN LETTER V WITH HOOK with COMBINING DIAERESIS (NFD and NFC are the same as this is a composed form only character)  |
 
 #### Functional units
 Functional units are sets of graphemes that work together to bring meaning to a reader. In the English 〈ch〉 functions as a functional unit. The reader needs to parse the letters as a single unit as they map an orthographic representation to a phonological representation.
@@ -504,23 +504,23 @@ Phoneme chart (Oral)<sup id="a42">[SIL1982](#f42)</sup><sup>,</sup><sup id="a43"
 
 Linguistically, Eastern Dan is claimed to have a 12 point vowel system with length, pitch, and nasalization distinctions. Length has been analyzed as two sequential vowels. Pitch patterns are covered under the tone marking section. Nasalization occurs phonemically on 9 vowels. The velar nasal /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan.<sup id="a44">[SIL1982](#f44)</sup><sup>,</sup><sup id="a45">[V&K 2008](#f45)</sup> This bring the total to 22 vowels.
 
-|    _**Oral**_  | Front Unrounded | Back Unrounded | Back Rounded |
+| _**Oral**_ | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
-| **Close**  |  i    |   ɯ   |   u  |
-| **Near-close** |   |   |  |
-| **Mid**    |  e    |   ɤ   |   o  |
-| **Open-mid**   |  ɛ    |   ʌ   |   ɔ  |
-| **Near-open**  |   æ   |   |  |
-| **Open**   |   |   a   |   ɒ  |
+| **Close** | i |  ɯ  |  u |
+| **Near-close** |  |  | |
+| **Mid** | e |  ɤ  |  o |
+| **Open-mid**  | ɛ |  ʌ  |  ɔ |
+| **Near-open** |  æ  |  | |
+| **Open**  |  |  a  |  ɒ |
 
-|    _**Nasal**_  | Front Unrounded | Back Unrounded | Back Rounded |
+| _**Nasal**_ | Front Unrounded | Back Unrounded | Back Rounded |
 |----------------|:-----:|:-----:|:----:|
-| **Close**  |  ĩ    |   ɯ̃   |   ũ  |
-| **Near-close** |   |   |  |
-| **Mid**    |   |   |  |
-| **Open-mid**   |  ɛ̃    |   ʌ̃   |   ɔ̃  |
-| **Near-open**  |   æ̃   |   |  |
-| **Open**   |   |   ã   |   ɒ̃  |
+| **Close** | ĩ |  ɯ̃  |  ũ |
+| **Near-close** |  |  | |
+| **Mid** |  |  | |
+| **Open-mid**  | ɛ̃ |  ʌ̃  |  ɔ̃ |
+| **Near-open** |  æ̃  |  | |
+| **Open**  |  |  ã  |  ɒ̃ |
 
 /ŋ/
 
@@ -600,12 +600,12 @@ uë
 
 ###### Based on the corpus
 
-Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA  symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. <!-- The detailed representation here allows for vowels to be tokenized. -->
+Eastern Dan vowels carry distinctions for length, pitch, and nasality. Nasality is indicated by an 〈n〉 following the vowel. Vowel length has been linguistically analyzed as two separate vowels and is indicated by sequential characters i.e. 〈aa〉. Some vowels are indicated by a digraph 〈ɛa, aɔ〉; these are not diphthongs (vowels that start at one phonetic value and finish at another value); though Eastern Dan also has diphthongs. Dieresis above vowels indicate a separate vowel quality. Vowels with dieresis are thought of as a single character or letter of the alphabet. Dieresis is not a separable unit (even though at the character encoding level in UTF-8 it is separable). The eng /ŋ/, orthographically indicated as 〈ng〉, is linguistically considered a vowel in Eastern Dan. This is in contrast to the typologically normal analysis and IPA symbol /ŋ/ usage as a consonant. Casing: for words starting with long/double vowels, only the first letter is case sensitive for sentence based casing rules. In this presentation of vowels, many vowels are presented, however, it is not true that this represents the Eastern Dan alphabet. <!-- The detailed representation here allows for vowels to be tokenized. -->
 
 
 Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
-Uppercase, lowercase |, |  |
+Uppercase, lowercase |, | |
 U+004E U+0067, U+006E U+0067 | Ng, ng | ŋ | Velar Nasal
 U+0041 U+0061 U+006E, U+0061 U+0061 U+006E| Aan, aan | ãã | Long nasalized front open unrounded vowel
 U+0041 U+0061, U+0061 U+0061| Aa, aa | aa | Long front open unrounded vowel
@@ -647,8 +647,8 @@ U+0049 U+006E, U+0069 U+006E | In, in | ĩ | Short nasalized close front unroun
 U+0049, U+0069 | I, i | i | Short close front unrounded vowel
  U+0196 U+0269, U+0269 U+0269| Ɩɩ, ɩɩ | /ee/,[ɪɪ] | Long near-close front unrounded vowel
  U+0196, U+0269| Ɩ, ɩ | /e/, [ɪ] | Short near-close front unrounded vowel
-  U+01B2, U+028B | Ʋ, ʋ | /o/, [ʊ] | Short near-close near-back rounded vowel
-  U+01B2 U+028B, U+028B U+028B | Ʋʋ, ʋʋ | /oo/, [ʊʊ] | Long near-close near-back rounded vowel
+ U+01B2, U+028B | Ʋ, ʋ | /o/, [ʊ] | Short near-close near-back rounded vowel
+ U+01B2 U+028B, U+028B U+028B | Ʋʋ, ʋʋ | /oo/, [ʊʊ] | Long near-close near-back rounded vowel
  U+01B2 U+0308, U+028B U+0308 | Ʋ̈, ʋ̈ | /ɤ/, [ʊ̜] or [ɯ̞̈]| Short near-close (near) back unrounded vowel
  U+01B2 U+0308 U+028B U+0308, U+028B U+0308 U+028B U+0308| Ʋ̈ʋ̈, ʋ̈ʋ̈ | /ɤ/, [ʊ̜ʊ̜] or [ɯ̞̈ɯ̞̈] | Long near-close (near) back unrounded vowel
 
@@ -659,7 +659,7 @@ U+0049, U+0069 | I, i | i | Short close front unrounded vowel
 
 Codepoint (NFC)| Functional Unit | IPA equivalent | Phonetic description
 -------------|:----:|:----:|----
-**Diphthongs**  | |  |
+**Diphthongs** | | |
 U+0069 U+028B U+0308 | iʋ̈ | iɯ̞̈ |
 U+0069 U+00F6 | iö | iɤ |
 U+0069 U+00EB | ië | iʌ |
@@ -683,14 +683,14 @@ The existing orthography contains three cases of consonant over-representation:
 The allophonic graphemes <r, m, n> were all included in the orthography out of a desire to facilitate transition to and from French; their presence also conforms to regional practice. -->
 
 
-| |Labial |Dental|Palatal  | Velar| Labio-velar
+| |Labial |Dental|Palatal | Velar| Labio-velar
 |-----|:-----:|:-----:|:------:|:------:|:--------:
-| Voiceless Stops    |    p |  t   |   |   k    |  kp, kw
-| Voiced Stops   |    b |  d   |   |   g    |  gb, gw
-| Voiceless fricatives   |    f |  s   |   |    |
-| Voiced Fricatives  |    v |  z   |   |    |
-| Implosives     |    ɓ |  ɗ   |   |    |
-| Continuants    |    r  |  l   |  y    |    |   w
+| Voiceless Stops | p | t  |  |  k | kp, kw
+| Voiced Stops  | b | d  |  |  g | gb, gw
+| Voiceless fricatives  | f | s  |  | |
+| Voiced Fricatives | v | z  |  | |
+| Implosives | ɓ | ɗ  |  | |
+| Continuants | r | l  | y | |  w
 
 
 ###### Based on data presented in 1994
@@ -726,7 +726,7 @@ The presentation order of consonants here does not represent the alphabet of Dan
 
 Codepoint | Grapheme | IPA equivalent | Phonetic description
 -------------|-----|----|----
-_Uppercase, lowercase_ | , |  |
+_Uppercase, lowercase_ | , | |
 U+004B U+0070, U+006B U+0070| Kp, kp| k͡p |
 U+004B U+0077, U+006B U+0077| Kw, kw | k͡w |
 U+004B, U+006B | K, k | k | Voiceless velar stop
@@ -743,12 +743,12 @@ U+0046, U+0066 | F, f | f | Voiceless labial dental fricative
 U+0053, U+0073 | S, s | s |
 U+0056, U+0076 | V, v | v | Voiced labial dental fricative
 U+0054, U+0074 | T, t | t | Voiceless dental stop
-U+005A, U+007A | Z, z |  |
+U+005A, U+007A | Z, z | |
 U+004C, U+006C | L, l | l |
-U+0057, U+0077 | W, w  |  |
-U+0052, U+0072 | R, r |  |
-U+0059, U+0079 | Y, y |  |
-U+0050, U+0070 | P, p  | p | Voiceless bilabial stop
+U+0057, U+0077 | W, w | |
+U+0052, U+0072 | R, r | |
+U+0059, U+0079 | Y, y | |
+U+0050, U+0070 | P, p | p | Voiceless bilabial stop
 
 ##### Tone marking
 
@@ -761,16 +761,16 @@ There are four characters which are used to indicate one of ten possible tone pa
 
 Codepoint | Grapheme Pattern | IPA equivalent | Phonologicall description | Usage Note
 -------------|-----|----|----|----
- U+02EE, No casing  |〈ˮ\p{L}\s〉 | ˥ |xH | double quote starting the word
+ U+02EE, No casing |〈ˮ\p{L}\s〉 | ˥ |xH | double quote starting the word
 U+02BC ,No Casing | 〈ʼ\p{L}\s〉 | ˦ | H | apostrophe starting the word
 Null, No Casing | 〈\s\p{L}\s〉 | ˧ | M | no marking at all for tone
 U+A78A, No Casing |〈꞊\\p{L}\s〉 | ˨ | L | equals sign starting the word
 U+02D7, No Casing | 〈˗\\p{L}\s〉 | ˩ | xL | minus sign starting the word
-No Casing | 〈ˮ\p{L}˗〉 |  | xH falling to L |double quote starting the word with minus at the end of the string
-No Casing | 〈ʼ\p{L}˗〉 |  | H falling to L | apostrophe starting the word with minus at the end of the string
-No Casing |〈\s\p{L}˗〉 |  | M falling to L | Null in front followed by minus at the end of the string
-No Casing |〈\s\p{L}ʼ〉 |  | M Raising to H| Null in front followed by apostrophe at the end of the string
-No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by double quote at the end of the string
+No Casing | 〈ˮ\p{L}˗〉 | | xH falling to L |double quote starting the word with minus at the end of the string
+No Casing | 〈ʼ\p{L}˗〉 | | H falling to L | apostrophe starting the word with minus at the end of the string
+No Casing |〈\s\p{L}˗〉 | | M falling to L | Null in front followed by minus at the end of the string
+No Casing |〈\s\p{L}ʼ〉 | | M Raising to H| Null in front followed by apostrophe at the end of the string
+No Casing |〈\s\p{L}ˮ〉 | | M Raising to xH| Null in front followed by double quote at the end of the string
 
 
 ###### Pre-Stem
@@ -781,7 +781,7 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 ˗
 ```
 ###### Post-Stem
-  ```
+ ```
 ˗
 ʼ
 ˮ
@@ -789,7 +789,7 @@ No Casing |〈\s\p{L}ˮ〉 |  | M Raising to xH| Null in front followed by doubl
 
 ###### Based on the corpus
 
-<!--  This pattern doesn't seem to be in the documentation. ʼ˗  -->
+<!-- This pattern doesn't seem to be in the documentation. ʼ˗ -->
 
 #### Reasonable characters needed for French
 
@@ -798,7 +798,7 @@ French is the national language in the country where the desist population of Ea
 ###### Based on content presented in 1994
 French is used in the book but there is no indication or attempt to define French writing norms or requirements as they are applied in Ivory Coast (Côte d'Ivoire).
 The introduction to Dan orthography as presented in _˗Pamɛbhamɛ_ states:
->  c, h, j, qu et x n'existent pas en dan.
+> c, h, j, qu et x n'existent pas en dan.
 
 Which says: "The letters 〈c〉, 〈h〉, 〈j〉, 〈qu〉 and, 〈x〉 do not exist in Dan." While this may be true at a very strict level (when considering functional units rather than actual characters), several issues come to light immediately:
 1. 〈h〉 is present in 〈bh〉 and 〈dh〉, therefore is in the writing system, and orthography, and is a letter.
@@ -829,157 +829,159 @@ Some texts have relied on Unicode PUA code points (U+E000..U+F8FF). All Dan text
 
 ### Content
 
-This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008.  There are several chapters of  _While waiting for a medical doctor_.
+This is about 20 issues of a 4 page monthly newsletter/newspaper published between 2005 and 2008. There are several chapters of _While waiting for a medical doctor_.
 A new testament is also known to exist, but is not included in this repository or character counts.
 
 #### Metrics
 ##### Pre text clean up stats
 It should be noted that the percentages of characters and the percentages of phonemes presented here are attested only in this corpus. This corpus is not necessarily natural speech, and some characters may be over represented because _˗Pamɛbhamɛ_, which was targeted at new readers, published a chart of the alphabet in nearly every issue, with some, but not many, words in French.
 
-Linux Command Line `wc -l -w -m`stats are presented for the before and after text clean up.
- `initial-starting-corpus.txt` includes all of the  _-Pamɛbhamɛ_ and the chapters of _While waiting for a medical doctor_.
+Significant character changes were made in the corpus in an attempt to bring it into a consistent typographical state. These changes are reflected in the numbers presented in the character level stats.
 
-Round | Lines  | Words  |  Characters
+Linux Command Line `wc -l -w -m`stats are presented for the before and after text clean up.
+ `initial-starting-corpus.txt` includes all of the _-Pamɛbhamɛ_ and the chapters of _While waiting for a medical doctor_.
+
+Round | Lines | Words | Characters
 --|--|---|--
 Initial Starting corpus | 15756 | 86466 | 416782
-Final corpus | 1827  | 83944 | 393362
+Final corpus | 1827 | 83944 | 393362
 
 Character level stats:
 
-| Code Point  | Glyph | Starting Count | Character alterations up to French Removal | Characters left after French Removal | Final Numbers | Unicode Character Name |
+| Code Point | Glyph | Starting Count | Character alterations up to French Removal | Characters left after French Removal | Final Numbers | Unicode Character Name |
 |:----------:|:------:|:-------:|:-------:|:-------:|:----------------:|:--------------------------------------------:|
-| U+0009   |      | 241   | 240   | 240   | 109 | CHARACTER TABULATION |
-| U+000A   |      | 15756 | 10567 | 10567 | 1827  | LINE FEED |
-| U+000C   |      | 110   | 110   | 110   | NULL  | FORM FEED |
-| U+000D   |      | 897   | 897   | 897   | NULL  | CARRIAGE RETURN      |
-| U+001E   |      | 2721  | NULL  | NULL  | NULL  | INFORMATION SEPARATOR TWO  |
-| U+0020   |      | 73737 | 79602 | 81759 | 87790 | SPACE     |
-| U+0021   | !  | 70    | 70    | 70    | 70  | EXCLAMATION MARK     |
-| U+0022 |	" | 3346 | NULL  | NULL  | NULL  | QUOTATION MARK |
-| U+0027   | '    | 7223  | 86    | 8     | 8   | APOSTROPHE  |
-| U+0028   | (    | 482   | 482   | 482   | 482 | LEFT PARENTHESIS     |
-| U+0029   | )    | 483   | 483   | 483   | 483 | RIGHT PARENTHESIS    |
-| U+002A   | \*    | 20    | 20    | 20    | 20  | ASTERISK  |
-| U+002B   | +    | 110   | 110   | 110   | 110 | PLUS SIGN |
-| U+002C   | ,    | 4751  | 4758  | 4713  | 4713  | COMMA     |
-| U+002D   | -    | 27491 | 16    | 16    | 16  | HYPHEN-MINUS         |
-| U+002E   | .    | 4181  | 4181  | 4106  | 4106  | FULL STOP |
-| U+002F   | &#92;  | 96    | 17    | 17    | 17  | SOLIDUS   |
-| U+0030   | 0    | 867   | 867   | 867   | 859 | DIGIT ZERO  |
-| U+0031   | 1    | 301   | 301   | 286   | 267 | DIGIT ONE |
-| U+0032   | 2    | 436   | 436   | 421   | 392 | DIGIT TWO |
-| U+0033   | 3    | 136   | 136   | 136   | 107 | DIGIT THREE |
-| U+0034   | 4    | 110   | 110   | 110   | 81  | DIGIT FOUR  |
-| U+0035   | 5    | 181   | 181   | 181   | 157 | DIGIT FIVE  |
-| U+0036   | 6    | 81    | 81    | 81    | 76  | DIGIT SIX |
-| U+0037   | 7    | 160   | 160   | 160   | 140 | DIGIT SEVEN |
-| U+0038   | 8    | 268   | 268   | 268   | 253 | DIGIT EIGHT |
-| U+0039   | 9    | 116   | 116   | 116   | 110 | DIGIT NINE  |
-| U+003A   | :    | 488   | 488   | 473   | 473 | COLON     |
-| U+003B   | ;    | 79    | 79    | 79    | 79  | SEMICOLON |
-| U+003C   | <    | 252   | NULL  | NULL  | NULL  | LESS-THAN SIGN       |
-| U+003D   | =    | 5458  | NULL  | NULL  | NULL  | EQUALS SIGN |
-| U+003E   | >    | 246   | NULL  | NULL  | NULL  | GREATER-THAN SIGN    |
-| U+003F   | ?    | 202   | 202   | 202   | 202 | QUESTION MARK        |
-| U+0041   | A    | 1044  | 1044  | 997   | 991 | LATIN CAPITAL LETTER A |
-| U+0042   | B    | 424   | 424   | 421   | 421 | LATIN CAPITAL LETTER B |
-| U+0043   | C    | 15    | 15    | 15    | 15  | LATIN CAPITAL LETTER C |
-| U+0044   | D    | 767   | 767   | 745   | 745 | LATIN CAPITAL LETTER D |
-| U+0045   | E    | 108   | 108   | 87    | 87  | LATIN CAPITAL LETTER E |
-| U+0046   | F    | 97    | 97    | 97    | 96  | LATIN CAPITAL LETTER F |
-| U+0047   | G    | 448   | 448   | 448   | 448 | LATIN CAPITAL LETTER G |
-| U+0048   | H    | 26    | 26    | 26    | 26  | LATIN CAPITAL LETTER H |
-| U+0049   | I    | 66    | 66    | 66    | 66  | LATIN CAPITAL LETTER I |
-| U+004A   | J    | 9     | 9     | 9     | 9   | LATIN CAPITAL LETTER J |
-| U+004B   | K    | 1224  | 1224  | 1224  | 1224  | LATIN CAPITAL LETTER K |
-| U+004C   | L    | 145   | 145   | 60    | 60  | LATIN CAPITAL LETTER L |
-| U+004D   | M    | 671   | 671   | 671   | 671 | LATIN CAPITAL LETTER M |
-| U+004E   | N    | 356   | 356   | 335   | 334 | LATIN CAPITAL LETTER N |
-| U+004F   | O    | 50    | 47    | 47    | 47  | LATIN CAPITAL LETTER O |
-| U+0050   | P    | 301   | 301   | 301   | 301 | LATIN CAPITAL LETTER P |
-| U+0052   | R    | 8     | 8     | 8     | 8   | LATIN CAPITAL LETTER R |
-| U+0053   | S    | 479   | 479   | 479   | 479 | LATIN CAPITAL LETTER S |
-| U+0054   | T    | 275   | 275   | 254   | 254 | LATIN CAPITAL LETTER T |
-| U+0055   | U    | 50    | 38    | 38    | 37  | LATIN CAPITAL LETTER U |
-| U+0056   | V    | 121   | 121   | 79    | 79  | LATIN CAPITAL LETTER V |
-| U+0057   | W    | 510   | 510   | 510   | 510 | LATIN CAPITAL LETTER W |
-| U+0059   | Y    | 977   | 977   | 977   | 977 | LATIN CAPITAL LETTER Y |
-| U+005A   | Z    | 386   | 386   | 386   | 386 | LATIN CAPITAL LETTER Z |
-| U+005B   | [    | 10    | 10    | 10    | 10  | LEFT SQUARE BRACKET  |
-| U+005C   | \    | 1     | 1     | 1     | 1   | REVERSE SOLIDUS      |
-| U+005D   | ]    | 10    | 10    | 10    | 10  | RIGHT SQUARE BRACKET |
-| U+005F   | \_    | 1     | NULL  | NULL  | NULL  | LOW LINE  |
-| U+0061   | a    | 29865 | 29865 | 28769 | 27845 | LATIN SMALL LETTER A |
-| U+0062   | b    | 9802  | 9802  | 9520  | 9520  | LATIN SMALL LETTER B |
-| U+0063   | c    | 436   | 436   | 23    | 23  | LATIN SMALL LETTER C |
-| U+0064   | d    | 12050 | 12050 | 11782 | 11782 | LATIN SMALL LETTER D |
-| U+0065   | e    | 5906  | 5111  | 3379  | 3238  | LATIN SMALL LETTER E |
-| U+0066   | f    | 430   | 430   | 367   | 367 | LATIN SMALL LETTER F |
-| U+0067   | g    | 10278 | 10278 | 10114 | 9952  | LATIN SMALL LETTER G |
-| U+0068   | h    | 15463 | 15303 | 15004 | 14962 | LATIN SMALL LETTER H |
-| U+0069   | i    | 8567  | 8567  | 7670  | 7533  | LATIN SMALL LETTER I |
-| U+006A   | j    | 71    | 71    | 35    | 35  | LATIN SMALL LETTER J |
-| U+006B   | k    | 11978 | 11978 | 11963 | 11963 | LATIN SMALL LETTER K |
-| U+006C   | l    | 3995  | 3995  | 3417  | 3416  | LATIN SMALL LETTER L |
-| U+006D   | m    | 4363  | 4363  | 4016  | 4016  | LATIN SMALL LETTER M |
-| U+006E   | n    | 16368 | 16368 | 15532 | 14624 | LATIN SMALL LETTER N |
-| U+006F   | o    | 10311 | 9081  | 8220  | 7802  | LATIN SMALL LETTER O |
-| U+0070   | p    | 4505  | 4505  | 4235  | 4235  | LATIN SMALL LETTER P |
-| U+0071   | q    | 103   | 103   | NULL  | NULL  | LATIN SMALL LETTER Q |
-| U+0072   | r    | 1762  | 1762  | 534   | 534 | LATIN SMALL LETTER R |
-| U+0073   | s    | 6557  | 6557  | 5467  | 5464  | LATIN SMALL LETTER S |
-| U+0074   | t    | 3756  | 3756  | 2781  | 2780  | LATIN SMALL LETTER T |
-| U+0075   | u    | 7973  | 7335  | 6593  | 6289  | LATIN SMALL LETTER U |
-| U+0076   | v    | 469   | 469   | 324   | 324 | LATIN SMALL LETTER V |
-| U+0077   | w    | 8286  | 8286  | 8286  | 8244  | LATIN SMALL LETTER W |
-| U+0078   | x    | 85    | 85    | 7     | 7   | LATIN SMALL LETTER X |
-| U+0079   | y    | 7445  | 7445  | 7333  | 7333  | LATIN SMALL LETTER Y |
-| U+007A   | z    | 1969  | 1969  | 1948  | 1948  | LATIN SMALL LETTER Z |
-| U+00A0   |      | 374   | NULL  | NULL  | NULL  | NO-BREAK SPACE       |
-| U+00A8   | ¨    | 1     | NULL  | NULL  | NULL  | DIAERESIS |
-| U+00AB   | «    | 102   | 219   | 219   | 219 | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  |
-| U+00B0   | °    | 1     | 1     | 1     | 1   | DEGREE SIGN |
-| U+00BB   | »    | 100   | 213   | 213   | 213 | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK |
-| U+00CB   | Ë    | 46    | 46    | 46    | 46  | LATIN CAPITAL LETTER E WITH DIAERESIS      |
-| U+00D6   | Ö    | 73    | 76    | 76    | 75  | LATIN CAPITAL LETTER O WITH DIAERESIS      |
-| U+00DC   | Ü    | 71    | 83    | 83    | 83  | LATIN CAPITAL LETTER U WITH DIAERESIS      |
-| U+00E7   | ç    | 21    | 21    | NULL  | NULL  | LATIN SMALL LETTER C WITH CEDILLA |
-| U+00E8   | è    | 221   | 221   | NULL  | NULL  | LATIN SMALL LETTER E WITH GRAVE |
-| U+00E9   | é    | 107   | 107   | NULL  | NULL  | LATIN SMALL LETTER E WITH ACUTE |
-| U+00EA   | ê    | 28    | 28    | NULL  | NULL  | LATIN SMALL LETTER E WITH CIRCUMFLEX       |
-| U+00EB   | ë    | 8411  | 9206  | 9214  | 8773  | LATIN SMALL LETTER E WITH DIAERESIS        |
-| U+00EE   | î    | 3     | 3     | NULL  | NULL  | LATIN SMALL LETTER I WITH CIRCUMFLEX       |
-| U+00F6   | ö    | 12699 | 13929 | 13929 | 13304 | LATIN SMALL LETTER O WITH DIAERESIS        |
-| U+00FB   | û    | 26    | 26    | NULL  | NULL  | LATIN SMALL LETTER U WITH CIRCUMFLEX       |
-| U+00FC   | ü    | 5868  | 6506  | 6506  | 6066  | LATIN SMALL LETTER U WITH DIAERESIS        |
-| U+0186   | Ɔ    | 58    | 58    | 58    | 58  | LATIN CAPITAL LETTER OPEN O |
-| U+0190   | Ɛ    | 70    | 70    | 70    | 48  | LATIN CAPITAL LETTER OPEN E     |
-| U+0254   | ɔ    | 8144  | 8144  | 8144  | 7857  | LATIN SMALL LETTER OPEN O       |
-| U+025B   | ɛ    | 11951 | 11951 | 11951 | 11415 | LATIN SMALL LETTER OPEN E       |
-| U+0269   | ɩ    | 993   | 993   | 993   | 913 | LATIN SMALL LETTER IOTA |
-| U+028B   | ʋ   | 1443  | 2765  | 2765  | 2666  | LATIN SMALL LETTER V WITH HOOK  |
-| U+02BC   | NULL | NULL  | 20032 | 20015 | 20000 | MODIFIER LETTER APOSTROPHE |
-| U+02D7   | NULL | NULL  | 31260 | 31260 | 31145 | MODIFIER LETTER MINUS SIGN |
-| U+02EE   | NULL | NULL  | 7844  | 7844  | 7800  | MODIFIER LETTER DOUBLE APOSTROPHE |
-| U+0304   | ̄    | 1     | NULL  | NULL  | NULL  | COMBINING MACRON    |
-| U+0308   | ̈    | 3269  | 1913  | 1913  | 1740  | COMBINING DIAERESIS  |
-| U+03CB   | ϋ    | 1322  | NULL  | NULL  | NULL  | GREEK SMALL LETTER UPSILON WITH DIALYTIKA  |
-| U+2013   | –    | 1065  | NULL  | NULL  | NULL  | EN DASH   |
-| U+2018   | ‘    | 12285 | NULL  | NULL  | NULL  | LEFT SINGLE QUOTATION MARK      |
-| U+2019   | ’    | 748   | NULL  | NULL  | NULL  | RIGHT SINGLE QUOTATION MARK     |
-| U+201A   | ‚    | 7     | NULL  | NULL  | NULL  | SINGLE LOW-9 QUOTATION MARK     |
-| U+201C   | “    | 4306  | NULL  | NULL  | NULL  | LEFT DOUBLE QUOTATION MARK      |
-| U+201D   | ”    | 123   | NULL  | NULL  | NULL  | RIGHT DOUBLE QUOTATION MARK     |
-| U+2022   | •    | 13    | NULL  | NULL  | NULL  | BULLET    |
-| U+2026   | …    | 7     | 7     | 7     | 7   | HORIZONTAL ELLIPSIS  |
-| U+2039   | ‹    | 142   | NULL  | NULL  | NULL  | SINGLE LEFT-POINTING ANGLE QUOTATION MARK  |
-| U+203A   | ›    | 140   | NULL  | NULL  | NULL  | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK |
-| U+A78A   | NULL | NULL  | 5458  | 5458  | 5458  | MODIFIER LETTER SHORT EQUALS SIGN |
-| U+FEFF   | ﻿    | 58    | NULL  | NULL  | NULL  | ZERO WIDTH NO-BREAK SPACE       |
-| U+FFF9   | ￹    | 17    | NULL  | NULL  | NULL  | INTERLINEAR ANNOTATION ANCHOR |
+| U+0009 | | 241 | 240 | 240 | 141 | CHARACTER TABULATION |
+| U+000A | | 15756 | 10567 | 10567 | 2326 | LINE FEED |
+| U+000C | | 110 | 110 | 110 | NULL | FORM FEED |
+| U+000D | | 897 | 897 | 897 | NULL | CARRIAGE RETURN |
+| U+001E | | 2721 | NULL | NULL | NULL | INFORMATION SEPARATOR TWO |
+| U+0020 | | 73737 | 79602 | 81759 | 81041 | SPACE |
+| U+0021 | ! | 70 | 70 | 70 | 70 | EXCLAMATION MARK |
+| U+0022 | " | 3346 | NULL | NULL | NULL | QUOTATION MARK | 
+| U+0027 | ' | 7223 | 86 | 8 | 8 | APOSTROPHE |
+| U+0028 | ( | 482 | 482 | 482 | 482 | LEFT PARENTHESIS |
+| U+0029 | ) | 483 | 483 | 483 | 483 | RIGHT PARENTHESIS |
+| U+002A | * | 20 | 20 | 20 | 20 | ASTERISK |
+| U+002B | + | 110 | 110 | 110 | 110 | PLUS SIGN |
+| U+002C | , | 4751 | 4758 | 4713 | 4713 | COMMA |
+| U+002D | - | 27491 | 16 | 16 | 16 | HYPHEN-MINUS |
+| U+002E | . | 4181 | 4181 | 4106 | 4106 | FULL STOP |
+| U+002F | &#92; | 96 | 17 | 17 | 17 | SOLIDUS |
+| U+0030 | 0 | 867 | 867 | 867 | 867 | DIGIT ZERO |
+| U+0031 | 1 | 301 | 301 | 286 | 286 | DIGIT ONE |
+| U+0032 | 2 | 436 | 436 | 421 | 421 | DIGIT TWO |
+| U+0033 | 3 | 136 | 136 | 136 | 136 | DIGIT THREE |
+| U+0034 | 4 | 110 | 110 | 110 | 110 | DIGIT FOUR |
+| U+0035 | 5 | 181 | 181 | 181 | 181 | DIGIT FIVE |
+| U+0036 | 6 | 81 | 81 | 81 | 81 | DIGIT SIX |
+| U+0037 | 7 | 160 | 160 | 160 | 160 | DIGIT SEVEN |
+| U+0038 | 8 | 268 | 268 | 268 | 268 | DIGIT EIGHT |
+| U+0039 | 9 | 116 | 116 | 116 | 116 | DIGIT NINE |
+| U+003A | : | 488 | 488 | 473 | 473 | COLON |
+| U+003B | ; | 79 | 79 | 79 | 79 | SEMICOLON |
+| U+003C | < | 252 | NULL | NULL | NULL | LESS-THAN SIGN |
+| U+003D | = | 5458 | NULL | NULL | NULL | EQUALS SIGN |
+| U+003E | > | 246 | NULL | NULL | NULL | GREATER-THAN SIGN |
+| U+003F | ? | 202 | 202 | 202 | 202 | QUESTION MARK |
+| U+0041 | A | 1044 | 1044 | 997 | 997 | LATIN CAPITAL LETTER A |
+| U+0042 | B | 424 | 424 | 421 | 421 | LATIN CAPITAL LETTER B |
+| U+0043 | C | 15 | 15 | 15 | 15 | LATIN CAPITAL LETTER C |
+| U+0044 | D | 767 | 767 | 745 | 745 | LATIN CAPITAL LETTER D |
+| U+0045 | E | 108 | 108 | 87 | 87 | LATIN CAPITAL LETTER E |
+| U+0046 | F | 97 | 97 | 97 | 97 | LATIN CAPITAL LETTER F |
+| U+0047 | G | 448 | 448 | 448 | 448 | LATIN CAPITAL LETTER G |
+| U+0048 | H | 26 | 26 | 26 | 26 | LATIN CAPITAL LETTER H |
+| U+0049 | I | 66 | 66 | 66 | 66 | LATIN CAPITAL LETTER I |
+| U+004A | J | 9 | 9 | 9 | 9 | LATIN CAPITAL LETTER J |
+| U+004B | K | 1224 | 1224 | 1224 | 1224 | LATIN CAPITAL LETTER K |
+| U+004C | L | 145 | 145 | 60 | 60 | LATIN CAPITAL LETTER L |
+| U+004D | M | 671 | 671 | 671 | 671 | LATIN CAPITAL LETTER M |
+| U+004E | N | 356 | 356 | 335 | 335 | LATIN CAPITAL LETTER N |
+| U+004F | O | 50 | 47 | 47 | 47 | LATIN CAPITAL LETTER O |
+| U+0050 | P | 301 | 301 | 301 | 301 | LATIN CAPITAL LETTER P |
+| U+0052 | R | 8 | 8 | 8 | 8 | LATIN CAPITAL LETTER R |
+| U+0053 | S | 479 | 479 | 479 | 479 | LATIN CAPITAL LETTER S |
+| U+0054 | T | 275 | 275 | 254 | 254 | LATIN CAPITAL LETTER T |
+| U+0055 | U | 50 | 38 | 38 | 38 | LATIN CAPITAL LETTER U |
+| U+0056 | V | 121 | 121 | 79 | 79 | LATIN CAPITAL LETTER V |
+| U+0057 | W | 510 | 510 | 510 | 510 | LATIN CAPITAL LETTER W |
+| U+0059 | Y | 977 | 977 | 977 | 977 | LATIN CAPITAL LETTER Y |
+| U+005A | Z | 386 | 386 | 386 | 386 | LATIN CAPITAL LETTER Z |
+| U+005B | [ | 10 | 10 | 10 | 10 | LEFT SQUARE BRACKET |
+| U+005C | \ | 1 | 1 | 1 | 1 | REVERSE SOLIDUS |
+| U+005D | ] | 10 | 10 | 10 | 10 | RIGHT SQUARE BRACKET |
+| U+005F | _ | 1 | NULL | NULL | NULL | LOW LINE |
+| U+0061 | a | 29865 | 29865 | 28769 | 28769 | LATIN SMALL LETTER A |
+| U+0062 | b | 9802 | 9802 | 9520 | 9520 | LATIN SMALL LETTER B |
+| U+0063 | c | 436 | 436 | 23 | 23 | LATIN SMALL LETTER C |
+| U+0064 | d | 12050 | 12050 | 11782 | 11782 | LATIN SMALL LETTER D |
+| U+0065 | e | 5906 | 5111 | 3379 | 3379 | LATIN SMALL LETTER E |
+| U+0066 | f | 430 | 430 | 367 | 367 | LATIN SMALL LETTER F |
+| U+0067 | g | 10278 | 10278 | 10114 | 10114 | LATIN SMALL LETTER G |
+| U+0068 | h | 15463 | 15303 | 15004 | 15004 | LATIN SMALL LETTER H |
+| U+0069 | i | 8567 | 8567 | 7670 | 7670 | LATIN SMALL LETTER I |
+| U+006A | j | 71 | 71 | 35 | 35 | LATIN SMALL LETTER J |
+| U+006B | k | 11978 | 11978 | 11963 | 11963 | LATIN SMALL LETTER K |
+| U+006C | l | 3995 | 3995 | 3417 | 3417 | LATIN SMALL LETTER L |
+| U+006D | m | 4363 | 4363 | 4016 | 4016 | LATIN SMALL LETTER M |
+| U+006E | n | 16368 | 16368 | 15532 | 15532 | LATIN SMALL LETTER N |
+| U+006F | o | 10311 | 9081 | 8220 | 8220 | LATIN SMALL LETTER O |
+| U+0070 | p | 4505 | 4505 | 4235 | 4235 | LATIN SMALL LETTER P |
+| U+0071 | q | 103 | 103 | NULL | NULL | LATIN SMALL LETTER Q |
+| U+0072 | r | 1762 | 1762 | 534 | 534 | LATIN SMALL LETTER R |
+| U+0073 | s | 6557 | 6557 | 5467 | 5467 | LATIN SMALL LETTER S |
+| U+0074 | t | 3756 | 3756 | 2781 | 2781 | LATIN SMALL LETTER T |
+| U+0075 | u | 7973 | 7335 | 6593 | 6593 | LATIN SMALL LETTER U |
+| U+0076 | v | 469 | 469 | 324 | 324 | LATIN SMALL LETTER V |
+| U+0077 | w | 8286 | 8286 | 8286 | 8286 | LATIN SMALL LETTER W |
+| U+0078 | x | 85 | 85 | 7 | 7 | LATIN SMALL LETTER X |
+| U+0079 | y | 7445 | 7445 | 7333 | 7333 | LATIN SMALL LETTER Y |
+| U+007A | z | 1969 | 1969 | 1948 | 1948 | LATIN SMALL LETTER Z |
+| U+00A0 | | 374 | NULL | NULL | NULL | NO-BREAK SPACE |
+| U+00A8 | ¨ | 1 | NULL | NULL | NULL | DIAERESIS |
+| U+00AB | « | 102 | 219 | 219 | 219 | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK |
+| U+00B0 | ° | 1 | 1 | 1 | 1 | DEGREE SIGN |
+| U+00BB | » | 100 | 213 | 213 | 213 | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK |
+| U+00CB | Ë | 46 | 46 | 46 | 46 | LATIN CAPITAL LETTER E WITH DIAERESIS |
+| U+00D6 | Ö | 73 | 76 | 76 | 76 | LATIN CAPITAL LETTER O WITH DIAERESIS |
+| U+00DC | Ü | 71 | 83 | 83 | 83 | LATIN CAPITAL LETTER U WITH DIAERESIS |
+| U+00E7 | ç | 21 | 21 | NULL | NULL | LATIN SMALL LETTER C WITH CEDILLA |
+| U+00E8 | è | 221 | 221 | NULL | NULL | LATIN SMALL LETTER E WITH GRAVE |
+| U+00E9 | é | 107 | 107 | NULL | NULL | LATIN SMALL LETTER E WITH ACUTE |
+| U+00EA | ê | 28 | 28 | NULL | NULL | LATIN SMALL LETTER E WITH CIRCUMFLEX |
+| U+00EB | ë | 8411 | 9206 | 9214 | 9214 | LATIN SMALL LETTER E WITH DIAERESIS |
+| U+00EE | î | 3 | 3 | NULL | NULL | LATIN SMALL LETTER I WITH CIRCUMFLEX |
+| U+00F6 | ö | 12699 | 13929 | 13929 | 13929 | LATIN SMALL LETTER O WITH DIAERESIS |
+| U+00FB | û | 26 | 26 | NULL | NULL | LATIN SMALL LETTER U WITH CIRCUMFLEX |
+| U+00FC | ü | 5868 | 6506 | 6506 | 6506 | LATIN SMALL LETTER U WITH DIAERESIS |
+| U+0186 | Ɔ | 58 | 58 | 58 | 58 | LATIN CAPITAL LETTER OPEN O |
+| U+0190 | Ɛ | 70 | 70 | 70 | 70 | LATIN CAPITAL LETTER OPEN E |
+| U+0254 | ɔ | 8144 | 8144 | 8144 | 8144 | LATIN SMALL LETTER OPEN O |
+| U+025B | ɛ | 11951 | 11951 | 11951 | 11951 | LATIN SMALL LETTER OPEN E |
+| U+0269 | ɩ | 993 | 993 | 993 | 993 | LATIN SMALL LETTER IOTA |
+| U+028B | ʋ | 1443 | 2765 | 2765 | 2765 | LATIN SMALL LETTER V WITH HOOK |
+| U+02BC | ʼ | NULL | 20032 | 20015 | 20015 | MODIFIER LETTER APOSTROPHE |
+| U+02D7 | ˗ | NULL | 31260 | 31260 | 31260 | MODIFIER LETTER MINUS SIGN |
+| U+02EE | ˮ | NULL | 7844 | 7844 | 7844 | MODIFIER LETTER DOUBLE APOSTROPHE |
+| U+0304 | ◌ ̄ | 1 | NULL | NULL | NULL | COMBINING MACRON |
+| U+0308 | ◌ ̈ | 3269 | 1913 | 1913 | 1913 | COMBINING DIAERESIS |
+| U+03CB | ϋ | 1322 | NULL | NULL | NULL | GREEK SMALL LETTER UPSILON WITH DIALYTIKA |
+| U+2013 | – | 1065 | NULL | NULL | NULL | EN DASH |
+| U+2018 | ‘ | 12285 | NULL | NULL | NULL | LEFT SINGLE QUOTATION MARK |
+| U+2019 | ’ | 748 | NULL | NULL | NULL | RIGHT SINGLE QUOTATION MARK |
+| U+201A | ‚ | 7 | NULL | NULL | NULL | SINGLE LOW-9 QUOTATION MARK |
+| U+201C | “ | 4306 | NULL | NULL | NULL | LEFT DOUBLE QUOTATION MARK |
+| U+201D | ” | 123 | NULL | NULL | NULL | RIGHT DOUBLE QUOTATION MARK |
+| U+2022 | • | 13 | NULL | NULL | NULL | BULLET |
+| U+2026 | … | 7 | 7 | 7 | 7 | HORIZONTAL ELLIPSIS |
+| U+2039 | ‹ | 142 | NULL | NULL | NULL | SINGLE LEFT-POINTING ANGLE QUOTATION MARK |
+| U+203A | › | 140 | NULL | NULL | NULL | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK |
+| U+A78A | ꞊ | NULL | 5458 | 5458 | 5458 | MODIFIER LETTER SHORT EQUALS SIGN |
+| U+FEFF | ﻿ | 58 | NULL | NULL | NULL | ZERO WIDTH NO-BREAK SPACE |
+| U+FFF9 | ￹ | 17 | NULL | NULL | NULL | INTERLINEAR ANNOTATION ANCHOR |
 
 ## Provenance and text conditioning
-Valentin Vydrin `vydrine[at]gmail[dot]com`  Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (trnaslated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.
+Valentin Vydrin `vydrine[at]gmail[dot]com` Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (trnaslated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.
 
 One `.doc` file was provided with 22 short (single paragraph length) parallel texts (Eastern Dan - French). And a copy of the New Testament was also provided but is not included in this corpus for copyright reasons.
 
@@ -1023,18 +1025,18 @@ All of the following commands can be executed by running the `generate-corpus.ba
 
 The issues of _˗Pamɛbhamɛ_ (provided as `[gG]weta*.doc`) were converted to PDFs by opening them in Microsoft Word 16.13.1 (180523) on MacOS 10.13.3. The operating system Print option was invoked, and the "Save as PDF" option was used. The PDFs were transfered to an Ubuntu machine where `pdftotext` was used to extract the text to `.txt` files. The multitude of text files were then concatenated to a single file `mass-text.txt` using the following commands on Ubuntu 16.04 (`$` represents the start of the command line, and the command was executed from the root of this repo):
 
-*   `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . &&  for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
+*  `$ cp $( find ./*Pam*/*weta*/*weta*.pdf ) . && for f in *weta*.pdf; do pdftotext $f mass-text_$f.txt; done && rm *.pdf && cat mass-text*.txt >> combined-gweta-text.txt && rm mass-text_*.txt`
 
 Each of the three sets of files in the directory `While-waiting-for-a-medical-doctor` were concatenated together with the following:
  * `$ cp $( find ./While-waiting-for-a-medical-doctor/*moyan-*/*moyan-*.old.txt ) . && cat moyan-sanni*.old.txt >> combined-moyan-sanni_ko_dhotroo.old.txt && cat moyan-yii*.old.txt >> combined-moyan-yii_gu.old.txt && cat moyan-waa*.old.txt >> combined-moyan-waa_won.old.txt && rm moyan-*.old.txt`
 
-These files were then visually inspected in the  text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
+These files were then visually inspected in the text editor [Atom](https://atom.io/) prior to further processing. Upon visual inspection HTML style heading tags `<h>` and `</h>` were noticed.
 
 The combined issues of _˗Pamɛbhamɛ_ and the three files representing _While waiting for a medical doctor_ were then concatenated into the same file for character level processing.
 * `$ cat combined-*.txt >> proof-of-concept-text.txt && rm combined-*.txt `
 
 #### Character Maintenance
-1.  Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
+1. Teckit was used to make sure that all deprecated PUA Unicode code points moved to current (Unicode 10) code points.
 
  ```
 $ txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -if utf8 -of utf8
@@ -1057,7 +1059,7 @@ rm proof-of-concept-text-nfd.txt
 mv proof-of-concept-text-nfc.txt proof-of-concept-text.txt
 ```
 
-4. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt  > proof-no-PUA-no-BOM-no-TAGS.txt` could be used. _Actually_ if  the script is used, the `sed` command is used in the script.
+4. Markup tags were removed from the text with search and replace. `<h>` and `</h>` were replaced with nothing (simple delete). Although `$ sed -e 's/<[^>]*>//g' proof-no-PUA-no-BOM.txt > proof-no-PUA-no-BOM-no-TAGS.txt` could be used. _Actually_ if the script is used, the `sed` command is used in the script.
 
 #### Typographical Encoding Errors
 In the course of text production several instances of different look-alike characters have been used. This is common for languages that do not have a Keyboard layout that will restrict (or guarantee the consistency) of the characters used to produce texts in that language.
@@ -1075,7 +1077,7 @@ $ cat proof-no-PUA-no-BOM-no-TAGS.txt | perl -CS -pe 's/\N{U+003D}/\N{U+A78A}/g'
 $ cat Corrected-equal-letterU-nbs-comma.txt| perl -CS -pe 's/\N{U+00A0}/\N{U+0020}/g' > Corrected-equal-letterU-nbs-comma-bs.txt
 ```
 
-3. Corrected bad non-breaking hyphen.  A known issue (as described in this [scriptsource blog post](http://scriptsource.org/entry/xvbp4378bg)) is that MS Word saved the non-breaking hyphen as x1E. This was then interpreted as \00 \1E 〈 〉 U+001E 'INFORMATION SEPARATOR TWO'. So it was supposed to be a non-breaking Hypehn 〈‑〉 U+2011 'NON-BREAKING HYPHEN', but should actually be 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'.
+3. Corrected bad non-breaking hyphen. A known issue (as described in this [scriptsource blog post](http://scriptsource.org/entry/xvbp4378bg)) is that MS Word saved the non-breaking hyphen as x1E. This was then interpreted as \00 \1E 〈 〉 U+001E 'INFORMATION SEPARATOR TWO'. So it was supposed to be a non-breaking Hypehn 〈‑〉 U+2011 'NON-BREAKING HYPHEN', but should actually be 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'.
 
  ```
 $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+001E}/\N{U+02D7}/g' > Corrected-equal-letterU-nbs.txt
@@ -1096,9 +1098,9 @@ $ sed -e 's/ʋ,̈/ʋ̈,/g' -i proof-of-concept-text.txt
 
  U+03CB 〈ϋ〉 'GREEK SMALL LETTER UPSILON WITH DIALYTIKA'; target 1322 instances.
 
- Visual similarities between  U+03CB and U+028B + U+0308 have lead some to use UPSILON WITH DIALYTIKA instead of LATIN LETTER V WITH HOOK + COMBINING DIERESES. This is only attested in the corpus to occur in lower case instances. But it is a problem if one uses a conversion tool to convert lower case to upper case (such as is often in text processing or word processing tools, or via the command line like --(actually this `perl` code doesn't work and Hugh is not sure why. Got a suggestion ?)-- `$ cat some-file-in-Eastern-Dan.txt | perl -CS -pe 's/\p{Ll}/\p{Lu}/g' > display-file-as-uppercase.txt`), because U+03CB is paired with U+03AB 〈Ϋ〉  rather than being paired with U+01B2 + U+0308 〈Ʋ̈〉.
+ Visual similarities between U+03CB and U+028B + U+0308 have lead some to use UPSILON WITH DIALYTIKA instead of LATIN LETTER V WITH HOOK + COMBINING DIERESES. This is only attested in the corpus to occur in lower case instances. But it is a problem if one uses a conversion tool to convert lower case to upper case (such as is often in text processing or word processing tools, or via the command line like --(actually this `perl` code doesn't work and Hugh is not sure why. Got a suggestion ?)-- `$ cat some-file-in-Eastern-Dan.txt | perl -CS -pe 's/\p{Ll}/\p{Lu}/g' > display-file-as-uppercase.txt`), because U+03CB is paired with U+03AB 〈Ϋ〉 rather than being paired with U+01B2 + U+0308 〈Ʋ̈〉.
 
- **Note**: `tr '[:lower:]' '[:upper:]'` doesn't work because [POSIX classes](https://www.regular-expressions.info/posixbrackets.html) do not support characters which are above the ASCII range, [Unicode characteristics](https://www.regular-expressions.info/unicode.html) are needed to do this.<!-- there is a great chart of what explicit characters are in each POSIX class here: https://unix.stackexchange.com/questions/128192/command-to-retrieve-the-list-of-characters-in-a-given-character-class-in-the-cur  -->
+ **Note**: `tr '[:lower:]' '[:upper:]'` doesn't work because [POSIX classes](https://www.regular-expressions.info/posixbrackets.html) do not support characters which are above the ASCII range, [Unicode characteristics](https://www.regular-expressions.info/unicode.html) are needed to do this.<!-- there is a great chart of what explicit characters are in each POSIX class here: https://unix.stackexchange.com/questions/128192/command-to-retrieve-the-list-of-characters-in-a-given-character-class-in-the-cur -->
 
  Fix the text with:
  ```
@@ -1130,11 +1132,11 @@ __(How do we keep the "good" double quotes?)__
 $ sed -e 's/”/ˮ/g' -i proof-of-concept-text.txt
 ```
 
- Let's move instances of 〈“〉 U+201C to  〈ˮ〉 U+02EE
+ Let's move instances of 〈“〉 U+201C to 〈ˮ〉 U+02EE
  ```
 $ sed -e 's/“/ˮ/g' -i proof-of-concept-text.txt
 ```
-Let's move instances of 〈"〉 U+0022 to  〈ˮ〉 U+02EE
+Let's move instances of 〈"〉 U+0022 to 〈ˮ〉 U+02EE
 
  ```
 $ sed -e 's/"/ˮ/g' -i proof-of-concept-text.txt
@@ -1149,7 +1151,7 @@ $ sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 
 9. French Quotes
 
-  This seems to fix the typos that are generated by not having access to the correct character via a keyboard, although the 1994 reader does use the 〈<〉 glyph instead of the 〈‹〉 glyph. We take this to be a typo in the book. Interestingly there are still 45 instances of 〈<〉 left if we convert them directly as 〈<<〉 to 〈«〉. Some of these are obviously quote marks. But not all of them. I'm just not sure. Most of them do not have a closing tag.
+ This seems to fix the typos that are generated by not having access to the correct character via a keyboard, although the 1994 reader does use the 〈<〉 glyph instead of the 〈‹〉 glyph. We take this to be a typo in the book. Interestingly there are still 45 instances of 〈<〉 left if we convert them directly as 〈<<〉 to 〈«〉. Some of these are obviously quote marks. But not all of them. I'm just not sure. Most of them do not have a closing tag.
 
  ```
  $ sed -e 's/</‹/g' -i proof-of-concept-text.txt
@@ -1169,15 +1171,15 @@ $ sed -e 's/ʼʼ/ˮ/g' -i proof-of-concept-text.txt
 10. Correct minus signs
  Underscore 〈\_〉 U+005F , EN Dash 〈–〉 U+2013, and Minus-hyphen 〈-〉 U+002D are used to represent what is supposed to be a 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN'. A simple solution is too greedy. Hyphen-minus between numbers is an appropriate use of this character.
 
-  LOW LINE 〈\_〉U+005F (Underscore) is a simple case with only one instance.
+ LOW LINE 〈\_〉U+005F (Underscore) is a simple case with only one instance.
 
+ ```
+  $ grep -n -P "_" proof-of-concept-text.txt
   ```
-   $ grep -n -P "_" proof-of-concept-text.txt
-   ```
 
-  ```
-  $ sed -e 's/_/˗/g' -i proof-of-concept-text.txt
-  ```
+ ```
+ $ sed -e 's/_/˗/g' -i proof-of-concept-text.txt
+ ```
 
  Visual inspection via `grep` shows that most dashes 〈–〉 U+2013 'EN DASH', should be 〈˗〉 U+02D7.
 ```
@@ -1250,7 +1252,7 @@ $ grep -n -P "\s[–-]\s" proof-of-concept-text.txt
 
  Minus is used with numbers.
 
-  ```
+ ```
 $ grep -n -P "\d-" proof-of-concept-text.txt
 ```
  ```
@@ -1276,7 +1278,7 @@ $ grep -n -P "\d-" proof-of-concept-text.txt
 
  We can target all minus signs that are not followed by a digit and are (not-not) preceded by a space. This should give us all word initial minus signs.
 
-  ```
+ ```
 $ grep -n -P "[^\d\S]-" proof-of-concept-text.txt
 ```
 
@@ -1306,64 +1308,64 @@ $ cat Corrected-equal-letterU.txt| perl -CS -pe 's/\N{U+201A}/\N{U+002C}/g' > Co
 13. Space padded full stop 〈.〉
 
  It is the case the 25 instances of U+002E 〈.〉 FULL STOP have a space on both sides. This is fixed so that the full stop does not have a space between it and the preceding word.
-  ```
-  $ grep -n -P -- "\s[.](?=\s)" proof-of-concept-text.txt | wc -l
-  ```
-  ```
-  $ perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g'
-  ```
+ ```
+ $ grep -n -P -- "\s[.](?=\s)" proof-of-concept-text.txt | wc -l
+ ```
+ ```
+ $ perl -CS -pe 's/\s[.](?=\s)/\s\N{U+002E}/g'
+ ```
 
 14. Space padded Comma 〈,〉
 
  It is the case the 56 instances of U+002C 〈,〉 COMMA have a space on both sides. This is fixed so that the comma does not have a space between it and the preceding word.
-  ```
-  $ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
-  ```
-  ```
-  $ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
-  ```
+ ```
+ $ grep -n -P -- "\s[,](?=\s)" proof-of-concept-text.txt | wc -l
+ ```
+ ```
+ $ perl -CS -pe 's/\s[,](?=\s)/\s\N{U+002C}/g'
+ ```
 
 15. Remove bad line encodings
 
  Different operating systems use different line ending encodings to indicate line endings. We are going to regularize these.
 
- Move  U+000A 〈 〉 'LINE FEED' to U+000D 〈 〉 Enter/Return.
-  ```
-  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
-  ```
+ Move U+000A 〈 〉 'LINE FEED' to U+000D 〈 〉 Enter/Return.
+ ```
+ $ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+000A}/\N{U+000D}/g' > proof-of-concept-text2.txt
+ ```
 
 16. Get rid of wayward U+00A8 Diaeresis and replace it with SPACE
 
  Diaeresis U+00A8 is on second a in waa¨ here:
 >waa¨ʼwëë˗ ˮgblü ˮsɔɔdo
 
-  ```
-  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+00A8}/ /g' > proof-of-concept-text2.txt$ rm proof-of-concept-text.txt
-  $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+ ```
+ $ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+00A8}/ /g' > proof-of-concept-text2.txt$ rm proof-of-concept-text.txt
+ $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 ```
 
 17. Move form feed to enter/return.
 
  ```
-$ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
+$ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+000C}/\N{U+000D}/g' > proof-of-concept-text2.txt
 $ rm proof-of-concept-text.txt
 $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 ```
 
-18.  Remove  17 instances of U+FFF9 INTERLINEAR ANNOTATION ANCHOR
+18. Remove 17 instances of U+FFF9 INTERLINEAR ANNOTATION ANCHOR
 
-  ```
-  $ cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+FFF9}//g' > proof-of-concept-text2.txt
+ ```
+ $ cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+FFF9}//g' > proof-of-concept-text2.txt
 
-  $ rm proof-of-concept-text.txt
-  $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
+ $ rm proof-of-concept-text.txt
+ $ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 ```
 
-19.  Remove  U+0304 COMBINING MACRON
+19. Remove U+0304 COMBINING MACRON
 
-  ```
-  $ sed -e 's/b̄h/bh/g' -i proof-of-concept-text.txt
-  ```
+ ```
+ $ sed -e 's/b̄h/bh/g' -i proof-of-concept-text.txt
+ ```
 
 
 **Still not completed:**
@@ -1394,29 +1396,29 @@ U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 
 ## Bibliography
 
-<b id="f1">1 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages.  [↩](#a1)
+<b id="f1">1 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a1)
 
-<b id="f2">2 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a2)
+<b id="f2">2 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a2)
 
 <b id="f3">3 </b>Simons, Gary. F., & Charles D. Fennig (Eds.) 2017. Ethnologue: Languages of the World, 20th edition. Dallas, TX: SIL International. Online: https://www.ethnologue.com/language/dnj [↩](#a3)
 
-<b id="f4">4 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a4)
+<b id="f4">4 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a4)
 
-<b id="f5">5 </b>Valentin Vydrin. 2012. ISO 639-3 Change Request 2012-083. Online: https://iso639-3.sil.org/request/2012-083.  [↩](#a5)
+<b id="f5">5 </b>Valentin Vydrin. 2012. ISO 639-3 Change Request 2012-083. Online: https://iso639-3.sil.org/request/2012-083. [↩](#a5)
 
-<b id="f6">6 </b>Phillips, A. & M. Davis (Eds.) 2009. Tags for Identifying Languages.  Internet Engineering Task Force (IETF). Online: https://tools.ietf.org/html/bcp47. [↩](#a6)
+<b id="f6">6 </b>Phillips, A. & M. Davis (Eds.) 2009. Tags for Identifying Languages. Internet Engineering Task Force (IETF). Online: https://tools.ietf.org/html/bcp47. [↩](#a6)
 
-<b id="f7">7 </b>Scannell, Kevin  (Ed.) 2009. An Crúbadán - Dan. Saint Louis University, Saint Louis, USA . Online: http://crubadan.org/languages/dnj. [↩](#a7)
+<b id="f7">7 </b>Scannell, Kevin (Ed.) 2009. An Crúbadán - Dan. Saint Louis University, Saint Louis, USA . Online: http://crubadan.org/languages/dnj. [↩](#a7)
 
-<b id="f8">8 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a8)
+<b id="f8">8 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a8)
 
-<b id="f9">9 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a9)
+<b id="f9">9 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a9)
 
 <b id="f10">10 </b>Baba, Tiémoko Sébastien .1978. Yaobhaa -wo bhe pe -se -ya ʼgu (Receuil de contes yacouba, ʼGwetaa -wo). Société Internationale de Linguistique: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34532. [↩](#a10)
 
-<b id="f11">11 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a11)
+<b id="f11">11 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a11)
 
-<b id="f12">12 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713. [↩](#a12)
+<b id="f12">12 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34713. [↩](#a12)
 
 <b id="f13">13 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a13)
 
@@ -1426,13 +1428,13 @@ U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 
 <b id="f16">16 </b>Roberts, David, Dana Basnight-Brown & Valentin Vydrin. Marking tone with punctuation: and orthography experiment in Eastern Dan (Côte d’Ivoire). [↩](#a16)
 
-<b id="f17">17 </b>Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a17)
+<b id="f17">17 </b>Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a17)
 
 <b id="f18">18 </b>Vydrin,Valentin & David Roberts. Forthcoming. Tonal oral reading errors in the orthography of Eastern Dan (Côte d’Ivoire). In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a18)
 
-<b id="f19">19 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670.  [↩](#a19)
+<b id="f19">19 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a19)
 
-<b id="f20">20 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713.  [↩](#a20)
+<b id="f20">20 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34713. [↩](#a20)
 
 <b id="f21">21 </b>Moran, Steven & Robert Forkel. 2017 (November 16). cldf/segments: segments 1.2.1 (Version v1.2.1). Zenodo. http://doi.org/10.5281/zenodo.1051157 . [↩](#a21)
 
@@ -1448,17 +1450,17 @@ U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 
 <b id="f27">27 </b>Github Engineering. 2017. GitHub Flavored Markdown Spec https://github.github.com/gfm/. [↩](#a27)
 
-<b id="f28">28 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast.  https://www.sil.org/resources/archives/34713.  [↩](#a28)
+<b id="f28">28 </b>Bolli, Margrit & Eva Flik. 1982. Guide d’orthographe pour la langue dan (dialecte gwɛtaawo). Société Internationale de Linguistique,: Abidjan, Ivory Coast. https://www.sil.org/resources/archives/34713. [↩](#a28)
 
-<b id="f29">29 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670.  [↩](#a29)
+<b id="f29">29 </b>Bolli, Margrit & Eva Flik. 1994. Cours-eclair de lecture pour des lecteurs d français apprenant à lire le Dan (Gwɛɛtaawʋ). Société Internationale de Linguistique: Abidjan, Ivory Coast https://www.sil.org/resources/archives/34670. [↩](#a29)
 
 <b id="f30">30 </b>Holm, Wayne. 1971. Navajo Reading Study: Grapheme and unit frequencies in Navajo. Reading Studies progress report № 12. University of New Mexico. https://eric.ed.gov/?id=ED059806. [↩](#a30)
 
 <b id="f31">31 </b>Venezky, Richard. 1970. The structure of English Orthography. (Janua linguarum., Series minor 82). Mouton: The Hague. http://www.worldcat.org/oclc/840415997 [↩](#a31)
 
-<b id="f32">32 </b>Venezky, Richard. 1967. English Orthography: It's graphical structure and its Relation to sound. Reading Research Quarterly.  2 (3): 75-105. [↩](#a32)
+<b id="f32">32 </b>Venezky, Richard. 1967. English Orthography: It's graphical structure and its Relation to sound. Reading Research Quarterly. 2 (3): 75-105. [↩](#a32)
 
-<b id="f33">33 </b> Roberts, David  & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a33)
+<b id="f33">33 </b> Roberts, David & Valentin Vydrin. Forthcoming. Chapter 10: Eastern Dan. In: Tone orthography and reading fluency: the voice of evidence in ten Niger-Congo languages. [↩](#a33)
 
 <b id="f34">34 </b>Bolli, Margert. 1978. Writing tone with punctuation marks. SIL Notes on Literacy. 23: 16-18. [↩](#a34)
 
@@ -1472,4 +1474,4 @@ U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 
 <b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. http://scripts.sil.org/cms/scripts/page.php?cat_id=EncodingPrinciples [↩](#a39)
 
-<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International.  Online: https://www.sil.org/resources/publications/entry/7853 [↩](
+<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International. Online: https://www.sil.org/resources/publications/entry/7853 [↩](
