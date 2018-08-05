@@ -11,7 +11,7 @@
 #I need my handbook of the IPA to reference the Unicode code points and symbol names
 
 rm phonemic-corpus.txt
-cp proof-of-concept-text.txt phonemic-corpus.txt
+cp final-corpus.txt phonemic-corpus.txt
 
 #ng
 sed -e 's/ng/ŋ/g' -i phonemic-corpus.txt
@@ -162,4 +162,6 @@ sed -e 's/m/ɓ/g' -i phonemic-corpus.txt
 
 
 # In a nasal feet, any consonant is nasalized; phonemes /ɓ, ɗ,, y,, w/ are represented by their allophones [m,, n,, ɲ,, w̃w̰]. Foot-internal -l- is realized as [-r-] when preceded by dental or palatal consonants, and as [-l-] after labial and velar consonants. Combinations sl-, zl- are realized respectively as [ɬ], [ɮ]: slʌ̄ʌ̄ [ɬʌ̄ʌ̄] ‘turn’, zláȁ [ɮáȁ] ‘younger sibling’.
+git add phonemic-corpus.txt
+git commit phonemic-corpus.txt
 echo "I think we generated a phonemeic corpus too!"
