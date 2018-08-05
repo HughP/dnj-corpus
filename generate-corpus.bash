@@ -419,7 +419,7 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #awk -F $'\t' '{OFS = FS} {gsub("NULL","",$12)}1' corpustable9.txt > outtable.txt
 
 #Let's disentagle some of the French-Dan words
-
+sed -e 's/scorpion/ scorpion/g' -i proof-of-concept-text.txt scorpion
 sed -e 's/ʼyënngsavon/ʼyënng savon/g' -i proof-of-concept-text.txt
 sed -e 's/ʼyënngmoyen/ʼyënng moyen/g' -i proof-of-concept-text.txt
 sed -e 's/ʼdaɔnaraignée/ʼdaɔn araignée/g' -i proof-of-concept-text.txt
@@ -535,7 +535,7 @@ rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 #Remove new lines from lines which do not also end with punctuation.
-cat proof-of-concept-text.txt  | perl -CS -pe 's/([^\p{P}])(\N{U+000A})/\1/g' > proof-of-concept-text2.txt
+cat proof-of-concept-text.txt  | perl -CS -pe 's/([^\p{P}])(\N{U+000A})/\1 /g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
@@ -571,6 +571,17 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 #Take care of three cases...
 sed -e 's/˗˗/˗ ˗/g' -i proof-of-concept-text.txt
 #cat proof-of-concept-text.txt  | perl -CS -pe 's/(\R)(?:\h*\R)+/$1$1/g' > proof-of-concept-text2.txt
+
+#Take care of some some combining Diaeresis which are at the beinging of words, and should likely be tone marks, but we are just going to delete them. It is hihgly probable that they used to be at the begining of new lines.
+cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+0020}\N{U+0308}/\N{U+0020}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
+
+cat proof-of-concept-text.txt  | perl -CS -pe 's/\N{U+00F6}\N{U+0308}/\N{U+00F6}/g' > proof-of-concept-text2.txt
+
+rm proof-of-concept-text.txt
+mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 UnicodeCCount.pl -n proof-of-concept-text.txt > proof-of-concept-text-count-17-end-of-text.txt
 
