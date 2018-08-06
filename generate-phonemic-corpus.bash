@@ -160,8 +160,8 @@ sed -e 's/m/ɓ/g' -i phonemic-corpus.txt
 # K k
 # Kw kw
 
-
 # In a nasal feet, any consonant is nasalized; phonemes /ɓ, ɗ,, y,, w/ are represented by their allophones [m,, n,, ɲ,, w̃w̰]. Foot-internal -l- is realized as [-r-] when preceded by dental or palatal consonants, and as [-l-] after labial and velar consonants. Combinations sl-, zl- are realized respectively as [ɬ], [ɮ]: slʌ̄ʌ̄ [ɬʌ̄ʌ̄] ‘turn’, zláȁ [ɮáȁ] ‘younger sibling’.
-git add phonemic-corpus.txt
 git commit phonemic-corpus.txt
+mkdir Corpora
+mv *-corpus.txt Corpora
 echo "I think we generated a phonemeic corpus too!"

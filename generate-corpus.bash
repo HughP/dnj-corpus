@@ -11,6 +11,8 @@
 
 #By running these delete commands we are able to start clean with new files each running of the script.
 
+rm -r Character-Count-Tables
+rm -r Corpora
 rm -r Corpus-Counts
 rm -r Corpustables
 rm tabel-*.txt
@@ -587,25 +589,29 @@ mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
 UnicodeCCount.pl -n proof-of-concept-text.txt > proof-of-concept-text-count-17-end-of-text.txt
 
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,2.3,1.4 proof-of-concept-text-count-1-original.txt proof-of-concept-text-count-15-pre-french.txt > tabel-1.txt
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,2.3,1.4 proof-of-concept-text-count-1-original.txt proof-of-concept-text-count-15-pre-french.txt > ori-pre-french-table.txt
 
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5 tabel-1.txt proof-of-concept-text-count-16-post-french.txt > tabel-2.txt
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,2.3,1.5 ori-pre-french-table.txt proof-of-concept-text-count-16-post-french.txt > ori-pre-french-post-french-table.txt
 
-join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6 tabel-2.txt proof-of-concept-text-count-17-end-of-text.txt > Table-for-Readme-File.txt
+join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6 ori-pre-french-post-french-table.txt proof-of-concept-text-count-17-end-of-text.txt > ori-pre-french-post-french-final-table.txt
+
+cp ori-pre-french-post-french-final-table.txt Table-for-Readme-File.txt
+
+mkdir Character-Count-Tables
+
+mv *-table.txt Character-Count-Tables
 
 mkdir Corpustables
-touch corpustables.md
 
 echo "# Corpus Tables
 
-These counts are periodically generated throughout the script to track which characters have been modified along the way. The counts also serve as a before and after metric to show what in the corpus was changed." >> corpustables.md
+These counts are periodically generated throughout the script to track which characters have been modified along the way. The counts also serve as a before and after metric to show what in the corpus was changed." > corpustables.md
 
 mv corpustable*.* Corpustables
 cp proof-of-concept-text.txt final-corpus.txt
 mkdir Corpus-Counts
 mv proof-of-concept-text-count*.* Corpus-Counts
 
-git add final-corpus.txt
 git commit final-corpus.txt
 
 echo
