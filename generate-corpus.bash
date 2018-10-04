@@ -29,7 +29,7 @@ git rm proof-of-concept-text-count*.txt
 rm phonemic-corpus.txt
 
 ########################
-## Gather raw files and conbine them ##
+## Gather raw files and combine them ##
 ########################
 
 #Get all the gweta / Pamebhame files and concatenate them to a single file.
@@ -51,7 +51,7 @@ UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-tex
 ##############################
 
 
-#1. As far as I know txtconv does not do in place editing.
+#1. As far as I know txtconv does not do in-place editing.
 txtconv -i proof-of-concept-text.txt -o proof-no-PUA.txt -t sil-pua/SILPUA.tec -if utf8 -of utf8 -u 2
 
 rm proof-of-concept-text.txt
@@ -83,7 +83,7 @@ UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-tex
 #Table 1
 join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 1.1,1.2,1.3,2.3,1.4 proof-of-concept-text*1*.txt proof-of-concept-text*2*.txt > corpustable.txt
 
-## ############## #################
+#################################
 ## Character changes - Typographical Encoding Errors##
 #################################
 
@@ -115,7 +115,7 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,2.3,1.6  corpus
 ##3. Non-Breaking Hyphen U+001E --> U+02D7##
 
  #Corrected bad non-breaking hyphen.
-#MS Word saved the non-breaking hyphen as x1E. This was then interpreed as \00 \1E. So was a non breaking Hypehn, but should actually be U+02D7.
+#MS Word saved the non-breaking hyphen as x1E. This was then interpreted as \00 \1E. So was a non breaking Hypehn, but should actually be U+02D7.
 
 cat proof-of-concept-text.txt | perl -CS -pe 's/\N{U+001E}/\N{U+02D7}/g' > proof-of-concept-text2.txt
 
@@ -261,7 +261,7 @@ UnicodeCCount.pl -n proof-of-concept-text.txt | tail -n+2 > proof-of-concept-tex
 #Table 8
 join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,1.10,2.3,1.11  corpustable8.txt proof-of-concept-text-count-9-dashes.txt > corpustable9.txt
 
-##10b. Fix undeerscore
+##10b. Fix underscore
 sed -e 's/_/˗/g' -i proof-of-concept-text.txt
 echo "   Just moved all UNDERSCORES to LETTER MINUS."
 # echo ""
@@ -284,18 +284,18 @@ sed -i 's/ \+/ /g' proof-of-concept-text.txt
 #A couple of commas had an inversion with spaces
 sed -e 's/ ,/, /g' -i proof-of-concept-text.txt
 
-#fixing some new lines
+#changing some comma-newline sequences to comma-space sequences
 sed -e 's/,\n/, /g' -i proof-of-concept-text.txt
 
 
 ##10c. There are still some real minus signs we need to take care of.
-#We can avoid minus used btween digits and target word beginings like this:
+#We can avoid minus used between digits and target word beginnings like this:
 #sed -e 's/[^\d\S]-/˗/g' -i proof-of-concept-text.txt
 echo "Lets look for cases puntuation or LM followed by letter minus"
 grep -n -P "\s(\p{P}|\p{Lm})(˗)" proof-of-concept-text.txt
 echo "Just looked for puntuation or LM followed by letter minus. This will tell us if we are missing spaces."
 
-#Change all the hyphen-minus preceeding non-digits to minus letter.
+#Change all the hyphen-minus preceding non-digits to minus letter.
 cat proof-of-concept-text.txt | perl -CS -pe 's/-(?=[^\d])/\N{U+02D7}/g' >  proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
@@ -314,11 +314,11 @@ join -a 1 -a 2 -e 'NULL' -1 1 -2 1 -t $'\t' -o 0,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9
 #Somehow there are still space minus space patterns this moves the minus signs to attach to the word on the right.
 sed -e 's/\s˗\s/ ˗/g' -i proof-of-concept-text.txt
 
-# The problems that happen as a result of this first reGex do not appear in the second RegEx indicating that they are induced problems.
+# The problems that happen as a result of this first RegEx do not appear in the second RegEx indicating that they are induced problems.
 #grep -n -P -- "\p{L}˗\p{L}" initial-starting-corpus.txt
 #grep -n -P -- "\p{L}-\p{L}" initial-starting-corpus.txt
 
-#It seems that sometimes people are fogetting spaces after sentence brakes or commas and one instance each of ? and !..
+#It seems that sometimes people are forgetting spaces after sentence brakes or commas and one instance each of ? and !..
 sed -e 's/\([.]\)\(˗\)/\1 \2/g' -i proof-of-concept-text.txt
 sed -e 's/\([,]\)\(˗\)/\1 \2/g' -i proof-of-concept-text.txt
 sed -e 's/\([!]\)\(˗\)/\1 \2/g' -i proof-of-concept-text.txt
@@ -330,7 +330,7 @@ sed -e 's/ ?/?/g' -i proof-of-concept-text.txt
 sed -e 's/,\n/, /g' -i proof-of-concept-text.txt
 
 #Hardcoded this becasuse it was faster.
-#This should be: Between Uppercase make that a real hypehn-minus
+#This should be: Between Uppercase make that a real hyphen-minus
 sed -e 's/ANARIZ˗CI/ANARIZ-CI/g' -i proof-of-concept-text.txt
 
 #There are several instances of letter modifier equals that needs to have a space inserted.
@@ -340,25 +340,25 @@ sed -e 's/\([^ ]\)\([꞊]\)/\1 \2/g' -i proof-of-concept-text.txt
 sed -e 's/‘wo-/‘wo- /g' -i proof-of-concept-text.txt
 # I think that wo- -doe is being reduced to wo-doe
 
-##13 Full stop de-encapselation by spaces
+##13 Full stop de-encapsulation by spaces
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s[.](?=\s)/\N{U+002E}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##14 comma de-encapselation by spaces
+##14 comma de-encapsulation by spaces
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s[,](?=\s)/\N{U+002C}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##15 semicolon de-encapselation by spaces
+##15 semicolon de-encapsulation by spaces
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s[;](?=\s)/\N{U+003B}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
 mv proof-of-concept-text2.txt proof-of-concept-text.txt
 
-##15 colon de-encapselation by spaces
+##15 colon de-encapsulation by spaces
 cat proof-of-concept-text.txt | perl -CS -pe 's/\s[:](?=\s)/\N{U+003A}/g' > proof-of-concept-text2.txt
 
 rm proof-of-concept-text.txt
@@ -450,7 +450,7 @@ grep -P "dʼunmot" proof-of-concept-text.txt
 echo "any dunmot?"
 
 
-#The toal here is to capture the french section, then filter out all the Dan words. This is done with four awk scripts. 1) tartgeting dan orthography clusters whch don't occur in French, then 2) targeting country names. 3) Then targeting specific dan words. 4) then targeting single letter character.
+#The goal here is to capture the french section, then filter out all the Dan words. This is done with four awk scripts. 1) tartgeting dan orthography clusters whch don't occur in French, then 2) targeting country names. 3) Then targeting specific dan words. 4) then targeting single letter character.
 
 echo "These are the French words in the corpus which are being removed."
 awk '/Lʼorthographe/{flag=1} /ˮNimlʋʋ/{flag=0} flag' proof-of-concept-text.txt | tr "[:punct:]|[:digit:]" " " | tr " " "\n" | sort -u > Set-of-all-words-to-filter-french-from.txt

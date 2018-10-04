@@ -857,7 +857,7 @@ Character level stats:
 | U+001E | | 2721 | NULL | NULL | NULL | INFORMATION SEPARATOR TWO |
 | U+0020 | | 73737 | 79602 | 81759 | 81041 | SPACE |
 | U+0021 | ! | 70 | 70 | 70 | 70 | EXCLAMATION MARK |
-| U+0022 | " | 3346 | NULL | NULL | NULL | QUOTATION MARK | 
+| U+0022 | " | 3346 | NULL | NULL | NULL | QUOTATION MARK |
 | U+0027 | ' | 7223 | 86 | 8 | 8 | APOSTROPHE |
 | U+0028 | ( | 482 | 482 | 482 | 482 | LEFT PARENTHESIS |
 | U+0029 | ) | 483 | 483 | 483 | 483 | RIGHT PARENTHESIS |
@@ -981,7 +981,7 @@ Character level stats:
 | U+FFF9 | ￹ | 17 | NULL | NULL | NULL | INTERLINEAR ANNOTATION ANCHOR |
 
 ## Provenance and text conditioning
-Valentin Vydrin `vydrine[at]gmail[dot]com` Provided the corpus. Issues of the Eastern Dan local newpaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (trnaslated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.
+Valentin Vydrin `vydrine[at]gmail[dot]com` Provided the corpus. Issues of the Eastern Dan local newspaper _-Pamɛbhamɛ_ were provided as a series of `.doc` files. Three translated texts (translated portions of _While waiting for a medical doctor_) were provided as a series of `.txt` files in related folders: moyan-sanni_ko_dhotroo, moyan-waa_won, moyan-yii_to_gu.
 
 One `.doc` file was provided with 22 short (single paragraph length) parallel texts (Eastern Dan - French). And a copy of the New Testament was also provided but is not included in this corpus for copyright reasons.
 
