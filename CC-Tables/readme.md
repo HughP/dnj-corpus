@@ -110,9 +110,150 @@ Time elapsed: 0 hours, 13 minutes, 43 seconds
 Chance to use previous layout is now 0.691987.
 Number of swaps between rounds is now 17.
 ```
+In a second test of ~3.5 hours yeilded the following series of results.
+```
+***Found from greatToBest()***
+
+Hands: 50% 49%
+Fingers: 9.0% 9.0% 19% 14% 0.00% 0.00% 15% 15% 10% 9.0%
+
+ ^  %  <  >  {  |   `  }  [  ]  #  Q  Z    
+    Y  P  O  U  ?   K  D  L  C  W  X  *  @
+    I  N  E  A  :   M  H  T  S  R  =       
+    ~  +  &  ;  !   B  F  G  V  J          
+
+ \  1  2  3  4  5   6  7  8  9  0  q  z    
+    y  p  o  u  -   k  d  l  c  w  x  /  $
+    i  n  e  a  ,   m  h  t  s  r  "       
+    '  (  )  .  _   b  f  g  v  j          
+
+Fitness:       17385653
+Distance:      13632295
+Finger work:   46258
+Inward rolls:  10.19%
+Outward rolls: 2.33%
+Same hand:     34.50%
+Same finger:   1.55%
+Row change:    12.78%
+Home jump:     1.07%
+Ring jump:     3.14%
+To center:     2.77%
+To outside:    0.42%
+
+Time elapsed: 2 hours, 5 minutes, 50 seconds
+Number of rounds in greatToBest() is now 65536.
+
+***Found from greatToBest()***
+
+Hands: 50% 49%
+Fingers: 9.0% 9.0% 19% 14% 0.00% 0.00% 15% 15% 10% 9.0%
+
+ ^  <  >  %  {  |   `  }  [  ]  #  Q  Z    
+    Y  P  O  U  ?   K  D  L  C  W  X  &  @
+    I  N  E  A  :   M  H  T  S  R  =       
+    ~  +  *  ;  !   B  F  G  V  J          
+
+ \  1  2  3  4  5   6  7  8  9  0  q  z    
+    y  p  o  u  -   k  d  l  c  w  x  /  $
+    i  n  e  a  ,   m  h  t  s  r  "       
+    '  (  )  .  _   b  f  g  v  j          
+
+Fitness:       17382108
+Distance:      13628085
+Finger work:   46738
+Inward rolls:  10.19%
+Outward rolls: 2.33%
+Same hand:     34.47%
+Same finger:   1.55%
+Row change:    12.78%
+Home jump:     1.07%
+Ring jump:     3.14%
+To center:     2.77%
+To outside:    0.41%
+
+Time elapsed: 4 hours, 18 minutes, 55 seconds
+
+***Found from greatToBest()***
+
+Hands: 50% 49%
+Fingers: 9.0% 9.0% 19% 14% 0.00% 0.00% 15% 15% 10% 9.0%
+
+ ~  `  [  {  <  #   ^  >  }  ]  %  Q  Z    
+    Y  P  O  U  ?   K  D  L  C  W  X  &  @
+    I  N  E  A  :   M  H  T  S  R  =       
+    |  +  *  ;  !   B  F  G  V  J          
+
+ \  1  2  3  4  5   6  7  8  9  0  q  z    
+    y  p  o  u  -   k  d  l  c  w  x  /  $
+    i  n  e  a  ,   m  h  t  s  r  "       
+    (  )  '  .  _   b  f  g  v  j          
+
+Fitness:       17371868
+Distance:      13615820
+Finger work:   35178
+Inward rolls:  10.08%
+Outward rolls: 2.35%
+Same hand:     34.45%
+Same finger:   1.53%
+Row change:    12.77%
+Home jump:     1.08%
+Ring jump:     3.16%
+To center:     2.73%
+To outside:    0.43%
+
+Time elapsed: 5 hours, 0 minutes, 59 seconds
+Number of rounds in greatToBest() is now 131072.
+Number of rounds in greatToBest() is now 131072.
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 6 hours, 21 minutes, 2 seconds
+
+***Found from greatToBest()***
+
+Hands: 50% 49%
+Fingers: 9.0% 9.0% 19% 14% 0.00% 0.00% 15% 15% 10% 9.0%
+
+ `  |  [  {  <  #   ^  >  }  ]  %  Q  Z    
+    Y  P  O  U  &   K  D  L  C  W  X  +  @
+    I  N  E  A  :   M  H  T  S  R  =       
+    ~  ?  *  ;  !   B  F  G  V  J          
+
+ \  1  2  3  4  5   6  7  8  9  0  q  z    
+    y  p  o  u  -   k  d  l  c  w  x  /  $
+    i  n  e  a  ,   m  h  t  s  r  "       
+    (  )  '  .  _   b  f  g  v  j          
+
+Fitness:       17367953
+Distance:      13620940
+Finger work:   35178
+Inward rolls:  10.09%
+Outward rolls: 2.35%
+Same hand:     34.45%
+Same finger:   1.53%
+Row change:    12.77%
+Home jump:     1.07%
+Ring jump:     3.16%
+To center:     2.70%
+To outside:    0.43%
+
+Time elapsed: 7 hours, 33 minutes, 38 seconds
+Time elapsed: 8 hours, 45 minutes, 54 seconds
+
+
+```
 ### AFU Keyboard Layout
 
+I think I can use the Mac Version.
+
 ### French Keyboard Layout
+![AWERTY-ISO](/Language-bigrams/AWERTY-images/azerty-iso-keyboard.png)
+
+
+to do: do cct transform. Bigram. Then test against qwerty in Typing. Then optimize.
+
+BEPO? NEW cct, transform, Bigram then test against qwerty in Typing. Then optimize.
+
+What do I need to do for KLA?
 
 ### Spanish Keyboard Layout
 
