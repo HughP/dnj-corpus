@@ -59,3 +59,5 @@ There are four CC files:
 3. As if it were typed with Trans-Mande.
 4. As if it were typed with AFU keyboard for MacOS.
 `É` is not on AWERTY. So it was fudged as `Eé`.
+
+Dan text should be run on Mande, and AFU
