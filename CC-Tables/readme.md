@@ -76,7 +76,7 @@ To get this evaluation the  final corpus was converted in such a way so that cha
 
 Within typing two variables were set.  The first was `setksize` this was set to `standard`, the second was to use the `compare` command and get the score for the Trans-Mande keyboard layout on the full corpus. A single file was created with the QWERTY keyboard layout: `qwertyStore.txt`
 
-If we take the hypothetical situation and say that the pairing of deadkeys and the character combinations available via these deadkeys is reasonable, then what would be a better arangment based on the Eastern Dan language for these keys? On a first run with `Typing` to suggest an optimized layout for Eastern Dan the following was suggested after 13 minutes of running on Linux (64 bit Ubuntu 16.04) on a Lenovo Thinkpad with an Intel® Core™ i7-3520M CPU @ 2.90GHz × 4 (cores) and 16GB of RAM.
+If we take the hypothetical situation and say that the pairing of deadkeys and the character combinations available via these deadkeys is reasonable, then what would be a better arrangement based on the Eastern Dan language for these keys? On a first run with `Typing` to suggest an optimized layout for Eastern Dan the following was suggested after 13 minutes of running on Linux (64 bit Ubuntu 16.04) on a Lenovo Thinkpad with an Intel® Core™ i7-3520M CPU @ 2.90GHz × 4 (cores) and 16GB of RAM.
 ```
 ***Found from greatToBest()***
 
@@ -245,8 +245,8 @@ Time elapsed: 8 hours, 45 minutes, 54 seconds
 
 I think I can use the Mac Version.
 
-### French Keyboard Layout
-![AWERTY-ISO](/Language-bigrams/fra-james-bigramed/AWERTY-images/azerty-iso-keyboard.png)
+### French Keyboard Layout (AZERTY)
+![AWERTY-ISO](/Language-bigrams/fra-james-bigramed/AZERTY-images/azerty-iso-keyboard.png)
 
 
 to do: do cct transform. Bigram. Then test against qwerty in Typing. Then optimize.
