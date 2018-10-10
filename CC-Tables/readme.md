@@ -249,11 +249,14 @@ I think I can use the Mac Version.
 ![AZERTY-ISO](/Language-Bigrams/fra-james-bigramed/AZERTY-images/azerty-iso-keyboard.png)
 
 
+
 to do: do cct transform. Bigram. Then test against qwerty in Typing. Then optimize.
 
 BEPO? NEW cct, transform, Bigram then test against qwerty in Typing. Then optimize.
 
 What do I need to do for KLA?
+
+### French Keyboard Layout (Bépo)
 
 ### Spanish Keyboard Layout
 
