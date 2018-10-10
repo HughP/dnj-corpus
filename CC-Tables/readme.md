@@ -246,7 +246,7 @@ Time elapsed: 8 hours, 45 minutes, 54 seconds
 I think I can use the Mac Version.
 
 ### French Keyboard Layout (AZERTY)
-![AWERTY-ISO](/Language-bigrams/fra-james-bigramed/AZERTY-images/azerty-iso-keyboard.png)
+![AZERTY-ISO](/Language-Bigrams/fra-james-bigramed/AZERTY-images/azerty-iso-keyboard.png)
 
 
 to do: do cct transform. Bigram. Then test against qwerty in Typing. Then optimize.
