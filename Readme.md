@@ -17,7 +17,7 @@
  * [`/AZERTY`](/Text-Input-Systems-and-Descriptions/AZERTY)
  * [`/QWERTY`](/Text-Input-Systems-and-Descriptions/QWERTY)
  * [`/BÉPO`](/Text-Input-Systems-and-Descriptions/BÉPO)
- * [`/Spanish ISO`](/Text-Input-Systems-and-Descriptions/Spanish ISO)
+ * [`/Spanish ISO`](/Text-Input-Systems-and-Descriptions/Spanish)
  * [`/Me'phaa`](/Text-Input-Systems-and-Descriptions/Me'phaa)
 
 ### Tools
