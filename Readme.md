@@ -3,10 +3,13 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
 
 ## Sections
 
+Corpora in Languages
+
 Writing System Descriptions
-Text Input Systems and Their Descriptions
+
+Text Input Systems and their Descriptions
+
 Tools for:
  * Measuring diacritic density and tone melodies
  * Text character counting
  * Converting or Transforming Text
-Corpora in Languages
