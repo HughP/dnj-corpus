@@ -193,7 +193,7 @@ To set the text as equivalent to the large corpus several characters need to be 
 
 NT File: `00-WNTdnjGW-web.pdf`
 James File: `dnj-james-ori.txt` Direct copy from PDF. Later cleaned up.
-James File: `dnj-james-no-numbs.txt` - Last step of processed file.
+James File: `dnj-james-less-numbers.txt` - Last step of processed file.
 James File: `dnj-james-wbt-final.txt` - file for using in scripts, such as counting.
 Counts file: `dnj-james-wbt-UnicodeCCount-n-m.txt` is a UnicodeCCount file for the final file.
 Folder: dnj-james (contains copies of Eastern and Western Dan translations of James) sourced from Bible.is on 22 June 2018. – Note: Bible.is seems to mis-represent the full license and copyright as the Creative Commons license is not included,hence in the ReadMe.md file of that folder, I indicate that I assume Fair Use.

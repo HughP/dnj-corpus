@@ -51,10 +51,10 @@ Version 4 | 2014-2017+ | There are significant changes to vowel and tone markers
 ### The data and its presentation here in the introduction to the corpus
 
 The data has two states.
- 1. As first received from sources. (as orginal files and as the consolidation of the extracted text from those original files: `initial-starting-corpus.txt`)
+ 1. As first received from sources. (as original files and as the consolidation of the extracted text from those original files: `initial-starting-corpus.txt`)
  2. As finally processed for use in Keyboard layout analysis: `proof-of-concept-text.txt`, `phonemic-corpus.txt`
 
-The reason for these two states is to faithfully represent the corpus as it was originally received. It is felt that this state most faifully represents the text processing and publishing "natural language use" which Dan Language users encounter. However, to do the keyboard optimization, it is important to look at the intended characters that language users thought they were using. It is quite evident that automation has changed a great deal of the intended characters into something unintended. This intended state is what is needed to optimize a keyboard layout.
+The reason for these two states is to faithfully represent the corpus as it was originally received. It is felt that this state most faithfully represents the text processing and publishing "natural language use" which Dan Language users encounter. However, to do the keyboard optimization, it is important to look at the intended characters that language users thought they were using. It is quite evident that automation has changed a great deal of the intended characters into something unintended. This intended state is what is needed to optimize a keyboard layout.
 
 ### Writing system
 
@@ -752,7 +752,7 @@ U+0050, U+0070 | P, p | p | Voiceless bilabial stop
 
 ##### Tone marking
 
-There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
+There are four characters which are used to indicate one of ten possible tone patterns for a given word. Not that there are ten possible patterns per word, but rather there are ten patterns in the language. The characters used in the language have no specified Unicode encoding per any known statement. However, based on the behavior of various Unicode characters the following are the obvious correct choice – they are the only look a like characters with letter attributes: 〈˗〉 U+02D7 'MODIFIER LETTER MINUS SIGN', 〈ʼ〉 U+02BC 'MODIFIER LETTER APOSTROPHE', 〈ˮ〉 U+02EE MODIFIER LETTER DOUBLE APOSTROPHE, 〈꞊〈꞊〉 U+A78A 'MODIFIER LETTER SHORT EQUALS SIGN'.
 
 ###### Based on content presented in 1994
 <!--
