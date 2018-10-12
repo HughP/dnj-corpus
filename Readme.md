@@ -8,10 +8,10 @@ A small corpus of a local newspaper (_˗Pamɛbhamɛ_), and medical counsels (cha
  * A parallel corpus (the New Testament book of James) in several languages: Spanish [spa], French [fra], English [eng], Eastern Dan [dnj], Me'phaa [tcf], Mandarin [cmn].
 
 ### Writing System Descriptions
- * The focus here is on the Eastern Dan writing system in general but some description also exists for the other languages in the parallel corpus.
+ [`/Writing-System-Descriptions`](/Writing-System-Descriptions) The focus here is on the Eastern Dan writing system in general but some description also exists for the other languages in the parallel corpus.
 
 ### Text Input Systems and their Descriptions
-Information about several keyboard layouts exists as part of this corpus.
+[`/Text-Input-Systems-and-Descriptions`](/Text-Input-Systems-and-Descriptions) Information about several keyboard layouts exists as part of this corpus.
  * AFU
  * Trans-Mande
  * AZERTY
@@ -20,7 +20,17 @@ Information about several keyboard layouts exists as part of this corpus.
  * Spanish ISO
  * Me'phaa
 
-###Tools for:
+### Tools
+A variety of tools were used in this project. I try to keep a list and a copy of them in this project.  
+#### Tools for Text
+[`/Tools/Tools-for-Text`](/Tools/Tools-for-Text) include:
  * Measuring diacritic density and tone melodies
  * Text character counting
  * Converting or Transforming Text
+
+#### Tools for Keyboard Layout analysis
+* Typing
+* KLA
+
+#### Tools for Descriptions
+* KLE
