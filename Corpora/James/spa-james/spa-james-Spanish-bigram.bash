@@ -1,6 +1,12 @@
 #commands for creating Typing compliant data
 
-chary ngram -f final-corpus-if-typed-with-*as-qwerty.txt -n 2 > long-ngramed.txt
+cp spa-james-less-numbers.txt spa-james.txt
+silcc -u -t spa-james-Spanish-to-QWERTY-table.cct spa-james.txt > spa-james-Spanish-as-QWERTY.txt
+
+UnicodeCCount.pl -n -m spa-james-Spanish-as-QWERTY.txt > spa-james-UnincodeCCount-n-m-Spanish-QWERTY.txt
+
+chary ngram -f spa-james-Spanish-as-QWERTY.txt -n 2 > long-ngramed.txt
+
 
 sed -e :a -e '$d;N;2,3ba' -e 'P;D' long-ngramed.txt >short-ngramed.txt
 
@@ -15,7 +21,7 @@ rm short-ngramed.txt
 rm long-ngramed.txt
 mv bigram.txt allDigraphs.txt
 
-chary ngram -f final-corpus-if-typed-with-*as-qwerty.txt -n 1 > long-sologramed.txt
+chary ngram -f spa-james-Spanish-as-QWERTY.txt -n 1 > long-sologramed.txt
 sed -e :a -e '$d;N;2,3ba' -e 'P;D' long-sologramed.txt >short-sologramed.txt
 
 awk '{print $1 " " $2}' short-sologramed.txt > sologramed.txt
@@ -28,3 +34,11 @@ sed -i 's/␊/\\n/g' sologramed.txt
 rm short-sologramed.txt
 rm long-sologramed.txt
 mv sologramed.txt allChars.txt
+
+mkdir spa-james-Spanish-counts-for-Typing
+mv allChars.txt spa-james-Spanish-counts-for-Typing
+mv allDigraphs.txt spa-james-Spanish-counts-for-Typing
+
+mkdir spa-james-Spanish-KLE
+mv spa-james-Spanish-as-QWERTY.txt spa-james-Spanish-KLE
+mv spa-james-UnincodeCCount-n-m-Spanish-QWERTY.txt spa-james-Spanish-KLE
