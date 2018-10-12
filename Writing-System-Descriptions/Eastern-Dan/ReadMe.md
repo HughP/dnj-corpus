@@ -1474,4 +1474,19 @@ U+00FB	û	26	LATIN SMALL LETTER U WITH CIRCUMFLEX
 
 <b id="f39">39 </b>Hosken, Martin. 2003. Creating an Orthography Description. http://scripts.sil.org/cms/scripts/page.php?cat_id=EncodingPrinciples [↩](#a39)
 
-<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International. Online: https://www.sil.org/resources/publications/entry/7853 [↩](
+<b id="f40">40 </b>Constable, Peter G. 2002. Toward a Model for Language Identification Defining an ontology of language-related categories. SIL Electronic Working Papers 2002-003. Dallas, Tx: SIL International. Online: https://www.sil.org/resources/publications/entry/7853 [↩](#a40)
+
+## Intellectual property ownership and licenses
+### Text (corpus) content
+Copyright claims are un-clear.
+If authors of content were employed by SIL, SIL International would be the copyright owner. (This is only relevant because the works themselves do not have copyright claims or licenses attached, but do reference SIL's address.) Otherwise copyright belongs to the authors, or their employer. It does not readily seem that the authors are attributed in the corpus, but they might be in the orthography.
+
+Only copyright owners can license materials. Therefore this content bears no license, as Hugh makes no content claims on the content of the corpus, and did not receive content under license. Use under the _fair use_ doctrine is assumed.
+
+### Hugh Paterson's Contribution
+The `README.md` which is Hugh Paterson III's contribution is copyright Hugh Paterson III 2018, and licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+
+The `generate-corpus.bash` script is also Hugh's contribution and is licensed under the MIT version [provided](paterson-license.md).
+
+### SIL International's Contribution
+Other content such as the content contained under the folder `/SILPUA` is licensed as originally offered (MIT).

@@ -1,5 +1,10 @@
 #commands for creating Typing compliant data
 
+cp tcf-james-less-numbers.txt tcf-james.txt
+silcc -u -t tcf-james-Mephaa-to-QWERTY-table.cct tcf-james.txt > tcf-james-Mephaa-as-QWERTY.txt
+
+UnicodeCCount.pl -n -m tcf-james-Mephaa-as-QWERTY.txt > tcf-james-UnincodeCCount-n-m-Mephaa-QWERTY.txt
+
 chary ngram -f tcf-james-Mephaa-as-QWERTY.txt -n 2 > long-ngramed.txt
 
 
@@ -29,3 +34,11 @@ sed -i 's/␊/\\n/g' sologramed.txt
 rm short-sologramed.txt
 rm long-sologramed.txt
 mv sologramed.txt allChars.txt
+
+mkdir tcf-james-Mephaa-counts-for-Typing
+mv allChars.txt tcf-james-Mephaa-counts-for-Typing
+mv allDigraphs.txt tcf-james-Mephaa-counts-for-Typing
+
+mkdir tcf-james-Mephaa-KLE
+mv tcf-james-Mephaa-as-QWERTY.txt tcf-james-Mephaa-KLE
+mv tcf-james-UnincodeCCount-n-m-Mephaa-QWERTY.txt tcf-james-Mephaa-KLE
