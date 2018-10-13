@@ -1,0 +1,117 @@
+The score of the french james text against the text of the Trans-Mande keyboard is as follows according to typing:
+
+Hands: 56% 43%
+Fingers: 8.0% 9.0% 23% 15% 0.00% 0.00% 16% 10% 10% 7.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  E  R  T   Y  U  I  O  P  {  }  |
+    A  S  D  F  G   H  J  K  L  :  "
+    Z  X  C  V  B   N  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  e  r  t   y  u  i  o  p  [  ]  \
+    a  s  d  f  g   h  j  k  l  ;  '
+    z  x  c  v  b   n  m  ,  .  /
+
+Fitness:       3588
+Distance:      3010
+Finger work:   28
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+
+
+If we score the KLA suggested keyboard with typing and the same text then the following is the score:
+
+Hands: 56% 43%
+Fingers: 5.0% 9.0% 21% 20% 0.00% 0.00% 19% 11% 8.0% 5.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    >  C  D  <  F   Z  :  P  M  H  X  {  |
+    O  I  E  U  R   N  A  S  T  L  G
+    Y  ?  B  V  J   "  Q  K  W  }
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    .  c  d  ,  f   z  ;  p  m  h  x  [  \
+    o  i  e  u  r   n  a  s  t  l  g
+    y  /  b  v  j   '  q  k  w  ]
+
+Fitness:       1975
+Distance:      1240
+Finger work:   0
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+
+Finally if we talk the Typing suggested layout the following is the score:
+
+***Found from greatToBest()***
+
+Hands: 42% 57%
+Fingers: 8.0% 9.0% 11% 14% 0.00% 0.00% 17% 23% 8.0% 8.0%
+
+ .  {  }  [  ]  `   _  (  )  #  =  @  G
+    P  D  +  \  ^   H  C  O  V  Q  X  "  J
+    N  T  U  I  L   ,  S  E  R  A  ?
+    Z  $  Y  F  :   -  M  W  K  B
+
+ ~  1  2  3  4  5   6  7  8  9  0  |  g
+    p  d  ;  <  >   h  c  o  v  q  x  *  j
+    n  t  u  i  l   '  s  e  r  a  &
+    z  !  y  f  %   /  m  w  k  b
+
+Fitness:       878
+Distance:      1080
+Finger work:   28
+Inward rolls:  30.43%
+Outward rolls: 4.35%
+Same hand:     39.13%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+Time elapsed: 0 hours, 7 minutes, 42 seconds
+Time elapsed: 0 hours, 7 minutes, 42 seconds
+Number of rounds in greatToBest() is now 16384.
+Time elapsed: 0 hours, 13 minutes, 29 seconds
+Chance to use previous layout is now 0.717940.
+Number of swaps between rounds is now 18.
+Time elapsed: 0 hours, 19 minutes, 26 seconds
+Number of rounds in greatToBest() is now 32768.
+Time elapsed: 0 hours, 28 minutes, 32 seconds
+Time elapsed: 0 hours, 40 minutes, 50 seconds
+Number of rounds in greatToBest() is now 65536.
+Time elapsed: 0 hours, 59 minutes, 49 seconds
+Number of rounds in greatToBest() is now 131072.
+Time elapsed: 1 hours, 38 minutes, 19 seconds
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 2 hours, 33 minutes, 22 seconds
+Number of rounds in greatToBest() is now 262144.
+Time elapsed: 4 hours, 30 minutes, 11 seconds
+Time elapsed: 6 hours, 33 minutes, 40 seconds
+Number of rounds in greatToBest() is now 524288.
+Time elapsed: 10 hours, 5 minutes, 4 seconds
+Time elapsed: 15 hours, 4 minutes, 3 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 26 hours, 1 minutes, 4 seconds
+Time elapsed: 35 hours, 21 minutes, 26 seconds

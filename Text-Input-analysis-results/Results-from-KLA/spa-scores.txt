@@ -1,0 +1,149 @@
+The score of the default Spanish james text against the text of the default Spanish keyboard is as follows according to typing:
+
+Hands: 58% 41%
+Fingers: 14% 9.0% 22% 13% 0.00% 0.00% 15% 7.0% 15% 5.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  E  R  T   Y  U  I  O  P  {  }  |
+    A  S  D  F  G   H  J  K  L  :  "
+    Z  X  C  V  B   N  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  e  r  t   y  u  i  o  p  [  ]  \
+    a  s  d  f  g   h  j  k  l  ;  '
+    z  x  c  v  b   n  m  ,  .  /
+
+Fitness:       3089
+Distance:      2605
+Finger work:   264
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+If we score the KLA suggested keyboard with typing and the same text then the following is the score:
+
+=====
+
+Hands: 52% 47%
+Fingers: 5.0% 9.0% 16% 22% 0.00% 0.00% 20% 15% 7.0% 6.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    >  P  M  T  V   :  C  "  <  G  Z  |  ?
+    D  R  E  O  I   L  S  A  N  U  Q
+    X  K  F  B  J   H  Y  W  {  }
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    .  p  m  t  v   ;  c  '  ,  g  z  \  /
+    d  r  e  o  i   l  s  a  n  u  q
+    x  k  f  b  j   h  y  w  [  ]
+
+Fitness:       1286
+Distance:      1020
+Finger work:   1
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+=====
+
+Finally if we talk the Typing suggested layout the following is the score:
+
+Hands: 46% 53%
+Fingers: 7.0% 8.0% 19% 13% 0.00% 0.00% 20% 14% 12% 8.0%
+
+ J  /  -  "  $  ?   ^  &  |  (  )  F  %
+    H  Y  L  C  #   ~  B  U  Q  M  {  }  X
+    I  R  E  N  T   ,  A  S  O  D  V
+    @  .  Z  \  :   *  P  G  K  W
+
+ j  1  2  3  4  5   6  7  8  9  0  f  ;
+    h  y  l  c  _   !  b  u  q  m  [  ]  x
+    i  r  e  n  t   '  a  s  o  d  v
+    =  +  z  `  <   >  p  g  k  w
+
+Fitness:       713
+Distance:      910
+Finger work:   3
+Inward rolls:  37.50%
+Outward rolls: 6.25%
+Same hand:     43.75%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+Time elapsed: 0 hours, 0 minutes, 0 seconds
+Chance to use previous layout is now 0.309351.
+Number of swaps between rounds is now 6.
+Chance to use previous layout is now 0.347861.
+Number of swaps between rounds is now 7.
+Number of rounds in greatToBest() is now 16.
+Chance to use previous layout is now 0.386603.
+Number of swaps between rounds is now 8.
+Chance to use previous layout is now 0.425147.
+Number of swaps between rounds is now 9.
+Number of rounds in greatToBest() is now 32.
+Chance to use previous layout is now 0.463111.
+Number of swaps between rounds is now 10.
+Chance to use previous layout is now 0.500168.
+Number of swaps between rounds is now 11.
+Number of rounds in greatToBest() is now 64.
+Chance to use previous layout is now 0.536049.
+Number of swaps between rounds is now 12.
+Number of rounds in greatToBest() is now 128.
+Chance to use previous layout is now 0.570538.
+Number of swaps between rounds is now 13.
+^[[ANumber of rounds in greatToBest() is now 256.
+Chance to use previous layout is now 0.603470.
+Number of swaps between rounds is now 14.
+Number of rounds in greatToBest() is now 512.
+Chance to use previous layout is now 0.634732.
+Number of swaps between rounds is now 15.
+Number of rounds in greatToBest() is now 1024.
+Chance to use previous layout is now 0.664249.
+Number of swaps between rounds is now 16.
+Number of rounds in greatToBest() is now 2048.
+Time elapsed: 0 hours, 1 minutes, 7 seconds
+Number of rounds in greatToBest() is now 4096.
+Time elapsed: 0 hours, 2 minutes, 26 seconds
+Chance to use previous layout is now 0.691987.
+Number of swaps between rounds is now 17.
+Number of rounds in greatToBest() is now 8192.
+Time elapsed: 0 hours, 4 minutes, 25 seconds
+Number of rounds in greatToBest() is now 16384.
+Time elapsed: 0 hours, 7 minutes, 35 seconds
+Time elapsed: 0 hours, 12 minutes, 19 seconds
+Chance to use previous layout is now 0.717940.
+Number of swaps between rounds is now 18.
+Number of rounds in greatToBest() is now 32768.
+Time elapsed: 0 hours, 22 minutes, 48 seconds
+Time elapsed: 0 hours, 35 minutes, 16 seconds
+Number of rounds in greatToBest() is now 65536.
+Time elapsed: 0 hours, 55 minutes, 33 seconds
+Time elapsed: 1 hours, 23 minutes, 21 seconds
+Number of rounds in greatToBest() is now 131072.
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 2 hours, 9 minutes, 38 seconds
+Time elapsed: 3 hours, 14 minutes, 25 seconds
+Number of rounds in greatToBest() is now 262144.
+Time elapsed: 5 hours, 0 minutes, 31 seconds
+Time elapsed: 7 hours, 27 minutes, 58 seconds
+Number of rounds in greatToBest() is now 524288.
+Time elapsed: 11 hours, 40 minutes, 40 seconds
+Time elapsed: 17 hours, 38 minutes, 8 seconds
+Number of rounds in greatToBest() is now 1048576.

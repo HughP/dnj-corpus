@@ -1,0 +1,132 @@
+The score of the french james text against the text of the BEPO keyboard is as follows according to typing:
+
+Hands: 50% 50%
+Fingers: 7.0% 9.0% 11% 23% 0.00% 0.00% 13% 13% 12% 13%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  E  R  T   Y  U  I  O  P  {  }  |
+    A  S  D  F  G   H  J  K  L  :  "
+    Z  X  C  V  B   N  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  e  r  t   y  u  i  o  p  [  ]  \
+    a  s  d  f  g   h  j  k  l  ;  '
+    z  x  c  v  b   n  m  ,  .  /
+
+Fitness:       1472
+Distance:      1240
+Finger work:   172
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+
+
+If we score the KLA suggested keyboard with typing and the same text then the following is the score:
+
+Hands: 55% 44%
+Fingers: 5.0% 10% 19% 21% 0.00% 0.00% 19% 12% 9.0% 5.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    <  U  I  O  ?   {  E  H  G  >  P  Y  }
+    R  D  F  S  L   :  A  K  J  "  V
+    C  Z  Q  W  T   M  N  X  |  B
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    ,  u  i  o  /   [  e  h  g  .  p  y  ]
+    r  d  f  s  l   ;  a  k  j  '  v
+    c  z  q  w  t   m  n  x  \  b
+
+Fitness:       1830
+Distance:      1210
+Finger work:   0
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+
+Finally if we talk the Typing suggested layout the following is the score:
+
+Hands: 45% 54%
+Fingers: 7.0% 9.0% 15% 15% 0.00% 0.00% 16% 21% 9.0% 9.0%
+
+ <  >  .  !  :  -   ,  *  _  (  )  [  ]
+    G  M  S  I  @   Y  W  R  U  N  T  V  B
+    O  A  /  J  ?   E  K  F  L  D  ^
+    C  Q  %  Z  {   }  H  X  P  +
+
+ "  1  2  3  4  5   6  7  8  9  0  \  ~
+    g  m  s  i  #   y  w  r  u  n  t  v  b
+    o  a  ;  j  '   e  k  f  l  d  =
+    c  q  $  z  &   |  h  x  p  `
+
+Fitness:       815
+Distance:      1080
+Finger work:   0
+Inward rolls:  36.36%
+Outward rolls: 0.00%
+Same hand:     50.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+Time elapsed: 0 hours, 0 minutes, 9 seconds
+Number of rounds in greatToBest() is now 256.
+Chance to use previous layout is now 0.603470.
+Number of swaps between rounds is now 14.
+Number of rounds in greatToBest() is now 512.
+Chance to use previous layout is now 0.634732.
+Number of swaps between rounds is now 15.
+Number of rounds in greatToBest() is now 1024.
+Chance to use previous layout is now 0.664249.
+Number of swaps between rounds is now 16.
+Number of rounds in greatToBest() is now 2048.
+Time elapsed: 0 hours, 1 minutes, 2 seconds
+Number of rounds in greatToBest() is now 4096.
+Time elapsed: 0 hours, 2 minutes, 10 seconds
+Chance to use previous layout is now 0.691987.
+Number of swaps between rounds is now 17.
+Time elapsed: 0 hours, 4 minutes, 2 seconds
+Number of rounds in greatToBest() is now 8192.
+Time elapsed: 0 hours, 7 minutes, 22 seconds
+Number of rounds in greatToBest() is now 16384.
+Time elapsed: 0 hours, 12 minutes, 53 seconds
+Chance to use previous layout is now 0.717940.
+Number of swaps between rounds is now 18.
+Time elapsed: 0 hours, 18 minutes, 38 seconds
+Number of rounds in greatToBest() is now 32768.
+Time elapsed: 0 hours, 27 minutes, 21 seconds
+Time elapsed: 0 hours, 39 minutes, 7 seconds
+Number of rounds in greatToBest() is now 65536.
+Time elapsed: 0 hours, 57 minutes, 19 seconds
+Number of rounds in greatToBest() is now 131072.
+Time elapsed: 1 hours, 34 minutes, 18 seconds
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 2 hours, 27 minutes, 16 seconds
+Number of rounds in greatToBest() is now 262144.
+Time elapsed: 4 hours, 19 minutes, 57 seconds
+Time elapsed: 6 hours, 19 minutes, 20 seconds
+Number of rounds in greatToBest() is now 524288.
+Time elapsed: 9 hours, 44 minutes, 26 seconds
+Time elapsed: 14 hours, 35 minutes, 15 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 24 hours, 58 minutes, 55 seconds
+Time elapsed: 34 hours, 7 minutes, 19 seconds
