@@ -1,0 +1,29 @@
+// file added by Hugh to test QWERTY.
+`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
+
+//KLE tcf suggestion
+`1234567890-=,exrs;gtl.pc/oia[umn'\\jdf]whykbvqz~!@#$%^&*()_+<EXRS:GTL>PC?OIA{UMN"|JDF}WHYKBVQZ
+
+//KLE spa suggestion
+`1234567890-=.pmtv;c',gz\\/dreoilsanuqxkfbjhyw[]~!@#$%^&*()_+>PMTV:C"<GZ|?DREOILSANUQXKFBJHYW{}
+
+//KLE eng suggestion
+`1234567890-=pfyl.'uwgv/;\\hsetinaord,xzkmjcbq[]~!@#$%^&*()_+PFYL>"UWGV?:|HSETINAORD<XZKMJCBQ{}
+
+//KLE  fra james AFU
+`1234567890-=h;pmfjdcvbxy\\oieurnqstlg./wa[,']kz~!@#$%^&*()_+H:PMFJDCVBXY|OIEURNQSTLG>?WA{<"}KZ
+
+//KLE fra james AZERTY
+`1234567890-=bv;dgxpcmwy.\\oieurnqstlh'/ja[,fk]z~!@#$%^&*()_+BV:DGXPCMWY>|OIEURNQSTLH"?JA{<FK}Z
+
+//KLE fra james BEPO
+`1234567890-=,uio/[ehg.py]rdfsl;akj'vczqwtmnx\b~!@#$%^&*()_+<UIO?{EHG>PY}RDFSL:AKJ"VCZQWTMNX|B
+
+//KLE fra james Trans Mande
+`1234567890-=.cd,fz;pmhx[\\oieurnastlgy/bvj'qkw]~!@#$%^&*()_+>CD<FZ:PMHX{|OIEURNASTLGY?BVJ"QKW}
+
+//KLE dnj james AFU
+`1234567890-=wiyup/mgzlj\\deqokn,[hbta'f;svc]x~!@#$%^&*()_+GZLRJ|DEQOKN<{HBTA"F:>SVC}X
+
+//KLE dnj james Trans Mande
+`1234567890-=.wgbt/yimljv\\ue;'knoahdzqcf,rsp[]x~!@#$%^&*()_+>WGBT?YIMLJV|UE:"KNOAHDZQCF<RSP{}X
