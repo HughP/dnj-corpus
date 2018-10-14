@@ -1,16 +1,16 @@
 // file added by Hugh to test QWERTY.
 `1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
 
-//KLA spa suggestion
+//KLA spa james suggestion
 `1234567890-=.pmtv;c',gz\\/dreoilsanuqxkfbjhyw[]~!@#$%^&*()_+>PMTV:C"<GZ|?DREOILSANUQXKFBJHYW{}
 
-//KLA tcf suggestion
+//KLA tcf james suggestion
 `1234567890-=,exrs;gtl.pc/oia[umn'\\jdf]whykbvqz~!@#$%^&*()_+<EXRS:GTL>PC?OIA{UMN"|JDF}WHYKBVQZ
 
-//KLA eng suggestion
+//KLA eng james suggestion
 `1234567890-=pfyl.'uwgv/;\\hsetinaord,xzkmjcbq[]~!@#$%^&*()_+PFYL>"UWGV?:|HSETINAORD<XZKMJCBQ{}
 
-//KLA  fra james AFU
+//KLA fra james AFU
 `1234567890-=h;pmfjdcvbxy\\oieurnqstlg./wa[,']kz~!@#$%^&*()_+H:PMFJDCVBXY|OIEURNQSTLG>?WA{<"}KZ
 
 //KLA dnj james AFU
@@ -27,3 +27,9 @@
 
 //KLA dnj james Trans Mande
 `1234567890-=.wgbt/yimljv\\ue;'knoahdzqcf,rsp[]x~!@#$%^&*()_+>WGBT?YIMLJV|UE:"KNOAHDZQCF<RSP{}X
+
+//KLA dnj full corpus Trans Mande
+`1234567890-=tywgpfbisz/jqke;onha'udlc[r,vm.]x\\~!@#$%^&*()_+TYWGPFBISZ?JQKE:ONHA"UDLC{R<VM>}X|
+
+//KLA dnj full corpus AFU
+`1234567890-=timgl.bzyw/j'ke[qhu,ondvc\\rsf;p]xa~!@#$%^&*()_+TIMGL>BZYW?J"KE{QHU<ONDVC|RSF:P}XA
