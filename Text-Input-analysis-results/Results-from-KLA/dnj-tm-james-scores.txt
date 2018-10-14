@@ -114,3 +114,31 @@ Number of rounds in greatToBest() is now 524288.
 Time elapsed: 14 hours, 28 minutes, 11 seconds
 Time elapsed: 21 hours, 20 minutes, 10 seconds
 Number of rounds in greatToBest() is now 1048576.
+
+Now if we take the KLA keyboard and score it against James where would it fit?
+
+Hands: 52% 47%
+Fingers: 5.0% 8.0% 25% 14% 0.00% 0.00% 19% 8.0% 4.0% 15%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    T  Y  W  G  P   F  B  I  S  Z  ?  J  Q
+    K  E  :  O  N   H  A  "  U  D  L
+    C  {  R  <  V   M  >  }  X  |
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    t  y  w  g  p   f  b  i  s  z  /  j  q
+    k  e  ;  o  n   h  a  '  u  d  l
+    c  [  r  ,  v   m  .  ]  x  \
+
+Fitness:       12331
+Distance:      4810
+Finger work:   691
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     88.43%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%

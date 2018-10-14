@@ -132,3 +132,239 @@ Number of swaps between rounds is now 20.
 Time elapsed: 21 hours, 39 minutes, 16 seconds
 Time elapsed: 34 hours, 7 minutes, 26 seconds
 Number of rounds in greatToBest() is now 2097152.
+
+Other famous scores:
+
+// file added by Hugh to test QWERTY.
+`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
+
+Hands: 56% 43%
+Fingers: 8.0% 10% 18% 21% 0.00% 0.00% 20% 8.0% 15% 1.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  E  R  T   Y  U  I  O  P  {  }  |
+    A  S  D  F  G   H  J  K  L  :  "
+    Z  X  C  V  B   N  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  e  r  t   y  u  i  o  p  [  ]  \
+    a  s  d  f  g   h  j  k  l  ;  '
+    z  x  c  v  b   n  m  ,  .  /
+
+Fitness:       3362
+Distance:      3125
+Finger work:   102
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//KLE eng suggestion
+`1234567890-=pfyl.'uwgv/;\\hsetinaord,xzkmjcbq[]~!@#$%^&*()_+PFYL>"UWGV?:|HSETINAORD<XZKMJCBQ{}
+
+Hands: 53% 46%
+Fingers: 7.0% 10% 16% 21% 0.00% 0.00% 20% 13% 8.0% 7.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    P  F  Y  L  >   "  U  W  G  V  ?  :  |
+    H  S  E  T  I   N  A  O  R  D  <
+    X  Z  K  M  J   C  B  Q  {  }
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    p  f  y  l  .   '  u  w  g  v  /  ;  \
+    h  s  e  t  i   n  a  o  r  d  ,
+    x  z  k  m  j   c  b  q  [  ]
+
+Fitness:       1635
+Distance:      1230
+Finger work:   0
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+// Colemak
+`1234567890-=qwfpgjluy;[]\\arstdhneio'zxcvbkm,./~!@#$%^&*()_+QWFPGJLUY:{}|ARSTDHNEIO"ZXCVBKM<>? Colemak
+
+Hands: 44% 55%
+Fingers: 8.0% 9.0% 11% 17% 0.00% 0.00% 15% 18% 11% 11%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  F  P  G   J  L  U  Y  :  {  }  |
+    A  R  S  T  D   H  N  E  I  O  "
+    Z  X  C  V  B   K  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  f  p  g   j  l  u  y  ;  [  ]  \
+    a  r  s  t  d   h  n  e  i  o  '
+    z  x  c  v  b   k  m  ,  .  /
+
+Fitness:       1568
+Distance:      1265
+Finger work:   68
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//Dvorak
+`1234567890-=',.pyfgcrl[]\\aoeuidhtns/;qjkxbmwvz~!@#$%^&*()_+"<>PYFGCRL{}|AOEUIDHTNS?:QJKXBMWVZ Dvorak
+
+Hands: 48% 51%
+Fingers: 8.0% 12% 14% 15% 0.00% 0.00% 15% 12% 13% 11%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    "  <  >  P  Y   F  G  C  R  L  {  }  |
+    A  O  E  U  I   D  H  T  N  S  ?
+    :  Q  J  K  X   B  M  W  V  Z
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    '  ,  .  p  y   f  g  c  r  l  [  ]  \
+    a  o  e  u  i   d  h  t  n  s  /
+    ;  q  j  k  x   b  m  w  v  z
+
+Fitness:       1642
+Distance:      1500
+Finger work:   122
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//Workman
+`1234567890-=qdrwbjfup;[]\\ashtgyneoi'zxmcvkl,./~!@#$%^&*()_+QDRWBJFUP:{}|ASHTGYNEOI"ZXMCVKL<>?
+
+
+Hands: 47% 52%
+Fingers: 8.0% 12% 13% 15% 0.00% 0.00% 14% 18% 13% 7.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  D  R  W  B   J  F  U  P  :  {  }  |
+    A  S  H  T  G   Y  N  E  O  I  "
+    Z  X  M  C  V   K  L  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  d  r  w  b   j  f  u  p  ;  [  ]  \
+    a  s  h  t  g   y  n  e  o  i  '
+    z  x  m  c  v   k  l  ,  .  /
+
+Fitness:       1519
+Distance:      1315
+Finger work:   54
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//Capewell https://deskthority.net/wiki/File:Capewell-Layout.PNG
+`1234567890[].ywdfjpluq/=\\aersgbtnio-xzcv;kmh,'~!@#$%^&*(){}>YWDFJPLUQ?+|AERSGBTNIO_XZCV:KMH<"
+
+Hands: 51% 48%
+Fingers: 9.0% 16% 10% 16% 0.00% 0.00% 12% 14% 12% 11%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  {  }
+    >  Y  W  D  F   J  P  L  U  Q  ?  +  |
+    A  E  R  S  G   B  T  N  I  O  _
+    X  Z  C  V  :   K  M  H  <  "
+
+ `  1  2  3  4  5   6  7  8  9  0  [  ]
+    .  y  w  d  f   j  p  l  u  q  /  =  \
+    a  e  r  s  g   b  t  n  i  o  -
+    x  z  c  v  ;   k  m  h  ,  '
+
+Fitness:       1747
+Distance:      1400
+Finger work:   212
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//Norman
+`1234567890-=qwdfkjurl;[]\\asetgynioh'zxcvbpm,./~!@#$%^&*()_+QWDFKJURL:{}|ASETGYNIOH"ZXCVBPM<>?
+
+Hands: 50% 50%
+Fingers: 8.0% 10% 18% 14% 0.00% 0.00% 15% 14% 15% 5.0%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  W  D  F  K   J  U  R  L  :  {  }  |
+    A  S  E  T  G   Y  N  I  O  H  "
+    Z  X  C  V  B   P  M  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  w  d  f  k   j  u  r  l  ;  [  ]  \
+    a  s  e  t  g   y  n  i  o  h  '
+    z  x  c  v  b   p  m  ,  .  /
+
+Fitness:       1517
+Distance:      1305
+Finger work:   102
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
+//Carpalx http://mkweb.bcgsc.ca/carpalx/images/qfmlwy.png
+`1234567890-=qfmlwyuobj[]\\dstnriaeh;'zvgcxpk,./~!@#$%^&*()_+QFMLWYUOBJ{}|DSTNRIAEH:"ZVGCXPK<>?
+
+Hands: 44% 55%
+Fingers: 4.0% 11% 11% 18% 0.00% 0.00% 23% 25% 8.0% 0.00%
+
+ ~  !  @  #  $  %   ^  &  *  (  )  _  +
+    Q  F  M  L  W   Y  U  O  B  J  {  }  |
+    D  S  T  N  R   I  A  E  H  :  "
+    Z  V  G  C  X   P  K  <  >  ?
+
+ `  1  2  3  4  5   6  7  8  9  0  -  =
+    q  f  m  l  w   y  u  o  b  j  [  ]  \
+    d  s  t  n  r   i  a  e  h  ;  '
+    z  v  g  c  x   p  k  ,  .  /
+
+Fitness:       1820
+Distance:      1850
+Finger work:   70
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     100.00%
+Same finger:   0.00%
+Row change:    0.00%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     0.00%
+To outside:    0.00%
+
