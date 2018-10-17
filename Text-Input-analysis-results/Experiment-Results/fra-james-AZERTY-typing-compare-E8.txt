@@ -1,5 +1,10 @@
-Hands: 26% 73%
-Fingers: 8.0% 4.0% 9.0% 6.0% 0.00% 0.00% 14% 7.0% 9.0% 43%
+Experiment: 8
+Typings layout encoding:
+
+
+Results:
+Hands: 60% 40%
+Fingers: 9.0% 11% 22% 18% 0.00% 0.00% 17% 8.0% 11% 4.0%
 
  ~  !  @  #  $  %   ^  &  *  (  )  _  +
     Q  W  E  R  T   Y  U  I  O  P  {  }  |
@@ -11,15 +16,15 @@ Fingers: 8.0% 4.0% 9.0% 6.0% 0.00% 0.00% 14% 7.0% 9.0% 43%
     a  s  d  f  g   h  j  k  l  ;  '
     z  x  c  v  b   n  m  ,  .  /
 
-Fitness:       376243
-Distance:      146530
-Finger work:   56513
+Fitness:       3358
+Distance:      3030
+Finger work:   3
 Inward rolls:  0.00%
 Outward rolls: 0.00%
-Same hand:     88.89%
+Same hand:     100.00%
 Same finger:   0.00%
 Row change:    0.00%
 Home jump:     0.00%
-Ring jump:     0.03%
+Ring jump:     0.00%
 To center:     0.00%
 To outside:    0.00%

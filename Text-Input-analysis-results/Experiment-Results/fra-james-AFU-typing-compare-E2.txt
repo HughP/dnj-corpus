@@ -1,5 +1,10 @@
-Hands: 56% 43%
-Fingers: 8.0% 9.0% 23% 15% 0.00% 0.00% 16% 10% 10% 7.0%
+Experiment: 2
+Typings layout encoding:
+
+
+Results:
+Hands: 58% 41%
+Fingers: 9.0% 11% 22% 16% 0.00% 0.00% 19% 8.0% 11% 4.0%
 
  ~  !  @  #  $  %   ^  &  *  (  )  _  +
     Q  W  E  R  T   Y  U  I  O  P  {  }  |
@@ -11,9 +16,9 @@ Fingers: 8.0% 9.0% 23% 15% 0.00% 0.00% 16% 10% 10% 7.0%
     a  s  d  f  g   h  j  k  l  ;  '
     z  x  c  v  b   n  m  ,  .  /
 
-Fitness:       3588
+Fitness:       3345
 Distance:      3010
-Finger work:   28
+Finger work:   0
 Inward rolls:  0.00%
 Outward rolls: 0.00%
 Same hand:     100.00%

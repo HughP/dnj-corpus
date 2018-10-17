@@ -1,4 +1,4 @@
-The score of the default Eastern Dan james text against the text of the Trans-Mande keyboard is as follows according to typing:
+The score of the Eastern Dan james text against the text of the Trans-Mande keyboard was derived in Experiment 21, and uses Keyboard ID #19 and is as follows according to typing:
 
 Hands: 27% 72%
 Fingers: 10% 2.0% 10% 6.0% 0.00% 0.00% 15% 6.0% 8.0% 42%
@@ -27,7 +27,7 @@ To center:     0.00%
 To outside:    0.00%
 
 
-If we score the KLA suggested keyboard with typing and the same text then the following is the score:
+If we score the KLA suggested keyboard with typing and the same text then the following is the score (of course this is experiment 24 and uses keyboard ID 20):
 
 Hands: 53% 46%
 Fingers: 4.0% 8.0% 26% 16% 0.00% 0.00% 14% 11% 7.0% 15%
@@ -55,7 +55,7 @@ Ring jump:     0.00%
 To center:     0.00%
 To outside:    0.00%
 
-Finally two experiments were run in Typing and the suggested layouts have the following score:
+Finally an experiment was run in Typing and the suggested layout has the following score (experiment 25 and keyboard Id 21):
 
 ***Found from greatToBest()***
 
@@ -115,7 +115,7 @@ Time elapsed: 14 hours, 28 minutes, 11 seconds
 Time elapsed: 21 hours, 20 minutes, 10 seconds
 Number of rounds in greatToBest() is now 1048576.
 
-Now if we take the KLA keyboard and score it against James where would it fit?
+Now if we take the KLA keyboard which was created with the full Eastern Dan text was scored it against James where would it fit? (experiment 39 with Keybard ID 33)
 
 Hands: 52% 47%
 Fingers: 5.0% 8.0% 25% 14% 0.00% 0.00% 19% 8.0% 4.0% 15%
