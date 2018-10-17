@@ -1,0 +1,32 @@
+Experiment: 48
+KBDID: 4
+Typings layout encoding:
+
+
+Results:
+
+Hands: 50% 49%
+Fingers: 7.0% 10% 14% 19% 0.00% 0.00% 22% 10% 9.0% 9.0%
+
+ C  %  &  [  ]  $   @  '  /  (  )  J  ^
+    Y  S  B  U  W   :  G  N  ,  +  A  R  -
+    K  Q  O  =  `   M  H  D  E  .  ?
+    P  X  |  V  F   T  Z  I  L  \
+
+ c  1  2  3  4  5   6  7  8  9  0  j  #
+    y  s  b  u  w   _  g  n  ;  "  a  r  *
+    k  q  o  <  >   m  h  d  e  {  }
+    p  x  ~  v  f   t  z  i  l  !
+
+Fitness:       173400
+Distance:      129510
+Finger work:   580
+Inward rolls:  0.00%
+Outward rolls: 0.00%
+Same hand:     88.53%
+Same finger:   0.00%
+Row change:    9.72%
+Home jump:     9.72%
+Ring jump:     2.49%
+To center:     0.04%
+To outside:    0.00%

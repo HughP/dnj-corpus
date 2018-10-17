@@ -1,0 +1,41 @@
+Experiment: 45
+KBDID: 36
+Typings layout encoding:
+
+
+Results:
+***Found from greatToBest()***
+
+Hands: 43% 56%
+Fingers: 8.0% 8.0% 10% 18% 0.00% 0.00% 23% 12% 11% 11%
+
+ T  |  #  %  [  ]   \  '  ,  $  +  J  A
+    Y  K  Z  S  W   R  P  B  G  &  ^  C  X
+    N  D  H  -  @   I  E  Q  O  .  "
+    L  !  *  M  _   /  U  V  ?  F
+
+ t  1  2  3  4  5   6  7  8  9  0  j  a
+    y  k  z  s  w   r  p  b  g  =  :  c  x
+    n  d  h  <  >   i  e  q  o  {  }
+    l  ;  ~  m  (   )  u  v  `  f
+
+Fitness:       154841
+Distance:      130685
+Finger work:   2811
+Inward rolls:  11.97%
+Outward rolls: 0.39%
+Same hand:     43.02%
+Same finger:   2.10%
+Row change:    20.09%
+Home jump:     0.58%
+Ring jump:     0.70%
+To center:     5.67%
+To outside:    0.35%
+
+Time elapsed: 43 hours, 44 minutes, 38 seconds
+Time elapsed: 43 hours, 44 minutes, 39 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 76 hours, 40 minutes, 20 seconds
+Time elapsed: 111 hours, 33 minutes, 28 seconds

@@ -1,0 +1,62 @@
+Experiment: 16
+Typings layout encoding:
+
+
+Results:
+***Found from greatToBest()***
+
+Hands: 46% 53%
+Fingers: 8.0% 7.0% 17% 15% 0.00% 0.00% 17% 21% 13% 3.0%
+
+ C  &  _  (  :  @   !  %  )  `  -  =  Z
+    D  E  J  L  "   V  B  R  S  T  <  >  #
+    U  M  ,  I  G   O  N  A  .  ;  W
+    ?  +  |  X  P   Y  H  K  Q  F
+
+ c  1  2  3  4  5   6  7  8  9  0  \  z
+    d  e  j  l  $   v  b  r  s  t  {  }  *
+    u  m  '  i  g   o  n  a  [  ]  w
+    ~  ^  /  x  p   y  h  k  q  f
+
+Fitness:       1157
+Distance:      1640
+Finger work:   57
+Inward rolls:  30.38%
+Outward rolls: 1.27%
+Same hand:     48.10%
+Same finger:   0.00%
+Row change:    3.80%
+Home jump:     0.00%
+Ring jump:     2.53%
+To center:     3.80%
+To outside:    0.00%
+
+Time elapsed: 0 hours, 15 minutes, 40 seconds
+Number of rounds in greatToBest() is now 16384.
+Time elapsed: 0 hours, 19 minutes, 52 seconds
+Chance to use previous layout is now 0.717940.
+Number of swaps between rounds is now 18.
+Time elapsed: 0 hours, 28 minutes, 13 seconds
+Number of rounds in greatToBest() is now 32768.
+Time elapsed: 0 hours, 40 minutes, 47 seconds
+Number of rounds in greatToBest() is now 65536.
+Time elapsed: 1 hours, 6 minutes, 8 seconds
+Time elapsed: 1 hours, 41 minutes, 7 seconds
+Number of rounds in greatToBest() is now 131072.
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 2 hours, 53 minutes, 45 seconds
+Time elapsed: 4 hours, 9 minutes, 16 seconds
+Number of rounds in greatToBest() is now 262144.
+Time elapsed: 6 hours, 12 minutes, 0 seconds
+Time elapsed: 9 hours, 1 minutes, 37 seconds
+Number of rounds in greatToBest() is now 524288.
+Time elapsed: 13 hours, 52 minutes, 40 seconds
+Time elapsed: 20 hours, 45 minutes, 3 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 33 hours, 30 minutes, 31 seconds
+Time elapsed: 52 hours, 6 minutes, 50 seconds
+Number of rounds in greatToBest() is now 2097152.
+Time elapsed: 89 hours, 40 minutes, 31 seconds

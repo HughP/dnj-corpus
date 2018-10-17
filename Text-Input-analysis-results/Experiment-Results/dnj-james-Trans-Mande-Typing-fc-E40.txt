@@ -4,8 +4,8 @@ Typings layout encoding:
 
 
 Results:
-Hands: 49% 50%
-Fingers: 7.0% 16% 13% 14% 0.00% 0.00% 14% 17% 11% 9.0%
+Hands: 47% 52%
+Fingers: 6.0% 15% 13% 15% 0.00% 0.00% 14% 20% 9.0% 9.0%
 
  Q  !  /  <  >  +   ~  ^  [  ]  @  J  C
     B  F  N  Y  T   V  G  *  #  I  Z  R  X
@@ -17,15 +17,15 @@ Fingers: 7.0% 16% 13% 14% 0.00% 0.00% 14% 17% 11% 9.0%
     k  ;  :  o  d   u  e  -  a  h  w
     ?  (  _  s  %   l  m  p  )  \
 
-Fitness:       1910
-Distance:      2740
-Finger work:   300
-Inward rolls:  31.40%
+Fitness:       92792
+Distance:      63775
+Finger work:   4072
+Inward rolls:  0.00%
 Outward rolls: 0.00%
-Same hand:     39.67%
+Same hand:     99.93%
 Same finger:   0.00%
-Row change:    4.13%
+Row change:    0.00%
 Home jump:     0.00%
-Ring jump:     0.00%
+Ring jump:     0.03%
 To center:     0.00%
 To outside:    0.00%

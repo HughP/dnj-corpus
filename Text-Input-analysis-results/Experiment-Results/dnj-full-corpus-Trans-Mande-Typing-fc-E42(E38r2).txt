@@ -1,0 +1,41 @@
+Experiment: 42
+Keyboard Layout: 35
+Results set: 2 (this is the same experiment parameters as #38, but longer time)
+Typings layout encoding:
+
+
+Results:
+***Found from greatToBest()***
+
+Hands: 51% 48%
+Fingers: 9.0% 9.0% 17% 17% 0.00% 0.00% 17% 12% 11% 9.0%
+
+ $  [  {  *  !  `   _  |  \  }  ]  Q  X
+    @  %  +  D  ~   &  L  H  B  G  M  C  J
+    ?  A  .  (  N   U  )  E  O  K  S
+    F  R  V  W  #   T  I  Y  P  Z
+
+ ^  1  2  3  4  5   6  7  8  9  0  q  x
+    ,  =  "  d  <   >  l  h  b  g  m  c  j
+    -  a  ;  :  n   u  '  e  o  k  s
+    f  r  v  w  /   t  i  y  p  z
+
+Fitness:       73920
+Distance:      63065
+Finger work:   0
+Inward rolls:  15.54%
+Outward rolls: 0.66%
+Same hand:     40.89%
+Same finger:   0.52%
+Row change:    9.97%
+Home jump:     0.79%
+Ring jump:     0.36%
+To center:     4.00%
+To outside:    1.15%
+
+Time elapsed: 52 hours, 22 minutes, 15 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 78 hours, 7 minutes, 52 seconds
+Time elapsed: 113 hours, 57 minutes, 23 seconds

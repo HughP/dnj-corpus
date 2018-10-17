@@ -1,0 +1,56 @@
+Experiment: 5
+KBDID: 4
+Typings layout encoding:
+
+
+Results:
+
+***Found from greatToBest()***
+
+Hands: 51% 48%
+Fingers: 7.0% 11% 14% 20% 0.00% 0.00% 21% 9.0% 9.0% 9.0%
+
+ C  %  &  [  ]  $   @  '  /  (  )  J  ^
+    Y  S  B  U  W   :  G  N  ,  +  A  R  -
+    K  Q  O  =  `   M  H  D  E  .  ?
+    P  X  |  V  F   T  Z  I  L  \
+
+ c  1  2  3  4  5   6  7  8  9  0  j  #
+    y  s  b  u  w   _  g  n  ;  "  a  r  *
+    k  q  o  <  >   m  h  d  e  {  }
+    p  x  ~  v  f   t  z  i  l  !
+
+Fitness:       7139
+Distance:      7110
+Finger work:   4
+Inward rolls:  17.48%
+Outward rolls: 3.88%
+Same hand:     34.95%
+Same finger:   0.00%
+Row change:    9.71%
+Home jump:     0.00%
+Ring jump:     0.00%
+To center:     3.88%
+To outside:    0.00%
+
+Time elapsed: 1 hours, 52 minutes, 44 seconds
+Time elapsed: 1 hours, 52 minutes, 44 seconds
+Number of rounds in greatToBest() is now 131072.
+Chance to use previous layout is now 0.742129.
+Number of swaps between rounds is now 19.
+Time elapsed: 2 hours, 58 minutes, 46 seconds
+Time elapsed: 4 hours, 29 minutes, 58 seconds
+Number of rounds in greatToBest() is now 262144.
+Time elapsed: 7 hours, 2 minutes, 6 seconds
+Time elapsed: 10 hours, 34 minutes, 33 seconds
+Number of rounds in greatToBest() is now 524288.
+Time elapsed: 16 hours, 49 minutes, 3 seconds
+Time elapsed: 25 hours, 46 minutes, 39 seconds
+Number of rounds in greatToBest() is now 1048576.
+Chance to use previous layout is now 0.764595.
+Number of swaps between rounds is now 20.
+Time elapsed: 42 hours, 52 minutes, 31 seconds
+Time elapsed: 55 hours, 31 minutes, 59 seconds
+Number of rounds in greatToBest() is now 2097152.
+Time elapsed: 80 hours, 44 minutes, 34 seconds
+Time elapsed: 120 hours, 41 minutes, 54 seconds

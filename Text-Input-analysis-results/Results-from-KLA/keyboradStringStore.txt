@@ -1,0 +1,89 @@
+// file added by Hugh to test QWERTY. This is qwerty, but also anything keyed to QWERTY.
+`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
+
+//fra-dnj AFU KBDID: 1 Uses QWERTY because of text transformations
+
+//KLA dnj james AFU KBDID: 2
+`1234567890-=wiyup/mgzlrj\\deqokn,[hbta'f;.svc]x~!@#$%^&*()_+WIYUP?MGZLRJ|DEQOKN<{HBTA"F:>SVC}X
+
+//Typing dnj afu KBDID: 3
+x1234567890[]ywbus!gn;j"c*kqo<>mhde{}pl~vftizarX\\|%/+:_-()@&YWBUS`GN#J.C?KQO=,MHDE'^PL$VFTIZAR
+
+//Typing dnj afu KBDID: 4
+c1234567890j#ysbuw_gn;"ar*kqo<>mhde{}px~vftzil!C%&[]$@'/()J^YSBUW:GN,+AR-KQO=`MHDE.?PX|VFTZIL\\
+
+//KLA fra james AFU KBDID: 5
+`1234567890-=h;pmfjdcvbxy\\oieurnqstlg./wa[,']kz~!@#$%^&*()_+H:PMFJDCVBXY|OIEURNQSTLG>?WA{<"}KZ
+
+//KLA dnj full corpus AFU KBDID:
+`1234567890-=timgl.bzyw/j'ke[qhu,ondvc\\rsf;p]xa~!@#$%^&*()_+TIMGL>BZYW?J"KE{QHU<ONDVC|RSF:P}XA
+
+//fra AZERTY KBDID: 7 Uses QWERTY because of text transformations
+
+//KLA fra james AZERTY KBDID: 8
+`1234567890-=bv;dgxpcmwy.\\oieurnqstlh'/ja[,fk]z~!@#$%^&*()_+BV:DGXPCMWY>|OIEURNQSTLH"?JA{<FK}Z
+
+//KLA fra james BEPO KBDID: 10
+`1234567890-=,uio/[ehg.py]rdfsl;akj'vczqwtmnx\\b~!@#$%^&*()_+<UIO?{EHG>PY}RDFSL:AKJ"VCZQWTMNX|B
+
+//fra Bépo KBDID: 11 Uses QWERTY because of text transformations
+
+
+//KLA tcf james suggestion KBDID: 14
+`1234567890-=,exrs;gtl.pc/oia[umn'\\jdf]whykbvqz~!@#$%^&*()_+<EXRS:GTL>PC?OIA{UMN"|JDF}WHYKBVQZ
+
+//Typing tcf james KBDID: 15 
+c1234567890\\zdejl$vbrst{}*um'igona[]w~^/xpyhkqfC&_(:@!%)`-=ZDEJL"VBRST<>#UM,IGONA.;W?+|XPYHKQF
+
+//spa KBDID: 16 Uses QWERTY because of text transformations
+
+//KLA spa james suggestion KBDID:17
+`1234567890-=.pmtv;c',gz\\/dreoilsanuqxkfbjhyw[]~!@#$%^&*()_+>PMTV:C"<GZ|?DREOILSANUQXKFBJHYW{}
+
+//fra-dnj KBDID: 19 Uses QWERTY because of text transformations
+
+//KLA dnj james Trans Mande KBDID: 20
+`1234567890-=.wgbt/yimljv\\ue;'knoahdzqcf,rsp[]x~!@#$%^&*()_+>WGBT?YIMLJV|UE:"KNOAHDZQCF<RSP{}X
+
+//dnj Typing James Trans Mande KBDID: 21
+q1234567890jcbfnytvg'=izrxk;:odue-ahw?(_s%lmp)\\Q!/<>+~^[]@JCBFNYTVG*#IZRXK.,ODUE"AHW`|$S&LMP{}
+
+//KLA fra james Trans Mande KBDID: 22
+`1234567890-=.cd,fz;pmhx[\\oieurnastlgy/bvj'qkw]~!@#$%^&*()_+>CD<FZ:PMHX{|OIEURNASTLGY?BVJ"QKW}
+
+//QWERTY. KBDID: 24
+`1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
+
+//Carpalx KBDID:25 http://mkweb.bcgsc.ca/carpalx/images/qfmlwy.png 
+`1234567890-=qfmlwyuobj[]\\dstnriaeh;'zvgcxpk,./~!@#$%^&*()_+QFMLWYUOBJ{}|DSTNRIAEH:"ZVGCXPK<>?
+
+//Capewell KBDID: 26
+`1234567890[].ywdfjpluq/=\\aersgbtnio-xzcv;kmh,'~!@#$%^&*(){}>YWDFJPLUQ?+|AERSGBTNIO_XZCV:KMH<"
+
+//Dvorak KBDID: 27
+`1234567890-=',.pyfgcrl[]\\aoeuidhtns/;qjkxbmwvz~!@#$%^&*()_+"<>PYFGCRL{}|AOEUIDHTNS?:QJKXBMWVZ Dvorak
+
+//KLA eng james suggestion KBDID: 28
+`1234567890-=pfyl.'uwgv/;\\hsetinaord,xzkmjcbq[]~!@#$%^&*()_+PFYL>"UWGV?:|HSETINAORD<XZKMJCBQ{}
+
+// Colemak KBDID: 29
+`1234567890-=qwfpgjluy;[]\\arstdhneio'zxcvbkm,./~!@#$%^&*()_+QWFPGJLUY:{}|ARSTDHNEIO"ZXCVBKM<>? Colemak
+
+//Workman KBDID: 30
+`1234567890-=qdrwbjfup;[]\\ashtgyneoi'zxmcvkl,./~!@#$%^&*()_+QDRWBJFUP:{}|ASHTGYNEOI"ZXMCVKL<>?
+
+//Norman KBDID: 31
+`1234567890-=qwdfkjurl;[]\\asetgynioh'zxcvbpm,./~!@#$%^&*()_+QWDFKJURL:{}|ASETGYNIOH"ZXCVBPM<>?
+
+//KLA dnj full corpus Trans Mande KBDID: 33
+`1234567890-=tywgpfbisz/jqke;onha'udlc[r,vm.]x\\~!@#$%^&*()_+TYWGPFBISZ?JQKE:ONHA"UDLC{R<VM>}X|
+
+//Typing dnj full corpus Trans Mande r1 KBDID: 34
+c1234567890jx=i"d,fhbgyz$q-';:nueoaks<>.lvpwmrtC\\{|~@/&`}%JX*I?D_FHBGYZ#Q^+()NUEOAKS![]LVPWMRT
+
+//Typing dnj full corpus Trans Mande r2 KBDID:35
+^1234567890qx,="d<>lhbgmcj-a;:nu'eoksfrvw/tiypz$[{*!`_|\\}]QX@%+D~&LHBGMCJ?A.(NU)EOKSFRVW#TIYPZ
+
+//KBDID: 36
+t1234567890jaykzswrpbg=:cxndh<>ieqo{}l;~m()uv`fT|#%[]\\',$+JAYKZSWRPBG&^CXNDH-@IEQO."L!*M_/UV?F
+
