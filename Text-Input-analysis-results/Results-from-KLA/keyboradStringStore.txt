@@ -32,7 +32,7 @@ c1234567890j#ysbuw_gn;"ar*kqo<>mhde{}px~vftzil!C%&[]$@'/()J^YSBUW:GN,+AR-KQO=`MH
 //KLA tcf james suggestion KBDID: 14
 `1234567890-=,exrs;gtl.pc/oia[umn'\\jdf]whykbvqz~!@#$%^&*()_+<EXRS:GTL>PC?OIA{UMN"|JDF}WHYKBVQZ
 
-//Typing tcf james KBDID: 15 
+//Typing tcf james KBDID: 15
 c1234567890\\zdejl$vbrst{}*um'igona[]w~^/xpyhkqfC&_(:@!%)`-=ZDEJL"VBRST<>#UM,IGONA.;W?+|XPYHKQF
 
 //spa KBDID: 16 Uses QWERTY because of text transformations
@@ -54,7 +54,7 @@ q1234567890jcbfnytvg'=izrxk;:odue-ahw?(_s%lmp)\\Q!/<>+~^[]@JCBFNYTVG*#IZRXK.,ODU
 //QWERTY. KBDID: 24
 `1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>? QWERTY
 
-//Carpalx KBDID:25 http://mkweb.bcgsc.ca/carpalx/images/qfmlwy.png 
+//Carpalx KBDID:25 http://mkweb.bcgsc.ca/carpalx/images/qfmlwy.png
 `1234567890-=qfmlwyuobj[]\\dstnriaeh;'zvgcxpk,./~!@#$%^&*()_+QFMLWYUOBJ{}|DSTNRIAEH:"ZVGCXPK<>?
 
 //Capewell KBDID: 26
@@ -87,3 +87,5 @@ c1234567890jx=i"d,fhbgyz$q-';:nueoaks<>.lvpwmrtC\\{|~@/&`}%JX*I?D_FHBGYZ#Q^+()NU
 //KBDID: 36
 t1234567890jaykzswrpbg=:cxndh<>ieqo{}l;~m()uv`fT|#%[]\\',$+JAYKZSWRPBG&^CXNDH-@IEQO."L!*M_/UV?F
 
+//KLA dnj full corpus AFU KBDID: 37
+`1234567890-=timgl.bzyw/j'ke[qhu,ondvc\\rsf;p]xa~!@#$%^&*()_+TIMGL>BZYW?J"KE{QH<ONDVC|RSF:P}XA
